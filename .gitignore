@@ -1,0 +1,5 @@
+.env
+config/google-credentials.json
+config/google-token.pickle
+*.session
+__pycache__/
