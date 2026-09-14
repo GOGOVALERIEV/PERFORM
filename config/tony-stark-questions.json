@@ -28,6 +28,35 @@
       }
     ]
   },
+  "step_5_context": {
+    "description": "Day Context — what time do you actually have?",
+    "questions": [
+      {
+        "id": "day_start",
+        "label": "Day Start",
+        "text": "What time does YOUR day start and end TODAY? (e.g. '12:00 wake, 02:00 sleep')",
+        "help": "Your actual window today, not the ideal. Include commute, meals, fixed stuff."
+      },
+      {
+        "id": "fixed_walls",
+        "label": "Fixed Walls",
+        "text": "What immovable blocks do you have? (college, calls, errands, appointments)",
+        "help": "List each with time: '14:00-16:00 college', '19:00 dinner with wife'. These are sacred."
+      },
+      {
+        "id": "deep_work_hours",
+        "label": "Deep Work Capacity",
+        "text": "How many hours of actual deep work can you realistically do today?",
+        "help": "Be honest. Top energy = 5. Bottom = 1. Default = 3."
+      },
+      {
+        "id": "must_do",
+        "label": "Must Do",
+        "text": "If NOTHING else gets done, what ONE thing must happen?",
+        "help": "This is the non-negotiable. The deep work block protects this."
+      }
+    ]
+  },
   "step_8_evaluation": {
     "description": "End of day ruthless reading — 4 questions",
     "questions": [

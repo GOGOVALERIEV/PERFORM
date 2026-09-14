@@ -330,65 +330,175 @@ def step_4_make_list(calculation):
 
 
 # ============================================================================
-# STEP 5: TIME CALCULATOR
+# STEP 5: DAY CONTEXT (Ask about actual schedule)
 # ============================================================================
-def step_5_time_calculator(calculation):
+def step_5_context():
     print("\n" + "="*60)
-    print("STEP 5: TIME CALCULATOR")
+    print("STEP 5: DAY CONTEXT")
+    print("   What is your day ACTUALLY like? (Not the ideal — the real)")
     print("="*60)
 
-    # George's profile
-    wakes = "12 PM"
-    peak_brain = "3 PM → 10 PM"
-    grit_mode = "8 PM → 2 AM+"
+    questions = load_questions()["step_5_context"]["questions"]
+    answers = {}
+
+    for q in questions:
+        print(f"\n🔹 {q['label']}")
+        print(f"   {q['text']}")
+        if q.get("help"):
+            print(f"   ({q['help']})")
+        if TEST_MODE:
+            answer = "12:00-02:00 | College 14:00-16:00 | 5 hours | Ship ads"
+            print(f"   [TEST ANSWER]: {answer}")
+        elif PRELOAD_ANSWERS and q["id"] in PRELOAD_ANSWERS:
+            answer = PRELOAD_ANSWERS[q["id"]]
+            print(f"   [PRELOADED]: {answer}")
+        else:
+            answer = input("   Your answer: ").strip()
+        answers[q["id"]] = {
+            "label": q["label"],
+            "answer": answer,
+            "timestamp": NOW
+        }
+        log_event("STEP5-CTX", f"{q['id']}: {answer}")
+
+    save_state(f"day-context-{TODAY}.json", answers)
+    log_event("STEP5-CTX", "Day context complete.")
+    return answers
+
+
+# ============================================================================
+# STEP 5B: TIME CALCULATOR (Builds blocks around actual day)
+# ============================================================================
+def step_5_time_calculator(calculation, day_context=None):
+    print("\n" + "="*60)
+    print("STEP 5: TIME CALCULATOR")
+    print("   Building blocks around YOUR actual day.")
+    print("="*60)
+
     energy = calculation["energy"]
 
-    # Calculate deep work block
-    if "bottom" in energy or "low" in energy:
-        deep_work = "1-2 hours max (protection mode)"
-        blocks = [
-            {"name": "Wake up + eat", "start": "12:00", "end": "14:00", "type": "personal"},
-            {"name": "DO NOW (one small thing)", "start": "15:00", "end": "17:00", "type": "work"},
-            {"name": "Habits only", "start": "17:00", "end": "18:00", "type": "habits"},
-            {"name": "Rest / wife time", "start": "18:00", "end": "22:00", "type": "personal"},
-        ]
-    elif "top" in energy or "high" in energy:
-        deep_work = "5 hours deep work + 2 hours grit"
-        blocks = [
-            {"name": "Wake up + eat", "start": "12:00", "end": "14:00", "type": "personal"},
-            {"name": "Warm up / admin", "start": "14:00", "end": "15:00", "type": "personal"},
-            {"name": "DEEP WORK (fresh brain)", "start": "15:00", "end": "20:00", "type": "deep_work"},
-            {"name": "Wife time / break", "start": "20:00", "end": "21:00", "type": "personal"},
-            {"name": "Habits", "start": "21:00", "end": "22:00", "type": "habits"},
-            {"name": "GRIT WORK (determination)", "start": "22:00", "end": "01:00", "type": "work"},
-            {"name": "Wind down", "start": "01:00", "end": "02:00", "type": "personal"},
-        ]
+    # Parse day context
+    if day_context:
+        day_start = day_context.get("day_start", {}).get("answer", "12:00-02:00")
+        fixed_walls = day_context.get("fixed_walls", {}).get("answer", "")
+        deep_capacity = day_context.get("deep_work_hours", {}).get("answer", "3")
+        must_do = day_context.get("must_do", {}).get("answer", calculation.get("main_block", "work"))
     else:
-        deep_work = "3-4 hours deep work"
-        blocks = [
-            {"name": "Wake up + eat", "start": "12:00", "end": "14:00", "type": "personal"},
-            {"name": "DEEP WORK", "start": "15:00", "end": "19:00", "type": "deep_work"},
-            {"name": "Wife time", "start": "19:00", "end": "20:00", "type": "personal"},
-            {"name": "Habits", "start": "20:00", "end": "21:00", "type": "habits"},
-            {"name": "Extra work", "start": "21:00", "end": "23:00", "type": "work"},
-        ]
+        day_start = "12:00-02:00"
+        fixed_walls = ""
+        deep_capacity = "3"
+        must_do = calculation.get("main_block", "work")
+
+    # Parse capacity
+    try:
+        deep_hours = int([c for c in deep_capacity if c.isdigit()][0]) if any(c.isdigit() for c in deep_capacity) else 3
+    except:
+        deep_hours = 3
+
+    # Parse start/end
+    import re
+    time_match = re.findall(r'(\d{1,2}):(\d{2})', day_start)
+    if len(time_match) >= 2:
+        start_h, start_m = int(time_match[0][0]), int(time_match[0][1])
+        end_h, end_m = int(time_match[-1][0]), int(time_match[-1][1])
+    else:
+        start_h, start_m = 12, 0
+        end_h, end_m = 2, 0
+
+    # Parse fixed walls
+    walls = []
+    wall_pattern = re.findall(r'(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})', fixed_walls)
+    for w in wall_pattern:
+        walls.append({
+            "start_h": int(w[0]), "start_m": int(w[1]),
+            "end_h": int(w[2]), "end_m": int(w[3])
+        })
+
+    # Build free blocks
+    blocks = []
+
+    # Wake up block
+    blocks.append({"name": "Wake up + eat", "start": f"{start_h:02d}:{start_m:02d}",
+                  "end": f"{start_h+1:02d}:{start_m:02d}", "type": "personal"})
+
+    # Fixed walls (sacred)
+    for wall in walls:
+        blocks.append({
+            "name": "FIXED WALL",
+            "start": f"{wall['start_h']:02d}:{wall['start_m']:02d}",
+            "end": f"{wall['end_h']:02d}:{wall['end_m']:02d}",
+            "type": "personal"
+        })
+
+    # Deep work (the big block)
+    if "bottom" in energy or "low" in energy:
+        deep_hours = min(deep_hours, 2)
+    elif "top" in energy or "high" in energy:
+        deep_hours = max(deep_hours, 4)
+
+    # Find largest free gap for deep work (naive: after last wall or after wake)
+    deep_start_h = 15 if not walls else walls[-1]["end_h"] + 1
+    deep_end_h = deep_start_h + deep_hours
+    blocks.append({
+        "name": f"DEEP WORK: {must_do}",
+        "start": f"{deep_start_h:02d}:00",
+        "end": f"{deep_end_h:02d}:00",
+        "type": "deep_work"
+    })
+
+    # Grit work (whatever is left)
+    grit_start_h = deep_end_h + 1
+    grit_end_h = min(grit_start_h + 2, end_h - 1)
+    if grit_end_h > grit_start_h:
+        blocks.append({
+            "name": "GRIT WORK (remaining tasks)",
+            "start": f"{grit_start_h:02d}:00",
+            "end": f"{grit_end_h:02d}:00",
+            "type": "work"
+        })
+
+    # Habits
+    habits_start = end_h - 2
+    if habits_start > deep_end_h:
+        blocks.append({
+            "name": "Habits (Twitter + English)",
+            "start": f"{habits_start:02d}:00",
+            "end": f"{habits_start+1:02d}:00",
+            "type": "habits"
+        })
+
+    # Wife / wind down
+    if end_h > 21:
+        blocks.append({
+            "name": "Wife time / wind down",
+            "start": f"{end_h-1:02d}:00",
+            "end": f"{end_h:02d}:{end_m:02d}",
+            "type": "personal"
+        })
+
+    # Sort by start time
+    def parse_time(t):
+        h, m = map(int, t.split(":"))
+        return h * 60 + m
+    blocks.sort(key=lambda b: parse_time(b["start"]))
 
     time_state = {
-        "deep_work_hours": deep_work,
-        "peak_window": peak_brain,
-        "grit_window": grit_mode,
+        "deep_work_hours": f"{deep_hours} hours",
+        "day_window": day_start,
+        "fixed_walls": fixed_walls,
+        "must_do": must_do,
         "blocks": blocks,
         "timestamp": NOW
     }
     save_state(f"time-blocks-{TODAY}.json", time_state)
 
-    print(f"\n⏰ Deep Work: {deep_work}")
-    print(f"🧠 Peak Brain: {peak_brain}")
-    print(f"🔥 Grit Mode: {grit_mode}")
+    print(f"\n⏰ Deep Work Capacity: {deep_hours} hours")
+    print(f"🧠 Must Do: {must_do}")
+    print(f"📅 Fixed Walls: {fixed_walls if fixed_walls else 'None'}")
     print("\n📅 Proposed Blocks:")
     for b in blocks:
         print(f"   {b['start']} - {b['end']}: {b['name']} ({b['type']})")
-    log_event("STEP5", f"Time calculated: {deep_work}")
+    log_event("STEP5", f"Time calculated: {deep_hours}h deep work, {len(blocks)} blocks")
 
     return time_state
 
@@ -685,8 +795,10 @@ def main():
         day_list = load_state(f"day-list-{TODAY}.json")
 
     if step_num == 0 or step_num == 5:
-        time_blocks = step_5_time_calculator(calc)
+        day_context = step_5_context()
+        time_blocks = step_5_time_calculator(calc, day_context)
     else:
+        day_context = load_state(f"day-context-{TODAY}.json")
         time_blocks = load_state(f"time-blocks-{TODAY}.json")
 
     if step_num == 0 or step_num == 6:
