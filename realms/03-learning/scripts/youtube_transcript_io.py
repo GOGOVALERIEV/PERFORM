@@ -40,8 +40,20 @@ import requests
 import json
 import sys
 
-# Firebase config for youtube-transcript.io (extracted from their JS)
-_FIREBASE_API_KEY = "AIzaSyC02AJ8YNuHAUKTf8e8u8orfZwTrLmqBeo"
+# Read Firebase API key from config/.env (never hardcode in public repo)
+def _get_firebase_key():
+    env_path = r"C:\Users\User\Desktop\PERFORM\config\.env"
+    if os.path.exists(env_path):
+        with open(env_path) as f:
+            for line in f:
+                if line.startswith("FIREBASE_API_KEY="):
+                    return line.split("=", 1)[1].strip()
+    _key = os.environ.get("FIREBASE_API_KEY", "")
+    if not _key:
+        raise ValueError("FIREBASE_API_KEY not found in PERFORM/config/.env")
+    return _key
+
+_FIREBASE_API_KEY = _get_firebase_key()
 
 
 def get_transcript(video_id: str) -> dict:

@@ -30,8 +30,17 @@ NOTES_DIR = COURSE_DIR / "notes"
 FFMPEG_PATH = r"C:\Users\User\ffmpeg\ffmpeg.exe"
 FFPROBE_PATH = r"C:\Users\User\ffmpeg\ffprobe.exe"
 
-# Gemini API
-GEMINI_API_KEY = "AIzaSyBCdIfStMezTbPl84Mra6ZY_zBmEfc-bMU"
+# Gemini API — read key from config/.env
+def _get_gemini_key():
+    env_path = r"C:\Users\User\Desktop\PERFORM\config\.env"
+    if os.path.exists(env_path):
+        with open(env_path) as f:
+            for line in f:
+                if line.startswith("GEMINI_API_KEY="):
+                    return line.split("=", 1)[1].strip()
+    raise ValueError("GEMINI_API_KEY not found in PERFORM/config/.env")
+
+GEMINI_API_KEY = _get_gemini_key()
 GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={GEMINI_API_KEY}"
 
 # Whisper model — "base" is a good balance of speed vs accuracy
