@@ -1,0 +1,57 @@
+{
+  "step_1_scan": {
+    "description": "Boris NLPP Morning Intake — 4 questions",
+    "questions": [
+      {
+        "id": "sinusoid",
+        "label": "Sinusoid Check",
+        "text": "Where's your energy today: top, middle, or bottom of the wave?",
+        "help": "Top = full load possible. Middle = moderate, one main thing. Bottom = protection mode, DO NOW + habits only."
+      },
+      {
+        "id": "boardroom",
+        "label": "Boardroom Check",
+        "text": "Quick stats, 1-10 each: Health, Friends, Fun, Work/Money?",
+        "help": "Any director at 4 or below gets a small maintenance session scheduled this week."
+      },
+      {
+        "id": "braindump",
+        "label": "Brain Dump",
+        "text": "Dump everything on your mind: tasks, worries, ideas, fires. No filtering.",
+        "help": "Get it out of RAM. Everything."
+      },
+      {
+        "id": "goal_anchor",
+        "label": "Goal Anchor",
+        "text": "What's the ONE outcome that makes today a win? Just one.",
+        "help": "This becomes the filter for everything else."
+      }
+    ]
+  },
+  "step_8_evaluation": {
+    "description": "End of day ruthless reading — 4 questions",
+    "questions": [
+      {
+        "id": "quality",
+        "label": "Quality of Work",
+        "text": "Rate the quality of today's work (1-10). What was the best thing you shipped?"
+      },
+      {
+        "id": "progress",
+        "label": "Progress Made",
+        "text": "What needle actually moved today? Be specific: file created, ad uploaded, skill learned."
+      },
+      {
+        "id": "time_wasted",
+        "label": "Time Wasted",
+        "text": "Where did you leak time? Social media? Overthinking? Distractions? Be honest."
+      },
+      {
+        "id": "focus",
+        "label": "Focus Level",
+        "text": "Were you present during deep work, or was your mind elsewhere? (1-10)"
+      }
+    ],
+    "closing_quote": "You yourself said that if you don't push yourself to do what's required, you will remain the same idiot with bad body, big mouth, and nothing to show for it. And you will hate yourself forever."
+  }
+}

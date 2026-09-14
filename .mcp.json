@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "google-calendar": {
+      "command": "npx",
+      "args": ["-y", "@cocal/google-calendar-mcp"],
+      "env": {
+        "GOOGLE_CLIENT_ID": "",
+        "GOOGLE_CLIENT_SECRET": "",
+        "GOOGLE_REDIRECT_URI": "http://localhost:3000/oauth2callback"
+      }
+    },
+    "google-tasks": {
+      "command": "npx",
+      "args": ["-y", "@alvincrave/gtasks-mcp"],
+      "env": {
+        "GOOGLE_CLIENT_ID": "",
+        "GOOGLE_CLIENT_SECRET": "",
+        "GOOGLE_REFRESH_TOKEN": ""
+      }
+    },
+    "clockify": {
+      "command": "python",
+      "args": ["scripts/mcp_clockify_server.py"],
+      "env": {
+        "CLOCKIFY_API_KEY": "${CLOCKIFY_API_KEY}",
+        "CLOCKIFY_WORKSPACE_ID": "${CLOCKIFY_WORKSPACE_ID}"
+      }
+    }
+  }
+}
