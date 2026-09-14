@@ -41,6 +41,19 @@ TEST_EVAL_ANSWERS = {
     "focus": "7 — strong in first 3 hours, drifted after dinner"
 }
 
+# Preload answers from file (for chat mode)
+PRELOAD_ANSWERS = None
+
+def load_preload_answers(filepath):
+    """Load answers from a JSON file for chat-based execution."""
+    global PRELOAD_ANSWERS
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            PRELOAD_ANSWERS = json.load(f)
+    except Exception as e:
+        print(f"⚠️ Could not preload answers: {e}")
+        PRELOAD_ANSWERS = None
+
 
 def load_questions():
     with open(CONFIG_DIR / "tony-stark-questions.json", "r", encoding="utf-8") as f:
@@ -125,6 +138,8 @@ def step_1_scan():
     print("STEP 1: THE SCAN (Boris NLPP Intake)")
     if TEST_MODE:
         print("   [TEST MODE — using dummy answers]")
+    elif PRELOAD_ANSWERS:
+        print("   [CHAT MODE — answers pre-loaded]")
     print("="*60)
 
     questions = load_questions()["step_1_scan"]["questions"]
@@ -138,6 +153,9 @@ def step_1_scan():
         if TEST_MODE:
             answer = TEST_ANSWERS.get(q["id"], {}).get("answer", "test")
             print(f"   [TEST ANSWER]: {answer}")
+        elif PRELOAD_ANSWERS and q["id"] in PRELOAD_ANSWERS:
+            answer = PRELOAD_ANSWERS[q["id"]]
+            print(f"   [PRELOADED]: {answer}")
         else:
             answer = input("   Your answer: ").strip()
         answers[q["id"]] = {
@@ -615,10 +633,19 @@ One thing. Not five. One. Name it now or it doesn't exist.
 # MAIN
 # ============================================================================
 def main():
-    global TEST_MODE
+    global TEST_MODE, PRELOAD_ANSWERS
     if "--test" in sys.argv:
         TEST_MODE = True
         print("\n🧪 TEST MODE ACTIVE — using dummy data, no input required\n")
+
+    if "--preload" in sys.argv:
+        try:
+            preload_file = sys.argv[sys.argv.index("--preload") + 1]
+            load_preload_answers(preload_file)
+            print(f"\n📂 PRELOAD MODE — reading answers from: {preload_file}\n")
+        except (IndexError, ValueError):
+            print("⚠️ --preload requires a file path. Usage: --preload answers.json")
+            return
 
     if "--evening" in sys.argv:
         step_8_evaluate_evening()
