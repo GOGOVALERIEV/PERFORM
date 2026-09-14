@@ -9,6 +9,8 @@ import sys
 import os
 import random
 import datetime
+import subprocess
+import webbrowser
 from pathlib import Path
 
 # --- Paths ---
@@ -464,6 +466,64 @@ def step_8_evaluate():
     return True
 
 
+def open_tools():
+    """Open Google Calendar, Clockify, and Obsidian — the Tony Stark dashboard."""
+    print("\n" + "="*60)
+    print("OPENING THE TONY STARK DASHBOARD")
+    print("="*60)
+
+    # 1. Open Google Calendar in Brave
+    calendar_url = "https://calendar.google.com/calendar/u/0/r/day"
+    try:
+        # Try Brave specifically first
+        brave_paths = [
+            r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe",
+            r"C:\Program Files (x86)\BraveSoftware\Brave-Browser\Application\brave.exe",
+        ]
+        brave_found = None
+        for p in brave_paths:
+            if os.path.exists(p):
+                brave_found = p
+                break
+        if brave_found:
+            subprocess.Popen([brave_found, calendar_url], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            print("   ✅ Opened Google Calendar in Brave")
+        else:
+            webbrowser.open(calendar_url)
+            print("   ✅ Opened Google Calendar in default browser")
+    except Exception as e:
+        print(f"   ⚠️ Could not open Calendar: {e}")
+        print(f"   Manual: {calendar_url}")
+
+    # 2. Open Clockify desktop
+    clockify_path = r"C:\Program Files\Clockify\ClockifyWindows.exe"
+    try:
+        if os.path.exists(clockify_path):
+            subprocess.Popen([clockify_path], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            print("   ✅ Opened Clockify desktop")
+        else:
+            print(f"   ⚠️ Clockify not found at: {clockify_path}")
+            print("   Manual: Search 'Clockify' in Start menu")
+    except Exception as e:
+        print(f"   ⚠️ Could not open Clockify: {e}")
+
+    # 3. Open Obsidian vault
+    obsidian_vault = Path.home() / "Desktop" / "personal-ob"
+    try:
+        # Try opening Obsidian app with the vault
+        obsidian_exe = Path.home() / "AppData" / "Local" / "Obsidian" / "Obsidian.exe"
+        if obsidian_exe.exists():
+            subprocess.Popen([str(obsidian_exe), f"--vault={obsidian_vault}"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            print("   ✅ Opened Obsidian vault")
+        else:
+            # Fallback: open the folder
+            os.startfile(str(obsidian_vault))
+            print("   ✅ Opened Obsidian vault folder")
+    except Exception as e:
+        print(f"   ⚠️ Could not open Obsidian: {e}")
+        print(f"   Manual: {obsidian_vault}")
+
+
 def step_8_evaluate_evening():
     print("\n" + "="*60)
     print("STEP 8: THE RUTHLESS READING")
@@ -610,16 +670,11 @@ def main():
 
     if step_num == 0:
         step_8_evaluate()
+        open_tools()  # Tony Stark dashboard
 
     print("\n" + "="*60)
     print("MORNING ROUTINE COMPLETE")
     print("="*60)
-    print(f"\nNext steps:")
-    print(f"1. Check Daily.md: {OB_DIR / 'Daily.md'}")
-    print(f"2. Open Google Calendar and verify blocks")
-    print(f"3. Run Clockify seed: python scripts\\seed_clockify.py --wipe")
-    print(f"4. Open Clockify desktop app")
-    print(f"5. At end of day: python scripts\\tony_stark.py --evening")
     print(f"\nState files saved in: {STATE_DIR}")
     print(f"Log file: {LOGS_DIR / 'tony-stark.log'}")
 
