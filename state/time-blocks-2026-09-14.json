@@ -1,33 +1,101 @@
 {
-  "deep_work_hours": "4 hours",
-  "day_window": "12:00-02:00 | College 14:00-16:00 | 5 hours | Ship ads",
-  "fixed_walls": "12:00-02:00 | College 14:00-16:00 | 5 hours | Ship ads",
-  "must_do": "12:00-02:00 | College 14:00-16:00 | 5 hours | Ship ads",
+  "day_window": "woke 12:30, worked to 5:30 am, 1 hour free now, event starts 8 pm, back in sofia room 12 am",
+  "fixed_walls": "event 8 pm to 11 pm",
+  "tasks": [
+    {
+      "name": "Finish reading notebooks",
+      "duration": 60,
+      "done": false
+    },
+    {
+      "name": "Networking at event",
+      "duration": 230,
+      "done": false
+    },
+    {
+      "name": "Check job status",
+      "duration": 230,
+      "done": false
+    },
+    {
+      "name": "Wind down after",
+      "duration": 230,
+      "done": false
+    }
+  ],
   "blocks": [
     {
       "name": "Wake up + eat",
-      "start": "12:00",
+      "start_m": 750,
+      "end_m": 780,
+      "type": "personal",
+      "start": "12:30",
       "end": "13:00",
-      "type": "personal"
+      "duration": 30
     },
     {
-      "name": "FIXED WALL",
-      "start": "12:00",
-      "end": "02:00",
-      "type": "personal"
+      "name": "Finish reading notebooks",
+      "start_m": 780,
+      "end_m": 840,
+      "type": "deep_work",
+      "start": "13:00",
+      "end": "14:00",
+      "duration": 60
     },
     {
-      "name": "FIXED WALL",
+      "name": "Networking at event",
+      "start_m": 840,
+      "end_m": 900,
+      "type": "deep_work",
       "start": "14:00",
-      "end": "16:00",
-      "type": "personal"
+      "end": "15:00",
+      "duration": 60
     },
     {
-      "name": "DEEP WORK: 12:00-02:00 | College 14:00-16:00 | 5 hours | Ship ads",
-      "start": "17:00",
-      "end": "21:00",
-      "type": "deep_work"
+      "start_m": 900,
+      "end_m": 930,
+      "name": "lunch, 18:00 dinner",
+      "type": "break",
+      "start": "15:00",
+      "end": "15:30",
+      "duration": 30
+    },
+    {
+      "name": "Check job status",
+      "start_m": 930,
+      "end_m": 1160,
+      "type": "deep_work",
+      "start": "15:30",
+      "end": "19:20",
+      "duration": 230
+    },
+    {
+      "name": "Wind down after",
+      "start_m": 1160,
+      "end_m": 1200,
+      "type": "deep_work",
+      "start": "19:20",
+      "end": "20:00",
+      "duration": 40
+    },
+    {
+      "start_m": 1200,
+      "end_m": 1380,
+      "name": "FIXED WALL",
+      "type": "personal",
+      "start": "20:00",
+      "end": "23:00",
+      "duration": 180
+    },
+    {
+      "name": "Buffer / wind down",
+      "start_m": 1380,
+      "end_m": 1770,
+      "type": "personal",
+      "start": "23:00",
+      "end": "05:30",
+      "duration": 390
     }
   ],
-  "timestamp": "2026-09-14T13:28:04.274896"
+  "timestamp": "2026-09-14T19:15:17.985288"
 }

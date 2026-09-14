@@ -1,0 +1,12 @@
+{
+  "sinusoid": "top",
+  "boardroom": "health 7, friends 8, fun 1, work 5 if job (comfy), 1 if not (deadly)",
+  "braindump": "fix car, pay internet, finish reading notebooks, get good with new machine, go to event, launch product after getting job. worries: not getting job, being scammed, car issues, not feeling good about job but waiting",
+  "goal_anchor": "getting the job is the most important. finishing notebooks and connecting with people is 3/10 compared to job but still fine",
+  "day_start": "woke 12:30, worked to 5:30 am, 1 hour free now, event starts 8 pm, back in sofia room 12 am",
+  "fixed_walls": "event 8 pm to 11 pm",
+  "deep_work_hours": "1 hour now, after 11:30 pm or 12 am in room: 5 hours",
+  "must_do": "job, friends, notebooks",
+  "today_tasks": "Finish reading notebooks (60min)\nNetworking at event\nCheck job status\nWind down after",
+  "breaks": "15:00 lunch, 18:00 dinner"
+}

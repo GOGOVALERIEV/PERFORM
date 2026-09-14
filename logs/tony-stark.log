@@ -95,3 +95,230 @@
 [2026-09-14T13:28:04.274896] [STEP5] Time calculated: 4h deep work, 4 blocks
 [2026-09-14T13:28:04.274896] [STEP6] Created 1 calendar events
 [2026-09-14T13:28:04.274896] [STEP7] Clockify seed command prepared
+[2026-09-14T18:04:44.869727] [STEP1] sinusoid: midle
+[2026-09-14T18:04:44.869727] [STEP1] boardroom: health 7, friends 8, fun 1, work/money 7 if job lands else 1
+[2026-09-14T18:04:44.869727] [STEP1] braindump: fix car, pay internet, finish reading notebooks, get good with new machine, go to event, launch product after getting job. worries: not getting job, being scammed, car issues, not feeling good about job but waiting
+[2026-09-14T18:04:44.869727] [STEP1] goal_anchor: getting the job is most important. reading notebooks and connecting at the event are still great
+[2026-09-14T18:04:44.869727] [STEP1] Scan complete. Saved to state.
+[2026-09-14T18:04:44.869727] [STEP2] Machine check complete.
+[2026-09-14T18:04:44.869727] [STEP3] Main block: **Portfolio resurrection** — george-istatkov.netlify.app is 404 (checked June 12). Redeploy/rebuild from `outreach-2\portfolio\` (cv-v3 + 5 funnels exist). Finish the 32/50 sample ads once API credits are topped up. *Everything downstream (outreach, events, Twitter DMs) needs this link to be alive.*
+[2026-09-14T18:04:44.869727] [STEP4] List created: Hammer
+[2026-09-14T18:04:44.869727] [STEP5-CTX] day_start: woke 12:30, worked to 5:30 am, now 6 pm, event at 8 pm, probably sleep late in sofia
+[2026-09-14T18:04:44.869727] [STEP5-CTX] fixed_walls: event 8 pm to 11 pm
+[2026-09-14T18:04:44.869727] [STEP5-CTX] deep_work_hours: ~2 hours good work before event; deep work possible after 11 pm
+[2026-09-14T18:04:44.869727] [STEP5-CTX] must_do: get the job. if not, mentally detach from that opportunity so i can grow elsewhere, connect with cool people, read the notebooks
+[2026-09-14T18:04:44.869727] [STEP5-CTX] Day context complete.
+[2026-09-14T18:04:44.869727] [STEP5] Time calculated: 2h deep work, 2 blocks
+[2026-09-14T18:04:44.869727] [STEP6] Created 1 calendar events
+[2026-09-14T18:04:44.869727] [STEP7] Clockify seed command prepared
+[2026-09-14T18:26:16.942854] [STEP1] sinusoid: midle
+[2026-09-14T18:26:16.942854] [STEP1] boardroom: health 7, friends 8, fun 1, work/money 7 if job lands else 1
+[2026-09-14T18:26:16.942854] [STEP1] braindump: fix car, pay internet, finish reading notebooks, get good with new machine, go to event, launch product after getting job. worries: not getting job, being scammed, car issues, not feeling good about job but waiting
+[2026-09-14T18:26:16.942854] [STEP1] goal_anchor: getting the job is most important. reading notebooks and connecting at the event are still great
+[2026-09-14T18:26:16.942854] [STEP1] Scan complete. Saved to state.
+[2026-09-14T18:26:16.942854] [STEP2] Machine check complete.
+[2026-09-14T18:26:16.942854] [STEP3] Main block: **Portfolio resurrection** — george-istatkov.netlify.app is 404 (checked June 12). Redeploy/rebuild from `outreach-2\portfolio\` (cv-v3 + 5 funnels exist). Finish the 32/50 sample ads once API credits are topped up. *Everything downstream (outreach, events, Twitter DMs) needs this link to be alive.*
+[2026-09-14T18:26:16.942854] [STEP4] List created: The Build
+[2026-09-14T18:26:16.942854] [STEP5-CTX] day_start: woke 12:30, worked to 5:30 am, now 6 pm, event at 8 pm, probably sleep late in sofia
+[2026-09-14T18:26:16.942854] [STEP5-CTX] fixed_walls: event 8 pm to 11 pm
+[2026-09-14T18:26:16.942854] [STEP5-CTX] deep_work_hours: ~2 hours good work before event; deep work possible after 11 pm
+[2026-09-14T18:26:16.942854] [STEP5-CTX] must_do: get the job. if not, mentally detach from that opportunity so i can grow elsewhere, connect with cool people, read the notebooks
+[2026-09-14T18:26:16.942854] [STEP5-CTX] Day context complete.
+[2026-09-14T18:26:16.942854] [STEP5] Time calculated: 2h deep work, 2 blocks
+[2026-09-14T18:26:46.646340] [STEP1] sinusoid: midle
+[2026-09-14T18:26:46.646340] [STEP1] boardroom: health 7, friends 8, fun 1, work/money 7 if job lands else 1
+[2026-09-14T18:26:46.646340] [STEP1] braindump: fix car, pay internet, finish reading notebooks, get good with new machine, go to event, launch product after getting job. worries: not getting job, being scammed, car issues, not feeling good about job but waiting
+[2026-09-14T18:26:46.646340] [STEP1] goal_anchor: getting the job is most important. reading notebooks and connecting at the event are still great
+[2026-09-14T18:26:46.646340] [STEP1] Scan complete. Saved to state.
+[2026-09-14T18:26:46.646340] [STEP2] Machine check complete.
+[2026-09-14T18:26:46.646340] [STEP3] Main block: **Portfolio resurrection** — george-istatkov.netlify.app is 404 (checked June 12). Redeploy/rebuild from `outreach-2\portfolio\` (cv-v3 + 5 funnels exist). Finish the 32/50 sample ads once API credits are topped up. *Everything downstream (outreach, events, Twitter DMs) needs this link to be alive.*
+[2026-09-14T18:26:46.646340] [STEP4] List created: Launchpad
+[2026-09-14T18:26:46.646340] [STEP5-CTX] day_start: woke 12:30, worked to 5:30 am, now 6 pm, event at 8 pm, probably sleep late in sofia
+[2026-09-14T18:26:46.646340] [STEP5-CTX] fixed_walls: event 8 pm to 11 pm
+[2026-09-14T18:26:46.646340] [STEP5-CTX] deep_work_hours: ~2 hours good work before event; deep work possible after 11 pm
+[2026-09-14T18:26:46.646340] [STEP5-CTX] must_do: get the job. if not, mentally detach from that opportunity so i can grow elsewhere, connect with cool people, read the notebooks
+[2026-09-14T18:26:46.646340] [STEP5-CTX] Day context complete.
+[2026-09-14T18:26:46.646340] [STEP5] Time calculated: 2h deep work, 2 blocks
+[2026-09-14T18:26:46.646340] [GATE] Appended time blocks to Daily.md
+[2026-09-14T18:34:14.948822] [STEP1] sinusoid: top
+[2026-09-14T18:34:14.948822] [STEP1] boardroom: health 7, friends 8, fun 1, work 5 if job (comfy), 1 if not (deadly)
+[2026-09-14T18:34:14.948822] [STEP1] braindump: fix car, pay internet, finish reading notebooks, get good with new machine, go to event, launch product after getting job. worries: not getting job, being scammed, car issues, not feeling good about job but waiting
+[2026-09-14T18:34:14.948822] [STEP1] goal_anchor: getting the job is the most important. finishing notebooks and connecting with people is 3/10 compared to job but still fine
+[2026-09-14T18:34:14.948822] [STEP1] Scan complete. Saved to state.
+[2026-09-14T18:34:14.948822] [STEP2] Machine check complete.
+[2026-09-14T18:34:14.948822] [STEP3] Main block: **Portfolio resurrection** — george-istatkov.netlify.app is 404 (checked June 12). Redeploy/rebuild from `outreach-2\portfolio\` (cv-v3 + 5 funnels exist). Finish the 32/50 sample ads once API credits are topped up. *Everything downstream (outreach, events, Twitter DMs) needs this link to be alive.*
+[2026-09-14T18:34:14.948822] [STEP4] List created: Overdrive
+[2026-09-14T18:34:14.948822] [STEP5-CTX] day_start: woke 12:30, worked to 5:30 am, 1 hour free now, event starts 8 pm, back in sofia room 12 am
+[2026-09-14T18:34:14.948822] [STEP5-CTX] fixed_walls: event 8 pm to 11 pm
+[2026-09-14T18:34:14.948822] [STEP5-CTX] deep_work_hours: 1 hour now, after 11:30 pm or 12 am in room: 5 hours
+[2026-09-14T18:34:14.948822] [STEP5-CTX] must_do: job, friends, notebooks
+[2026-09-14T18:34:14.948822] [STEP5-CTX] Day context complete.
+[2026-09-14T18:34:14.948822] [STEP5] Time calculated: 4h deep work, 2 blocks
+[2026-09-14T18:37:10.794405] [STEP1] sinusoid: top
+[2026-09-14T18:37:10.794405] [STEP1] boardroom: health 7, friends 8, fun 1, work 5 if job (comfy), 1 if not (deadly)
+[2026-09-14T18:37:10.794405] [STEP1] braindump: fix car, pay internet, finish reading notebooks, get good with new machine, go to event, launch product after getting job. worries: not getting job, being scammed, car issues, not feeling good about job but waiting
+[2026-09-14T18:37:10.794405] [STEP1] goal_anchor: getting the job is the most important. finishing notebooks and connecting with people is 3/10 compared to job but still fine
+[2026-09-14T18:37:10.794405] [STEP1] Scan complete. Saved to state.
+[2026-09-14T18:37:10.794405] [STEP2] Machine check complete.
+[2026-09-14T18:37:10.794405] [STEP3] Main block: **Portfolio resurrection** — george-istatkov.netlify.app is 404 (checked June 12). Redeploy/rebuild from `outreach-2\portfolio\` (cv-v3 + 5 funnels exist). Finish the 32/50 sample ads once API credits are topped up. *Everything downstream (outreach, events, Twitter DMs) needs this link to be alive.*
+[2026-09-14T18:37:10.794405] [STEP4] List created: Deep Cut
+[2026-09-14T18:37:10.794405] [STEP5-CTX] day_start: woke 12:30, worked to 5:30 am, 1 hour free now, event starts 8 pm, back in sofia room 12 am
+[2026-09-14T18:37:10.794405] [STEP5-CTX] fixed_walls: event 8 pm to 11 pm
+[2026-09-14T18:37:10.794405] [STEP5-CTX] deep_work_hours: 1 hour now, after 11:30 pm or 12 am in room: 5 hours
+[2026-09-14T18:37:10.794405] [STEP5-CTX] must_do: job, friends, notebooks
+[2026-09-14T18:37:10.794405] [STEP5-CTX] Day context complete.
+[2026-09-14T18:37:10.794405] [STEP5] Time calculated: 4h deep work, 2 blocks
+[2026-09-14T18:37:10.794405] [GATE] Appended time blocks to Daily.md
+[2026-09-14T18:37:10.794405] [CAL_DEL] Deleted 9 calendar events
+[2026-09-14T18:37:10.794405] [STEP6] Wiped 9, created 1 calendar events
+[2026-09-14T18:37:10.794405] [STEP7] Clockify seeded OK
+[2026-09-14T18:38:33.469011] [STEP1] sinusoid: top
+[2026-09-14T18:38:33.469011] [STEP1] boardroom: health 7, friends 8, fun 1, work 5 if job (comfy), 1 if not (deadly)
+[2026-09-14T18:38:33.469011] [STEP1] braindump: fix car, pay internet, finish reading notebooks, get good with new machine, go to event, launch product after getting job. worries: not getting job, being scammed, car issues, not feeling good about job but waiting
+[2026-09-14T18:38:33.469011] [STEP1] goal_anchor: getting the job is the most important. finishing notebooks and connecting with people is 3/10 compared to job but still fine
+[2026-09-14T18:38:33.469011] [STEP1] Scan complete. Saved to state.
+[2026-09-14T18:38:33.469011] [STEP2] Machine check complete.
+[2026-09-14T18:38:33.469011] [STEP3] Main block: **Portfolio resurrection** — george-istatkov.netlify.app is 404 (checked June 12). Redeploy/rebuild from `outreach-2\portfolio\` (cv-v3 + 5 funnels exist). Finish the 32/50 sample ads once API credits are topped up. *Everything downstream (outreach, events, Twitter DMs) needs this link to be alive.*
+[2026-09-14T18:38:33.469011] [STEP4] List created: The Leap
+[2026-09-14T18:38:33.469011] [STEP5-CTX] day_start: woke 12:30, worked to 5:30 am, 1 hour free now, event starts 8 pm, back in sofia room 12 am
+[2026-09-14T18:38:33.469011] [STEP5-CTX] fixed_walls: event 8 pm to 11 pm
+[2026-09-14T18:38:33.469011] [STEP5-CTX] deep_work_hours: 1 hour now, after 11:30 pm or 12 am in room: 5 hours
+[2026-09-14T18:38:33.469011] [STEP5-CTX] must_do: job, friends, notebooks
+[2026-09-14T18:38:33.469011] [STEP5-CTX] Day context complete.
+[2026-09-14T18:38:33.469011] [STEP5] Time calculated: 4h deep work, 2 blocks
+[2026-09-14T18:38:33.469011] [GATE] Time blocks appended: False
+[2026-09-14T18:38:33.469011] [CAL_DEL] Deleted 1 calendar events
+[2026-09-14T18:38:33.469011] [STEP6] Wiped 1, created 1 calendar events
+[2026-09-14T18:38:33.469011] [STEP7] Clockify seeded OK
+[2026-09-14T19:09:18.989048] [STEP1] sinusoid: top
+[2026-09-14T19:09:18.989048] [STEP1] boardroom: health 7, friends 8, fun 1, work 5 if job (comfy), 1 if not (deadly)
+[2026-09-14T19:09:18.989048] [STEP1] braindump: fix car, pay internet, finish reading notebooks, get good with new machine, go to event, launch product after getting job. worries: not getting job, being scammed, car issues, not feeling good about job but waiting
+[2026-09-14T19:09:18.989048] [STEP1] goal_anchor: getting the job is the most important. finishing notebooks and connecting with people is 3/10 compared to job but still fine
+[2026-09-14T19:09:18.989048] [STEP1] Scan complete. Saved to state.
+[2026-09-14T19:09:18.989048] [STEP2] Machine check complete.
+[2026-09-14T19:09:18.989048] [STEP3] Main block: **Portfolio resurrection** — george-istatkov.netlify.app is 404 (checked June 12). Redeploy/rebuild from `outreach-2\portfolio\` (cv-v3 + 5 funnels exist). Finish the 32/50 sample ads once API credits are topped up. *Everything downstream (outreach, events, Twitter DMs) needs this link to be alive.*
+[2026-09-14T19:09:18.989048] [STEP4] Skeleton created: Storm
+[2026-09-14T19:09:18.989048] [STEP5-CTX] day_start: woke 12:30, worked to 5:30 am, 1 hour free now, event starts 8 pm, back in sofia room 12 am
+[2026-09-14T19:09:18.989048] [STEP5-CTX] fixed_walls: event 8 pm to 11 pm
+[2026-09-14T19:09:18.989048] [STEP5-CTX] deep_work_hours: 1 hour now, after 11:30 pm or 12 am in room: 5 hours
+[2026-09-14T19:09:18.989048] [STEP5-CTX] must_do: job, friends, notebooks
+[2026-09-14T19:09:18.989048] [STEP5-CTX] today_tasks: Finish reading notebooks (60min)
+Networking at event
+Check job status
+Wind down after
+[2026-09-14T19:09:18.989048] [STEP5-CTX] Day context complete.
+[2026-09-14T19:09:18.989048] [TODO] Daily todo created: C:\Users\User\Desktop\personal-ob\ToDo\Daily\2026-09-14.md
+[2026-09-14T19:09:18.989048] [TODO] Synced 4 tasks to All.md
+[2026-09-14T19:09:18.989048] [TODO] Schedule written to daily todo
+[2026-09-14T19:09:18.989048] [STEP5] Scheduled 6 blocks, 4 tasks
+[2026-09-14T19:09:18.989048] [CAL_DEL] Deleted 1 calendar events
+[2026-09-14T19:09:18.989048] [STEP6] Wiped 1, created 4 calendar events
+[2026-09-14T19:09:18.989048] [STEP7] Clockify seeded OK
+[2026-09-14T19:09:56.149838] [STEP1] sinusoid: top
+[2026-09-14T19:09:56.149838] [STEP1] boardroom: health 7, friends 8, fun 1, work 5 if job (comfy), 1 if not (deadly)
+[2026-09-14T19:09:56.149838] [STEP1] braindump: fix car, pay internet, finish reading notebooks, get good with new machine, go to event, launch product after getting job. worries: not getting job, being scammed, car issues, not feeling good about job but waiting
+[2026-09-14T19:09:56.149838] [STEP1] goal_anchor: getting the job is the most important. finishing notebooks and connecting with people is 3/10 compared to job but still fine
+[2026-09-14T19:09:56.149838] [STEP1] Scan complete. Saved to state.
+[2026-09-14T19:09:56.149838] [STEP2] Machine check complete.
+[2026-09-14T19:09:56.149838] [STEP3] Main block: **Portfolio resurrection** — george-istatkov.netlify.app is 404 (checked June 12). Redeploy/rebuild from `outreach-2\portfolio\` (cv-v3 + 5 funnels exist). Finish the 32/50 sample ads once API credits are topped up. *Everything downstream (outreach, events, Twitter DMs) needs this link to be alive.*
+[2026-09-14T19:09:56.149838] [STEP4] Skeleton created: Breakthrough
+[2026-09-14T19:09:56.149838] [STEP5-CTX] day_start: woke 12:30, worked to 5:30 am, 1 hour free now, event starts 8 pm, back in sofia room 12 am
+[2026-09-14T19:09:56.149838] [STEP5-CTX] fixed_walls: event 8 pm to 11 pm
+[2026-09-14T19:09:56.149838] [STEP5-CTX] deep_work_hours: 1 hour now, after 11:30 pm or 12 am in room: 5 hours
+[2026-09-14T19:09:56.149838] [STEP5-CTX] must_do: job, friends, notebooks
+[2026-09-14T19:09:56.149838] [STEP5-CTX] today_tasks: Finish reading notebooks (60min)
+Networking at event
+Check job status
+Wind down after
+[2026-09-14T19:09:56.149838] [STEP5-CTX] Day context complete.
+[2026-09-14T19:10:04.033293] [STEP1] sinusoid: top
+[2026-09-14T19:10:04.033293] [STEP1] boardroom: health 7, friends 8, fun 1, work 5 if job (comfy), 1 if not (deadly)
+[2026-09-14T19:10:04.033293] [STEP1] braindump: fix car, pay internet, finish reading notebooks, get good with new machine, go to event, launch product after getting job. worries: not getting job, being scammed, car issues, not feeling good about job but waiting
+[2026-09-14T19:10:04.033293] [STEP1] goal_anchor: getting the job is the most important. finishing notebooks and connecting with people is 3/10 compared to job but still fine
+[2026-09-14T19:10:04.033293] [STEP1] Scan complete. Saved to state.
+[2026-09-14T19:10:04.033293] [STEP2] Machine check complete.
+[2026-09-14T19:10:04.033293] [STEP3] Main block: **Portfolio resurrection** — george-istatkov.netlify.app is 404 (checked June 12). Redeploy/rebuild from `outreach-2\portfolio\` (cv-v3 + 5 funnels exist). Finish the 32/50 sample ads once API credits are topped up. *Everything downstream (outreach, events, Twitter DMs) needs this link to be alive.*
+[2026-09-14T19:10:04.033293] [STEP4] Skeleton created: Deep Cut
+[2026-09-14T19:10:04.033293] [STEP5-CTX] day_start: woke 12:30, worked to 5:30 am, 1 hour free now, event starts 8 pm, back in sofia room 12 am
+[2026-09-14T19:10:04.033293] [STEP5-CTX] fixed_walls: event 8 pm to 11 pm
+[2026-09-14T19:10:04.033293] [STEP5-CTX] deep_work_hours: 1 hour now, after 11:30 pm or 12 am in room: 5 hours
+[2026-09-14T19:10:04.033293] [STEP5-CTX] must_do: job, friends, notebooks
+[2026-09-14T19:10:04.033293] [STEP5-CTX] today_tasks: Finish reading notebooks (60min)
+Networking at event
+Check job status
+Wind down after
+[2026-09-14T19:10:04.033293] [STEP5-CTX] Day context complete.
+[2026-09-14T19:10:14.258687] [STEP1] sinusoid: top
+[2026-09-14T19:10:14.258687] [STEP1] boardroom: health 7, friends 8, fun 1, work 5 if job (comfy), 1 if not (deadly)
+[2026-09-14T19:10:14.258687] [STEP1] braindump: fix car, pay internet, finish reading notebooks, get good with new machine, go to event, launch product after getting job. worries: not getting job, being scammed, car issues, not feeling good about job but waiting
+[2026-09-14T19:10:14.258687] [STEP1] goal_anchor: getting the job is the most important. finishing notebooks and connecting with people is 3/10 compared to job but still fine
+[2026-09-14T19:10:14.258687] [STEP1] Scan complete. Saved to state.
+[2026-09-14T19:10:14.258687] [STEP2] Machine check complete.
+[2026-09-14T19:10:14.258687] [STEP3] Main block: **Portfolio resurrection** — george-istatkov.netlify.app is 404 (checked June 12). Redeploy/rebuild from `outreach-2\portfolio\` (cv-v3 + 5 funnels exist). Finish the 32/50 sample ads once API credits are topped up. *Everything downstream (outreach, events, Twitter DMs) needs this link to be alive.*
+[2026-09-14T19:10:14.258687] [STEP4] Skeleton created: Deep Cut
+[2026-09-14T19:10:14.258687] [STEP5-CTX] day_start: woke 12:30, worked to 5:30 am, 1 hour free now, event starts 8 pm, back in sofia room 12 am
+[2026-09-14T19:10:14.258687] [STEP5-CTX] fixed_walls: event 8 pm to 11 pm
+[2026-09-14T19:10:14.258687] [STEP5-CTX] deep_work_hours: 1 hour now, after 11:30 pm or 12 am in room: 5 hours
+[2026-09-14T19:10:14.258687] [STEP5-CTX] must_do: job, friends, notebooks
+[2026-09-14T19:10:14.258687] [STEP5-CTX] today_tasks: Finish reading notebooks (60min)
+Networking at event
+Check job status
+Wind down after
+[2026-09-14T19:10:14.258687] [STEP5-CTX] Day context complete.
+[2026-09-14T19:10:14.258687] [TODO] Daily todo created: C:\Users\User\Desktop\personal-ob\ToDo\Daily\2026-09-14.md
+[2026-09-14T19:10:14.258687] [TODO] Synced 4 tasks to All.md
+[2026-09-14T19:10:14.258687] [TODO] Schedule written to daily todo
+[2026-09-14T19:10:14.258687] [STEP5] Scheduled 7 blocks, 4 tasks
+[2026-09-14T19:10:14.258687] [CAL_DEL] Deleted 3 calendar events
+[2026-09-14T19:10:14.258687] [STEP6] Wiped 3, created 4 calendar events
+[2026-09-14T19:10:14.258687] [STEP7] Clockify seeded OK
+[2026-09-14T19:13:47.832210] [STEP1] sinusoid: top
+[2026-09-14T19:13:47.832210] [STEP1] boardroom: health 7, friends 8, fun 1, work 5 if job (comfy), 1 if not (deadly)
+[2026-09-14T19:13:47.832210] [STEP1] braindump: fix car, pay internet, finish reading notebooks, get good with new machine, go to event, launch product after getting job. worries: not getting job, being scammed, car issues, not feeling good about job but waiting
+[2026-09-14T19:13:47.832210] [STEP1] goal_anchor: getting the job is the most important. finishing notebooks and connecting with people is 3/10 compared to job but still fine
+[2026-09-14T19:13:47.832210] [STEP1] Scan complete. Saved to state.
+[2026-09-14T19:13:47.832210] [STEP2] Machine check complete.
+[2026-09-14T19:13:47.832210] [STEP3] Main block: **Portfolio resurrection** — george-istatkov.netlify.app is 404 (checked June 12). Redeploy/rebuild from `outreach-2\portfolio\` (cv-v3 + 5 funnels exist). Finish the 32/50 sample ads once API credits are topped up. *Everything downstream (outreach, events, Twitter DMs) needs this link to be alive.*
+[2026-09-14T19:13:47.832210] [STEP4] Skeleton created: Hammer
+[2026-09-14T19:13:47.832210] [STEP5-CTX] day_start: woke 12:30, worked to 5:30 am, 1 hour free now, event starts 8 pm, back in sofia room 12 am
+[2026-09-14T19:13:47.832210] [STEP5-CTX] fixed_walls: event 8 pm to 11 pm
+[2026-09-14T19:13:47.832210] [STEP5-CTX] breaks: 15:00 lunch, 18:00 dinner
+[2026-09-14T19:13:47.832210] [STEP5-CTX] deep_work_hours: 1 hour now, after 11:30 pm or 12 am in room: 5 hours
+[2026-09-14T19:13:47.832210] [STEP5-CTX] must_do: job, friends, notebooks
+[2026-09-14T19:13:47.832210] [STEP5-CTX] today_tasks: Finish reading notebooks (60min)
+Networking at event
+Check job status
+Wind down after
+[2026-09-14T19:13:47.832210] [STEP5-CTX] Day context complete.
+[2026-09-14T19:13:47.832210] [TODO] Daily todo created: C:\Users\User\Desktop\personal-ob\ToDo\Daily\2026-09-14.md
+[2026-09-14T19:13:47.832210] [TODO] Synced 4 tasks to All.md
+[2026-09-14T19:13:47.832210] [TODO] Schedule written to daily todo
+[2026-09-14T19:13:47.832210] [STEP5] Scheduled 7 blocks, 4 tasks
+[2026-09-14T19:13:47.832210] [CAL_DEL] Deleted 4 calendar events
+[2026-09-14T19:13:47.832210] [STEP6] Wiped 4, created 4 calendar events
+[2026-09-14T19:13:47.832210] [STEP7] Clockify seeded OK
+[2026-09-14T19:15:17.985288] [STEP1] sinusoid: top
+[2026-09-14T19:15:17.985288] [STEP1] boardroom: health 7, friends 8, fun 1, work 5 if job (comfy), 1 if not (deadly)
+[2026-09-14T19:15:17.985288] [STEP1] braindump: fix car, pay internet, finish reading notebooks, get good with new machine, go to event, launch product after getting job. worries: not getting job, being scammed, car issues, not feeling good about job but waiting
+[2026-09-14T19:15:17.985288] [STEP1] goal_anchor: getting the job is the most important. finishing notebooks and connecting with people is 3/10 compared to job but still fine
+[2026-09-14T19:15:17.985288] [STEP1] Scan complete. Saved to state.
+[2026-09-14T19:15:17.985288] [STEP2] Machine check complete.
+[2026-09-14T19:15:17.985288] [STEP3] Main block: **Portfolio resurrection** — george-istatkov.netlify.app is 404 (checked June 12). Redeploy/rebuild from `outreach-2\portfolio\` (cv-v3 + 5 funnels exist). Finish the 32/50 sample ads once API credits are topped up. *Everything downstream (outreach, events, Twitter DMs) needs this link to be alive.*
+[2026-09-14T19:15:17.985288] [STEP4] Skeleton created: The Forge
+[2026-09-14T19:15:17.985288] [STEP5-CTX] day_start: woke 12:30, worked to 5:30 am, 1 hour free now, event starts 8 pm, back in sofia room 12 am
+[2026-09-14T19:15:17.985288] [STEP5-CTX] fixed_walls: event 8 pm to 11 pm
+[2026-09-14T19:15:17.985288] [STEP5-CTX] breaks: 15:00 lunch, 18:00 dinner
+[2026-09-14T19:15:17.985288] [STEP5-CTX] deep_work_hours: 1 hour now, after 11:30 pm or 12 am in room: 5 hours
+[2026-09-14T19:15:17.985288] [STEP5-CTX] must_do: job, friends, notebooks
+[2026-09-14T19:15:17.985288] [STEP5-CTX] today_tasks: Finish reading notebooks (60min)
+Networking at event
+Check job status
+Wind down after
+[2026-09-14T19:15:17.985288] [STEP5-CTX] Day context complete.
+[2026-09-14T19:15:17.985288] [TODO] Daily todo created: C:\Users\User\Desktop\personal-ob\ToDo\Daily\2026-09-14.md
+[2026-09-14T19:15:17.985288] [TODO] Synced 4 tasks to All.md
+[2026-09-14T19:15:17.985288] [TODO] Schedule written to daily todo
+[2026-09-14T19:15:17.985288] [STEP5] Scheduled 8 blocks, 4 tasks
+[2026-09-14T19:15:17.985288] [CAL_DEL] Deleted 4 calendar events
+[2026-09-14T19:15:17.985288] [STEP6] Wiped 4, created 5 calendar events
+[2026-09-14T19:15:17.985288] [STEP7] Clockify seeded OK

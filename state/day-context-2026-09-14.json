@@ -1,22 +1,32 @@
 {
   "day_start": {
     "label": "Day Start",
-    "answer": "12:00-02:00 | College 14:00-16:00 | 5 hours | Ship ads",
-    "timestamp": "2026-09-14T13:28:04.274896"
+    "answer": "woke 12:30, worked to 5:30 am, 1 hour free now, event starts 8 pm, back in sofia room 12 am",
+    "timestamp": "2026-09-14T19:15:17.985288"
   },
   "fixed_walls": {
     "label": "Fixed Walls",
-    "answer": "12:00-02:00 | College 14:00-16:00 | 5 hours | Ship ads",
-    "timestamp": "2026-09-14T13:28:04.274896"
+    "answer": "event 8 pm to 11 pm",
+    "timestamp": "2026-09-14T19:15:17.985288"
+  },
+  "breaks": {
+    "label": "Breaks",
+    "answer": "15:00 lunch, 18:00 dinner",
+    "timestamp": "2026-09-14T19:15:17.985288"
   },
   "deep_work_hours": {
     "label": "Deep Work Capacity",
-    "answer": "12:00-02:00 | College 14:00-16:00 | 5 hours | Ship ads",
-    "timestamp": "2026-09-14T13:28:04.274896"
+    "answer": "1 hour now, after 11:30 pm or 12 am in room: 5 hours",
+    "timestamp": "2026-09-14T19:15:17.985288"
   },
   "must_do": {
     "label": "Must Do",
-    "answer": "12:00-02:00 | College 14:00-16:00 | 5 hours | Ship ads",
-    "timestamp": "2026-09-14T13:28:04.274896"
+    "answer": "job, friends, notebooks",
+    "timestamp": "2026-09-14T19:15:17.985288"
+  },
+  "today_tasks": {
+    "label": "Today's Tasks",
+    "answer": "Finish reading notebooks (60min)\nNetworking at event\nCheck job status\nWind down after",
+    "timestamp": "2026-09-14T19:15:17.985288"
   }
 }

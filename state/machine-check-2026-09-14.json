@@ -1,8 +1,8 @@
 {
   "energy": "top",
-  "boardroom": "Health 8, Friends 7, Fun 6, Work 5",
-  "goal_anchor": "Ship 10 ads today",
+  "boardroom": "health 7, friends 8, fun 1, work 5 if job (comfy), 1 if not (deadly)",
+  "goal_anchor": "getting the job is the most important. finishing notebooks and connecting with people is 3/10 compared to job but still fine",
   "active_queue_snippet": "## Active Queue (ordered — Main Block always works the TOP item)\n\n1. **Portfolio resurrection** — george-istatkov.netlify.app is 404 (checked June 12). Redeploy/rebuild from `outreach-2\\portfolio\\` (cv-v3 + 5 funnels exist). Finish the 32/50 sample ads once API credits are topped up. *Everything downstream (outreach, events, Twitter DMs) needs this link to be alive.*\n2. **Restart the outreach machine** — 507 leads were queued and send-ready when it stopped April 17. Re-auth Gmail tokens if expir",
   "daily_md_snippet": "## September 14, 2026 — Breakthrough\n\n*Energy: top. Main Block: **Portfolio resurrection** — george-istatkov.netlify.app is 404 (checked June 12). Redeploy/rebuild from `outreach-2\\portfolio\\` (cv-v3 + 5 funnels exist). Finish the 32/50 sample ads once API credits are topped up. *Everything downstream (outreach, events, Twitter DMs) needs this link to be alive.**\n\n**Main Block (the ONE win):**\n- [ ] **Portfolio resurrection** — george-istatkov.netlify.app is 404 (checked June 12). Redeploy/rebui",
-  "timestamp": "2026-09-14T13:28:04.274896"
+  "timestamp": "2026-09-14T19:15:17.985288"
 }

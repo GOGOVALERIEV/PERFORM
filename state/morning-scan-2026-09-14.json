@@ -2,21 +2,21 @@
   "sinusoid": {
     "label": "Sinusoid Check",
     "answer": "top",
-    "timestamp": "2026-09-14T13:28:04.274896"
+    "timestamp": "2026-09-14T19:15:17.985288"
   },
   "boardroom": {
     "label": "Boardroom Check",
-    "answer": "Health 8, Friends 7, Fun 6, Work 5",
-    "timestamp": "2026-09-14T13:28:04.274896"
+    "answer": "health 7, friends 8, fun 1, work 5 if job (comfy), 1 if not (deadly)",
+    "timestamp": "2026-09-14T19:15:17.985288"
   },
   "braindump": {
     "label": "Brain Dump",
-    "answer": "Need to finish the LFS ads, call Boris, fix the portfolio site, study copywriting",
-    "timestamp": "2026-09-14T13:28:04.274896"
+    "answer": "fix car, pay internet, finish reading notebooks, get good with new machine, go to event, launch product after getting job. worries: not getting job, being scammed, car issues, not feeling good about job but waiting",
+    "timestamp": "2026-09-14T19:15:17.985288"
   },
   "goal_anchor": {
     "label": "Goal Anchor",
-    "answer": "Ship 10 ads today",
-    "timestamp": "2026-09-14T13:28:04.274896"
+    "answer": "getting the job is the most important. finishing notebooks and connecting with people is 3/10 compared to job but still fine",
+    "timestamp": "2026-09-14T19:15:17.985288"
   }
 }
