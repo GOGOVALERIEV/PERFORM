@@ -54,6 +54,12 @@
         "label": "Must Do",
         "text": "If NOTHING else gets done, what ONE thing must happen?",
         "help": "This is the non-negotiable. The deep work block protects this."
+      },
+      {
+        "id": "today_tasks",
+        "label": "Today's Tasks",
+        "text": "List the specific tasks you want done today, one per line. Include rough time estimates (minutes) if you want.",
+        "help": "Example: 'Finish notebooks (60min)', 'Pay internet (15min)', 'Networking at event'. These become individual Calendar + Clockify entries."
       }
     ]
   },

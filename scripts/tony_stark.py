@@ -20,7 +20,14 @@ CONFIG_DIR = BASE_DIR / "config"
 STATE_DIR = BASE_DIR / "state"
 LOGS_DIR = BASE_DIR / "logs"
 OB_DIR = Path.home() / "Desktop" / "personal-ob" / "Goals"
+TODO_DIR = Path.home() / "Desktop" / "personal-ob" / "ToDo"
+TODO_DAILY_DIR = TODO_DIR / "Daily"
+TODO_ALL = TODO_DIR / "All.md"
 
+TODO_DIR.mkdir(exist_ok=True)
+TODO_DAILY_DIR.mkdir(exist_ok=True)
+(Path.home() / "Desktop" / "personal-ob" / "ToDo" / "Weekly").mkdir(exist_ok=True)
+(Path.home() / "Desktop" / "personal-ob" / "ToDo" / "Monthly").mkdir(exist_ok=True)
 STATE_DIR.mkdir(exist_ok=True)
 LOGS_DIR.mkdir(exist_ok=True)
 
@@ -218,6 +225,215 @@ def append_time_blocks_to_daily(date_str, blocks):
     return True
 
 
+def parse_task_duration(line):
+    """Parse 'Task name (60min)' into (clean_name, minutes). Returns (name, None) if no match."""
+    clean = line.strip()
+    # Try (60min), (1h), (30m), (90 m)
+    m = re.search(r'\((\d+)\s*min\)', clean, flags=re.IGNORECASE)
+    if m:
+        return clean[:m.start()].strip(), int(m.group(1))
+    m = re.search(r'\((\d+)\s*h(?:ou)?r?\)', clean, flags=re.IGNORECASE)
+    if m:
+        return clean[:m.start()].strip(), int(m.group(1)) * 60
+    m = re.search(r'\((\d+)\s*m\)', clean, flags=re.IGNORECASE)
+    if m:
+        return clean[:m.start()].strip(), int(m.group(1))
+    return clean, None
+
+
+def parse_today_tasks(task_str):
+    """Split a multi-line task string into list of (name, duration_min or None)."""
+    tasks = []
+    for line in task_str.split("\n"):
+        line = line.strip().lstrip("-").strip().lstrip("*").strip()
+        if not line:
+            continue
+        name, dur = parse_task_duration(line)
+        if name:
+            tasks.append({"name": name, "duration": dur, "done": False})
+    return tasks
+
+
+def write_daily_todo(tasks, calc):
+    """Create or overwrite ToDo/Daily/YYYY-MM-DD.md with task list (no schedule yet)."""
+    date_str = datetime.date.today().strftime("%B %d, %Y")
+    daily_file = TODO_DAILY_DIR / f"{TODAY}.md"
+    day_name = generate_day_name()
+    lines = [
+        f"## {date_str} — {day_name}",
+        "",
+        f"**Energy:** {calc['energy']}",
+        f"**Main Block:** {calc['main_block']}",
+        "",
+        "### Tasks",
+    ]
+    for t in tasks:
+        dur = f" ({t['duration']}min)" if t.get("duration") else ""
+        lines.append(f"- [ ] {t['name']}{dur}")
+    lines += ["", "### Schedule", ""]
+    content = "\n".join(lines)
+    with open(daily_file, "w", encoding="utf-8") as f:
+        f.write(content + "\n")
+    log_event("TODO", f"Daily todo created: {daily_file}")
+    return str(daily_file)
+
+
+def add_tasks_to_all(tasks):
+    """Append new tasks from today's list to ToDo/All.md if they don't already exist."""
+    if not TODO_ALL.exists():
+        with open(TODO_ALL, "w", encoding="utf-8") as f:
+            f.write("# All Tasks\n\n")
+    with open(TODO_ALL, "r", encoding="utf-8") as f:
+        existing = f.read().lower()
+    with open(TODO_ALL, "a", encoding="utf-8") as f:
+        for t in tasks:
+            name = t["name"]
+            if name.lower() not in existing:
+                dur = f" ({t['duration']}min)" if t.get("duration") else ""
+                f.write(f"- [ ] {name}{dur}\n")
+                existing += f" {name.lower()} "
+    log_event("TODO", f"Synced {len(tasks)} tasks to All.md")
+
+
+def read_daily_todo():
+    """Read today's todo file and return list of task dicts."""
+    daily_file = TODO_DAILY_DIR / f"{TODAY}.md"
+    if not daily_file.exists():
+        return []
+    with open(daily_file, "r", encoding="utf-8") as f:
+        content = f.read()
+    tasks = []
+    in_tasks = False
+    for line in content.split("\n"):
+        if line.strip().startswith("### Tasks"):
+            in_tasks = True
+            continue
+        if line.strip().startswith("### Schedule"):
+            in_tasks = False
+            continue
+        if in_tasks and line.strip().startswith("- [ ]"):
+            stripped = line.strip()[6:].strip()
+            name, dur = parse_task_duration(stripped)
+            tasks.append({"name": name, "duration": dur, "done": False})
+    return tasks
+
+
+def write_schedule_to_daily(blocks):
+    """Write or replace the schedule section in today's daily todo file."""
+    daily_file = TODO_DAILY_DIR / f"{TODAY}.md"
+    if not daily_file.exists():
+        return False
+    with open(daily_file, "r", encoding="utf-8") as f:
+        content = f.read()
+    # Find schedule section
+    sch_start = content.find("### Schedule")
+    if sch_start != -1:
+        content = content[:sch_start + len("### Schedule")] + "\n"
+    else:
+        content += "\n### Schedule\n"
+    for b in blocks:
+        dur = ""
+        if b.get("duration"):
+            dur = f" ({b['duration']}min)"
+        content += f"- {b['start']} — {b['end']}: {b['name']}{dur}\n"
+    with open(daily_file, "w", encoding="utf-8") as f:
+        f.write(content)
+    log_event("TODO", "Schedule written to daily todo")
+    return True
+
+
+def remove_done_from_all(done_names):
+    """Remove completed task lines from ToDo/All.md."""
+    if not TODO_ALL.exists():
+        return 0
+    with open(TODO_ALL, "r", encoding="utf-8") as f:
+        lines = f.readlines()
+    removed = 0
+    kept = []
+    for ln in lines:
+        lower_ln = ln.lower()
+        match = False
+        for name in done_names:
+            if name.lower() in lower_ln and ln.strip().startswith("- [ ]"):
+                match = True
+                break
+        if match:
+            removed += 1
+        else:
+            kept.append(ln)
+    with open(TODO_ALL, "w", encoding="utf-8") as f:
+        f.writelines(kept)
+    log_event("TODO", f"Removed {removed} done tasks from All.md")
+    return removed
+
+
+def seed_clockify_from_blocks(blocks):
+    """Create Clockify entries with actual planned start/end + duration."""
+    import urllib.request, urllib.error, json
+    # Load env
+    env_path = CONFIG_DIR / ".env"
+    env = {}
+    if env_path.exists():
+        with open(env_path, "r", encoding="utf-8") as f:
+            for ln in f:
+                ln = ln.strip()
+                if ln and not ln.startswith("#") and "=" in ln:
+                    k, v = ln.split("=", 1)
+                    env[k] = v
+    api_key = env.get("CLOCKIFY_API_KEY")
+    workspace = env.get("CLOCKIFY_WORKSPACE_ID")
+    if not api_key or not workspace:
+        return False, "Clockify credentials missing in config/.env"
+
+    def clk(path, method="GET", body=None):
+        data = json.dumps(body).encode() if body is not None else None
+        req = urllib.request.Request(
+            f"https://api.clockify.me/api/v1{path}",
+            data=data, method=method,
+            headers={"X-Api-Key": api_key, "Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req) as r:
+                raw = r.read().decode()
+                return json.loads(raw) if raw else None
+        except urllib.error.HTTPError as e:
+            return {"_error": e.code, "_msg": e.read().decode()}
+
+    # Wipe today's entries
+    uid = clk("/user")
+    if not uid or "id" not in uid:
+        return False, f"Could not get Clockify user: {uid}"
+    uid = uid["id"]
+    now = datetime.datetime.now(datetime.timezone.utc)
+    start = (now - datetime.timedelta(hours=20)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    entries = clk(f"/workspaces/{workspace}/user/{uid}/time-entries?start={start}&page-size=200")
+    wiped = 0
+    for e in (entries or []):
+        r = clk(f"/workspaces/{workspace}/time-entries/{e['id']}", "DELETE")
+        wiped += 1
+
+    # Seed new entries with real durations
+    today = datetime.date.today()
+    created = 0
+    for i, b in enumerate(blocks):
+        if b.get("type") == "personal":
+            continue
+        sh, sm = map(int, b["start"].split(":"))
+        eh, em = map(int, b["end"].split(":"))
+        start_dt = datetime.datetime(today.year, today.month, today.day, sh, sm, tzinfo=datetime.timezone.utc)
+        end_dt = datetime.datetime(today.year, today.month, today.day, eh, em, tzinfo=datetime.timezone.utc)
+        if end_dt <= start_dt:
+            end_dt += datetime.timedelta(days=1)
+        body = {
+            "start": start_dt.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "end": end_dt.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "description": b["name"],
+        }
+        res = clk(f"/workspaces/{workspace}/time-entries", "POST", body)
+        if res and "id" in res:
+            created += 1
+    return True, f"Wiped {wiped} entries, created {created} entries with real durations."
+
+
 def delete_calendar_events_in_window(service, window_start_hours=-6, window_end_hours=18):
     """Delete all non-all-day calendar events in the given window."""
     now = datetime.datetime.now(datetime.timezone.utc)
@@ -405,55 +621,32 @@ def step_4_make_list(calculation):
     date_str = datetime.date.today().strftime("%B %d, %Y")
     main_block = calculation["main_block"]
 
-    daily_entry = f"""## {date_str} — {day_name}
+    # Create skeleton ToDo/Daily/YYYY-MM-DD.md (tasks filled in later after context)
+    daily_file = TODO_DAILY_DIR / f"{TODAY}.md"
+    skeleton = f"""## {date_str} — {day_name}
 
-*Energy: {calculation['energy']}. Main Block: {main_block}*
+**Energy:** {calculation['energy']}
+**Main Block:** {main_block}
 
-**Main Block (the ONE win):**
-- [ ] {main_block}
+### Tasks
+<!-- tasks will be populated after chat context -->
 
-**Habits (non-negotiable):**
-- [ ] Twitter — 25 min: read Boris's tweets, note 3 that got engagement + why
-- [ ] English — 30 min: rewrite a hook from yesterday in own words, compare, log mistakes
+### Schedule
 
-**If juice left:**
-- [ ] One small unblock task (5 min max)
-
-**Deferred:**
-- (check Active Queue for next item if Main Block finishes early)
-
----
 """
+    with open(daily_file, "w", encoding="utf-8") as f:
+        f.write(skeleton)
 
-    # Append to Daily.md
-    daily_path = OB_DIR / "Daily.md"
-    if daily_path.exists():
-        with open(daily_path, "r", encoding="utf-8") as f:
-            existing = f.read()
-        # Check if today's entry already exists
-        if date_str in existing[:1000]:
-            print(f"   ⚠️ Entry for {date_str} already exists. Appending below.")
-            existing += "\n\n" + daily_entry
-        else:
-            existing = daily_entry + "\n\n" + existing
-    else:
-        existing = daily_entry
-
-    with open(daily_path, "w", encoding="utf-8") as f:
-        f.write(existing)
-
-    # Save state
     list_state = {
         "day_name": day_name,
         "date": date_str,
-        "entry": daily_entry,
+        "daily_file": str(daily_file),
         "timestamp": NOW
     }
     save_state(f"day-list-{TODAY}.json", list_state)
 
-    print(f"\n📝 Written to Daily.md: {date_str} — {day_name}")
-    print(f"   Main Block: {main_block}")
-    log_event("STEP4", f"List created: {day_name}")
+    print(f"\n📝 Skeleton daily todo created: {daily_file}")
+    log_event("STEP4", f"Skeleton created: {day_name}")
 
     return list_state
 
@@ -498,34 +691,45 @@ def step_5_context():
 # ============================================================================
 # STEP 5B: TIME CALCULATOR (Builds blocks around actual day)
 # ============================================================================
+def _parse_ampm(hour, ampm):
+    h = int(hour)
+    ap = ampm.lower().strip()
+    if ap == "pm" and h != 12:
+        h += 12
+    if ap == "am" and h == 12:
+        h = 0
+    return h
+
+
+def _time_to_min(h, m):
+    return (h % 24) * 60 + m
+
+
+def _min_to_str(mins):
+    mins = mins % (24 * 60)
+    return f"{mins // 60:02d}:{mins % 60:02d}"
+
+
 def step_5_time_calculator(calculation, day_context=None):
     print("\n" + "="*60)
     print("STEP 5: TIME CALCULATOR")
-    print("   Building blocks around YOUR actual day.")
+    print("   Building per-task blocks around YOUR actual day.")
     print("="*60)
 
-    energy = calculation["energy"]
-
-    # Parse day context
     if day_context:
         day_start = day_context.get("day_start", {}).get("answer", "12:00-02:00")
         fixed_walls = day_context.get("fixed_walls", {}).get("answer", "")
         deep_capacity = day_context.get("deep_work_hours", {}).get("answer", "3")
         must_do = day_context.get("must_do", {}).get("answer", calculation.get("main_block", "work"))
+        today_tasks_str = day_context.get("today_tasks", {}).get("answer", "")
     else:
         day_start = "12:00-02:00"
         fixed_walls = ""
         deep_capacity = "3"
         must_do = calculation.get("main_block", "work")
+        today_tasks_str = ""
 
-    # Parse capacity
-    try:
-        deep_hours = int([c for c in deep_capacity if c.isdigit()][0]) if any(c.isdigit() for c in deep_capacity) else 3
-    except:
-        deep_hours = 3
-
-    # Parse start/end
-    import re
+    # Parse wake / sleep boundaries
     time_match = re.findall(r'(\d{1,2}):(\d{2})', day_start)
     if len(time_match) >= 2:
         start_h, start_m = int(time_match[0][0]), int(time_match[0][1])
@@ -534,100 +738,134 @@ def step_5_time_calculator(calculation, day_context=None):
         start_h, start_m = 12, 0
         end_h, end_m = 2, 0
 
-    # Parse fixed walls
+    wake_m = _time_to_min(start_h, start_m)
+    sleep_m = _time_to_min(end_h, end_m)
+    if sleep_m <= wake_m:
+        sleep_m += 24 * 60
+
+    # Parse walls (colon and am/pm tolerant)
     walls = []
-    wall_pattern = re.findall(r'(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})', fixed_walls)
-    for w in wall_pattern:
-        walls.append({
-            "start_h": int(w[0]), "start_m": int(w[1]),
-            "end_h": int(w[2]), "end_m": int(w[3])
-        })
+    colon_pattern = re.findall(r'(\d{1,2}):(\d{2})\s*[-–—]\s*(\d{1,2}):(\d{2})', fixed_walls)
+    for w in colon_pattern:
+        ws = _time_to_min(int(w[0]), int(w[1]))
+        we = _time_to_min(int(w[2]), int(w[3]))
+        if we <= ws:
+            we += 24 * 60
+        walls.append({"start_m": ws, "end_m": we, "name": "FIXED WALL", "type": "personal"})
+    # am/pm style: "8 pm to 11 pm", "8pm-11pm"
+    ampm_pattern = re.findall(r'(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*[-–—to]+\s*(\d{1,2})(?::(\d{2}))?\s*(am|pm)', fixed_walls, flags=re.IGNORECASE)
+    for w in ampm_pattern:
+        sh = _parse_ampm(w[0], w[2])
+        sm = int(w[1]) if w[1] else 0
+        eh = _parse_ampm(w[3], w[5])
+        em = int(w[4]) if w[4] else 0
+        ws = _time_to_min(sh, sm)
+        we = _time_to_min(eh, em)
+        if we <= ws:
+            we += 24 * 60
+        walls.append({"start_m": ws, "end_m": we, "name": "FIXED WALL", "type": "personal"})
+    walls.sort(key=lambda x: x["start_m"])
 
-    # Build free blocks
+    # Parse tasks from today's_tasks answer
+    tasks = parse_today_tasks(today_tasks_str) if today_tasks_str.strip() else []
+    if not tasks:
+        # fallback from must_do
+        tasks = [{"name": must_do, "duration": None}]
+
+    # Calculate available free minutes
+    total_day = sleep_m - wake_m
+    wall_total = sum(w["end_m"] - w["start_m"] for w in walls)
+    free_minutes = total_day - wall_total
+
+    # Assign durations to tasks without them
+    explicit = sum(t["duration"] or 0 for t in tasks)
+    undefined = [t for t in tasks if not t["duration"]]
+    if undefined:
+        remaining = max(0, free_minutes - 60 - explicit)  # reserve 60 min buffer/wind-down
+        per_undef = remaining // len(undefined) if remaining > 0 else 30
+        for t in undefined:
+            t["duration"] = max(15, per_undef)
+    else:
+        if explicit > free_minutes:
+            scale = free_minutes / explicit if explicit > 0 else 1
+            for t in tasks:
+                t["duration"] = max(15, int(t["duration"] * scale))
+
+    # Schedule blocks: interleave tasks, walls, personal blocks
     blocks = []
+    cursor = wake_m
 
-    # Wake up block
-    blocks.append({"name": "Wake up + eat", "start": f"{start_h:02d}:{start_m:02d}",
-                  "end": f"{start_h+1:02d}:{start_m:02d}", "type": "personal"})
-
-    # Fixed walls (sacred)
-    for wall in walls:
-        blocks.append({
-            "name": "FIXED WALL",
-            "start": f"{wall['start_h']:02d}:{wall['start_m']:02d}",
-            "end": f"{wall['end_h']:02d}:{wall['end_m']:02d}",
-            "type": "personal"
-        })
-
-    # Deep work (the big block)
-    if "bottom" in energy or "low" in energy:
-        deep_hours = min(deep_hours, 2)
-    elif "top" in energy or "high" in energy:
-        deep_hours = max(deep_hours, 4)
-
-    # Find largest free gap for deep work (naive: after last wall or after wake)
-    deep_start_h = 15 if not walls else walls[-1]["end_h"] + 1
-    deep_end_h = deep_start_h + deep_hours
+    # Wake block (30 min)
     blocks.append({
-        "name": f"DEEP WORK: {must_do}",
-        "start": f"{deep_start_h:02d}:00",
-        "end": f"{deep_end_h:02d}:00",
-        "type": "deep_work"
+        "name": "Wake up + eat",
+        "start_m": cursor, "end_m": min(cursor + 30, sleep_m),
+        "type": "personal"
     })
+    cursor = blocks[-1]["end_m"]
 
-    # Grit work (whatever is left)
-    grit_start_h = deep_end_h + 1
-    grit_end_h = min(grit_start_h + 2, end_h - 1)
-    if grit_end_h > grit_start_h:
+    # Merge walls and tasks in chronological order
+    remaining_tasks = list(tasks)
+    for wall in walls:
+        # Fill gap before wall
+        while cursor < wall["start_m"] and remaining_tasks:
+            t = remaining_tasks.pop(0)
+            end_t = min(cursor + t["duration"], wall["start_m"])
+            blocks.append({
+                "name": t["name"],
+                "start_m": cursor, "end_m": end_t,
+                "type": "deep_work"
+            })
+            cursor = end_t
+        blocks.append(wall)
+        cursor = wall["end_m"]
+
+    # After last wall, fill remaining day
+    while cursor < sleep_m and remaining_tasks:
+        t = remaining_tasks.pop(0)
+        end_t = min(cursor + t["duration"], sleep_m)
         blocks.append({
-            "name": "GRIT WORK (remaining tasks)",
-            "start": f"{grit_start_h:02d}:00",
-            "end": f"{grit_end_h:02d}:00",
-            "type": "work"
+            "name": t["name"],
+            "start_m": cursor, "end_m": end_t,
+            "type": "deep_work"
         })
+        cursor = end_t
 
-    # Habits
-    habits_start = end_h - 2
-    if habits_start > deep_end_h:
+    # Wind-down / buffer before sleep
+    if cursor < sleep_m:
         blocks.append({
-            "name": "Habits (Twitter + English)",
-            "start": f"{habits_start:02d}:00",
-            "end": f"{habits_start+1:02d}:00",
-            "type": "habits"
-        })
-
-    # Wife / wind down
-    if end_h > 21:
-        blocks.append({
-            "name": "Wife time / wind down",
-            "start": f"{end_h-1:02d}:00",
-            "end": f"{end_h:02d}:{end_m:02d}",
+            "name": "Buffer / wind down",
+            "start_m": cursor, "end_m": sleep_m,
             "type": "personal"
         })
 
-    # Sort by start time
-    def parse_time(t):
-        h, m = map(int, t.split(":"))
-        return h * 60 + m
-    blocks.sort(key=lambda b: parse_time(b["start"]))
+    # Convert start_m/end_m to strings, add durations
+    for b in blocks:
+        b["start"] = _min_to_str(b["start_m"])
+        b["end"] = _min_to_str(b["end_m"])
+        b["duration"] = b["end_m"] - b["start_m"]
+        if b["duration"] < 0:
+            b["duration"] += 24 * 60
+    blocks.sort(key=lambda b: b["start_m"])
+
+    # Write to daily todo file and All.md
+    write_daily_todo(tasks, calculation)
+    add_tasks_to_all(tasks)
+    write_schedule_to_daily(blocks)
 
     time_state = {
-        "deep_work_hours": f"{deep_hours} hours",
         "day_window": day_start,
         "fixed_walls": fixed_walls,
-        "must_do": must_do,
+        "tasks": tasks,
         "blocks": blocks,
         "timestamp": NOW
     }
     save_state(f"time-blocks-{TODAY}.json", time_state)
 
-    print(f"\n⏰ Deep Work Capacity: {deep_hours} hours")
-    print(f"🧠 Must Do: {must_do}")
-    print(f"📅 Fixed Walls: {fixed_walls if fixed_walls else 'None'}")
-    print("\n📅 Proposed Blocks:")
+    print(f"\n⏰ Total day window: {day_start} | Free time: {free_minutes} min")
+    print(f"📅 Scheduled blocks:")
     for b in blocks:
-        print(f"   {b['start']} - {b['end']}: {b['name']} ({b['type']})")
-    log_event("STEP5", f"Time calculated: {deep_hours}h deep work, {len(blocks)} blocks")
+        print(f"   {b['start']} - {b['end']}: {b['name']} ({b['duration']}min) [{b['type']}]")
+    log_event("STEP5", f"Scheduled {len(blocks)} blocks, {len(tasks)} tasks")
 
     return time_state
 
@@ -796,15 +1034,15 @@ def step_6_calendar_push(time_blocks):
 # ============================================================================
 # STEP 7: CLOCKIFY SEED
 # ============================================================================
-def step_7_clockify_seed():
+def step_7_clockify_seed(time_blocks):
     print("\n" + "="*60)
     print("STEP 7: CLOCKIFY SEED")
     print("="*60)
 
-    ok, msg = run_clockify_seed_script()
+    ok, msg = seed_clockify_from_blocks(time_blocks["blocks"])
     if ok:
         print(f"   ✅ Clockify seeded successfully.")
-        print(msg[:800])
+        print(f"   {msg}")
         log_event("STEP7", "Clockify seeded OK")
         return True
     else:
@@ -885,11 +1123,12 @@ def open_tools():
 
 def step_8_evaluate_evening():
     print("\n" + "="*60)
-    print("STEP 8: THE RUTHLESS READING")
+    print("STEP 8: THE RUTHLESS READING + TASK CLEANUP")
     if TEST_MODE:
         print("   [TEST MODE — using dummy answers]")
     print("="*60)
 
+    date_str = datetime.date.today().strftime("%B %d, %Y")
     questions = load_questions()["step_8_evaluation"]["questions"]
     quote = load_questions()["step_8_evaluation"]["closing_quote"]
     answers = {}
@@ -905,7 +1144,7 @@ def step_8_evaluate_evening():
         answers[q["id"]] = answer
         log_event("STEP8", f"{q['id']}: {answer}")
 
-    # Generate ruthless reading
+    # ruthless reading (same logic)
     quality = answers.get("quality", "")
     progress = answers.get("progress", "")
     wasted = answers.get("time_wasted", "")
@@ -914,58 +1153,71 @@ def step_8_evaluate_evening():
     print("\n" + "="*60)
     print("THE RUTHLESS READING")
     print("="*60)
-
-    reading = f"""
-QUALITY: {quality}
-PROGRESS: {progress}
-TIME WASTED: {wasted}
-FOCUS: {focus}
-
-ANALYSIS:
-"""
-
-    # Simple logic for the reading
+    reading_lines = [f"QUALITY: {quality}", f"PROGRESS: {progress}", f"TIME WASTED: {wasted}", f"FOCUS: {focus}", ""]
     if "10" in quality or "9" in quality:
-        reading += "- Quality was high. Good. But did you ship, or just polish?\n"
+        reading_lines.append("- Quality was high. Good. But did you ship, or just polish?")
     elif "5" in quality or "4" in quality or "3" in quality:
-        reading += "- Quality was mediocre. Why? Distracted? Unprepared? Fix the input, not the output.\n"
+        reading_lines.append("- Quality was mediocre. Why? Fix the input, not the output.")
     else:
-        reading += "- Quality unclear. Be honest with yourself.\n"
-
+        reading_lines.append("- Quality unclear. Be honest.")
     if progress and len(progress) > 5:
-        reading += "- You named something that moved. That counts.\n"
+        reading_lines.append("- You named something that moved. That counts.")
     else:
-        reading += "- No specific progress named. That means nothing shipped.\n"
-
+        reading_lines.append("- No specific progress. That means nothing shipped.")
     if wasted and len(wasted) > 5:
-        reading += f"- You leaked time to: {wasted}. Tomorrow, that leak gets plugged.\n"
+        reading_lines.append(f"- Leaked time to: {wasted}.")
     else:
-        reading += "- No time waste identified. Either you're lying or you're perfect. You're not perfect.\n"
-
+        reading_lines.append("- No waste identified? You're not perfect.")
     if "10" in focus or "9" in focus:
-        reading += "- Focus was strong. This is your weapon. Use it more.\n"
+        reading_lines.append("- Focus was strong. Weaponize it.")
     elif "5" in focus or "4" in focus:
-        reading += "- Focus was split. Phone in another room tomorrow. No exceptions.\n"
+        reading_lines.append("- Focus was split. Phone in another room tomorrow.")
     else:
-        reading += "- Focus was trash. Why did you even sit down?\n"
-
-    reading += f"""
-THE FIX FOR TOMORROW:
-One thing. Not five. One. Name it now or it doesn't exist.
-
-{quote}
-"""
-
+        reading_lines.append("- Focus was trash.")
+    reading_lines += ["", f"{quote}", ""]
+    reading = "\n".join(reading_lines)
     print(reading)
 
-    # Save
+    # --- Task cleanup ---
+    print("\n📝 TASK CLEANUP")
+    daily_file = TODO_DAILY_DIR / f"{TODAY}.md"
+    tasks_today = read_daily_todo() if daily_file.exists() else []
+    done_names = []
+    if tasks_today:
+        print(f"   Today's tasks ({date_str}):")
+        for t in tasks_today:
+            dur = f" ({t['duration']}min)" if t.get("duration") else ""
+            print(f"   - [ ] {t['name']}{dur}")
+        print("\n   Which tasks got done? (comma-separated names, or 'none' / 'all')")
+        done_input = input("   Done: ").strip()
+        if done_input.lower() in ("all", "everything", "yes"):
+            done_names = [t["name"] for t in tasks_today]
+        elif done_input.lower() not in ("none", "no", "nothing", ""):
+            done_names = [x.strip() for x in done_input.split(",") if x.strip()]
+
+    if done_names:
+        # Remove from daily file
+        with open(daily_file, "r", encoding="utf-8") as f:
+            content = f.read()
+        for name in done_names:
+            content = content.replace(f"- [ ] {name}", f"- [x] ~~{name}~~")
+        with open(daily_file, "w", encoding="utf-8") as f:
+            f.write(content)
+        # Remove from All.md
+        removed = remove_done_from_all(done_names)
+        print(f"   ✅ Marked {len(done_names)} done in daily todo, cleaned {removed} from All.md")
+        log_event("STEP8", f"Cleaned {done_names} — {removed} from All.md")
+    else:
+        print("   ⏸️ No tasks marked done.")
+
     eval_state = {
         "answers": answers,
         "reading": reading,
+        "done_tasks": done_names,
         "timestamp": NOW
     }
     save_state(f"evaluation-{TODAY}.json", eval_state)
-    log_event("STEP8", "Evaluation complete")
+    log_event("STEP8", "Evaluation + cleanup complete")
 
     return eval_state
 
@@ -974,15 +1226,11 @@ One thing. Not five. One. Name it now or it doesn't exist.
 # MAIN
 # ============================================================================
 def main():
-    global TEST_MODE, PRELOAD_ANSWERS, GATE_ANSWERS
+    global TEST_MODE, PRELOAD_ANSWERS
 
-    stop_after = None
-    if "--stop-after" in sys.argv:
-        try:
-            stop_after = int(sys.argv[sys.argv.index("--stop-after") + 1])
-            print(f"⏹️  Will halt after step {stop_after}.")
-        except (IndexError, ValueError):
-            pass
+    if "--evening" in sys.argv:
+        step_8_evaluate_evening()
+        return
 
     if "--preload" in sys.argv:
         try:
@@ -992,19 +1240,6 @@ def main():
         except (IndexError, ValueError):
             print("⚠️ --preload requires a file path. Usage: --preload answers.json")
             return
-
-    if "--gate-preload" in sys.argv:
-        try:
-            gate_file = sys.argv[sys.argv.index("--gate-preload") + 1]
-            load_gate_answers(gate_file)
-            print(f"\n🔒 GATE PRELOAD — reading gate decisions from: {gate_file}\n")
-        except (IndexError, ValueError):
-            print("⚠️ --gate-preload requires a file path. Usage: --gate-preload gate.json")
-            return
-
-    if "--evening" in sys.argv:
-        step_8_evaluate_evening()
-        return
 
     if "--step" in sys.argv:
         try:
@@ -1019,27 +1254,31 @@ def main():
     print(f"Date: {TODAY}")
     print("="*60)
 
-    # ---- Steps 1–5 ----
+    # ---- Step 1: Scan ----
     if step_num == 0 or step_num == 1:
         scan = step_1_scan()
     else:
         scan = load_state(f"morning-scan-{TODAY}.json")
 
+    # ---- Step 2: Machine Check ----
     if step_num == 0 or step_num == 2:
         check = step_2_machine_check(scan)
     else:
         check = load_state(f"machine-check-{TODAY}.json")
 
+    # ---- Step 3: Calculate ----
     if step_num == 0 or step_num == 3:
         calc = step_3_calculate(check)
     else:
         calc = load_state(f"calculation-{TODAY}.json")
 
+    # ---- Step 4: Skeleton ----
     if step_num == 0 or step_num == 4:
         day_list = step_4_make_list(calc)
     else:
         day_list = load_state(f"day-list-{TODAY}.json")
 
+    # ---- Step 5: Context + Time Calculator ----
     if step_num == 0 or step_num == 5:
         day_context = step_5_context()
         time_blocks = step_5_time_calculator(calc, day_context)
@@ -1047,33 +1286,18 @@ def main():
         day_context = load_state(f"day-context-{TODAY}.json")
         time_blocks = load_state(f"time-blocks-{TODAY}.json")
 
-    if stop_after == 5:
-        print("\n⏹️  Stopped after Step 5. Run again with --gate-preload to continue.")
-        save_state(f"stopped-{TODAY}.json", {"step": 5, "reason": "gate required"})
-        return
-
-    # ---- Step 5.5: Obsidian Gate ----
-    # (loaded from state if resuming, or run fresh)
-    gate_state_file = f"obsidian-gate-{TODAY}.json"
-    if GATE_ANSWERS or not Path(STATE_DIR / gate_state_file).exists():
-        step_5_5_obsidian_gate(time_blocks)
-    else:
-        print("\n🔒 Obsidian Gate already completed today. Skipping.")
-
-    if stop_after == 55:
-        print("\n⏹️  Stopped after Step 5.5. Ready for Calendar + Clockify.")
-        return
-
-    # ---- Steps 6–8 ----
+    # ---- Step 6: Calendar ----
     if step_num == 0 or step_num == 6:
         step_6_calendar_push(time_blocks)
 
+    # ---- Step 7: Clockify ----
     if step_num == 0 or step_num == 7:
-        step_7_clockify_seed()
+        step_7_clockify_seed(time_blocks)
 
+    # ---- Step 8: Dashboard ----
     if step_num == 0:
         step_8_evaluate()
-        open_tools()  # Tony Stark dashboard
+        open_tools()
 
     print("\n" + "="*60)
     print("MORNING ROUTINE COMPLETE")
