@@ -3,7 +3,8 @@ import pickle
 import os
 import sys
 from pathlib import Path
-from google_auth_oauthlib.flow import InstalledAppFlow
+from google_auth_oauthlib.flow import Flow
+from google.auth.transport.requests import Request
 
 # Auto-detect project root
 BASE = Path(__file__).resolve().parent.parent
@@ -20,16 +21,38 @@ SCOPES = [
     'https://www.googleapis.com/auth/gmail.settings.basic',
 ]
 
-print(f"Using credentials: {creds_file}")
-print(f"Token will be saved to: {token_file}")
-print("\nA browser window will open. Please log in and click 'Allow'.")
-print("After auth, the token will be saved automatically.\n")
+# Use Flow (not InstalledAppFlow) so we can control the browser manually
+flow = Flow.from_client_secrets_file(
+    creds_file,
+    SCOPES,
+    redirect_uri='urn:ietf:wg:oauth:2.0:oob'  # "Out of band" — shows auth code directly
+)
 
-flow = InstalledAppFlow.from_client_secrets_file(creds_file, SCOPES)
-creds = flow.run_local_server(port=0)
+# Generate the URL for the user to open
+auth_url, _ = flow.authorization_url(prompt='consent')
+
+print("="*70)
+print("GOOGLE AUTH REQUIRED")
+print("="*70)
+print("\n1. Open this URL in your browser (Ctrl+click or copy-paste):\n")
+print(auth_url)
+print("\n2. Log in with: gogovaleriev77@gmail.com")
+print("3. Click 'Allow' for all permissions")
+print("4. You will see a screen that says 'The authentication flow has completed.'")
+print("   Copy the CODE from that page (the long string after 'code=')")
+print("5. Paste it below and press Enter:\n")
+
+# Wait for user to paste the auth code
+auth_code = input("Paste auth code here: ").strip()
+
+# Exchange code for credentials
+flow.fetch_token(code=auth_code)
+creds = flow.credentials
 
 with open(token_file, 'wb') as f:
     pickle.dump(creds, f)
 
-print('\n✅ Token refreshed and saved!')
-print(f'   Location: {token_file}')
+print(f"\n{'='*70}")
+print("✅ Token refreshed and saved!")
+print(f"   Location: {token_file}")
+print("="*70)
