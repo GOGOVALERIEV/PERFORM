@@ -729,11 +729,41 @@ def step_5_time_calculator(calculation, day_context=None):
         must_do = calculation.get("main_block", "work")
         today_tasks_str = ""
 
-    # Parse wake / sleep boundaries
-    time_match = re.findall(r'(\d{1,2}):(\d{2})', day_start)
-    if len(time_match) >= 2:
-        start_h, start_m = int(time_match[0][0]), int(time_match[0][1])
-        end_h, end_m = int(time_match[-1][0]), int(time_match[-1][1])
+    # Robust wake/sleep extraction from free-text day_start
+    def _extract_times(text):
+        times = []
+        # H:MM or H;MM with optional am/pm
+        for m in re.finditer(r'(\d{1,2})[:;](\d{2})\s*(am|pm)?', text, flags=re.IGNORECASE):
+            h, mn = int(m.group(1)), int(m.group(2))
+            ap = (m.group(3) or "").lower()
+            if ap == "pm" and h != 12: h += 12
+            if ap == "am" and h == 12: h = 0
+            times.append((h, mn))
+        # H:MM am/pm or H am/pm (avoid double-counting)
+        for m in re.finditer(r'(\d{1,2})(?:[:;](\d{2}))?\s*(am|pm)', text, flags=re.IGNORECASE):
+            h, mn = int(m.group(1)), int(m.group(2) or 0)
+            ap = m.group(3).lower()
+            if ap == "pm" and h != 12: h += 12
+            if ap == "am" and h == 12: h = 0
+            if (h, mn) not in times:
+                times.append((h, mn))
+        # Bare numbers near sleep keywords: "after 3", "sleep 3"
+        if len(times) < 2:
+            for m in re.finditer(r'(?:after|sleep|to|until|around|~|about)\s+(\d{1,2})\s*(am|pm)?', text, flags=re.IGNORECASE):
+                h = int(m.group(1))
+                ap = (m.group(2) or "").lower()
+                if ap == "pm" and h != 12: h += 12
+                if ap == "am" and h == 12: h = 0
+                if (h, 0) not in times:
+                    times.append((h, 0))
+        return times
+
+    times = _extract_times(day_start)
+    if len(times) >= 2:
+        (start_h, start_m), (end_h, end_m) = times[0], times[-1]
+    elif len(times) == 1:
+        start_h, start_m = times[0]
+        end_h, end_m = 2, 0
     else:
         start_h, start_m = 12, 0
         end_h, end_m = 2, 0
@@ -793,7 +823,14 @@ def step_5_time_calculator(calculation, day_context=None):
 
     # Merge walls + breaks into fixed_blocks
     fixed_blocks = walls + breaks
+    # Normalize: anything before wake means next day
+    for fb in fixed_blocks:
+        if fb["start_m"] < wake_m:
+            fb["start_m"] += 24 * 60
+            fb["end_m"] += 24 * 60
     fixed_blocks.sort(key=lambda x: x["start_m"])
+    # Clip anything that starts after sleep
+    fixed_blocks = [fb for fb in fixed_blocks if fb["start_m"] < sleep_m]
 
     # Parse tasks from today's_tasks answer
     tasks = parse_today_tasks(today_tasks_str) if today_tasks_str.strip() else []
