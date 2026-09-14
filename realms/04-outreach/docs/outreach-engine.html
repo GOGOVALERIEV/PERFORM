@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outreach Engine — Technical Architecture</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.7;
+    padding: 0;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, #161b22 0%, #0d1117 50%, #0a2540 100%);
+    border-bottom: 1px solid #30363d;
+    padding: 50px 40px;
+    text-align: center;
+  }
+
+  .hero h1 { font-size: 2.5em; color: #58a6ff; margin-bottom: 8px; }
+  .hero .subtitle { font-size: 1.1em; color: #8b949e; max-width: 700px; margin: 0 auto; }
+
+  .container { max-width: 1050px; margin: 0 auto; padding: 40px 30px; }
+
+  .phase {
+    margin-bottom: 40px;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .phase-header {
+    padding: 22px 28px;
+    border-bottom: 1px solid #21262d;
+  }
+
+  .phase-header h2 { font-size: 1.5em; color: #58a6ff; }
+  .phase-header .phase-desc { color: #8b949e; margin-top: 4px; font-size: 0.9em; }
+
+  .phase-body { padding: 22px 28px; }
+
+  h3 {
+    color: #f0883e;
+    font-size: 1.15em;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #21262d;
+  }
+  h3:first-child { margin-top: 0; }
+
+  h4 { color: #d2a8ff; font-size: 1em; margin-top: 16px; margin-bottom: 6px; }
+
+  p { margin-bottom: 10px; }
+  ul, ol { padding-left: 22px; margin-bottom: 12px; }
+  li { margin-bottom: 5px; }
+  strong { color: #e6edf3; }
+  a { color: #58a6ff; text-decoration: none; }
+
+  .box { border-radius: 8px; padding: 16px 18px; margin: 14px 0; }
+  .box-blue { background: #0c2d6b; border-left: 4px solid #58a6ff; }
+  .box-green { background: #0d2818; border-left: 4px solid #3fb950; }
+  .box-orange { background: #3d1d00; border-left: 4px solid #f0883e; }
+  .box-red { background: #3d0e0e; border-left: 4px solid #f85149; }
+  .box-purple { background: #1e0d3d; border-left: 4px solid #d2a8ff; }
+
+  .code {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin: 12px 0;
+    font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.88em;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    color: #e6edf3;
+    overflow-x: auto;
+  }
+
+  .code .comment { color: #6e7681; }
+  .code .keyword { color: #ff7b72; }
+  .code .string { color: #a5d6ff; }
+  .code .func { color: #d2a8ff; }
+  .code .var { color: #ffa657; }
+
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; }
+  th { background: #21262d; color: #58a6ff; padding: 9px 12px; text-align: left; font-size: 0.88em; border-bottom: 2px solid #30363d; }
+  td { padding: 9px 12px; border-bottom: 1px solid #21262d; font-size: 0.93em; }
+  tr:hover { background: #1c2128; }
+
+  .tag { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 0.78em; font-weight: 600; margin-right: 4px; }
+  .tag-have { background: #0d2818; color: #3fb950; }
+  .tag-need { background: #3d1d00; color: #f0883e; }
+  .tag-free { background: #0c2d6b; color: #58a6ff; }
+  .tag-auto { background: #1e0d3d; color: #d2a8ff; }
+  .tag-manual { background: #3d0e0e; color: #f85149; }
+
+  .flow-box {
+    background: #0d1117;
+    border: 2px solid #30363d;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .flow-arrow {
+    text-align: center;
+    color: #58a6ff;
+    font-size: 1.8em;
+    line-height: 1;
+    padding: 5px 0;
+  }
+
+  .script-card {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 12px 0;
+  }
+
+  .script-card .script-name {
+    font-family: 'Cascadia Code', 'Fira Code', monospace;
+    color: #3fb950;
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  .script-card .script-desc {
+    color: #8b949e;
+    font-size: 0.9em;
+    margin-top: 4px;
+  }
+
+  .api-badge {
+    display: inline-block;
+    background: #21262d;
+    color: #d2a8ff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.78em;
+    font-family: monospace;
+    margin: 2px;
+  }
+
+  hr.divider { border: none; border-top: 1px solid #21262d; margin: 22px 0; }
+
+  .stat-row { display: flex; gap: 16px; margin: 16px 0; }
+  .stat-box { flex: 1; background: #0d1117; border: 1px solid #30363d; border-radius: 8px; padding: 16px; text-align: center; }
+  .stat-box .big { font-size: 2em; color: #58a6ff; font-weight: 800; line-height: 1; }
+  .stat-box .label { color: #8b949e; font-size: 0.82em; margin-top: 4px; }
+
+  @media (max-width: 700px) {
+    .hero { padding: 30px 15px; }
+    .hero h1 { font-size: 1.6em; }
+    .container { padding: 20px 12px; }
+    .stat-row { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>The Outreach Engine</h1>
+  <p class="subtitle">How to run your entire job hunt from Claude Code using scripts, APIs, and automation. The technical blueprint.</p>
+</div>
+
+<div class="container">
+
+<!-- ============================================================ -->
+<!-- SYSTEM OVERVIEW -->
+<!-- ============================================================ -->
+<div class="phase">
+  <div class="phase-header">
+    <h2>System Overview</h2>
+    <p class="phase-desc">What we're building and how it all connects</p>
+  </div>
+  <div class="phase-body">
+
+    <h3>The Idea</h3>
+    <p>Instead of manually going to 8 different platforms, opening tabs, copy-pasting — you open Claude Code and run commands. Everything happens through scripts that call APIs. Claude Code becomes your control center.</p>
+
+    <div class="box box-green">
+      <strong>A typical day looks like this:</strong><br><br>
+      You: "Find me 20 e-com leads in supplements"<br>
+      → Script hits Apollo API, saves 20 leads to Google Sheets<br><br>
+      You: "Research them and draft emails"<br>
+      → Script uses Claude API to research each company, writes personalized cold emails, saves drafts to Sheets<br><br>
+      You: "Show me the drafts" → You review in Google Sheets, mark the good ones<br><br>
+      You: "Send the approved ones"<br>
+      → Script sends via Gmail API, logs everything, schedules follow-ups<br><br>
+      You: "Scan Reddit for people who need ad help"<br>
+      → Script scans 5 subreddits, finds relevant posts, drafts replies<br><br>
+      You: "Post today's tweet"<br>
+      → Script posts to X via API<br><br>
+      You: "Run follow-ups"<br>
+      → Script checks which leads need follow-up today, drafts and sends<br><br>
+      You: "Show me my dashboard"<br>
+      → Script pulls stats from Sheets: emails sent, replies, pipeline status<br><br>
+      <strong>Total time: ~45 minutes instead of 2+ hours. Higher quality because Claude personalizes everything.</strong>
+    </div>
+
+    <h3>System Architecture</h3>
+
+    <div class="flow-box">
+      <strong style="color: #f0883e; font-size: 1.1em;">LEAD SOURCES</strong><br>
+      <span class="api-badge">Apollo.io API</span>
+      <span class="api-badge">Reddit API</span>
+      <span class="api-badge">Manual (you find someone)</span>
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-box">
+      <strong style="color: #d2a8ff; font-size: 1.1em;">BRAIN (Claude API)</strong><br>
+      Research prospects → Write personalized emails → Draft social posts → Draft replies<br>
+      <span class="api-badge">Anthropic API</span>
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-box">
+      <strong style="color: #3fb950; font-size: 1.1em;">CENTRAL DATABASE (Google Sheets)</strong><br>
+      All leads, all emails, all drafts, all tracking, all stats — one place<br>
+      <span class="api-badge">Google Sheets API</span>
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-box">
+      <strong style="color: #58a6ff; font-size: 1.1em;">OUTPUT CHANNELS</strong><br>
+      <span class="api-badge">Gmail API → Cold emails</span>
+      <span class="api-badge">X/Twitter API → Tweets</span>
+      <span class="api-badge">Reddit API → Replies</span>
+      <span class="api-badge">Clipboard → LinkedIn (manual post)</span>
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-box">
+      <strong style="color: #f0883e; font-size: 1.1em;">TRACKING & FOLLOW-UP</strong><br>
+      Auto-schedule follow-ups → Auto-send when due → Dashboard shows everything<br>
+      <span class="api-badge">Google Sheets</span>
+      <span class="api-badge">Google Calendar</span>
+      <span class="api-badge">ClickUp</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- APIs INVENTORY -->
+<!-- ============================================================ -->
+<div class="phase">
+  <div class="phase-header">
+    <h2>API Inventory — What We Have vs What We Need</h2>
+    <p class="phase-desc">Most of the heavy lifting uses APIs you already have</p>
+  </div>
+  <div class="phase-body">
+
+    <h3>Already Connected (Ready to Use)</h3>
+    <table>
+      <tr><th>API</th><th>What It Does For Us</th><th>Status</th></tr>
+      <tr>
+        <td><strong>Gmail API</strong></td>
+        <td>Send cold emails, send follow-ups, track replies (check inbox for responses)</td>
+        <td><span class="tag tag-have">READY</span></td>
+      </tr>
+      <tr>
+        <td><strong>Google Sheets API</strong></td>
+        <td>Central database — leads, outreach tracking, drafts, dashboard</td>
+        <td><span class="tag tag-have">READY</span></td>
+      </tr>
+      <tr>
+        <td><strong>Google Calendar API</strong></td>
+        <td>Schedule follow-up reminders, block outreach time</td>
+        <td><span class="tag tag-have">READY</span></td>
+      </tr>
+      <tr>
+        <td><strong>Google Docs API</strong></td>
+        <td>Store email templates, LinkedIn post drafts for easy copy-paste</td>
+        <td><span class="tag tag-have">READY</span></td>
+      </tr>
+      <tr>
+        <td><strong>ClickUp API</strong></td>
+        <td>Create tasks for high-priority follow-ups, track deals in pipeline</td>
+        <td><span class="tag tag-have">READY</span></td>
+      </tr>
+      <tr>
+        <td><strong>Anthropic API (Claude)</strong></td>
+        <td>THE BRAIN — researches prospects, writes emails, drafts posts, personalizes everything</td>
+        <td><span class="tag tag-have">READY</span></td>
+      </tr>
+    </table>
+
+    <h3>Need to Set Up (All Free)</h3>
+    <table>
+      <tr><th>API</th><th>What It Does For Us</th><th>Cost</th><th>Setup</th></tr>
+      <tr>
+        <td><strong>Apollo.io API</strong></td>
+        <td>Find leads — search by job title, industry, company size → get emails</td>
+        <td><span class="tag tag-free">FREE — 10k leads</span></td>
+        <td>Create account → Settings → API Key</td>
+      </tr>
+      <tr>
+        <td><strong>Reddit API (PRAW)</strong></td>
+        <td>Scan subreddits for relevant posts, find people asking for ad help</td>
+        <td><span class="tag tag-free">FREE</span></td>
+        <td>Go to reddit.com/prefs/apps → Create "script" app → Get client_id + secret</td>
+      </tr>
+      <tr>
+        <td><strong>X/Twitter API v2</strong></td>
+        <td>Post tweets, search for relevant conversations</td>
+        <td><span class="tag tag-free">FREE Basic — 500 posts/month</span></td>
+        <td>Apply at developer.twitter.com → Create project → Get API keys</td>
+      </tr>
+    </table>
+
+    <div class="box box-orange">
+      <strong>LinkedIn API?</strong> LinkedIn's official API is locked down — requires company-level approval, takes weeks. Instead:<br>
+      <strong>Solution:</strong> Claude drafts LinkedIn posts and DMs → saves to a Google Doc → you open the doc, copy-paste into LinkedIn. Takes 30 seconds per post. Not worth fighting LinkedIn's API for this.<br>
+      <strong>Later option:</strong> PhantomBuster has its own API for LinkedIn automation (auto-connect, auto-visit). We can integrate that if/when you get PhantomBuster.
+    </div>
+
+    <div class="box box-orange">
+      <strong>Facebook Groups API?</strong> Also locked down. Same solution: Claude drafts → Google Doc → you copy-paste. Facebook groups are manual.
+    </div>
+
+    <div class="box box-orange">
+      <strong>Fiverr API?</strong> Doesn't exist. Fiverr is 100% manual. We set it up once and it runs passively.
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SCRIPTS -->
+<!-- ============================================================ -->
+<div class="phase">
+  <div class="phase-header">
+    <h2>The Scripts — What We Build</h2>
+    <p class="phase-desc">Each script is a tool you can run from Claude Code. They live in project-test/scripts/outreach/</p>
+  </div>
+  <div class="phase-body">
+
+    <h3>Folder Structure</h3>
+    <div class="code"><span class="comment"># New folder inside your existing scripts/</span>
+project-test/
+  scripts/
+    outreach/
+      config.py              <span class="comment"># Loads all API keys from .env, shared settings</span>
+      tracker_setup.py       <span class="comment"># Creates the Google Sheet (run once)</span>
+      find_leads.py          <span class="comment"># Apollo API → finds leads → saves to Sheet</span>
+      research.py            <span class="comment"># Claude API → researches each lead → adds context</span>
+      draft_emails.py        <span class="comment"># Claude API → writes personalized cold emails</span>
+      send_emails.py         <span class="comment"># Gmail API → sends approved emails</span>
+      follow_up.py           <span class="comment"># Checks Sheet → drafts/sends follow-ups</span>
+      check_replies.py       <span class="comment"># Gmail API → checks for replies → updates Sheet</span>
+      reddit_scan.py         <span class="comment"># Reddit API → finds opportunities → drafts replies</span>
+      x_post.py              <span class="comment"># X API → posts tweets</span>
+      linkedin_drafts.py     <span class="comment"># Claude API → drafts LinkedIn content → Google Doc</span>
+      generate_samples.py    <span class="comment"># Runs ww-2 machine for a specific prospect</span>
+      dashboard.py           <span class="comment"># Reads Sheet → shows stats</span>
+      templates/
+        cold_emails.json     <span class="comment"># Email template library (the 5 templates from the plan)</span>
+        follow_ups.json      <span class="comment"># Follow-up templates (day 3, 7, 14)</span>
+        x_posts.json         <span class="comment"># Tweet template library</span>
+        linkedin_posts.json  <span class="comment"># LinkedIn post templates</span>
+        reddit_replies.json  <span class="comment"># Reddit reply frameworks</span></div>
+
+    <hr class="divider">
+
+    <h3>Script 1: tracker_setup.py</h3>
+    <div class="script-card">
+      <div class="script-name">python scripts/outreach/tracker_setup.py</div>
+      <div class="script-desc">Run ONCE. Creates the master Google Sheet with all the right tabs and columns.</div>
+    </div>
+    <p><strong>What it creates:</strong></p>
+    <table>
+      <tr><th>Sheet Tab</th><th>Columns</th><th>Purpose</th></tr>
+      <tr>
+        <td><strong>Leads</strong></td>
+        <td>id, name, email, company, title, industry, company_size, source, linkedin_url, website, date_added, status</td>
+        <td>Everyone we find on Apollo or manually</td>
+      </tr>
+      <tr>
+        <td><strong>Research</strong></td>
+        <td>lead_id, company_summary, products, target_audience, pain_points, ad_library_notes, personalized_first_line, researched_date</td>
+        <td>Claude's research on each prospect</td>
+      </tr>
+      <tr>
+        <td><strong>Email Drafts</strong></td>
+        <td>lead_id, subject, body, template_used, status (draft/approved/sent/replied), created_date</td>
+        <td>Emails waiting for your review</td>
+      </tr>
+      <tr>
+        <td><strong>Outreach Log</strong></td>
+        <td>lead_id, channel, action, date, follow_up_due, follow_up_number, notes</td>
+        <td>Every touchpoint with every lead</td>
+      </tr>
+      <tr>
+        <td><strong>Content Drafts</strong></td>
+        <td>platform (x/linkedin/reddit/facebook), content, target_post_url (for replies), status (draft/posted), date</td>
+        <td>Social media content ready to post</td>
+      </tr>
+      <tr>
+        <td><strong>Dashboard</strong></td>
+        <td>Auto-calculated: total leads, emails sent this week, replies, reply rate, follow-ups due, pipeline value</td>
+        <td>Your daily overview</td>
+      </tr>
+    </table>
+    <p><span class="api-badge">Google Sheets API</span></p>
+
+    <hr class="divider">
+
+    <h3>Script 2: find_leads.py</h3>
+    <div class="script-card">
+      <div class="script-name">python scripts/outreach/find_leads.py --industry "supplements" --count 20</div>
+      <div class="script-desc">Searches Apollo for leads matching your criteria. Saves them to the Leads sheet.</div>
+    </div>
+    <p><strong>How it works:</strong></p>
+    <ol>
+      <li>Takes parameters: industry, job titles, company size, location, how many</li>
+      <li>Calls Apollo.io API with those filters</li>
+      <li>Gets back: name, email, company, title, LinkedIn URL</li>
+      <li>Checks for duplicates (don't add someone already in the Sheet)</li>
+      <li>Adds new leads to the "Leads" tab</li>
+      <li>Prints summary: "Added 18 new leads (2 were duplicates)"</li>
+    </ol>
+    <p><strong>Example commands you'd run:</strong></p>
+    <div class="code"><span class="comment"># Find supplement brand founders</span>
+python scripts/outreach/find_leads.py --industry "supplements" --titles "Founder,CEO" --size "1-50" --count 20
+
+<span class="comment"># Find e-commerce marketing managers</span>
+python scripts/outreach/find_leads.py --industry "e-commerce" --titles "Marketing Director,CMO,Growth Manager" --count 20
+
+<span class="comment"># Find media buyers at agencies</span>
+python scripts/outreach/find_leads.py --industry "advertising" --titles "Media Buyer,Performance Marketing" --count 15</div>
+    <p><span class="api-badge">Apollo.io API</span> <span class="api-badge">Google Sheets API</span></p>
+
+    <hr class="divider">
+
+    <h3>Script 3: research.py</h3>
+    <div class="script-card">
+      <div class="script-name">python scripts/outreach/research.py --new</div>
+      <div class="script-desc">Takes unresearched leads from the Sheet, uses Claude API to research each company, writes personalized first lines.</div>
+    </div>
+    <p><strong>How it works:</strong></p>
+    <ol>
+      <li>Reads leads with status "new" (not yet researched) from Sheet</li>
+      <li>For each lead, sends a prompt to Claude API:
+        <div class="code"><span class="comment"># The prompt sent to Claude API for each lead</span>
+<span class="string">"Research this company for a cold email. Company: {company_name}, Website: {website}.
+Tell me:
+1. What they sell (main products)
+2. Who their target audience is
+3. What their ads look like (guess based on their niche)
+4. Their likely pain point with ad creative
+5. Write a personalized first line for a cold email that references something specific about their business.
+Keep everything concise. Max 3 sentences per point."</span></div>
+      </li>
+      <li>Saves Claude's research to the "Research" tab</li>
+      <li>Updates lead status to "researched"</li>
+      <li>Prints: "Researched 18 leads. Cost: ~$0.15"</li>
+    </ol>
+    <p><strong>Why this is powerful:</strong> Instead of you spending 5 minutes researching each company manually, Claude does 20 companies in 2 minutes for $0.15. And the first lines are personalized, not generic.</p>
+    <p><span class="api-badge">Anthropic API</span> <span class="api-badge">Google Sheets API</span></p>
+
+    <hr class="divider">
+
+    <h3>Script 4: draft_emails.py</h3>
+    <div class="script-card">
+      <div class="script-name">python scripts/outreach/draft_emails.py --template brand_owner</div>
+      <div class="script-desc">Takes researched leads, combines their personalized data with an email template, uses Claude API to write the final email. Saves to Email Drafts tab.</div>
+    </div>
+    <p><strong>How it works:</strong></p>
+    <ol>
+      <li>Reads leads with status "researched" from Sheet</li>
+      <li>Reads the chosen template from <code>templates/cold_emails.json</code></li>
+      <li>For each lead, sends a prompt to Claude API:
+        <div class="code"><span class="string">"Write a cold email using this template structure:
+{template}
+
+For this prospect:
+Name: {name}
+Company: {company}
+Research: {research_data}
+Personalized first line: {first_line}
+
+Rules:
+- Keep it under 120 words
+- Sound human, not like AI
+- End with a simple question they can reply yes/no to
+- Don't be salesy or use exclamation marks"</span></div>
+      </li>
+      <li>Saves each draft to "Email Drafts" tab with status "draft"</li>
+      <li>Prints: "Drafted 18 emails. Review them in the Sheet and mark 'approved' to send."</li>
+    </ol>
+    <p><strong>Your job:</strong> Open the Google Sheet, read each draft, mark the good ones as "approved" (change the status column). Edit any that need tweaking directly in the Sheet.</p>
+    <p><span class="api-badge">Anthropic API</span> <span class="api-badge">Google Sheets API</span></p>
+
+    <hr class="divider">
+
+    <h3>Script 5: send_emails.py</h3>
+    <div class="script-card">
+      <div class="script-name">python scripts/outreach/send_emails.py</div>
+      <div class="script-desc">Reads emails marked "approved" in the Sheet, sends them via Gmail API, logs everything.</div>
+    </div>
+    <p><strong>How it works:</strong></p>
+    <ol>
+      <li>Reads Email Drafts where status = "approved"</li>
+      <li>For each one: sends via Gmail API (from your outreach email)</li>
+      <li>Waits 30-60 seconds between emails (don't trigger spam filters)</li>
+      <li>Updates status to "sent" + logs send date</li>
+      <li>Adds entry to "Outreach Log" tab</li>
+      <li>Calculates follow-up dates (Day 3, Day 7, Day 14)</li>
+      <li>Optionally creates Google Calendar reminders for follow-ups</li>
+      <li>Prints: "Sent 12 emails. Follow-ups scheduled for Mar 9, Mar 13, Mar 20."</li>
+    </ol>
+    <div class="box box-red">
+      <strong>Safety features built in:</strong>
+      <ul>
+        <li>Never sends more than 20 emails per day (Gmail limits + spam prevention)</li>
+        <li>Random delay between sends (30-90 seconds) so it doesn't look automated</li>
+        <li>Checks if lead was already emailed (prevents double-sending)</li>
+        <li>Won't send without your explicit "approved" status</li>
+      </ul>
+    </div>
+    <p><span class="api-badge">Gmail API</span> <span class="api-badge">Google Sheets API</span> <span class="api-badge">Google Calendar API</span></p>
+
+    <hr class="divider">
+
+    <h3>Script 6: follow_up.py</h3>
+    <div class="script-card">
+      <div class="script-name">python scripts/outreach/follow_up.py</div>
+      <div class="script-desc">Checks for leads that need follow-up today. Drafts follow-up emails using the right template (Day 3 / Day 7 / Day 14). Sends after your approval.</div>
+    </div>
+    <p><strong>How it works:</strong></p>
+    <ol>
+      <li>Scans "Outreach Log" for follow_up_due = today AND no reply received</li>
+      <li>Determines which follow-up number it is (1st, 2nd, or break-up)</li>
+      <li>Uses Claude API to draft the follow-up, using the original email context</li>
+      <li>For Follow-up #1: generates 3 free sample ads for their product using the ww-2 style (optional — you can turn this on/off)</li>
+      <li>Saves to Email Drafts as "follow_up_draft"</li>
+      <li>You review → mark "approved" → run <code>send_emails.py</code> to send</li>
+    </ol>
+    <p><span class="api-badge">Anthropic API</span> <span class="api-badge">Google Sheets API</span> <span class="api-badge">Gmail API</span></p>
+
+    <hr class="divider">
+
+    <h3>Script 7: check_replies.py</h3>
+    <div class="script-card">
+      <div class="script-name">python scripts/outreach/check_replies.py</div>
+      <div class="script-desc">Scans Gmail inbox for replies from leads. Updates their status in the Sheet. Alerts you to hot leads.</div>
+    </div>
+    <p><strong>How it works:</strong></p>
+    <ol>
+      <li>Gets list of all lead emails from Sheet</li>
+      <li>Searches Gmail inbox for messages from those addresses</li>
+      <li>If reply found: updates lead status to "replied", cancels scheduled follow-ups</li>
+      <li>Prints: "2 NEW REPLIES: [name] from [company] replied! [name2] from [company2] replied!"</li>
+      <li>Shows a snippet of each reply so you can respond immediately</li>
+    </ol>
+    <p><span class="api-badge">Gmail API</span> <span class="api-badge">Google Sheets API</span></p>
+
+    <hr class="divider">
+
+    <h3>Script 8: reddit_scan.py</h3>
+    <div class="script-card">
+      <div class="script-name">python scripts/outreach/reddit_scan.py</div>
+      <div class="script-desc">Scans your target subreddits for relevant posts. Uses Claude to draft helpful replies. Saves to Content Drafts.</div>
+    </div>
+    <p><strong>How it works:</strong></p>
+    <ol>
+      <li>Connects to Reddit API (PRAW)</li>
+      <li>Scans these subreddits for new posts (last 24 hours):
+        <ul>
+          <li>r/ecommerce, r/PPC, r/FacebookAds, r/digital_marketing, r/Entrepreneur, r/dropship, r/copywriting, r/forhire</li>
+        </ul>
+      </li>
+      <li>Filters for relevant keywords: "ad copy", "copywriter", "creative fatigue", "Facebook ads help", "need ads", "looking for copywriter", "ad writer", "scaling ads"</li>
+      <li>For each relevant post, uses Claude API to draft a helpful reply:
+        <div class="code"><span class="string">"Write a helpful Reddit reply to this post.
+Post title: {title}
+Post body: {body}
+Subreddit: {subreddit}
+
+Rules:
+- Be genuinely helpful first. Answer their actual question.
+- If relevant, BRIEFLY mention that you do this professionally at the end.
+- Don't be salesy. Reddit users will destroy you if you're promotional.
+- Match the tone of the subreddit.
+- If the post is someone looking for hire: be direct about your services."</span></div>
+      </li>
+      <li>Saves drafts to "Content Drafts" tab with the post URL</li>
+      <li>Prints: "Found 7 relevant posts. Drafted 7 replies. Review in Sheet, then post manually."</li>
+    </ol>
+    <div class="box box-orange">
+      <strong>Why manual posting:</strong> Reddit's API CAN post comments, but using it for promotional content gets your account flagged fast. Safer to copy-paste from the Sheet. It takes 30 seconds per comment.
+    </div>
+    <p><span class="api-badge">Reddit API (PRAW)</span> <span class="api-badge">Anthropic API</span> <span class="api-badge">Google Sheets API</span></p>
+
+    <hr class="divider">
+
+    <h3>Script 9: x_post.py</h3>
+    <div class="script-card">
+      <div class="script-name">python scripts/outreach/x_post.py --topic "creative fatigue"</div>
+      <div class="script-desc">Uses Claude API to write a tweet about a topic, posts it to X via the Twitter API.</div>
+    </div>
+    <p><strong>How it works:</strong></p>
+    <ol>
+      <li>Takes a topic or uses a random one from a predefined list</li>
+      <li>Sends prompt to Claude API:
+        <div class="code"><span class="string">"Write a tweet about {topic} from the perspective of someone who generates
+300+ ad copies per day for e-com brands.
+
+Rules:
+- Max 280 characters (or can be longer if it's a thread-style post)
+- Sound human and opinionated, not corporate
+- Include a takeaway or insight, not just a statement
+- Don't use hashtags (they look spammy in 2026)
+- Occasional humor is good"</span></div>
+      </li>
+      <li>Posts to X via Twitter API v2</li>
+      <li>Logs to Content Drafts tab</li>
+      <li>Prints the posted tweet</li>
+    </ol>
+    <p><strong>Optional: search mode</strong></p>
+    <div class="code"><span class="comment"># Search X for people talking about needing ad copy</span>
+python scripts/outreach/x_post.py --search "need copywriter" "looking for ad copy" "creative fatigue"
+
+<span class="comment"># Returns relevant tweets you can reply to or DM</span></div>
+    <p><span class="api-badge">X/Twitter API v2</span> <span class="api-badge">Anthropic API</span> <span class="api-badge">Google Sheets API</span></p>
+
+    <hr class="divider">
+
+    <h3>Script 10: linkedin_drafts.py</h3>
+    <div class="script-card">
+      <div class="script-name">python scripts/outreach/linkedin_drafts.py --type post</div>
+      <div class="script-desc">Generates LinkedIn posts or DM drafts using Claude API. Saves to a Google Doc for easy copy-paste.</div>
+    </div>
+    <p><strong>How it works:</strong></p>
+    <ol>
+      <li>For posts: Claude writes a LinkedIn post based on a topic (ad breakdowns, system results, industry insights)</li>
+      <li>For DMs: reads researched leads from Sheet, writes personalized connection messages and follow-up DMs</li>
+      <li>Saves everything to a Google Doc titled "LinkedIn Content Queue"</li>
+      <li>You open the doc → copy → paste into LinkedIn</li>
+    </ol>
+    <p><strong>Why a Google Doc?</strong> LinkedIn has no usable API, and this is the fastest way to get Claude-written content into LinkedIn. Open the doc on your phone or browser, copy, paste, post. 30 seconds.</p>
+    <p><span class="api-badge">Anthropic API</span> <span class="api-badge">Google Docs API</span></p>
+
+    <hr class="divider">
+
+    <h3>Script 11: generate_samples.py</h3>
+    <div class="script-card">
+      <div class="script-name">python scripts/outreach/generate_samples.py --product "hair growth supplement" --company "NutraHair"</div>
+      <div class="script-desc">When you're pitching a specific prospect, this generates custom sample ads for THEIR product using the ww-2 machine's approach.</div>
+    </div>
+    <p><strong>How it works:</strong></p>
+    <ol>
+      <li>Takes a product description and company name</li>
+      <li>Uses Claude API to generate 5-10 ad variations in different formats</li>
+      <li>Formats them nicely (plain text or HTML)</li>
+      <li>Saves to a file you can attach to emails or paste into DMs</li>
+    </ol>
+    <p><strong>When to use:</strong> For follow-up emails where you want to send free samples. "Here are 5 ads I wrote for YOUR product" is 10x more powerful than "here's my portfolio."</p>
+    <p><span class="api-badge">Anthropic API</span></p>
+
+    <hr class="divider">
+
+    <h3>Script 12: dashboard.py</h3>
+    <div class="script-card">
+      <div class="script-name">python scripts/outreach/dashboard.py</div>
+      <div class="script-desc">Reads all data from the Sheet and shows you a summary. Run this at the start and end of each day.</div>
+    </div>
+    <p><strong>What it shows:</strong></p>
+    <div class="code"><span class="comment">═══════════════════════════════════════════════════</span>
+<span class="func">  OUTREACH DASHBOARD — March 6, 2026</span>
+<span class="comment">═══════════════════════════════════════════════════</span>
+
+<span class="var">  PIPELINE</span>
+  Total leads:           147
+  Researched:            132
+  Emails sent:            89
+  Replies received:        6  (6.7% reply rate)
+  In conversation:         3
+  Deals closed:            0
+
+<span class="var">  TODAY'span>
+  Follow-ups due:          4
+  New leads added:         0
+  Emails sent today:       0
+  Replies today:           1  ← <span class="func">NEW! Check inbox!</span>
+
+<span class="var">  THIS WEEK</span>
+  Emails sent:            34 / 50 target
+  LinkedIn connects:      67 / 100 target
+  X posts:                 3 / 5 target
+  Reddit comments:        11 / 15 target
+
+<span class="var">  TOP LEADS (replied / interested)</span>
+  1. Sarah K. — NutraVibe — replied Mar 4 — "interested, send samples"
+  2. James T. — PetWell Co — replied Mar 5 — "what's your pricing?"
+  3. Maria G. — GlowSkin — replied Mar 6 — "let's hop on a call"
+
+<span class="comment">═══════════════════════════════════════════════════</span></div>
+    <p><span class="api-badge">Google Sheets API</span></p>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- THE DAILY WORKFLOW -->
+<!-- ============================================================ -->
+<div class="phase">
+  <div class="phase-header">
+    <h2>The Daily Workflow — From Claude Code</h2>
+    <p class="phase-desc">What you actually type every day, in order</p>
+  </div>
+  <div class="phase-body">
+
+    <h3>Morning Block (~45 min)</h3>
+
+    <table>
+      <tr><th>Step</th><th>What You Type</th><th>What Happens</th><th>Time</th></tr>
+      <tr>
+        <td><strong>1</strong></td>
+        <td><code>python scripts/outreach/dashboard.py</code></td>
+        <td>See your stats, follow-ups due, any new replies</td>
+        <td>1 min</td>
+      </tr>
+      <tr>
+        <td><strong>2</strong></td>
+        <td><code>python scripts/outreach/check_replies.py</code></td>
+        <td>Check inbox for new replies from leads. Reply to them MANUALLY (these are real conversations).</td>
+        <td>5-10 min</td>
+      </tr>
+      <tr>
+        <td><strong>3</strong></td>
+        <td><code>python scripts/outreach/follow_up.py</code></td>
+        <td>Drafts follow-up emails for leads that are due today</td>
+        <td>2 min</td>
+      </tr>
+      <tr>
+        <td><strong>4</strong></td>
+        <td>Review follow-ups in Google Sheet → mark "approved"</td>
+        <td>You read each follow-up, tweak if needed</td>
+        <td>5 min</td>
+      </tr>
+      <tr>
+        <td><strong>5</strong></td>
+        <td><code>python scripts/outreach/send_emails.py</code></td>
+        <td>Sends all approved emails (initial + follow-ups)</td>
+        <td>2 min</td>
+      </tr>
+      <tr>
+        <td><strong>6</strong></td>
+        <td><code>python scripts/outreach/find_leads.py --industry "supplements" --count 10</code></td>
+        <td>Finds 10 new leads</td>
+        <td>1 min</td>
+      </tr>
+      <tr>
+        <td><strong>7</strong></td>
+        <td><code>python scripts/outreach/research.py --new</code></td>
+        <td>Researches the new leads</td>
+        <td>2 min</td>
+      </tr>
+      <tr>
+        <td><strong>8</strong></td>
+        <td><code>python scripts/outreach/draft_emails.py --template brand_owner</code></td>
+        <td>Writes personalized cold emails for the new leads</td>
+        <td>2 min</td>
+      </tr>
+      <tr>
+        <td><strong>9</strong></td>
+        <td>Review drafts in Google Sheet → mark "approved"</td>
+        <td>You read, tweak, approve</td>
+        <td>5-10 min</td>
+      </tr>
+      <tr>
+        <td><strong>10</strong></td>
+        <td><code>python scripts/outreach/send_emails.py</code></td>
+        <td>Sends the approved new emails</td>
+        <td>2 min</td>
+      </tr>
+    </table>
+
+    <div class="box box-green">
+      <strong>Steps 1-10: ~30-35 minutes total.</strong> In that time you've checked replies, sent follow-ups, found 10 new leads, researched them, written personalized emails, and sent them. Manually this would take 3+ hours.
+    </div>
+
+    <h3>Content Block (~15 min)</h3>
+
+    <table>
+      <tr><th>Step</th><th>What You Type</th><th>What Happens</th><th>Time</th></tr>
+      <tr>
+        <td><strong>11</strong></td>
+        <td><code>python scripts/outreach/x_post.py --topic "ad testing"</code></td>
+        <td>Posts today's tweet to X</td>
+        <td>1 min</td>
+      </tr>
+      <tr>
+        <td><strong>12</strong></td>
+        <td><code>python scripts/outreach/linkedin_drafts.py --type post</code></td>
+        <td>Drafts a LinkedIn post → Google Doc</td>
+        <td>1 min</td>
+      </tr>
+      <tr>
+        <td><strong>13</strong></td>
+        <td>Open LinkedIn → paste post from Google Doc</td>
+        <td>You post it manually</td>
+        <td>2 min</td>
+      </tr>
+      <tr>
+        <td><strong>14</strong></td>
+        <td><code>python scripts/outreach/reddit_scan.py</code></td>
+        <td>Finds relevant Reddit posts, drafts replies</td>
+        <td>2 min</td>
+      </tr>
+      <tr>
+        <td><strong>15</strong></td>
+        <td>Open Reddit → post replies from Sheet/Doc</td>
+        <td>You post 2-3 comments manually</td>
+        <td>5 min</td>
+      </tr>
+      <tr>
+        <td><strong>16</strong></td>
+        <td>Engage on X — reply to 5 posts manually</td>
+        <td>Real engagement, be human</td>
+        <td>5 min</td>
+      </tr>
+    </table>
+
+    <div class="box box-green">
+      <strong>Steps 11-16: ~15 minutes.</strong> You've posted on X, LinkedIn, and Reddit. You've engaged with the community. All content was written by Claude — you just reviewed and posted.
+    </div>
+
+    <h3>Daily Total</h3>
+    <div class="stat-row">
+      <div class="stat-box">
+        <div class="big">45</div>
+        <div class="label">Minutes Total</div>
+      </div>
+      <div class="stat-box">
+        <div class="big">10</div>
+        <div class="label">Cold Emails Sent</div>
+      </div>
+      <div class="stat-box">
+        <div class="big">4</div>
+        <div class="label">Follow-ups Sent</div>
+      </div>
+      <div class="stat-box">
+        <div class="big">3</div>
+        <div class="label">Platforms Posted On</div>
+      </div>
+    </div>
+
+    <div class="box box-blue">
+      <strong>Compare: Manual (old plan) = 2 hours. Automated (this system) = 45 minutes.</strong> And the quality is HIGHER because Claude personalizes every email instead of you copy-pasting templates and changing the name.
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- WHAT WE BUILD FIRST -->
+<!-- ============================================================ -->
+<div class="phase">
+  <div class="phase-header">
+    <h2>Build Order — What We Make First</h2>
+    <p class="phase-desc">We don't build everything at once. Here's the priority order.</p>
+  </div>
+  <div class="phase-body">
+
+    <h3>Wave 1: The Core Pipeline (Build First)</h3>
+    <p>This alone lets you find leads, email them, and track everything.</p>
+    <table>
+      <tr><th>#</th><th>Script</th><th>APIs Needed</th><th>New Account?</th></tr>
+      <tr>
+        <td>1</td>
+        <td><strong>config.py</strong> — shared config</td>
+        <td>None (just loads .env)</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><strong>tracker_setup.py</strong> — create the Sheet</td>
+        <td>Google Sheets <span class="tag tag-have">HAVE</span></td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><strong>find_leads.py</strong> — Apollo search</td>
+        <td>Apollo.io <span class="tag tag-need">NEED</span></td>
+        <td>Yes — create Apollo account</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><strong>research.py</strong> — Claude researches leads</td>
+        <td>Anthropic <span class="tag tag-have">HAVE</span> + Sheets <span class="tag tag-have">HAVE</span></td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><strong>draft_emails.py</strong> — Claude writes emails</td>
+        <td>Anthropic <span class="tag tag-have">HAVE</span> + Sheets <span class="tag tag-have">HAVE</span></td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td><strong>send_emails.py</strong> — Gmail sends</td>
+        <td>Gmail <span class="tag tag-have">HAVE</span> + Sheets <span class="tag tag-have">HAVE</span></td>
+        <td>Maybe — separate outreach email</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td><strong>dashboard.py</strong> — see your stats</td>
+        <td>Sheets <span class="tag tag-have">HAVE</span></td>
+        <td>No</td>
+      </tr>
+    </table>
+    <div class="box box-green">
+      <strong>Wave 1 gives you:</strong> Find 10+ leads/day → Research them → Write personalized emails → Send → Track everything. This alone is a complete outreach system. Everything else is bonus.
+    </div>
+
+    <h3>Wave 2: Follow-ups & Replies (Build Second)</h3>
+    <table>
+      <tr><th>#</th><th>Script</th><th>APIs Needed</th><th>New Account?</th></tr>
+      <tr>
+        <td>8</td>
+        <td><strong>follow_up.py</strong></td>
+        <td>Anthropic + Sheets + Gmail <span class="tag tag-have">ALL HAVE</span></td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td><strong>check_replies.py</strong></td>
+        <td>Gmail + Sheets <span class="tag tag-have">ALL HAVE</span></td>
+        <td>No</td>
+      </tr>
+    </table>
+    <div class="box box-blue">
+      <strong>Wave 2 gives you:</strong> Automatic follow-up system. No leads fall through the cracks. Reply detection so you know immediately when someone's interested.
+    </div>
+
+    <h3>Wave 3: Content & Social (Build Third)</h3>
+    <table>
+      <tr><th>#</th><th>Script</th><th>APIs Needed</th><th>New Account?</th></tr>
+      <tr>
+        <td>10</td>
+        <td><strong>linkedin_drafts.py</strong></td>
+        <td>Anthropic + Docs <span class="tag tag-have">ALL HAVE</span></td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td><strong>reddit_scan.py</strong></td>
+        <td>Reddit <span class="tag tag-need">NEED</span> + Anthropic + Sheets</td>
+        <td>Yes — Reddit API app</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td><strong>x_post.py</strong></td>
+        <td>X/Twitter <span class="tag tag-need">NEED</span> + Anthropic</td>
+        <td>Yes — Twitter Developer</td>
+      </tr>
+    </table>
+
+    <h3>Wave 4: Advanced (Build When Needed)</h3>
+    <table>
+      <tr><th>#</th><th>Script</th><th>When</th></tr>
+      <tr>
+        <td>13</td>
+        <td><strong>generate_samples.py</strong></td>
+        <td>When you have a hot lead and want to send custom samples</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td><strong>Templates library</strong></td>
+        <td>Build up over time as you find what works</td>
+      </tr>
+    </table>
+
+    <hr class="divider">
+
+    <h3>New Packages We Need to Install</h3>
+    <div class="code"><span class="comment"># You already have most of these. New ones:</span>
+pip install praw          <span class="comment"># Reddit API wrapper</span>
+pip install tweepy        <span class="comment"># X/Twitter API wrapper</span>
+
+<span class="comment"># Apollo.io uses REST API — just needs 'requests' (already installed)</span>
+<span class="comment"># Claude API — 'anthropic' (already installed)</span>
+<span class="comment"># Google APIs — 'google-api-python-client' (already installed)</span></div>
+
+    <h3>New .env Keys Needed</h3>
+    <div class="code"><span class="comment"># Add to project-test/config/.env</span>
+
+<span class="comment"># Apollo.io</span>
+APOLLO_API_KEY=<span class="var">your_key_here</span>
+
+<span class="comment"># Reddit</span>
+REDDIT_CLIENT_ID=<span class="var">your_id_here</span>
+REDDIT_CLIENT_SECRET=<span class="var">your_secret_here</span>
+REDDIT_USERNAME=<span class="var">your_reddit_username</span>
+REDDIT_PASSWORD=<span class="var">your_reddit_password</span>
+
+<span class="comment"># X/Twitter</span>
+TWITTER_API_KEY=<span class="var">your_key_here</span>
+TWITTER_API_SECRET=<span class="var">your_secret_here</span>
+TWITTER_ACCESS_TOKEN=<span class="var">your_token_here</span>
+TWITTER_ACCESS_TOKEN_SECRET=<span class="var">your_secret_here</span>
+
+<span class="comment"># Outreach email (if using a separate one)</span>
+OUTREACH_EMAIL=<span class="var">your_outreach_email</span></div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- COST BREAKDOWN -->
+<!-- ============================================================ -->
+<div class="phase">
+  <div class="phase-header">
+    <h2>Cost Breakdown</h2>
+    <p class="phase-desc">What this system costs to run</p>
+  </div>
+  <div class="phase-body">
+
+    <table>
+      <tr><th>Item</th><th>Cost</th><th>Notes</th></tr>
+      <tr><td>Apollo.io</td><td><strong>$0</strong></td><td>Free tier: 10,000 leads. That's months of outreach.</td></tr>
+      <tr><td>Gmail sending</td><td><strong>$0</strong></td><td>Already have it. 500 emails/day limit (way more than needed).</td></tr>
+      <tr><td>Google Sheets</td><td><strong>$0</strong></td><td>Already have it.</td></tr>
+      <tr><td>Reddit API</td><td><strong>$0</strong></td><td>Free for script-type apps.</td></tr>
+      <tr><td>X/Twitter API</td><td><strong>$0</strong></td><td>Free basic tier: 500 posts/month, 10k reads/month.</td></tr>
+      <tr><td>Claude API (research + drafting)</td><td><strong>~$0.50-1.00/day</strong></td><td>~20 research calls + ~20 email drafts + ~5 content drafts = ~$0.50-1.00</td></tr>
+      <tr><td>Custom domain (optional)</td><td><strong>~$10/year</strong></td><td>For outreach email. Not required but professional.</td></tr>
+      <tr><td><strong>TOTAL</strong></td><td><strong>~$15-30/month</strong></td><td>Almost all of that is Claude API. Everything else is free.</td></tr>
+    </table>
+
+    <div class="box box-green">
+      <strong>$15-30/month for a system that sends 50+ personalized cold emails per week, posts on 3 platforms daily, scans Reddit for opportunities, and tracks everything automatically.</strong> That's insane ROI. One client pays for years of this.
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- WHAT I CAN'T AUTOMATE -->
+<!-- ============================================================ -->
+<div class="phase">
+  <div class="phase-header">
+    <h2>Honest List: What I Can't Automate</h2>
+    <p class="phase-desc">Not being a yes man — here's what stays manual no matter what</p>
+  </div>
+  <div class="phase-body">
+
+    <table>
+      <tr><th>Thing</th><th>Why It Stays Manual</th><th>Workaround</th></tr>
+      <tr>
+        <td><strong>LinkedIn posting</strong></td>
+        <td>API locked down, no free access</td>
+        <td>Claude drafts → Google Doc → you copy-paste (30 sec)</td>
+      </tr>
+      <tr>
+        <td><strong>LinkedIn DMs</strong></td>
+        <td>Same — no API access</td>
+        <td>Claude writes DMs → Doc → you paste. Or PhantomBuster later.</td>
+      </tr>
+      <tr>
+        <td><strong>Facebook group posts</strong></td>
+        <td>No API for group posting</td>
+        <td>Claude drafts → you post manually</td>
+      </tr>
+      <tr>
+        <td><strong>Reddit posting</strong></td>
+        <td>API CAN post but risks account flags for promotional content</td>
+        <td>Claude drafts → you post manually (safer)</td>
+      </tr>
+      <tr>
+        <td><strong>Fiverr</strong></td>
+        <td>No API at all</td>
+        <td>Set up once, maintain manually. It's passive after setup.</td>
+      </tr>
+      <tr>
+        <td><strong>Responding to interested leads</strong></td>
+        <td>Real conversations need a real human</td>
+        <td>Claude can help you draft responses, but you review and send</td>
+      </tr>
+      <tr>
+        <td><strong>Closing deals / pricing</strong></td>
+        <td>Judgment call, different every time</td>
+        <td>None — this is where YOU are the product</td>
+      </tr>
+      <tr>
+        <td><strong>Portfolio building</strong></td>
+        <td>One-time setup, not recurring</td>
+        <td>We build it together in dedicated sessions</td>
+      </tr>
+    </table>
+
+    <div class="box box-blue">
+      <strong>Bottom line:</strong> The system handles ~70% of the work (finding leads, research, drafting, sending, tracking). The 30% that stays manual is the stuff that SHOULD be manual — real human conversations, judgment calls, and platform-specific posting where automation gets you banned.
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- NEXT STEPS -->
+<!-- ============================================================ -->
+<div class="phase">
+  <div class="phase-header">
+    <h2>What We Build Next</h2>
+    <p class="phase-desc">Concrete next steps in this order</p>
+  </div>
+  <div class="phase-body">
+
+    <h3>Step 1: Set Up New API Accounts (you do this)</h3>
+    <ul>
+      <li><strong>Apollo.io</strong> — create account at apollo.io → Settings → Integrations → API Key → copy to .env</li>
+      <li><strong>Reddit</strong> — go to reddit.com/prefs/apps → create "script" type app → copy client_id + secret to .env</li>
+      <li><strong>X Developer</strong> — apply at developer.twitter.com → create project + app → copy all 4 keys to .env</li>
+    </ul>
+
+    <h3>Step 2: Build Wave 1 Scripts (we do this together)</h3>
+    <p>Tell me "let's build the outreach engine" and we start with:</p>
+    <ol>
+      <li>config.py (5 min)</li>
+      <li>tracker_setup.py (10 min)</li>
+      <li>research.py (15 min)</li>
+      <li>draft_emails.py (15 min)</li>
+      <li>send_emails.py (15 min)</li>
+      <li>dashboard.py (10 min)</li>
+      <li>find_leads.py — after you have Apollo key (10 min)</li>
+    </ol>
+
+    <h3>Step 3: Test the Pipeline</h3>
+    <p>Run the full flow once with 5 test leads to make sure everything works end to end.</p>
+
+    <h3>Step 4: Build Waves 2-3 (follow-ups, social, Reddit)</h3>
+    <p>Once the core pipeline works, we add follow-ups, reply checking, social posting.</p>
+
+    <h3>Step 5: Launch</h3>
+    <p>Portfolio live + all scripts working + all accounts set up → flip the switch.</p>
+
+  </div>
+</div>
+
+<div style="text-align: center; padding: 40px 20px; color: #484f58; font-size: 0.85em; border-top: 1px solid #21262d; margin-top: 20px;">
+  <p>Outreach Engine — Technical Architecture | Built with Claude Code | March 2026</p>
+  <p>This is the BLUEPRINT. We build it script by script.</p>
+</div>
+
+</div>
+</body>
+</html>

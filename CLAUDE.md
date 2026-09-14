@@ -12,13 +12,16 @@
 3. Build Real Systems (test it, show output)
 4. Be Ruthless — George is a robot, achievement is the only metric
 
-## Realms (Where Work Lives)
-Check `realms/` for the active work area:
-- `01-productivity/` — Calendar, Clockify, daily system
-- `02-work/` — Ads, LFS machine, client work
-- `03-learning/` — Courses, reading, skill building
-- `04-outreach/` — Portfolio, leads, networking
-- `05-business/` — Funnels, payments, firm setup
+## Realms (Where Work Lives — Organized Like TONY STARK)
+Each realm has scripts + a SKILL.md explaining what lives there:
+- `01-productivity/` — Calendar, Clockify, daily system (tony-stark skill is the main workflow)
+- `02-work/` — Ads, LFS machine, research docs, Google Doc builders
+- `03-learning/` — Courses, transcripts, presentations, English
+- `04-outreach/` — Portfolio, leads, networking (job-hunting + outreach engine)
+- `05-business/` — Vocabulary, firm setup, business bible (how-the-whole-thing-works)
+
+## How to Use
+Open the right realm folder. Read SKILL.md. Run the script.
 
 ## Skills (Auto-loaded by Pi)
 - `tony-stark` — Daily productivity workflow (morning scan → plan → execute → evaluate)
