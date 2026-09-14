@@ -1,81 +1,68 @@
-# Tony Stark — Daily Productivity System
+# Tony Stark — Daily Productivity System (Chat-Only Mode)
 
-Use this skill when George says "run the morning routine", "plan my day", "tony stark", or any morning/evening productivity command.
+When George says "run the morning routine", "plan my day", "tony stark", or "how to start morning raut" — execute this SKILL directly in Chat. No Options A/B, no choices. Just ask 8 questions one by one and run the machine.
 
 ## Rule 1: Be Ruthless
 George is a robot. Achievement is the only metric. BUT — do not put him in a rat race for stupid tasks. The Main Block must actually move the needle for money, skill, or body.
 
-## The 8-Step Workflow
+## THE WORKFLOW (Chat Mode Only — NO OPTIONS)
 
-### Step 1: The Scan (Boris Questions)
-Read George's current state from:
-- `~/Desktop/personal-ob/Goals/Daily.md` (today's entry if exists)
-- `~/Desktop/personal-ob/Goals/Daily System.md` (Active Queue)
-- Ask George directly: energy (1-10), sleep quality, wife status, distractions expected today
+### Phase 1: Ask 8 Questions Right Here In Chat (one by one)
 
-### Step 2: The Reality Check
-Cross-check answers against what's still open in Daily.md and Active Queue.
-Ask: "You said you would do X. Did you? Yes/No/Partial."
+**Step 1: The Scan (Boris NLPP)**
+1. Sinusoid — "Where's your energy today: top, middle, or bottom?"
+2. Boardroom — "Quick stats, 1-10 each: Health, Friends, Fun, Work/Money?"
+3. Brain Dump — "Dump everything: tasks, worries, ideas, fires."
+4. Goal Anchor — "What's the ONE outcome that makes today a win?"
 
-### Step 3: Calculate Today
-Based on:
-- Peak brain window: 3 PM → 10 PM (fresh mind work: strategy, creative, learning)
-- Grit execution window: 8 PM → 2 AM+ (repetition, grind, guilt-fueled)
-- Fixed commitments: college (starts Sept 17, schedule TBD), wife time (flexible but required)
-- Energy reported in Step 1
+**Step 5: Day Context**
+5. Day Start/End — "What time do you actually wake and sleep TODAY?"
+6. Fixed Walls — "What immovable blocks? (college, calls, errands)"
+7. Deep Work Capacity — "How many focused hours can you do?"
+8. Must Do — "If NOTHING else gets done, what ONE thing must happen?"
 
-Output: "You have X hours. The ONE thing that moves the needle is: [top queue item]."
+**Save answers to `state/chat-answers.json`** (in PERFORM folder)
 
-### Step 4: Make The List
-Write to `~/Desktop/personal-ob/Goals/Daily.md` with:
-- Date
-- A random name (pick something that feels good)
-- Main Block (ONE thing only)
-- Habits (Twitter 25min, English 30min)
-- If-juice-left items (ONE, not five)
+### Phase 2: Run The Machine
 
-### Step 5: Time Block
-Calculate exact time slots:
-- 5-hour deep work block = peak window (3 PM → 8 PM or 8 PM → 1 AM depending on energy)
-- Buffer around fixed commitments
-- No meetings, no calls, no "quick checks"
-- Use Google Calendar API via script
+Execute with preload:
+```bash
+py scripts/tony_stark.py --preload state/chat-answers.json
+```
 
-### Step 6: Push to Clockify
-Run `scripts/seed_clockify.py --wipe` to clear today and seed new timers from calendar blocks.
-George presses ▶️ himself. Nothing auto-tracks.
+Output:
+- Step 2: Machine Check (Read Obsidian, Calculate)
+- Step 3: Calculate Today (Pick Main Block)
+- Step 4: Make The List (Write Daily.md)
+- Step 5: Time Calculator (Build blocks around actual day)
+- Step 6: Google Calendar Push (Creates events)
+- Step 7: Clockify Seed Command (prepared)
+- Step 8: End of Day Evaluation — Not now, at evening
 
-### Step 7: Deep Work (Execution)
-This is on GEORGE. The system ends here.
-- Phone in another room
-- One Pi session open in the right project
-- Nothing else
+### Phase 3: Opening Dashboard
+Opens Google Calendar, Clockify, Obsidian — automatically.
 
-### Step 8: End of Day Evaluation (The Ruthless Reading)
-Ask George:
-1. Quality of work (1-10)
-2. Progress made — what actually shipped?
-3. Time wasted — where did you leak?
-4. Focus level — were you present or distracted?
+## Evening Option (Only After Day Is Done)
 
-Give honest score. No comfort. No "it's okay."
+When George says "evening evaluation" or "ruthless reading" — ask these 4:
+1. Quality of Work (1-10, what shipped?)
+2. Progress (what needle moved?)
+3. Time Wasted (where did you leak time?)
+4. Focus (deep work presence 1-10)
 
-If spiral risk detected (3+ weeks no needle movement):
-> "You yourself said that if you don't push yourself to do what's required, you will remain the same idiot with bad body, big mouth, and nothing to show for it. And you will hate yourself forever."
+Then run `tony_stark.py --evening` and read output.
 
-One actionable fix for tomorrow.
-Log it.
+## Standing Rules
+- One main thing per day. Three half-done things = zero done things.
+- Habits are floor, not ceiling. Never skipped.
+- Bottom-of-wave day = DO NOW + habits only.
+- Don't add ideas to Active Queue unless they #1 in money-now terms.
 
-## Personality Profile (For Reference)
+## Personality Profile
 - Wakes: 12 PM (wants earlier, currently fucked)
-- Peak brain: 3 PM → 10 PM
-- Grit mode: 8 PM → 2 AM+
-- Spiral trigger: months of grind with zero payoff
-- Superpower: Gets insanely good at everything super fast
-- Gap: Consistency on body/activities
-- Money: €500/month dad (guaranteed), +€700 Boris (80% probability, starts tomorrow)
-- Wife: Supportive, needs love+attention+sex, flexible timing, currently peaceful
-- Work style: Chaotic employer-friend (Boris), freedom with performance obligation
-- Main Block when no client work: Top of Active Queue
-- Good day = money made OR needle moved in mind/body
-- Bad day = opposite
+- Peak Brain: 3 PM → 10 PM (fresh mind work)
+- Grit Mode: 8 PM → 2 AM+ (determination)
+- Spiral: Months grind, zero payoff = Pain. System job is to make win visible early.
+- Money: €500 dad, €700 Boris (80% start tomorrow)
+- Wife: Needs support, flexible time
+- Good Day: Mind, Body, Money — all moved

@@ -1,0 +1,22 @@
+{
+  "day_start": {
+    "label": "Day Start",
+    "answer": "12:00-02:00 | College 14:00-16:00 | 5 hours | Ship ads",
+    "timestamp": "2026-09-14T13:04:50.318231"
+  },
+  "fixed_walls": {
+    "label": "Fixed Walls",
+    "answer": "12:00-02:00 | College 14:00-16:00 | 5 hours | Ship ads",
+    "timestamp": "2026-09-14T13:04:50.318231"
+  },
+  "deep_work_hours": {
+    "label": "Deep Work Capacity",
+    "answer": "12:00-02:00 | College 14:00-16:00 | 5 hours | Ship ads",
+    "timestamp": "2026-09-14T13:04:50.318231"
+  },
+  "must_do": {
+    "label": "Must Do",
+    "answer": "12:00-02:00 | College 14:00-16:00 | 5 hours | Ship ads",
+    "timestamp": "2026-09-14T13:04:50.318231"
+  }
+}
