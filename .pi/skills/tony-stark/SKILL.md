@@ -1,3 +1,8 @@
+---
+name: tony-stark
+description: Run George's daily productivity morning routine directly in chat. Ask 8 diagnostic questions, save answers to state/chat-answers.json, then execute scripts/tony_stark.py to generate Daily.md, push Google Calendar events, and seed Clockify. Trigger when George says "run the morning routine", "plan my day", "tony stark", or "how to start morning raut".
+---
+
 # Tony Stark — Daily Productivity System (Chat-Only Mode)
 
 When George says "run the morning routine", "plan my day", "tony stark", or "how to start morning raut" — execute this SKILL directly in Chat. No Options A/B, no choices. Just ask 8 questions one by one and run the machine.

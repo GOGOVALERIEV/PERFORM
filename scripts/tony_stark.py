@@ -11,6 +11,7 @@ import random
 import datetime
 import subprocess
 import webbrowser
+import re
 from pathlib import Path
 
 # --- Paths ---
@@ -27,6 +28,8 @@ TODAY = datetime.date.today().isoformat()
 NOW = datetime.datetime.now().isoformat()
 
 
+TEST_MODE = False
+
 TEST_EVAL_ANSWERS = {
     "quality": "8 — wrote strong front for the gout angle",
     "progress": "Finished 2 ad fronts, uploaded to Meta",
@@ -36,6 +39,7 @@ TEST_EVAL_ANSWERS = {
 
 # Preload answers from file (for chat mode)
 PRELOAD_ANSWERS = None
+GATE_ANSWERS = None
 
 def load_preload_answers(filepath):
     """Load answers from a JSON file for chat-based execution."""
@@ -46,6 +50,16 @@ def load_preload_answers(filepath):
     except Exception as e:
         print(f"⚠️ Could not preload answers: {e}")
         PRELOAD_ANSWERS = None
+
+def load_gate_answers(filepath):
+    """Load Obsidian Gate decisions from a JSON file."""
+    global GATE_ANSWERS
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            GATE_ANSWERS = json.load(f)
+    except Exception as e:
+        print(f"⚠️ Could not preload gate answers: {e}")
+        GATE_ANSWERS = None
 
 
 def load_questions():
@@ -121,6 +135,133 @@ def generate_day_name():
         "Crucible", "Launchpad", "Overdrive", "Reckoning"
     ]
     return random.choice(names)
+
+
+# --- Helpers for the Obsidian Gate ---
+
+def _find_section_indices(content, header):
+    """Return (start, end) indices of a markdown section under a header."""
+    start = content.find(header)
+    if start == -1:
+        return None, None
+    next_h2 = content.find("\n## ", start + 1)
+    end = next_h2 if next_h2 != -1 else len(content)
+    return start, end
+
+
+def extract_daily_tasks(content, date_str):
+    """Extract '- [ ] ...' lines from today's Daily.md section. Skip machine time blocks."""
+    start, end = _find_section_indices(content, f"## {date_str}")
+    if start is None:
+        return []
+    section = content[start:end]
+    tasks = []
+    for line in section.split("\n"):
+        stripped = line.strip()
+        if stripped.startswith("- [ ]"):
+            # Skip machine-generated time blocks (have HH:MM — HH:MM pattern)
+            if re.search(r'\d{1,2}:\d{2}\s*[-–—]\s*\d{1,2}:\d{2}', stripped):
+                continue
+            tasks.append(stripped)
+    return tasks
+
+
+def extract_active_queue_items(content):
+    """Extract numbered / '- [ ]' items from the Active Queue section."""
+    start, end = _find_section_indices(content, "## Active Queue")
+    if start is None:
+        return []
+    section = content[start:end]
+    items = []
+    for line in section.split("\n"):
+        stripped = line.strip()
+        if re.match(r'^\d+\.', stripped) or stripped.startswith("- [ ]"):
+            items.append(stripped)
+    return items
+
+
+def remove_line_from_file(filepath, line_text):
+    """Remove the first exact matching line from a file, preserving the rest."""
+    path = Path(filepath)
+    if not path.exists():
+        return False
+    with open(path, "r", encoding="utf-8") as f:
+        lines = f.readlines()
+    cleaned = [ln for ln in lines if line_text not in ln]
+    if len(cleaned) == len(lines):
+        return False
+    with open(path, "w", encoding="utf-8") as f:
+        f.writelines(cleaned)
+    return True
+
+
+def append_time_blocks_to_daily(date_str, blocks):
+    """Append time blocks under today's section in Daily.md. Returns True if appended."""
+    path = OB_DIR / "Daily.md"
+    if not path.exists():
+        return False
+    with open(path, "r", encoding="utf-8") as f:
+        content = f.read()
+    start, end = _find_section_indices(content, f"## {date_str}")
+    if start is None:
+        return False
+    # Check if Time Blocks section already exists in this section
+    section = content[start:end]
+    if "**Time Blocks:**" in section:
+        return False
+    block_text = "\n\n**Time Blocks:**\n"
+    for b in blocks:
+        block_text += f"- [ ] {b['start']} — {b['end']}: {b['name']}\n"
+    new_content = content[:end] + block_text + content[end:]
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(new_content)
+    return True
+
+
+def delete_calendar_events_in_window(service, window_start_hours=-6, window_end_hours=18):
+    """Delete all non-all-day calendar events in the given window."""
+    now = datetime.datetime.now(datetime.timezone.utc)
+    time_min = (now + datetime.timedelta(hours=window_start_hours)).isoformat()
+    time_max = (now + datetime.timedelta(hours=window_end_hours)).isoformat()
+    events_result = service.events().list(
+        calendarId="primary",
+        timeMin=time_min,
+        timeMax=time_max,
+        singleEvents=True,
+        orderBy="startTime",
+    ).execute()
+    items = events_result.get("items", [])
+    deleted = 0
+    for ev in items:
+        if ev.get("start", {}).get("dateTime"):
+            try:
+                service.events().delete(calendarId="primary", eventId=ev["id"]).execute()
+                deleted += 1
+            except Exception as e:
+                log_event("CAL_DEL", f"Failed to delete {ev.get('summary')}: {e}")
+    log_event("CAL_DEL", f"Deleted {deleted} calendar events")
+    return deleted
+
+
+def run_clockify_seed_script():
+    """Actually run seed_clockify.py --wipe and return (ok, message)."""
+    seed_script = BASE_DIR / "scripts" / "seed_clockify.py"
+    if not seed_script.exists():
+        return False, "seed_clockify.py not found"
+    try:
+        result = subprocess.run(
+            [sys.executable, str(seed_script), "--wipe"],
+            capture_output=True,
+            text=True,
+            timeout=60,
+            cwd=BASE_DIR,
+        )
+        if result.returncode == 0:
+            return True, result.stdout
+        else:
+            return False, f"Exit code {result.returncode}: {result.stderr}"
+    except Exception as e:
+        return False, str(e)
 
 
 # ============================================================================
@@ -492,6 +633,112 @@ def step_5_time_calculator(calculation, day_context=None):
 
 
 # ============================================================================
+# STEP 5.5: OBSIDIAN GATE — Review existing tasks before writing new ones
+# ============================================================================
+def _resolve_gate_decision(task_text, decision_map):
+    """Find a decision for task_text in decision_map.
+    Tries exact match, then prefix/substring match. Returns (decision, matched_key)."""
+    if not decision_map:
+        return None, None
+    # Exact match
+    if task_text in decision_map:
+        return decision_map[task_text], task_text
+    # Try exact after normalizing whitespace
+    for key, val in decision_map.items():
+        if key.strip() == task_text.strip():
+            return val, key
+    # Try prefix match: gate-preload key is a prefix of the full task line
+    for key, val in decision_map.items():
+        kstrip = key.strip()
+        tstrip = task_text.strip()
+        if tstrip.startswith(kstrip) or kstrip in tstrip:
+            return val, key
+    return None, None
+
+
+def step_5_5_obsidian_gate(time_blocks):
+    print("\n" + "="*60)
+    print("STEP 5.5: OBSIDIAN GATE")
+    print("   Review existing tasks. Keep, fuck this, or not today.")
+    print("="*60)
+
+    date_str = datetime.date.today().strftime("%B %d, %Y")
+    gate_decisions = {"daily_md": {}, "active_queue": {}, "time_blocks_appended": True}
+
+    # --- Daily.md review ---
+    daily_path = OB_DIR / "Daily.md"
+    daily_tasks = []
+    if daily_path.exists():
+        with open(daily_path, "r", encoding="utf-8") as f:
+            content = f.read()
+        daily_tasks = extract_daily_tasks(content, date_str)
+
+    if daily_tasks:
+        print("\n📋 Tasks found in Daily.md under today's section:")
+        for task in daily_tasks:
+            decision, matched_key = _resolve_gate_decision(task, GATE_ANSWERS.get("daily_md", {}) if GATE_ANSWERS else None)
+            if decision is not None:
+                print(f"   [{decision.upper()}] {task}")
+            else:
+                print(f"\n   Task: {task}")
+                try:
+                    decision = input("   Decision [keep / fuck this / not today]: ").strip().lower()
+                except (EOFError, OSError):
+                    decision = "keep"
+            gate_decisions["daily_md"][task] = decision
+            if decision == "fuck this":
+                removed = remove_line_from_file(daily_path, task)
+                log_event("GATE", f"Removed from Daily.md: {task} (ok={removed})")
+                print(f"      🗑️ Removed from Daily.md")
+            elif decision == "not today":
+                print(f"      ⏸️ Left in Daily.md, skipped for calendar")
+            else:
+                print(f"      ✅ Kept")
+
+    # --- Daily System.md review ---
+    system_path = OB_DIR / "Daily System.md"
+    aq_items = []
+    if system_path.exists():
+        with open(system_path, "r", encoding="utf-8") as f:
+            content = f.read()
+        aq_items = extract_active_queue_items(content)
+
+    if aq_items:
+        print("\n🎯 Active Queue items in Daily System.md:")
+        for item in aq_items:
+            decision, matched_key = _resolve_gate_decision(item, GATE_ANSWERS.get("active_queue", {}) if GATE_ANSWERS else None)
+            if decision is not None:
+                print(f"   [{decision.upper()}] {item}")
+            else:
+                print(f"\n   Item: {item}")
+                try:
+                    decision = input("   Decision [keep / fuck this / not today]: ").strip().lower()
+                except (EOFError, OSError):
+                    decision = "keep"
+            gate_decisions["active_queue"][item] = decision
+            if decision == "fuck this":
+                removed = remove_line_from_file(system_path, item)
+                log_event("GATE", f"Removed from Active Queue: {item} (ok={removed})")
+                print(f"      🗑️ Removed from Daily System.md")
+            elif decision == "not today":
+                print(f"      ⏸️ Left in queue, not scheduled today")
+            else:
+                print(f"      ✅ Kept")
+
+    # --- Append new time blocks to Daily.md (only if not already there) ---
+    appended = append_time_blocks_to_daily(date_str, time_blocks["blocks"])
+    log_event("GATE", f"Time blocks appended: {appended}")
+    if appended:
+        print("\n📝 Time blocks appended to today's Daily.md section.")
+    else:
+        print("\n📝 Time blocks already present in today's Daily.md section. No duplicate.")
+
+    save_state(f"obsidian-gate-{TODAY}.json", gate_decisions)
+    print(f"\n📋 Gate decisions saved to state/obsidian-gate-{TODAY}.json")
+    return gate_decisions
+
+
+# ============================================================================
 # STEP 6: GOOGLE CALENDAR PUSH
 # ============================================================================
 def step_6_calendar_push(time_blocks):
@@ -499,7 +746,6 @@ def step_6_calendar_push(time_blocks):
     print("STEP 6: GOOGLE CALENDAR PUSH")
     print("="*60)
 
-    # Import google_helper
     sys.path.insert(0, str(BASE_DIR / "scripts"))
     try:
         from google_helper import get_calendar
@@ -511,19 +757,21 @@ def step_6_calendar_push(time_blocks):
         return False
 
     today = datetime.date.today()
-    created = 0
 
+    # WIPE today before writing
+    deleted = delete_calendar_events_in_window(service, window_start_hours=-6, window_end_hours=18)
+    print(f"   🗑️ Deleted {deleted} existing events.")
+
+    created = 0
     for block in time_blocks["blocks"]:
         if block["type"] == "personal":
-            continue  # Skip personal blocks for calendar
+            continue
 
         start_hour, start_min = map(int, block["start"].split(":"))
         end_hour, end_min = map(int, block["end"].split(":"))
 
         start_dt = datetime.datetime(today.year, today.month, today.day, start_hour, start_min)
         end_dt = datetime.datetime(today.year, today.month, today.day, end_hour, end_min)
-
-        # Handle next-day end times
         if end_dt <= start_dt:
             end_dt += datetime.timedelta(days=1)
 
@@ -533,7 +781,6 @@ def step_6_calendar_push(time_blocks):
             "end": {"dateTime": end_dt.isoformat(), "timeZone": "Europe/Sofia"},
             "description": f"Tony Stark auto-block | Type: {block['type']}",
         }
-
         try:
             service.events().insert(calendarId="primary", body=event).execute()
             created += 1
@@ -541,7 +788,7 @@ def step_6_calendar_push(time_blocks):
         except Exception as e:
             print(f"   ❌ Failed: {block['name']} — {e}")
 
-    log_event("STEP6", f"Created {created} calendar events")
+    log_event("STEP6", f"Wiped {deleted}, created {created} calendar events")
     print(f"\n📅 {created} events pushed to Google Calendar")
     return created > 0
 
@@ -554,19 +801,15 @@ def step_7_clockify_seed():
     print("STEP 7: CLOCKIFY SEED")
     print("="*60)
 
-    seed_script = BASE_DIR / "scripts" / "seed_clockify.py"
-    if seed_script.exists():
-        print(f"   Running: {seed_script}")
-        print("   (This will wipe today's entries and seed from calendar)")
-        # Note: We can't easily run this inline because it expects CLI args
-        # and may have the crash bug. We log the instruction instead.
-        print("\n   💻 MANUAL COMMAND:")
-        print(f"   cd C:\\Users\\User\\Desktop\\PERFORM && python scripts\\seed_clockify.py --wipe")
-        log_event("STEP7", "Clockify seed command prepared")
+    ok, msg = run_clockify_seed_script()
+    if ok:
+        print(f"   ✅ Clockify seeded successfully.")
+        print(msg[:800])
+        log_event("STEP7", "Clockify seeded OK")
         return True
     else:
-        print("   ⚠️ seed_clockify.py not found. Skipping.")
-        log_event("STEP7", "FAILED: script not found")
+        print(f"   ⚠️ Clockify seed failed: {msg}")
+        log_event("STEP7", f"FAILED: {msg}")
         return False
 
 
@@ -731,8 +974,15 @@ One thing. Not five. One. Name it now or it doesn't exist.
 # MAIN
 # ============================================================================
 def main():
-    global TEST_MODE, PRELOAD_ANSWERS
+    global TEST_MODE, PRELOAD_ANSWERS, GATE_ANSWERS
 
+    stop_after = None
+    if "--stop-after" in sys.argv:
+        try:
+            stop_after = int(sys.argv[sys.argv.index("--stop-after") + 1])
+            print(f"⏹️  Will halt after step {stop_after}.")
+        except (IndexError, ValueError):
+            pass
 
     if "--preload" in sys.argv:
         try:
@@ -741,6 +991,15 @@ def main():
             print(f"\n📂 PRELOAD MODE — reading answers from: {preload_file}\n")
         except (IndexError, ValueError):
             print("⚠️ --preload requires a file path. Usage: --preload answers.json")
+            return
+
+    if "--gate-preload" in sys.argv:
+        try:
+            gate_file = sys.argv[sys.argv.index("--gate-preload") + 1]
+            load_gate_answers(gate_file)
+            print(f"\n🔒 GATE PRELOAD — reading gate decisions from: {gate_file}\n")
+        except (IndexError, ValueError):
+            print("⚠️ --gate-preload requires a file path. Usage: --gate-preload gate.json")
             return
 
     if "--evening" in sys.argv:
@@ -760,6 +1019,7 @@ def main():
     print(f"Date: {TODAY}")
     print("="*60)
 
+    # ---- Steps 1–5 ----
     if step_num == 0 or step_num == 1:
         scan = step_1_scan()
     else:
@@ -787,6 +1047,24 @@ def main():
         day_context = load_state(f"day-context-{TODAY}.json")
         time_blocks = load_state(f"time-blocks-{TODAY}.json")
 
+    if stop_after == 5:
+        print("\n⏹️  Stopped after Step 5. Run again with --gate-preload to continue.")
+        save_state(f"stopped-{TODAY}.json", {"step": 5, "reason": "gate required"})
+        return
+
+    # ---- Step 5.5: Obsidian Gate ----
+    # (loaded from state if resuming, or run fresh)
+    gate_state_file = f"obsidian-gate-{TODAY}.json"
+    if GATE_ANSWERS or not Path(STATE_DIR / gate_state_file).exists():
+        step_5_5_obsidian_gate(time_blocks)
+    else:
+        print("\n🔒 Obsidian Gate already completed today. Skipping.")
+
+    if stop_after == 55:
+        print("\n⏹️  Stopped after Step 5.5. Ready for Calendar + Clockify.")
+        return
+
+    # ---- Steps 6–8 ----
     if step_num == 0 or step_num == 6:
         step_6_calendar_push(time_blocks)
 
