@@ -44,6 +44,12 @@
         "help": "List each with time: '14:00-16:00 college', '19:00 dinner with wife'. These are sacred."
       },
       {
+        "id": "breaks",
+        "label": "Breaks",
+        "text": "What breaks do you need today? (eat, gym, commute, nap, shit)",
+        "help": "List each with time or rough slot: '13:00 lunch', '17:00 gym 1h', 'commute 30min'."
+      },
+      {
         "id": "deep_work_hours",
         "label": "Deep Work Capacity",
         "text": "How many hours of actual deep work can you realistically do today?",

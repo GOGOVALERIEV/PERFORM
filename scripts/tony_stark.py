@@ -764,7 +764,36 @@ def step_5_time_calculator(calculation, day_context=None):
         if we <= ws:
             we += 24 * 60
         walls.append({"start_m": ws, "end_m": we, "name": "FIXED WALL", "type": "personal"})
-    walls.sort(key=lambda x: x["start_m"])
+    # Parse breaks (same am/pm / colon tolerance as walls, but keep name)
+    break_str = day_context.get("breaks", {}).get("answer", "") if day_context else ""
+    breaks = []
+    # Range style: "15:00-15:30 lunch"
+    for w in re.findall(r'(\d{1,2}):(\d{2})\s*[-–—]\s*(\d{1,2}):(\d{2})\s*(.+)', break_str):
+        bs = _time_to_min(int(w[0]), int(w[1]))
+        be = _time_to_min(int(w[2]), int(w[3]))
+        if be <= bs: be += 24 * 60
+        breaks.append({"start_m": bs, "end_m": be, "name": w[4].strip(), "type": "break"})
+    # Single time: "15:00 lunch" -> default 30 min
+    for w in re.findall(r'(\d{1,2}):(\d{2})\s+(.+)', break_str):
+        bs = _time_to_min(int(w[0]), int(w[1]))
+        be = bs + 30
+        breaks.append({"start_m": bs, "end_m": be, "name": w[2].strip(), "type": "break"})
+    # am/pm range: "3pm-4pm gym"
+    for w in re.findall(r'(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*[-–—to]+\s*(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*(.+)', break_str, flags=re.IGNORECASE):
+        sh = _parse_ampm(w[0], w[2]); sm = int(w[1]) if w[1] else 0
+        eh = _parse_ampm(w[3], w[5]); em = int(w[4]) if w[4] else 0
+        bs = _time_to_min(sh, sm); be = _time_to_min(eh, em)
+        if be <= bs: be += 24 * 60
+        breaks.append({"start_m": bs, "end_m": be, "name": w[6].strip(), "type": "break"})
+    # Single am/pm: "3pm lunch" -> default 30 min
+    for w in re.findall(r'(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s+(.+)', break_str, flags=re.IGNORECASE):
+        sh = _parse_ampm(w[0], w[2]); sm = int(w[1]) if w[1] else 0
+        bs = _time_to_min(sh, sm); be = bs + 30
+        breaks.append({"start_m": bs, "end_m": be, "name": w[3].strip(), "type": "break"})
+
+    # Merge walls + breaks into fixed_blocks
+    fixed_blocks = walls + breaks
+    fixed_blocks.sort(key=lambda x: x["start_m"])
 
     # Parse tasks from today's_tasks answer
     tasks = parse_today_tasks(today_tasks_str) if today_tasks_str.strip() else []
@@ -774,8 +803,8 @@ def step_5_time_calculator(calculation, day_context=None):
 
     # Calculate available free minutes
     total_day = sleep_m - wake_m
-    wall_total = sum(w["end_m"] - w["start_m"] for w in walls)
-    free_minutes = total_day - wall_total
+    fixed_total = sum(b["end_m"] - b["start_m"] for b in fixed_blocks)
+    free_minutes = total_day - fixed_total
 
     # Assign durations to tasks without them
     explicit = sum(t["duration"] or 0 for t in tasks)
@@ -803,23 +832,23 @@ def step_5_time_calculator(calculation, day_context=None):
     })
     cursor = blocks[-1]["end_m"]
 
-    # Merge walls and tasks in chronological order
+    # Merge fixed blocks (walls + breaks) and tasks in chronological order
     remaining_tasks = list(tasks)
-    for wall in walls:
-        # Fill gap before wall
-        while cursor < wall["start_m"] and remaining_tasks:
+    for fb in fixed_blocks:
+        # Fill gap before fixed block
+        while cursor < fb["start_m"] and remaining_tasks:
             t = remaining_tasks.pop(0)
-            end_t = min(cursor + t["duration"], wall["start_m"])
+            end_t = min(cursor + t["duration"], fb["start_m"])
             blocks.append({
                 "name": t["name"],
                 "start_m": cursor, "end_m": end_t,
                 "type": "deep_work"
             })
             cursor = end_t
-        blocks.append(wall)
-        cursor = wall["end_m"]
+        blocks.append(fb)
+        cursor = fb["end_m"]
 
-    # After last wall, fill remaining day
+    # After last fixed block, fill remaining day
     while cursor < sleep_m and remaining_tasks:
         t = remaining_tasks.pop(0)
         end_t = min(cursor + t["duration"], sleep_m)
