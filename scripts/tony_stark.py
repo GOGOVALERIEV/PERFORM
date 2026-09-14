@@ -24,6 +24,21 @@ LOGS_DIR.mkdir(exist_ok=True)
 TODAY = datetime.date.today().isoformat()
 NOW = datetime.datetime.now().isoformat()
 
+# Test mode flag — set by --test argument
+TEST_MODE = False
+TEST_ANSWERS = {
+    "sinusoid": {"label": "Sinusoid Check", "answer": "top", "timestamp": NOW},
+    "boardroom": {"label": "Boardroom Check", "answer": "Health 8, Friends 7, Fun 6, Work 5", "timestamp": NOW},
+    "braindump": {"label": "Brain Dump", "answer": "Need to finish the LFS ads, call Boris, fix the portfolio site, study copywriting", "timestamp": NOW},
+    "goal_anchor": {"label": "Goal Anchor", "answer": "Ship 10 ads today", "timestamp": NOW},
+}
+TEST_EVAL_ANSWERS = {
+    "quality": "8 — wrote strong front for the gout angle",
+    "progress": "Finished 2 ad fronts, uploaded to Meta",
+    "time_wasted": "30 min scrolling Twitter before the deep work block",
+    "focus": "7 — strong in first 3 hours, drifted after dinner"
+}
+
 
 def load_questions():
     with open(CONFIG_DIR / "tony-stark-questions.json", "r", encoding="utf-8") as f:
@@ -106,6 +121,8 @@ def generate_day_name():
 def step_1_scan():
     print("\n" + "="*60)
     print("STEP 1: THE SCAN (Boris NLPP Intake)")
+    if TEST_MODE:
+        print("   [TEST MODE — using dummy answers]")
     print("="*60)
 
     questions = load_questions()["step_1_scan"]["questions"]
@@ -116,7 +133,11 @@ def step_1_scan():
         print(f"   {q['text']}")
         if q.get("help"):
             print(f"   ({q['help']})")
-        answer = input("   Your answer: ").strip()
+        if TEST_MODE:
+            answer = TEST_ANSWERS.get(q["id"], {}).get("answer", "test")
+            print(f"   [TEST ANSWER]: {answer}")
+        else:
+            answer = input("   Your answer: ").strip()
         answers[q["id"]] = {
             "label": q["label"],
             "answer": answer,
@@ -446,6 +467,8 @@ def step_8_evaluate():
 def step_8_evaluate_evening():
     print("\n" + "="*60)
     print("STEP 8: THE RUTHLESS READING")
+    if TEST_MODE:
+        print("   [TEST MODE — using dummy answers]")
     print("="*60)
 
     questions = load_questions()["step_8_evaluation"]["questions"]
@@ -455,7 +478,11 @@ def step_8_evaluate_evening():
     for q in questions:
         print(f"\n🔹 {q['label']}")
         print(f"   {q['text']}")
-        answer = input("   Your answer: ").strip()
+        if TEST_MODE:
+            answer = TEST_EVAL_ANSWERS.get(q["id"], "test")
+            print(f"   [TEST ANSWER]: {answer}")
+        else:
+            answer = input("   Your answer: ").strip()
         answers[q["id"]] = answer
         log_event("STEP8", f"{q['id']}: {answer}")
 
@@ -528,6 +555,11 @@ One thing. Not five. One. Name it now or it doesn't exist.
 # MAIN
 # ============================================================================
 def main():
+    global TEST_MODE
+    if "--test" in sys.argv:
+        TEST_MODE = True
+        print("\n🧪 TEST MODE ACTIVE — using dummy data, no input required\n")
+
     if "--evening" in sys.argv:
         step_8_evaluate_evening()
         return

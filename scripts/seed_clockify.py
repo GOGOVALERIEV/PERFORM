@@ -20,8 +20,9 @@ list with a play icon. Pressing ▶ starts a real timer with the same name+color
 import sys, os, json, urllib.request, urllib.error
 from datetime import datetime, timezone, timedelta
 
-PROJECT = "C:/Users/User/Desktop/project-test"
-sys.path.insert(0, os.path.join(PROJECT, "tools"))
+# Auto-detect project root
+from pathlib import Path
+PROJECT = str(Path(__file__).resolve().parent.parent)
 sys.path.insert(0, os.path.join(PROJECT, "scripts"))
 from google_helper import get_calendar
 # reuse the project map + keyword->project logic so colors match everywhere

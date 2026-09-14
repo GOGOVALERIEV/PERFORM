@@ -10,6 +10,7 @@ import pickle
 import sys
 import io
 import os
+from pathlib import Path
 
 # Fix Windows terminal encoding — prevents Unicode crash.
 # Only wrap if not already UTF-8: wrapping twice closes the stream underneath
@@ -20,10 +21,11 @@ if sys.stdout is not None and (getattr(sys.stdout, 'encoding', '') or '').lower(
 if sys.stderr is not None and (getattr(sys.stderr, 'encoding', '') or '').lower().replace('-', '') != 'utf8':
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
-# Paths
-CONFIG_DIR = 'C:/Users/User/Desktop/project-test/config'
-TOKEN_PATH = os.path.join(CONFIG_DIR, 'google-token.pickle')
-CREDS_PATH = os.path.join(CONFIG_DIR, 'google-credentials.json')
+# Paths — auto-detect project root from this file's location
+_BASE = Path(__file__).resolve().parent.parent
+CONFIG_DIR = str(_BASE / 'config')
+TOKEN_PATH = str(_BASE / 'config' / 'google-token.pickle')
+CREDS_PATH = str(_BASE / 'config' / 'google-credentials.json')
 
 
 def get_creds():

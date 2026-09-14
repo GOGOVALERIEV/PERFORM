@@ -1,0 +1,22 @@
+{
+  "sinusoid": {
+    "label": "Sinusoid Check",
+    "answer": "top",
+    "timestamp": "2026-09-14T03:29:34.478386"
+  },
+  "boardroom": {
+    "label": "Boardroom Check",
+    "answer": "Health 8, Friends 7, Fun 6, Work 5",
+    "timestamp": "2026-09-14T03:29:34.478386"
+  },
+  "braindump": {
+    "label": "Brain Dump",
+    "answer": "Need to finish the LFS ads, call Boris, fix the portfolio site, study copywriting",
+    "timestamp": "2026-09-14T03:29:34.478386"
+  },
+  "goal_anchor": {
+    "label": "Goal Anchor",
+    "answer": "Ship 10 ads today",
+    "timestamp": "2026-09-14T03:29:34.478386"
+  }
+}
