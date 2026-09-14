@@ -26,14 +26,7 @@ LOGS_DIR.mkdir(exist_ok=True)
 TODAY = datetime.date.today().isoformat()
 NOW = datetime.datetime.now().isoformat()
 
-# Test mode flag — set by --test argument
-TEST_MODE = False
-TEST_ANSWERS = {
-    "sinusoid": {"label": "Sinusoid Check", "answer": "top", "timestamp": NOW},
-    "boardroom": {"label": "Boardroom Check", "answer": "Health 8, Friends 7, Fun 6, Work 5", "timestamp": NOW},
-    "braindump": {"label": "Brain Dump", "answer": "Need to finish the LFS ads, call Boris, fix the portfolio site, study copywriting", "timestamp": NOW},
-    "goal_anchor": {"label": "Goal Anchor", "answer": "Ship 10 ads today", "timestamp": NOW},
-}
+
 TEST_EVAL_ANSWERS = {
     "quality": "8 — wrote strong front for the gout angle",
     "progress": "Finished 2 ad fronts, uploaded to Meta",
@@ -136,9 +129,7 @@ def generate_day_name():
 def step_1_scan():
     print("\n" + "="*60)
     print("STEP 1: THE SCAN (Boris NLPP Intake)")
-    if TEST_MODE:
-        print("   [TEST MODE — using dummy answers]")
-    elif PRELOAD_ANSWERS:
+    if PRELOAD_ANSWERS:
         print("   [CHAT MODE — answers pre-loaded]")
     print("="*60)
 
@@ -150,10 +141,7 @@ def step_1_scan():
         print(f"   {q['text']}")
         if q.get("help"):
             print(f"   ({q['help']})")
-        if TEST_MODE:
-            answer = TEST_ANSWERS.get(q["id"], {}).get("answer", "test")
-            print(f"   [TEST ANSWER]: {answer}")
-        elif PRELOAD_ANSWERS and q["id"] in PRELOAD_ANSWERS:
+        if PRELOAD_ANSWERS and q["id"] in PRELOAD_ANSWERS:
             answer = PRELOAD_ANSWERS[q["id"]]
             print(f"   [PRELOADED]: {answer}")
         else:
@@ -744,9 +732,7 @@ One thing. Not five. One. Name it now or it doesn't exist.
 # ============================================================================
 def main():
     global TEST_MODE, PRELOAD_ANSWERS
-    if "--test" in sys.argv:
-        TEST_MODE = True
-        print("\n🧪 TEST MODE ACTIVE — using dummy data, no input required\n")
+
 
     if "--preload" in sys.argv:
         try:
