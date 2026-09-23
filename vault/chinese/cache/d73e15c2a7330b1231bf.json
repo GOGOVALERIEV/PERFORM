@@ -1,0 +1,17 @@
+{
+  "fetchedAt": 1789860588895,
+  "finalUrl": "https://www.emag.bg/vynshen-ssd-corsair-ex400u-1tb-external-ssd-storage-cssd-ex400u1tb/pd/D2TBV23BM/",
+  "httpStatus": 200,
+  "title": "Външен SSD Corsair EX400U 1TB External SSD Storage CSSD-EX400U1TB - eMAG.bg",
+  "price": {
+    "amount": 649.01,
+    "currency": "EUR"
+  },
+  "signals": {
+    "warranty": true,
+    "returnPolicy": false,
+    "official": false,
+    "storageRisk": true
+  },
+  "cached": false
+}

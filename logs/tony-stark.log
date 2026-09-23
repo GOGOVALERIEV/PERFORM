@@ -322,3 +322,264 @@ Wind down after
 [2026-09-14T19:15:17.985288] [CAL_DEL] Deleted 4 calendar events
 [2026-09-14T19:15:17.985288] [STEP6] Wiped 4, created 5 calendar events
 [2026-09-14T19:15:17.985288] [STEP7] Clockify seeded OK
+[2026-09-15T18:37:12.519492] [STEP1] sinusoid: middle
+[2026-09-15T18:37:12.519492] [STEP1] boardroom: health 7, friends 7, fun 2, money 7
+[2026-09-15T18:37:12.519492] [STEP1] braindump: i have to get rreally good with the mashine fix the internet return some shit to the store buy another shit folio from the store read the notebooks and dicect work chats and find out if the mashine is working right now
+[2026-09-15T18:37:12.519492] [STEP1] goal_anchor: learning how to work with the mashine very good
+[2026-09-15T18:37:12.519492] [STEP1] Scan complete. Saved to state.
+[2026-09-15T18:37:12.519492] [STEP2] Machine check complete.
+[2026-09-15T18:37:12.519492] [STEP3] Main block: Top of Active Queue
+[2026-09-15T18:37:12.519492] [STEP4] Skeleton created: The Push
+[2026-09-15T18:37:12.519492] [STEP5-CTX] day_start: today i will sleap in 2 3 woke up at 1
+[2026-09-15T18:37:12.519492] [STEP5-CTX] fixed_walls: nothing
+[2026-09-15T18:37:47.699265] [STEP1] sinusoid: middle
+[2026-09-15T18:37:47.699265] [STEP1] boardroom: health 7, friends 7, fun 2, money 7
+[2026-09-15T18:37:47.699265] [STEP1] braindump: i have to get rreally good with the mashine fix the internet return some shit to the store buy another shit folio from the store read the notebooks and dicect work chats and find out if the mashine is working right now
+[2026-09-15T18:37:47.699265] [STEP1] goal_anchor: learning how to work with the mashine very good
+[2026-09-15T18:37:47.699265] [STEP1] Scan complete. Saved to state.
+[2026-09-15T18:37:47.699265] [STEP2] Machine check complete.
+[2026-09-15T18:37:47.699265] [STEP3] Main block: Top of Active Queue
+[2026-09-15T18:37:47.699265] [STEP4] Skeleton created: Storm
+[2026-09-15T18:37:47.699265] [STEP5-CTX] day_start: today i will sleap in 2 3 woke up at 1
+[2026-09-15T18:37:47.699265] [STEP5-CTX] fixed_walls: nothing
+[2026-09-15T18:37:47.699265] [STEP5-CTX] breaks: dinner 8:30
+[2026-09-15T18:37:47.699265] [STEP5-CTX] deep_work_hours: 5 at least
+[2026-09-15T18:37:47.699265] [STEP5-CTX] must_do: lear the mashine
+[2026-09-15T18:37:47.699265] [STEP5-CTX] today_tasks: only the mashine
+[2026-09-15T18:37:47.699265] [STEP5-CTX] Day context complete.
+[2026-09-15T18:37:47.699265] [TODO] Daily todo created: C:\Users\User\Desktop\personal-ob\ToDo\Daily\2026-09-15.md
+[2026-09-15T18:37:47.699265] [TODO] Synced 1 tasks to All.md
+[2026-09-15T18:37:47.699265] [TODO] Schedule written to daily todo
+[2026-09-15T18:37:47.699265] [STEP5] Scheduled 3 blocks, 1 tasks
+[2026-09-15T18:37:47.699265] [CAL_DEL] Deleted 0 calendar events
+[2026-09-15T18:37:47.699265] [STEP6] Wiped 0, created 1 calendar events
+[2026-09-15T18:37:47.699265] [STEP7] Clockify seeded OK
+[2026-09-15T19:02:33.543764] [STEP1] sinusoid: middle
+[2026-09-15T19:02:33.543764] [STEP1] boardroom: health 7, friends 7, fun 2, money 7
+[2026-09-15T19:02:33.543764] [STEP1] braindump: i have to get rreally good with the mashine fix the internet return some shit to the store buy another shit folio from the store read the notebooks and dicect work chats and find out if the mashine is working right now
+[2026-09-15T19:02:33.543764] [STEP1] goal_anchor: learning how to work with the mashine very good
+[2026-09-15T19:02:33.543764] [STEP1] Scan complete. Saved to state.
+[2026-09-15T19:02:33.543764] [STEP2] Machine check complete.
+[2026-09-15T19:02:33.543764] [STEP3] Main block: Top of Active Queue
+[2026-09-15T19:02:33.543764] [STEP4] Skeleton created: Reckoning
+[2026-09-15T19:02:33.543764] [STEP5-CTX] day_start: today i will sleap in 2 3 woke up at 1
+[2026-09-15T19:02:33.543764] [STEP5-CTX] fixed_walls: nothing
+[2026-09-15T19:02:33.543764] [STEP5-CTX] breaks: dinner 8:30
+[2026-09-15T19:02:33.543764] [STEP5-CTX] deep_work_hours: 5 at least
+[2026-09-15T19:02:33.543764] [STEP5-CTX] must_do: lear the mashine
+[2026-09-15T19:02:33.543764] [STEP5-CTX] today_tasks: only the mashine
+[2026-09-15T19:02:33.543764] [STEP5-CTX] Day context complete.
+[2026-09-15T19:02:33.543764] [TODO] Daily todo created: C:\Users\User\Desktop\personal-ob\ToDo\Daily\2026-09-15.md
+[2026-09-15T19:02:33.543764] [TODO] Synced 1 tasks to All.md
+[2026-09-15T19:02:33.543764] [TODO] Schedule written to daily todo
+[2026-09-15T19:02:33.543764] [STEP5] Scheduled 4 blocks, 1 tasks
+[2026-09-15T19:02:33.543764] [CAL_DEL] Deleted 1 calendar events
+[2026-09-15T19:02:33.543764] [STEP6] Wiped 1, created 3 calendar events
+[2026-09-15T19:02:33.543764] [STEP7] Clockify seeded OK
+[2026-09-17T08:52:16.509421] [STEP1] sinusoid: top
+[2026-09-17T08:52:16.509421] [STEP1] boardroom: health 7, friends 4, fun 3, money 6 living comfortable
+[2026-09-17T08:52:16.509421] [STEP1] braindump: tasks: learn the machine to its fullest potential and test it after learning, college 10-13, then show what i learned to the squad. worries: 15% that boris wont pay, if i perform it should be good. ideas: anonymous account on x and platforms to grow. fires: none
+[2026-09-17T08:52:16.509421] [STEP1] goal_anchor: using the machine correctly, learn it fully
+[2026-09-17T08:52:16.509421] [STEP1] Scan complete. Saved to state.
+[2026-09-17T08:52:16.509421] [STEP2] Machine check complete.
+[2026-09-17T08:52:16.509421] [STEP3] Main block: Top of Active Queue
+[2026-09-17T08:52:16.509421] [STEP4] Skeleton created: Overdrive
+[2026-09-17T08:52:16.509421] [STEP5-CTX] day_start: woke up now 9, sleep at 1 am
+[2026-09-17T08:52:16.509421] [STEP5-CTX] fixed_walls: college 10 to 1 pm, lunch after school 30 min
+[2026-09-17T08:52:16.509421] [STEP5-CTX] breaks: lunch 13:00, dinner 7:30, errands about 6 pm: get car, return something to store, take out trash (1 minute task)
+[2026-09-17T08:52:16.509421] [STEP5-CTX] deep_work_hours: 6 hours minimum
+[2026-09-17T08:52:16.509421] [STEP5-CTX] must_do: be good with the machine, learn it fully
+[2026-09-17T08:52:16.509421] [STEP5-CTX] today_tasks: learning the machine fully 2 hours, using/testing the machine 2 hours, prep and demo to the squad 1 hour, errands: get car and return stuff to store 30 minutes, trash out 1 minute
+[2026-09-17T08:52:16.509421] [STEP5-CTX] Day context complete.
+[2026-09-17T08:52:16.509421] [TODO] Daily todo created: C:\Users\User\Desktop\personal-ob\ToDo\Daily\2026-09-17.md
+[2026-09-17T08:52:16.509421] [TODO] Synced 1 tasks to All.md
+[2026-09-17T08:52:16.509421] [TODO] Schedule written to daily todo
+[2026-09-17T08:52:16.509421] [STEP5] Scheduled 2 blocks, 1 tasks
+[2026-09-17T08:52:16.509421] [CAL_DEL] Deleted 0 calendar events
+[2026-09-17T08:52:16.509421] [STEP6] Wiped 0, created 1 calendar events
+[2026-09-17T08:52:16.509421] [STEP7] Clockify seeded OK
+[2026-09-17T08:52:54.448010] [STEP1] sinusoid: top
+[2026-09-17T08:52:54.448010] [STEP1] boardroom: health 7, friends 4, fun 3, money 6 living comfortable
+[2026-09-17T08:52:54.448010] [STEP1] braindump: tasks: learn the machine to its fullest potential and test it after learning, college 10-13, then show what i learned to the squad. worries: 15% that boris wont pay, if i perform it should be good. ideas: anonymous account on x and platforms to grow. fires: none
+[2026-09-17T08:52:54.448010] [STEP1] goal_anchor: using the machine correctly, learn it fully
+[2026-09-17T08:52:54.448010] [STEP1] Scan complete. Saved to state.
+[2026-09-17T08:52:54.448010] [STEP2] Machine check complete.
+[2026-09-17T08:52:54.448010] [STEP3] Main block: Top of Active Queue
+[2026-09-17T08:52:54.448010] [STEP4] Skeleton created: The Forge
+[2026-09-17T08:52:54.448010] [STEP5-CTX] day_start: 09:00 wake, 01:00 sleep
+[2026-09-17T08:52:54.448010] [STEP5-CTX] fixed_walls: 10:00-13:00 college
+[2026-09-17T08:52:54.448010] [STEP5-CTX] breaks: 13:00-13:30 lunch, 19:30-20:00 dinner, 18:00-18:30 errands: get car and return stuff to store
+[2026-09-17T08:52:54.448010] [STEP5-CTX] deep_work_hours: 6 hours minimum
+[2026-09-17T08:52:54.448010] [STEP5-CTX] must_do: be good with the machine, learn it fully
+[2026-09-17T08:52:54.448010] [STEP5-CTX] today_tasks: Learn the Tony Stark machine fully (120min)
+Use and test the machine live (120min)
+Prep and demo to the squad (60min)
+Errands: get car + return stuff to store (30min)
+Take out trash (1min)
+[2026-09-17T08:52:54.448010] [STEP5-CTX] Day context complete.
+[2026-09-17T08:52:54.448010] [TODO] Daily todo created: C:\Users\User\Desktop\personal-ob\ToDo\Daily\2026-09-17.md
+[2026-09-17T08:52:54.448010] [TODO] Synced 5 tasks to All.md
+[2026-09-17T08:52:54.448010] [TODO] Schedule written to daily todo
+[2026-09-17T08:52:54.448010] [STEP5] Scheduled 12 blocks, 5 tasks
+[2026-09-17T08:52:54.448010] [CAL_DEL] Deleted 0 calendar events
+[2026-09-17T08:52:54.448010] [STEP6] Wiped 0, created 9 calendar events
+[2026-09-17T08:52:54.448010] [STEP7] Clockify seeded OK
+[2026-09-18T16:03:31.464145] [STEP1] sinusoid: top
+[2026-09-18T16:03:31.464145] [STEP1] boardroom: health 7, friends 4, fun 5, money 5 - 1200 euro on the line, 500 dad 700 boris
+[2026-09-18T16:03:31.464145] [STEP1] braindump: tasks: lock in, produce first shit video ads then produce real good video ads, build the system for university in the meantime. worries: none. ideas: none. fires: none
+[2026-09-18T16:03:31.464145] [STEP1] goal_anchor: product good video ads
+[2026-09-18T16:03:31.464145] [STEP1] Scan complete. Saved to state.
+[2026-09-18T16:03:31.464145] [STEP2] Machine check complete.
+[2026-09-18T16:03:31.464145] [STEP3] Main block: Finish reading notebooks (60min)
+[2026-09-18T16:03:31.464145] [STEP4] Skeleton created: Launchpad
+[2026-09-18T16:03:31.464145] [STEP5-CTX] day_start: 16:00 wake, 02:00 sleep
+[2026-09-18T16:03:31.464145] [STEP5-CTX] fixed_walls: nothing
+[2026-09-18T16:03:31.464145] [STEP5-CTX] breaks: 19:00-19:30 dinner
+[2026-09-18T16:03:31.464145] [STEP5-CTX] deep_work_hours: 7 hours max
+[2026-09-18T16:03:31.464145] [STEP5-CTX] must_do: good video ads
+[2026-09-18T16:03:31.464145] [STEP5-CTX] today_tasks: Produce first shit video ad drafts (60min)
+Produce GOOD video ads (180min)
+Build the university system (120min)
+[2026-09-18T16:03:31.464145] [STEP5-CTX] Day context complete.
+[2026-09-18T16:03:31.464145] [TODO] Daily todo created: C:\Users\User\Desktop\personal-ob\ToDo\Daily\2026-09-18.md
+[2026-09-18T16:03:31.464145] [TODO] Synced 3 tasks to All.md
+[2026-09-18T16:03:31.464145] [TODO] Schedule written to daily todo
+[2026-09-18T16:03:31.464145] [STEP5] Scheduled 7 blocks, 3 tasks
+[2026-09-18T16:03:31.464145] [CAL_DEL] Deleted 0 calendar events
+[2026-09-18T16:03:31.464145] [STEP6] Wiped 0, created 5 calendar events
+[2026-09-18T16:03:31.464145] [STEP7] Clockify seeded OK
+[2026-09-19T15:41:39.444766] [STEP1] sinusoid: top
+[2026-09-19T15:41:39.444766] [STEP1] boardroom: health 7 (gym soon), friends 5 (college connections, plan to sell uni system to other universities), fun 3 (ok with it), money 4 (1500 euro/month, livable for 18 but wants more; self-aware: needs needle-pushers over side projects)
+[2026-09-19T15:41:39.444766] [STEP1] braindump: tasks: read the notebooks, learn the LFS system, try doing scripts with it. Boris/Argon feedback: ad script idea good but badly written - useless lines, unclear. The gap is copywriting - clean and clear. notebooks = the research corpus i was missing. ideas: sell uni system to universities with commission sellers, seat protection, monthly pricing, business cards with telegram + crypto legality check. fires: incapability to write perfect copy
+[2026-09-19T15:41:39.444766] [STEP1] goal_anchor: grasp what is wrong with my writing abilities - diagnosis before repair
+[2026-09-19T15:41:39.444766] [STEP1] Scan complete. Saved to state.
+[2026-09-19T15:41:39.444766] [STEP2] Machine check complete.
+[2026-09-19T15:41:39.444766] [STEP3] Main block: Finish reading notebooks (60min)
+[2026-09-19T15:41:39.444766] [STEP4] Skeleton created: The Forge
+[2026-09-19T15:41:39.444766] [STEP5-CTX] day_start: 12:00 wake, 03:00 sleep
+[2026-09-19T15:41:39.444766] [STEP5-CTX] fixed_walls: nothing
+[2026-09-19T15:41:39.444766] [STEP5-CTX] breaks: 17:15 chocolate run 5 min for the girl, 19:00-19:30 dinner (flexible 19-22)
+[2026-09-19T15:41:39.444766] [STEP5-CTX] deep_work_hours: 5 hours clean, 8h task list exceeds cap - rewrite blocks are OVERTIME
+[2026-09-19T15:41:39.444766] [STEP5-CTX] must_do: the copy - diagnose and improve writing
+[2026-09-19T15:41:39.444766] [STEP5-CTX] today_tasks: Business cards research: telegram on card, crypto legality (15min)
+Read the notebooks - load the corpus (180min)
+Chocolate run for the girl (5min)
+Learn the LFS system (60min)
+Use LFS - try doing scripts with it (60min)
+Rewrite the ad script clean - kill useless lines, sharpen (180min)
+[2026-09-19T15:41:39.444766] [STEP5-CTX] Day context complete.
+[2026-09-19T15:41:39.444766] [TODO] Daily todo created: C:\Users\User\Desktop\personal-ob\ToDo\Daily\2026-09-19.md
+[2026-09-19T15:41:39.444766] [TODO] Synced 6 tasks to All.md
+[2026-09-19T15:41:39.444766] [TODO] Schedule written to daily todo
+[2026-09-19T15:41:39.444766] [STEP5] Scheduled 11 blocks, 6 tasks
+[2026-09-19T15:41:39.444766] [CAL_DEL] Deleted 0 calendar events
+[2026-09-19T15:41:39.444766] [STEP6] Wiped 0, created 10 calendar events
+[2026-09-19T15:41:39.444766] [STEP7] Clockify seeded OK
+[2026-09-20T16:25:52.920093] [STEP1] sinusoid: top after honest reset - yesterday was a zero day, today is war
+[2026-09-20T16:25:52.920093] [STEP1] boardroom: health 7, friends 5, fun 3, money 4 (1500 euro/month, livable for 18, wants more)
+[2026-09-20T16:25:52.920093] [STEP1] braindump: tasks: watch good copywriter youtube video and take notes, write 1000 hooks by hand as reps, read notebooks (corpus), learn LFS, use LFS for scripts, rewrite ad script. fires: inability to write perfect copy. lesson from yesterday: dopamine before work kills the day
+[2026-09-20T16:25:52.920093] [STEP1] goal_anchor: grasp and fix my copywriting - diagnosis through reps
+[2026-09-20T16:25:52.920093] [STEP1] Scan complete. Saved to state.
+[2026-09-20T16:25:52.920093] [STEP2] Machine check complete.
+[2026-09-20T16:25:52.920093] [STEP3] Main block: Finish reading notebooks (60min)
+[2026-09-20T16:25:52.920093] [STEP4] Skeleton created: Storm
+[2026-09-20T16:25:52.920093] [STEP5-CTX] day_start: 14:30 wake, 03:00 sleep
+[2026-09-20T16:25:52.920093] [STEP5-CTX] fixed_walls: nothing
+[2026-09-20T16:25:52.920093] [STEP5-CTX] breaks: 19:30-20:00 dinner
+[2026-09-20T16:25:52.920093] [STEP5-CTX] deep_work_hours: work blocks tracked in clockify, timer is the referee
+[2026-09-20T16:25:52.920093] [STEP5-CTX] must_do: the copy - video notes, hook reps, script rewrite
+[2026-09-20T16:25:52.920093] [STEP5-CTX] today_tasks: Watch copywriter youtube video + take notes (80min)
+Write 1000 hooks by hand - reps (120min)
+Read the notebooks - load the corpus (180min)
+Learn the LFS system (60min)
+Use LFS - try doing scripts with it (60min)
+Rewrite the ad script clean (150min)
+Progress check + Journal (30min)
+[2026-09-20T16:25:52.920093] [STEP5-CTX] Day context complete.
+[2026-09-20T16:25:52.920093] [TODO] Daily todo created: C:\Users\User\Desktop\personal-ob\ToDo\Daily\2026-09-20.md
+[2026-09-20T16:25:52.920093] [TODO] Synced 7 tasks to All.md
+[2026-09-20T16:25:52.920093] [TODO] Schedule written to daily todo
+[2026-09-20T16:25:52.920093] [STEP5] Scheduled 8 blocks, 7 tasks
+[2026-09-20T16:25:52.920093] [CAL_DEL] Deleted 0 calendar events
+[2026-09-20T16:25:52.920093] [STEP6] Wiped 0, created 8 calendar events
+[2026-09-20T16:25:52.920093] [STEP7] Clockify seeded OK
+[2026-09-20T16:26:30.638878] [STEP1] sinusoid: top after honest reset - yesterday was a zero day, today is war
+[2026-09-20T16:26:30.638878] [STEP1] boardroom: health 7, friends 5, fun 3, money 4 (1500 euro/month, livable for 18, wants more)
+[2026-09-20T16:26:30.638878] [STEP1] braindump: tasks: watch good copywriter youtube video and take notes, write 1000 hooks by hand as reps, read notebooks (corpus), learn LFS, use LFS for scripts, rewrite ad script. fires: inability to write perfect copy. lesson from yesterday: dopamine before work kills the day
+[2026-09-20T16:26:30.638878] [STEP1] goal_anchor: grasp and fix my copywriting - diagnosis through reps
+[2026-09-20T16:26:30.638878] [STEP1] Scan complete. Saved to state.
+[2026-09-20T16:26:30.638878] [STEP2] Machine check complete.
+[2026-09-20T16:26:30.638878] [STEP3] Main block: Finish reading notebooks (60min)
+[2026-09-20T16:26:30.638878] [STEP4] Skeleton created: Overdrive
+[2026-09-20T16:26:30.638878] [STEP5-CTX] day_start: 14:30 wake, 03:00 sleep
+[2026-09-20T16:26:30.638878] [STEP5-CTX] fixed_walls: nothing
+[2026-09-20T16:26:30.638878] [STEP5-CTX] breaks: 19:30-20:00 dinner
+[2026-09-20T16:26:30.638878] [STEP5-CTX] deep_work_hours: work blocks tracked in clockify, timer is the referee
+[2026-09-20T16:26:30.638878] [STEP5-CTX] must_do: the copy - video notes, hook reps, script rewrite
+[2026-09-20T16:26:30.638878] [STEP5-CTX] today_tasks: Watch copywriter youtube video + take notes (80min)
+Write 1000 hooks by hand - reps tonight, rest is daily reps habit (105min)
+Read the notebooks - load the corpus (180min)
+Learn the LFS system (60min)
+Use LFS - try doing scripts with it (60min)
+Rewrite the ad script clean (75min)
+Progress check + Journal (30min)
+[2026-09-20T16:26:30.638878] [STEP5-CTX] Day context complete.
+[2026-09-20T16:26:30.638878] [TODO] Daily todo created: C:\Users\User\Desktop\personal-ob\ToDo\Daily\2026-09-20.md
+[2026-09-20T16:26:30.638878] [TODO] Synced 7 tasks to All.md
+[2026-09-20T16:26:30.638878] [TODO] Schedule written to daily todo
+[2026-09-20T16:26:30.638878] [STEP5] Scheduled 10 blocks, 7 tasks
+[2026-09-20T16:26:30.638878] [CAL_DEL] Failed to delete Read the notebooks - load the corpus: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-09-20T16:26:30.638878] [CAL_DEL] Failed to delete Learn the LFS system: Unable to find the server at www.googleapis.com
+[2026-09-20T16:26:30.638878] [CAL_DEL] Deleted 4 calendar events
+[2026-09-20T16:26:30.638878] [STEP6] Wiped 4, created 0 calendar events
+[2026-09-20T16:49:02.317165] [STEP1] sinusoid: top after honest reset - yesterday was a zero day, today is war
+[2026-09-20T16:49:02.317165] [STEP1] boardroom: health 7, friends 5, fun 3, money 4 (1500 euro/month, livable for 18, wants more)
+[2026-09-20T16:49:02.317165] [STEP1] braindump: tasks: watch good copywriter youtube video and take notes, write 1000 hooks by hand as reps, read notebooks (corpus), learn LFS, use LFS for scripts, rewrite ad script. fires: inability to write perfect copy. lesson from yesterday: dopamine before work kills the day
+[2026-09-20T16:49:02.317165] [STEP1] goal_anchor: grasp and fix my copywriting - diagnosis through reps
+[2026-09-20T16:49:02.317165] [STEP1] Scan complete. Saved to state.
+[2026-09-20T16:49:02.317165] [STEP2] Machine check complete.
+[2026-09-20T16:49:02.317165] [STEP3] Main block: Finish reading notebooks (60min)
+[2026-09-20T16:49:02.317165] [STEP4] Skeleton created: The Push
+[2026-09-20T16:49:02.317165] [STEP5-CTX] day_start: 14:30 wake, 03:00 sleep
+[2026-09-20T16:49:02.317165] [STEP5-CTX] fixed_walls: nothing
+[2026-09-20T16:49:02.317165] [STEP5-CTX] breaks: 19:30-20:00 dinner
+[2026-09-20T16:49:02.317165] [STEP5-CTX] deep_work_hours: work blocks tracked in clockify, timer is the referee
+[2026-09-20T16:49:02.317165] [STEP5-CTX] must_do: the copy - video notes, hook reps, script rewrite
+[2026-09-20T16:49:02.317165] [STEP5-CTX] today_tasks: Watch copywriter youtube video + take notes (80min)
+Write 1000 hooks by hand - reps tonight, rest is daily reps habit (100min)
+Read the notebooks - load the corpus (180min)
+Learn the LFS system (60min)
+Use LFS - try doing scripts with it (60min)
+Rewrite the ad script clean (75min)
+Progress check + Journal (30min)
+[2026-09-20T16:49:02.317165] [STEP5-CTX] Day context complete.
+[2026-09-20T16:49:02.317165] [TODO] Daily todo created: C:\Users\User\Desktop\personal-ob\ToDo\Daily\2026-09-20.md
+[2026-09-20T16:49:02.317165] [TODO] Synced 7 tasks to All.md
+[2026-09-20T16:49:02.317165] [TODO] Schedule written to daily todo
+[2026-09-20T16:49:02.317165] [STEP5] Scheduled 9 blocks, 7 tasks
+[2026-09-20T16:49:02.317165] [CAL_DEL] Deleted 1 calendar events
+[2026-09-20T16:49:02.317165] [STEP6] Wiped 1, created 9 calendar events
+[2026-09-20T16:49:02.317165] [STEP7] Clockify seeded OK
+[2026-09-22T15:46:58.243603] [STEP1] sinusoid: mid
+[2026-09-22T15:46:58.243603] [STEP1] boardroom: health 7, friends 4, fun 7, money 4 today (1500 euro; software -> 5 at 1800-2k; then harder multipliers to 6-10)
+[2026-09-22T15:46:58.243603] [STEP1] braindump: nothing new: watch copywriter videos (3h) then read notebooks (3h) - that is the whole day. after everything: use the machine a lot. wake target 10:00 someday
+[2026-09-22T15:46:58.243603] [STEP1] goal_anchor: finish the copy input phase - videos + notes, notebooks corpus
+[2026-09-22T15:46:58.243603] [STEP1] Scan complete. Saved to state.
+[2026-09-22T15:46:58.243603] [STEP2] Machine check complete.
+[2026-09-22T15:46:58.243603] [STEP3] Main block: FIX THE OUTREACH SYSTEM - audit current mess, rebuild around Upwork + everywhere-posting (2-3h golden-day task)
+[2026-09-22T15:46:58.243603] [STEP4] Skeleton created: Deep Cut
+[2026-09-22T15:46:58.243603] [STEP5-CTX] day_start: 14:30 wake, 03:00 sleep
+[2026-09-22T15:46:58.243603] [STEP5-CTX] fixed_walls: nothing - no college
+[2026-09-22T15:46:58.243603] [STEP5-CTX] breaks: 20:00-20:30 dinner (light - overfeeding kills the evening)
+[2026-09-22T15:46:58.243603] [STEP5-CTX] deep_work_hours: mid day - 6 hours planned (3 videos + 3 notebooks)
+[2026-09-22T15:46:58.243603] [STEP5-CTX] must_do: the copy input phase - videos and notebooks
+[2026-09-22T15:46:58.243603] [STEP5-CTX] today_tasks: Watch copywriter youtube videos + take notes (180min)
+Read the notebooks - load the corpus (180min)
+[2026-09-22T15:46:58.243603] [STEP5-CTX] Day context complete.
+[2026-09-22T15:46:58.243603] [TODO] Daily todo created: C:\Users\User\Desktop\personal-ob\ToDo\Daily\2026-09-22.md
+[2026-09-22T15:46:58.243603] [TODO] Synced 2 tasks to All.md
+[2026-09-22T15:46:58.243603] [TODO] Schedule written to daily todo
+[2026-09-22T15:46:58.243603] [STEP5] Scheduled 5 blocks, 2 tasks
+[2026-09-22T15:46:58.243603] [CAL_DEL] Deleted 0 calendar events
+[2026-09-22T15:46:58.243603] [STEP6] Wiped 0, created 4 calendar events
+[2026-09-22T15:46:58.243603] [STEP7] Clockify seeded OK

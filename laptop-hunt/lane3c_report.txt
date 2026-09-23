@@ -1,0 +1,18 @@
+LANE 3c: BAZAR.BG FINAL (budget <= 300 EUR)
+
+== 'lenovo thinkpad' -> 200 len 205185
+blocks: 0
+
+== 'dell latitude' -> 200 len 209390
+blocks: 0
+
+== 'hp elitebook' -> 200 len 201475
+blocks: 0
+
+== 'laptop i5 ssd' -> 200 len 212471
+blocks: 0
+
+
+=== ALL <= 300 EUR, laptop-relevant, sorted ===
+
+TOTAL relevant <=300 EUR: 0

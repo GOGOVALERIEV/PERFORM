@@ -1,0 +1,32 @@
+{
+  "day_start": {
+    "label": "Day Start",
+    "answer": "14:30 wake, 03:00 sleep",
+    "timestamp": "2026-09-20T16:49:02.317165"
+  },
+  "fixed_walls": {
+    "label": "Fixed Walls",
+    "answer": "nothing",
+    "timestamp": "2026-09-20T16:49:02.317165"
+  },
+  "breaks": {
+    "label": "Breaks",
+    "answer": "19:30-20:00 dinner",
+    "timestamp": "2026-09-20T16:49:02.317165"
+  },
+  "deep_work_hours": {
+    "label": "Deep Work Capacity",
+    "answer": "work blocks tracked in clockify, timer is the referee",
+    "timestamp": "2026-09-20T16:49:02.317165"
+  },
+  "must_do": {
+    "label": "Must Do",
+    "answer": "the copy - video notes, hook reps, script rewrite",
+    "timestamp": "2026-09-20T16:49:02.317165"
+  },
+  "today_tasks": {
+    "label": "Today's Tasks",
+    "answer": "Watch copywriter youtube video + take notes (80min)\nWrite 1000 hooks by hand - reps tonight, rest is daily reps habit (100min)\nRead the notebooks - load the corpus (180min)\nLearn the LFS system (60min)\nUse LFS - try doing scripts with it (60min)\nRewrite the ad script clean (75min)\nProgress check + Journal (30min)",
+    "timestamp": "2026-09-20T16:49:02.317165"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "day_start": {
+    "label": "Day Start",
+    "answer": "12:00 wake, 03:00 sleep",
+    "timestamp": "2026-09-19T15:41:39.444766"
+  },
+  "fixed_walls": {
+    "label": "Fixed Walls",
+    "answer": "nothing",
+    "timestamp": "2026-09-19T15:41:39.444766"
+  },
+  "breaks": {
+    "label": "Breaks",
+    "answer": "17:15 chocolate run 5 min for the girl, 19:00-19:30 dinner (flexible 19-22)",
+    "timestamp": "2026-09-19T15:41:39.444766"
+  },
+  "deep_work_hours": {
+    "label": "Deep Work Capacity",
+    "answer": "5 hours clean, 8h task list exceeds cap - rewrite blocks are OVERTIME",
+    "timestamp": "2026-09-19T15:41:39.444766"
+  },
+  "must_do": {
+    "label": "Must Do",
+    "answer": "the copy - diagnose and improve writing",
+    "timestamp": "2026-09-19T15:41:39.444766"
+  },
+  "today_tasks": {
+    "label": "Today's Tasks",
+    "answer": "Business cards research: telegram on card, crypto legality (15min)\nRead the notebooks - load the corpus (180min)\nChocolate run for the girl (5min)\nLearn the LFS system (60min)\nUse LFS - try doing scripts with it (60min)\nRewrite the ad script clean - kill useless lines, sharpen (180min)",
+    "timestamp": "2026-09-19T15:41:39.444766"
+  }
+}

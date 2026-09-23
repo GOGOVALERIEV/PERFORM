@@ -1,0 +1,81 @@
+skipping already scored: ['glo-migracii', 'glo-sto', 'his-sssr', 'his-studena', 'phi-francia', 'pol-grajdani', 'pol-izbori']
+batch: 10 papers
+
+[1/10]
+
+=== pol-izbori-m2 | Изборните системи: мажоритарна, пропорционална и с | current ===
+  corpus: 1780 words
+  P1 draft: 525 words
+  P2 sweep: 545 words (inclusionai/ling-3.0-flash)
+  SCOREBOARD ROW: | pol-izbori-m2 | current | inclusionai/ling-3.0-flash -> inclusionai/ling-3.0-flash | 545 | 0/1.44 | FAIL(2) | n/a | n/
+
+[2/10]
+
+=== his-studena-m2 | Студената война: произход, фази и край | current ===
+  corpus: 3597 words
+  P1 draft: 351 words
+  P2 sweep: 438 words (deepseek/deepseek-v4.1-flash)
+  SCOREBOARD ROW: | his-studena-m2 | current | deepseek/deepseek-v4.1-flash -> deepseek/deepseek-v4.1-flash | 438 | 0/0.0 | FAIL(4) | n/a 
+
+[3/10]
+
+=== phi-francia-m2 | Френската революция и нейното влияние върху Европа | current ===
+  corpus: 6766 words
+  OR(openai/gpt-luna-latest) failed: HTTPError: HTTP Error 400: Bad Request
+
+[4/10]
+
+=== glo-sto-m2 | Световната търговия и световната търговска организ | current ===
+  corpus: 7107 words
+  P1 draft: 543 words
+  P2 sweep: 380 words (qwen/qwen3.7-plus)
+  SCOREBOARD ROW: | glo-sto-m2 | current | qwen/qwen3.7-plus -> qwen/qwen3.7-plus | 380 | 0/2.07 | PASS | n/a | n/a | 0.0117 |
+
+[5/10]
+
+=== pol-grajdani-m2 | Гражданското общество и неговите функции | current ===
+  corpus: 350 words
+  P1 draft: 600 words
+  P2 sweep: 489 words (thinkingmachines/inkling-small)
+  SCOREBOARD ROW: | pol-grajdani-m2 | current | thinkingmachines/inkling-small -> thinkingmachines/inkling-s | 489 | 0/0.0 | FAIL(2) | n/a
+
+[6/10]
+
+=== his-sssr-m2 | Разпадът на СССР и краят на bipolarnия свят | current ===
+  corpus: 0 words
+  P1 draft: 459 words
+  OR(qwen/qwen3.5-plus-02-15) failed: IncompleteRead: IncompleteRead(572 bytes read)
+  P2 sweep: 459 words (qwen/qwen3.5-plus-02-15)
+  SCOREBOARD ROW: | his-sssr-m2 | current | qwen/qwen3.5-plus-02-15 -> qwen/qwen3.5-plus-02-15 | 459 | ?/? | FAIL(22) | n/a | n/a | 0.0 |
+
+[7/10]
+
+=== phi-germania-m2 | Обединението на Германия през 1990 година | current ===
+  corpus fetch failed for Обединение на Германия: URLError
+  corpus: 0 words
+  OR(z-ai/glm-5.2) failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+[8/10]
+
+=== glo-migracii-m2 | Миграционните потоци и Европейският съюз | current ===
+  corpus fetch failed for Миграция: URLError
+  corpus fetch failed for Европейски съюз: URLError
+  corpus: 0 words
+  OR(deepseek/deepseek-pro-latest) failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+[9/10]
+
+=== pol-partii-m2 | Политическите партии и партийните системи | current ===
+  corpus fetch failed for Политическа партия: URLError
+  corpus fetch failed for Партийна система: URLError
+  corpus: 0 words
+  OR(mistralai/mistral-medium-3.1) failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+[10/10]
+
+=== eng-coldwar-m2 | The Cold War: Origins, Crises and the End of Bipol | current ===
+  corpus fetch failed for Cold War: URLError
+  corpus: 0 words
+  OR(moonshotai/kimi-k2.5) failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+BATCH DONE — scoreboard: C:\Users\User\Desktop\PERFORM\realms\06-university\state\benchmark\scoreboard.md

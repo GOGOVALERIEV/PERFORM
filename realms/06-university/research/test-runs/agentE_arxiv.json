@@ -1,0 +1,32 @@
+{
+ "all:\"paraphrasing evades detectors\"": {
+  "error": "HTTP Error 406: Not Acceptable"
+ },
+ "all:\"recursive paraphrasing\" AND all:\"AI generated text\"": {
+  "error": "HTTP Error 406: Not Acceptable"
+ },
+ "all:\"evade AI-text detection\"": {
+  "error": "HTTP Error 406: Not Acceptable"
+ },
+ "all:\"translation\" AND all:\"AI-generated text detection\"": {
+  "error": "HTTP Error 406: Not Acceptable"
+ },
+ "all:\"perplexity\" AND all:\"burstiness\" AND all:detection": {
+  "error": "HTTP Error 406: Not Acceptable"
+ },
+ "all:\"detectGPT\" AND all:evasion": {
+  "error": "HTTP Error 406: Not Acceptable"
+ },
+ "all:\"TempParaphraser\"": {
+  "error": "HTTP Error 406: Not Acceptable"
+ },
+ "all:\"attacking\" AND all:\"AI text detectors\"": {
+  "error": "HTTP Error 406: Not Acceptable"
+ },
+ "all:\"bypassing\" AND all:\"AI content detection\"": {
+  "error": "HTTP Error 406: Not Acceptable"
+ },
+ "all:\"watermark\" AND all:\"paraphrase\" AND all:evade": {
+  "error": "HTTP Error 406: Not Acceptable"
+ }
+}

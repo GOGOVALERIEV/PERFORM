@@ -1,0 +1,31 @@
+LANE 1: FLIP.BG LAPTOP CATALOG
+budget in BGN: 587
+products found on /laptop/apple/: 32
+
+== ALL MACBOOKS ON FLIP.BG (price BGN | model) ==
+  369.99 BGN ( 189.2 EUR) | iPhone SE 2020 64 GB <== UNDER BUDGET
+  599.99 BGN ( 306.8 EUR) | iPhone 11 64 GB <== UNDER BUDGET
+  749.99 BGN ( 383.5 EUR) | iPhone 11 Pro 64 GB
+ 1129.99 BGN ( 577.8 EUR) | iPhone 13 mini 128 GB
+ 1229.99 BGN ( 628.9 EUR) | iPhone 12 Pro 256 GB
+ 1269.99 BGN ( 649.3 EUR) | iPhone 12 Pro Max 128 GB
+ 1299.99 BGN ( 664.7 EUR) | iPhone 13
+ 1599.99 BGN ( 818.1 EUR) | Samsung Galaxy S24 5G
+ 1649.00 BGN ( 843.1 EUR) | iPhone 11 64 GB
+ 1759.99 BGN ( 899.9 EUR) | iPhone 13 Pro Max 128 GB
+ 1949.99 BGN ( 997.0 EUR) | iPhone 13 pro 256 GB
+ 2279.00 BGN (1165.2 EUR) | Galaxy S22 5G Dual Sim 128 GB
+ 2289.00 BGN (1170.3 EUR) | iPhone 12 64 GB
+ 2329.99 BGN (1191.3 EUR) | iPhone 15
+ 2459.99 BGN (1257.8 EUR) | iPhone 14 Pro Max
+ 2469.00 BGN (1262.4 EUR) | iPhone 11 Pro Max 64 GB
+ 2899.00 BGN (1482.2 EUR) | iPhone 12 Pro 128 GB
+ 2899.99 BGN (1482.7 EUR) | iPhone 15 Pro
+ 3349.00 BGN (1712.3 EUR) | Galaxy S22 Ultra 5G Dual Sim 128 GB
+ 3499.00 BGN (1789.0 EUR) | iPhone 12 Pro Max 128 GB
+ 3499.99 BGN (1789.5 EUR) | iPhone 16 Pro
+ 3599.99 BGN (1840.6 EUR) | iPhone 17
+ 3799.99 BGN (1942.9 EUR) | Samsung Galaxy S25 Ultra 5G
+ 4179.00 BGN (2136.7 EUR) | iPhone 13 Pro 128 GB
+
+== CHEAPEST LISTING DETAILS ==

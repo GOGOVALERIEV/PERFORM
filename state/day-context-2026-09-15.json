@@ -1,0 +1,32 @@
+{
+  "day_start": {
+    "label": "Day Start",
+    "answer": "today i will sleap in 2 3 woke up at 1",
+    "timestamp": "2026-09-15T19:02:33.543764"
+  },
+  "fixed_walls": {
+    "label": "Fixed Walls",
+    "answer": "nothing",
+    "timestamp": "2026-09-15T19:02:33.543764"
+  },
+  "breaks": {
+    "label": "Breaks",
+    "answer": "dinner 8:30",
+    "timestamp": "2026-09-15T19:02:33.543764"
+  },
+  "deep_work_hours": {
+    "label": "Deep Work Capacity",
+    "answer": "5 at least",
+    "timestamp": "2026-09-15T19:02:33.543764"
+  },
+  "must_do": {
+    "label": "Must Do",
+    "answer": "lear the mashine",
+    "timestamp": "2026-09-15T19:02:33.543764"
+  },
+  "today_tasks": {
+    "label": "Today's Tasks",
+    "answer": "only the mashine",
+    "timestamp": "2026-09-15T19:02:33.543764"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fetchedAt": 1789860583623,
+  "finalUrl": "https://www.emag.bg/vynshen-ssd-samsung-t7-prenosim-1tb-usb-3-2-titan-grey-mu-pc1t0t-ww/pd/D85X32MBM/",
+  "httpStatus": 200,
+  "title": "Външен SSD Samsung T7, Преносим, 1TB, USB 3.2, Titan Grey - eMAG.bg",
+  "price": {
+    "amount": 169.88,
+    "currency": "EUR"
+  },
+  "signals": {
+    "warranty": true,
+    "returnPolicy": false,
+    "official": false,
+    "storageRisk": true
+  },
+  "cached": false
+}

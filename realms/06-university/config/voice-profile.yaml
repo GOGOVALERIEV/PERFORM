@@ -1,0 +1,52 @@
+# VOICE PROFILE — persona "G" (George's papers) — v1 CONSTRUCTED VOICE
+# REALITY (George, 2026-09-17): George never writes papers himself. There is no
+# "natural George voice" to sample. So the voice is CONSTRUCTED and must stay
+# CONSISTENT — consistency is the armor, because professors compare a series of
+# papers by the same author, not against handwriting.
+# Valeria's papers use HER natural voice as reference (she writes them).
+# The phrase-audit (6-gram scan) is MANDATORY for the pair — two LLM voices can
+# accidentally rhyme; the dial-settings divergence is what keeps them apart.
+
+name: "G (constructed persona for George's submissions)"
+design: "stable 1st-year register: decent, careful, slightly informal academic"
+
+# Fixed measurable targets — stylecheck.py enforces these; deviation = rewrite
+sentence_stats:
+  mean_words: 13          # target band 11-16
+  short_fraction: 0.15    # share of sentences <= 7 words (band 0.10-0.25)
+  sigma_over_mean: 0.45   # burstiness floor (A9 gate: >= 0.35)
+paragraph_stats:
+  mean_sentences: 4
+  min: 1                  # at least one 1-2 sentence punch paragraph per page
+  max: 7
+  sigma_over_mean: 0.30
+
+lexical_signature:        # recurring but sparse — 2-3 uses per 1000 words, not more
+  particles: ["пък", "ама", "тоест", "все пак"]
+  collocations: ["давам си сметка", "прави впечатление", "излиза, че"]
+  self_reference: ["мисля, че", "ми се струва"]
+punctuation:
+  - "dash for asides (—), ~1 per 300 words"
+  - "occasional parenthesis"
+
+typical_openings: ["a concrete noun/fact", "a short claim sentence"]
+human_trace: ">= 2 student marks per 1000 words (SC-A10 checklist)"
+
+avoid_list:               # banned at generation (counter3 tic kill-list)
+  - "В днешната статия"
+  - "В настоящия текст"
+  - "В заключение може да се каже"
+  - "Обобщавайки казаното"
+  - "От една страна ... От друга страна"
+  - "Важно е да се отбележи"
+  - "В съвременния свят"
+  - "Освен това"            # max 1 per document
+  - "може да се каже, че"
+
+# CONSISTENCY RULES (replaces 'sample from real writing'):
+# 1. Every paper of George's runs stylecheck.py; stats must sit in the bands above.
+# 2. First and last paragraph hand-set by George from the outline (SC-11) — the only
+#    genuinely 'his' text; it anchors the persona.
+# 3. Same persona across ALL submissions this semester (styleprint regression later).
+# 4. Valeria's papers: her natural register, measured by the same stylecheck for
+#    reference; the two personas must NOT match (styleprint cross-check <= 0.70).

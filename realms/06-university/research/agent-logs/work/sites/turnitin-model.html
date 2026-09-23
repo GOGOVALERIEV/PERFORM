@@ -1,0 +1,853 @@
+URL: https://guides.turnitin.com/hc/en-us/articles/28294949544717-AI-writing-detection-model
+STATUS: 200
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <!-- v27948 -->
+
+
+  <title>AI writing detection model &ndash; Turnitin Guides</title>
+
+  
+
+  <meta name="description" content="On this page, review any information or notes related to our most-recent releases for Turnitin's AI writing detection model.  2026..." /><meta property="og:image" content="https://guides.turnitin.com/hc/theming_assets/01JM22FA29VN0YYARZ226CQR0Y" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Turnitin Guides" />
+<meta property="og:title" content="AI writing detection model" />
+<meta property="og:description" content="On this page, review any information or notes related to our most-recent releases for Turnitin's AI writing detection model.
+
+2026 release notes
+
+
+May 2026 
+
+February 2026 
+
+
+
+2025 release notes
+
+O..." />
+<meta property="og:url" content="https://guides.turnitin.com/hc/en-us/articles/28294949544717-AI-writing-detection-model" />
+<link rel="canonical" href="https://guides.turnitin.com/hc/en-us/articles/28294949544717-AI-writing-detection-model">
+<link rel="alternate" hreflang="en-us" href="https://guides.turnitin.com/hc/en-us/articles/28294949544717-AI-writing-detection-model">
+<link rel="alternate" hreflang="x-default" href="https://guides.turnitin.com/hc/en-us/articles/28294949544717-AI-writing-detection-model">
+
+  <link rel="stylesheet" href="//static.zdassets.com/hc/assets/application-dfda240c40477db2e8cc0ad93adeb1eb.css" media="all" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/hc/theming_assets/11767052/17483334371725/style.css?digest=49000087814669">
+
+  <link rel="icon" type="image/x-icon" href="/hc/theming_assets/01J09TQ7PPACH8986243SMR7KJ">
+
+    
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/styles/github.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
+<link rel="stylesheet" href="/hc/theming_assets/01J09TQ6JKCZGD7W8XJMXB2R01" />
+<script src="//cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js"></script>
+<script>
+  window.LotusConfig = {};
+  LotusConfig.css = {
+    activeClass: 'is-active',
+    hiddenClass: 'is-hidden'
+  };
+  LotusConfig.signedIn = false;
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@ryangjchandler/spruce@2.x.x/dist/spruce.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js"></script>
+<script>
+  window.Spruce.store('mobileMenu', {
+    isOpen: false,
+  });
+</script>
+<script src="/hc/theming_assets/01J09TQ62GN5K2RER7D2P0GCYF"></script>
+<script src="/hc/theming_assets/01J09TQ6BMGVKAGD63GBJB330K"></script>
+<script src="/hc/theming_assets/01J09TQ6B5YXYFBJY90X3QMF7G"></script>
+<script src="/hc/theming_assets/01J09TQ5CRH8FNAZH1FB9Q9FDE"></script>
+<script src="/hc/theming_assets/01J09TQ5RGXETFB9G0MF62WGKM"></script>
+<script src="/hc/theming_assets/01J09TQ65FTP6340VB29K3EY4P"></script>
+<script src="/hc/theming_assets/01J09TQ60C1X7SJ5ZAAMQTNQCY"></script>
+<script src="/hc/theming_assets/01J09TQ5BX1S9FPJRVZAGXEGFC"></script>
+<script src="/hc/theming_assets/01J09TQ5M4WSFN26AQXAW3DYHQ"></script>
+<script src="/hc/theming_assets/01J09TQ5R34SDX70GNBMA9F1X5"></script>
+<script src="/hc/theming_assets/01J09TQ60DQ0GRZZJF68RVEH0M"></script>
+
+<script src="https://cdn.jsdelivr.net/combine/npm/vue@2.6.12/dist/vue.min.js,npm/survey-vue@1.9.72,npm/survey-vue-ui@1.9.72,npm/vue-spinner@1.0.3/dist/vue-spinner.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- KaTeX CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+
+<!-- KaTeX core -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+
+<!-- KaTeX auto-render -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+<!-- KaTeX mhchem extension -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/mhchem.min.js"></script>
+
+<!-- Initialization with mhchem support -->
+<script>
+  window.addEventListener("load", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$$", right: "$$$", display: true},
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false}
+      ],
+    });
+  });
+</script>
+
+<link rel='stylesheet' media='all' href='//www.envoydev.co/envoydev/turnitin/envoy-dev.css?ver=3' id='stylesheet' />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
+<style>
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.lexend-deca-<uniquifier > {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  
+/* fix for scroll-to-top */
+.lt-scroll-to-top { 
+  display: block !important; 
+  color: #003D46;
+  border: 3px solid #003D46;
+}
+  @media (max-width: 770px) {
+  .lt-scroll-to-top {
+    display: none !important;
+  }
+</style>
+
+<script>
+    var HC = window.HC || {};
+    HC.SETTINGS = HC.SETTINGS || {};
+    HC.SETTINGS = {
+      locale: "en-us",
+    };
+</script>
+  
+
+  
+</head>
+<body class="">
+  
+  
+  
+
+  <a class="lt-skip-navigation" tabindex="1" href="#main-content">Skip to main content</a>
+<div class="lt-layout">
+  <header class="header lt-topbar lt-container lt-py-4 lt-mb-8 lt-d-print-none" data-topbar>
+    <div class="lt-container-inner lt-d-flex lt-align-items-center lt-justify-content-between lt-w-100">
+      <div class="lt-d-flex lt-align-items-center">
+        <a title="Home" href="/hc/en-us">
+        <img class="lt-topbar__logo lt-flex-shrink-0" src="/hc/theming_assets/01JM22FA29VN0YYARZ226CQR0Y" alt="Logo">
+        </a>
+        
+      </div>
+
+      <button
+      class="lt-menu-toggle"
+      aria-label="Toggle navigation menu"
+      aria-controls="user-nav"
+      x-data="{}"
+      x-bind:aria-expanded="$store.mobileMenu.isOpen"
+      x-bind:class="{'is-active': $store.mobileMenu.isOpen}"
+      x-on:click="$store.mobileMenu.isOpen = !$store.mobileMenu.isOpen"
+      x-on:keydown.escape="$store.mobileMenu.isOpen = false"
+      >
+      <span></span>
+    </button>
+    <nav
+    class="lt-topbar__controls lt-d-flex lt-flex-column lt-align-items-start lt-flex-lg-row lt-align-items-lg-center"
+    id="user-nav"
+    x-data="{}"
+    x-bind:class="{'is-active': $store.mobileMenu.isOpen}"
+    x-on:keydown.escape="$store.mobileMenu.isOpen = false">
+    <nav class="user-nav" id="user-nav" aria-label="User navigation">
+      <ul class="user-nav-list">
+        
+        <div class="product-individual-status">
+          <li class="system-status" id="product" data-status-id="s6207dlh9dgl">
+            <a href="#" >System Status</a>
+          </li>
+        </div>
+        
+        
+      </ul>
+    </nav>
+     <!-- <ul class="sign-in-link-container">
+        
+          <li>
+            <a class="sign-in" rel="nofollow" data-auth-action="signin" title="Opens a dialog" role="button" href="/hc/en-us/signin?return_to=https%3A%2F%2Fguides.turnitin.com%2Fhc%2Fen-us%2Farticles%2F28294949544717-AI-writing-detection-model">
+              Sign in
+            </a>
+          </li>
+        
+      </ul> -->
+    
+
+
+  <div class="lt-dropdown lt-dropdown--topbar lt-dropdown--language-selector language-selector">
+    <button class="lt-dropdown-toggle lt-btn lt-btn--topbar" aria-haspopup="true">
+      English (United States)
+    </button>
+    <span class="lt-dropdown-menu lt-dropdown-menu--topbar" role="menu">
+      
+      <a href="/hc/change_language/ar?return_to=%2Fhc%2Far" dir="rtl" rel="nofollow" role="menuitem">
+        العربية
+      </a>
+      
+      <a href="/hc/change_language/de?return_to=%2Fhc%2Fde" dir="ltr" rel="nofollow" role="menuitem">
+        Deutsch
+      </a>
+      
+      <a href="/hc/change_language/el?return_to=%2Fhc%2Fel" dir="ltr" rel="nofollow" role="menuitem">
+        Ελληνικά
+      </a>
+      
+      <a href="/hc/change_language/es?return_to=%2Fhc%2Fes" dir="ltr" rel="nofollow" role="menuitem">
+        Español
+      </a>
+      
+      <a href="/hc/change_language/fr?return_to=%2Fhc%2Ffr" dir="ltr" rel="nofollow" role="menuitem">
+        Français
+      </a>
+      
+      <a href="/hc/change_language/it?return_to=%2Fhc%2Fit" dir="ltr" rel="nofollow" role="menuitem">
+        Italiano
+      </a>
+      
+      <a href="/hc/change_language/ja?return_to=%2Fhc%2Fja" dir="ltr" rel="nofollow" role="menuitem">
+        日本語
+      </a>
+      
+      <a href="/hc/change_language/ko?return_to=%2Fhc%2Fko" dir="ltr" rel="nofollow" role="menuitem">
+        한국어
+      </a>
+      
+      <a href="/hc/change_language/nl?return_to=%2Fhc%2Fnl" dir="ltr" rel="nofollow" role="menuitem">
+        Nederlands
+      </a>
+      
+      <a href="/hc/change_language/pt-br?return_to=%2Fhc%2Fpt-br" dir="ltr" rel="nofollow" role="menuitem">
+        Português do Brasil
+      </a>
+      
+      <a href="/hc/change_language/sv?return_to=%2Fhc%2Fsv" dir="ltr" rel="nofollow" role="menuitem">
+        Svenska
+      </a>
+      
+      <a href="/hc/change_language/tr?return_to=%2Fhc%2Ftr" dir="ltr" rel="nofollow" role="menuitem">
+        Türkçe
+      </a>
+      
+      <a href="/hc/change_language/vi?return_to=%2Fhc%2Fvi" dir="ltr" rel="nofollow" role="menuitem">
+        Tiếng Việt
+      </a>
+      
+      <a href="/hc/change_language/zh-cn?return_to=%2Fhc%2Fzh-cn" dir="ltr" rel="nofollow" role="menuitem">
+        简体中文
+      </a>
+      
+      <a href="/hc/change_language/zh-tw?return_to=%2Fhc%2Fzh-tw" dir="ltr" rel="nofollow" role="menuitem">
+        繁體中文
+      </a>
+      
+    </span>
+  </div>
+
+  
+  
+</nav>
+</div>
+</header>
+<div class="lt-layout__main">
+
+  
+  <script src="https://cdn.statuspage.io/se-v2.js"></script>
+
+  <script>
+    var productStatuses = document.querySelectorAll('.product-statuses li, .product-individual-status li');
+
+    productStatuses.forEach(function(statusItem) {
+      var statusId = statusItem.getAttribute('data-status-id');
+      var statusName = statusItem.getAttribute('id');
+
+      var sp = new StatusPage.page({
+        page: statusId
+      });
+
+      sp.summary({
+        success: function(data) {
+          console.log('data',data)
+          var statusIndicator = data.status.indicator;
+          var className = '';
+
+          switch (statusIndicator) {
+            case 'none':
+            className = 'status-ok';
+            break;
+            case 'minor':
+            className = 'status-minor';
+            break;
+            case 'major':
+            className = 'status-major';
+            break;
+            case 'critical':
+            className = 'status-critical';
+            break;
+            default:
+            className = 'status-unknown';
+          }
+          statusItem.classList.add(className);
+          statusItem.querySelector('a').setAttribute('href' , data.page.url);
+
+          if(statusName == "ithenticate"){
+            var statusIndicator = data.components[3].status;
+            var className = '';
+            switch (statusIndicator) {
+              case 'operational':
+              className = 'status-ok';
+              break;
+              case 'minor':
+              className = 'status-minor';
+              break;
+              case 'major':
+              className = 'status-major';
+              break;
+              case 'critical':
+              className = 'status-critical';
+              break;
+              default:
+              className = 'status-unknown';
+            }
+            statusItem.className = '';
+            statusItem.classList.add(className);
+          }
+        },
+        error: function() {
+          console.error('Failed to fetch status for ' + statusId);
+        }
+      });
+    });
+
+  </script>
+
+
+  <main role="main">
+    
+
+<div class="lt-search-box lt-container lt-py-5 lt-search-box--small lt-d-print-none">
+  <div class="lt-container-inner">
+    <form role="search" class="search" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input type="hidden" name="utf8" value="&#x2713;" autocomplete="off" /><input type="search" name="query" id="query" placeholder="Search" autocomplete="off" aria-label="Search" /></form>
+  </div>
+</div>
+
+<div class="lt-breadcrumbs-wrapper lt-mb-8 lt-container lt-d-print-none">
+  <div class="lt-container-inner"><ol class="breadcrumbs">
+  
+    <li title="Turnitin Guides">
+      
+        <a href="/hc/en-us">Turnitin Guides</a>
+      
+    </li>
+  
+    <li title="Academic integrity tools">
+      
+        <a href="/hc/en-us/categories/22037225052173-Academic-integrity-tools">Academic integrity tools</a>
+      
+    </li>
+  
+    <li title="AI writing">
+      
+        <a href="/hc/en-us/sections/22773792790797-AI-writing">AI writing</a>
+      
+    </li>
+  
+</ol>
+</div>
+</div>
+
+<div class="lt-container article-page">
+  <div class="lt-container-inner">
+    <div class="lt-article-container" id="main-content">
+      <div class="lt-article-container__column lt-article-container__sidenav">
+        <div data-sidenav='{"mobileBreakpoint": 991}'></div>
+      </div>
+      <div class="lt-article-container__column lt-article-container__article">
+        <article class="lt-article lt-mb-6" data-article itemscope itemtype="http://schema.org/Article">
+          <header>
+            <h1 class="lt-article__title lt-mb-4 lt-fs-3 lt-fs-md-1" itemprop="name">
+              
+              AI writing detection model
+            </h1>
+
+            <div class="lt-d-sm-flex lt-justify-content-between lt-mb-4 lt-align-items-start">
+              <div class="lt-mb-2 lt-me-sm-4">
+                <div class="lt-entry-info ">
+                  
+                  <div class="lt-entry-info__content">
+                    
+                   <!-- <div class="lt-meta">
+                      
+                        Updated <time datetime="2026-05-15T08:03:20Z" title="2026-05-15T08:03:20Z" data-datetime="relative">May 15, 2026 08:03</time>
+                      
+                    </div> -->
+
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="lt-article-subscribe lt-d-flex lt-d-print-none lt-align-items-center">
+                
+                  <button class="lt-btn lt-btn--print" onclick="javascript:print();">
+                    <span class="fas fa-print" aria-hidden="true">
+                    </span>
+                  </button>
+                
+                
+
+                
+              </div>
+            </div>
+          </header>
+<div class="article-body">
+          <div class="lt-article__body" itemprop="articleBody">
+            <p>On this page, review any information or notes related to our most-recent releases for Turnitin's AI writing detection model.</p><div class="accordion accordion--colored">
+<div class="accordion__item">
+<div class="accordion__item-title"><strong>2026 release notes</strong></div>
+<div class="accordion__item-content"><ul>
+<li data-list-item-id="ec8f22f0f08b5a59a1f5eb65590f7225f">
+<a href="#h_01J7KP9CQZ6P0BNKDDVN7A190F">May 2026</a><a>&nbsp;</a>
+</li>
+<li data-list-item-id="ecb473523d850853249af4e45e58e3d9b"><a href="#h_01KQWM1ZSYPGKGESG2YZ46ZYJZ">February 2026&nbsp;</a></li>
+</ul></div>
+</div>
+<div class="accordion__item">
+<div class="accordion__item-title"><strong>2025 release notes</strong></div>
+<div class="accordion__item-content"><ul>
+<li data-list-item-id="ecb9a5c2379c919c4a3511ee8a77c3f15"><a href="#h_01KH9T23ETTSEADECR392VP7D2">October 2025</a></li>
+<li data-list-item-id="e5b83cb7038ea3c460c07192baf6b38a3"><a href="#01K7HQX3HG7VX3T7GVBT3M98KF">August 2025</a></li>
+<li data-list-item-id="e656aef178c705dc91837de22679d2352"><a href="#h_01K71JHCD3PN1KP9H8QSGFDVXD">April 2025</a></li>
+</ul></div>
+</div>
+<div class="accordion__item">
+<div class="accordion__item-title"><strong>2024 release notes</strong></div>
+<div class="accordion__item-content"><ul>
+<li data-list-item-id="e06a2315b7f85dfe8b352de495660d5f0"><a href="#01JQVJ727PK1Q3A72QW42XEST5">September 2024</a></li>
+<li data-list-item-id="e15accdb65251fcc0e207cbda8edc30f0"><a href="#h_01HZFEBT45XNNNNQ74TQG02FFD">July 2024</a></li>
+</ul></div>
+</div>
+<div class="accordion__item">
+<div class="accordion__item-title"><strong>2023 release notes</strong></div>
+<div class="accordion__item-content"><ul>
+<li data-list-item-id="ecbe84538858b15dda40361519b15d5b8"><a href="#h_01J091JFRNJ81ZG03SJY182966">December 2023</a></li>
+<li data-list-item-id="e183d0884619e27e1641f55dbfdac6b55"><a href="#01J2EJ71S7C2ARXD7VBK1WMMGV">August 2023</a></li>
+<li data-list-item-id="ee47ad09b45f05fe53f86ac6b1abc2fcb"><a href="#01J2EJ7BCGZV9XB6XB6S90RMRJ">May 2023</a></li>
+</ul></div>
+</div>
+</div><h2 id="h_01HZFEA39VEZEMD6M66MV43BM3">2026 release notes</h2><h3 id="h_01J7KP9CQZ6P0BNKDDVN7A190F">May 2026</h3><h4 id="h_01KQWKY1E6ZADT8D2X75B9KKXG">2026 May 5</h4><h3 id="h_01KQWKY5FJY86BHFA2QPM48YS6">Spanish language AI writing detection updates</h3><p>We have improved AI detection in our Spanish-language AI writing model while minimizing false positives.&nbsp;</p><p>No changes to your settings are required. There are no visual changes to the AI writing report or the highlighting within the report.&nbsp;</p><p>This release will not retroactively update previously-generated AI writing reports. To view the AI writing score generated by this update, existing submissions must be resubmitted.<br>&nbsp;</p><h3 id="h_01KQWM1ZSYPGKGESG2YZ46ZYJZ">February 2026</h3><h4 id="h_01J7KNYCHRAJZPG43TEJK4Y4FY">2026 February 12</h4><h3 id="h_01J7KNH47AP5697NG298YAY6SB">AI writing detection updates</h3><p>We have updated our AI writing detection model to improve recall while maintaining a low false positive rate.</p><p>This release does not require any changes to your settings. There are no visual changes to the AI writing report or the highlighting within the report.</p><p>This release will not retroactively update previously-generated AI writing reports. To view the AI writing score generated by this update, existing submissions must be resubmitted.</p><hr><h2 id="h_01KH9T23ETH83G9G64XMSJTQQG">2025 release notes</h2><h3 id="h_01KH9T23ETTSEADECR392VP7D2">October 2025</h3><h4 id="h_01KH9T23ET999RND87BVGT77R5">2025 October 14</h4><h3 id="h_01KH9T23ETE29R23D80GGXREAV">AI writing detection updates</h3><p>We have updated our AI writing detection model to improve recall while maintaining a low false positive rate.</p><p>This release does not require any changes to your settings. There are no visual changes to the AI writing report or the highlighting within the report.</p><p>This release will not retroactively update previously-generated AI writing reports. To view the AI writing score generated by this update, existing submissions must be resubmitted.</p><hr><h3 id="01K7HQX3HG7VX3T7GVBT3M98KF">August 2025</h3><h4 id="01K7HQX3HG8D0Y4251481EF42J">2025 August 27</h4><h3 id="01K7HQX3HHBA5P7WGVRNT0MJR8">AI writing detection updates</h3><h4 id="01K7HQX3HHT7FDWD16PAR3466X"><strong>AI writing detection capabilities now includes the detection of AI bypasser tools</strong></h4><p>Turnitin is excited to release an update to the AI writing detection capabilities that includes detection of the likely use of AI bypasser tools. These tools attempt to modify AI-generated text to appear more human-like, with the goal of avoiding detection by AI writing indicators.</p><p>With this release, the ‘<strong>AI-generated only</strong>’ category in the AI writing report will now include the percentage of AI-generated text that may have been modified by an AI bypasser tool.</p><hr><h3 id="h_01K71JHCD3PN1KP9H8QSGFDVXD">April 2025</h3><h4 id="h_01K71JHCD436HPMC5HAWNBZVAN">2025 April 2</h4><h3 id="h_01K71JHCD4PZ0B5F73MGQFW629">New AI detection writing detection capabilities for Japanese submissions</h3><p>Turnitin is excited to release its AI writing detection capabilities in Japanese to help educators uphold academic integrity for Japanese language submissions.&nbsp;</p><p>With this release, our AI writing detector can process submissions written in Japanese for text that was likely AI-generated. Once submitted, a Japanese AI writing report is generated for instructors to review. Previously submitted Japanese assignments can be checked with our AI writing detection when they are re-submitted to Turnitin and if you have AI writing enabled for your account.&nbsp;</p><p>Please note our Japanese AI writing model is a different model than our and models. Turnitin’s Japanese AI model has detection capabilities that have been trained with Japanese language writing and to detect text likely generated with the GPT-4 (version 0613), GPT4-o (released 13/05/2024 &amp; 06/08/2024), and GPT-4o-mini (released on 18/07/2024) large language models. As our Japanese and English AI detection capabilities differ, please read more in our <a href="https://guides.turnitin.com/hc/ja/articles/28477544839821-">Japanese AI Writing FAQ.</a>&nbsp;</p><hr><h2 id="01JQVJ727P791NBS8FMEZRRP2F">2024 release notes</h2><h3 id="01JQVJ727PK1Q3A72QW42XEST5">September 2024</h3><h4 id="01JQVJ727PMYS9MFTCCFFZXAZX">2024 September 12</h4><h3 id="01JQVJ727PB7J2RCXNS7AKHDD5">New AI detection writing detection capabilities for Spanish submissions</h3><p>Turnitin is excited to release its AI writing detection capabilities in Spanish to help educators uphold academic integrity for Spanish language submissions. &nbsp;</p><p>With this release, our AI writing detecto r can process submissions in Spanish for text that was likely AI-generated. Once submitted, a Spanish AI writing report is generated for instructors to review. Previously submitted Spanish assignments can be checked with our AI writing detection when they are re-submitted to Turnitin and if you have AI writing enabled for your account.&nbsp;</p><p>Please note our Spanish AI writing model is a different model than our model. Turnitin’s Spanish AI model has detection capabilities that have been trained with Spanish language writing and to detect text likely generated with the GPT-3.5 and GPT-4 large language models.&nbsp;</p><hr><h3 id="h_01HZFEBT45XNNNNQ74TQG02FFD">July 2024</h3><h4 id="h_01HZFPQW5TJ40AWS3PZC6EVJZ0">2024 July 16th</h4><h3 id="h_01J2EHRPMXG4FMKC2A55K88S70">AI writing detection updates</h3><h4 id="h_01J2EJG9X8D3MPZ9S96H7Y7T7C"><strong>Interactive detection categories</strong></h4><p>With this release, the AI writing report now displays a submission’s overall percentage of text detected as AI and a breakdown of that score in two interactive categories:</p><ul>
+<li data-list-item-id="eab30deda08baa604cf03efb1662132b5">
+<strong>AI-generated only </strong>- qualifying text that was likely generated from a Large Language Model (LLM).</li>
+<li data-list-item-id="e615856274760ebc879dd3b001c3af64c">
+<strong>AI-generated text that was AI-paraphrased </strong>- qualifying text that was likely AI-generated and then was likely revised using an AI-paraphrasing tool or AI word spinner, such as Quillbot.</li>
+</ul><p>These categories provide more granularity into what AI capabilities were used and where, as well as their frequency within the submission. Selecting a category will bring the first highlight detected in the submission into focus.</p><h4 id="h_01J2EJGK9S04V96VB2D1YRESSB"><strong>Increased maximum word count for detection</strong></h4><p>The AI writing report now supports submissions with up to 30,000 words of qualifying text.&nbsp;&nbsp;</p><h4 id="h_01J2EJGXWDQA8P1SSAG6CHDRTR"><strong>Scores below 20% are no longer surfaced</strong></h4><p>False positives (incorrectly flagging human-written text as AI-generated) are a possibility in AI models. To avoid potential incidence of false positives, no score or highlights are attributed for AI detection scores in the 1% to 19% range. When AI is detected below the 20% threshold in the report, it is now indicated with an asterisk (*%) and no percentage is attributed. This update goes into effect for all reports generated after this release; reports generated previous to this release will still display scores between 0-19 with an asterisk.&nbsp;</p><h4 id="h_01J2EJH46QCPBTNN76JQBFGY2Z"><strong>Updated AI writing detection chart in admin stats</strong></h4><p>Users will also see an updated AI detection chart in the administrators statistics page. Updates to the chart include new contextual help and a separate data column for AI reports with no percentage attributed (percentages within the 1-19% range), indicated with an asterisk (*%).&nbsp;</p><hr><h2 id="01J2EHQYA4G8F6XMPXQY4SCG3Y">2023 release notes</h2><h3 id="h_01J091JFRNJ81ZG03SJY182966">December 2023</h3><h4 id="h_01J091JJ0JV3QZ45TA8ZPSWYGZ">2023 December 15th</h4><h3 id="01J2EJFK076YXGKQZSMMY0RKJE">AI writing detection processing bug fix</h3><div class="callout callout--info">
+<p>We have fixed a prose text, long-form writing format bug that was inadvertently introduced in the December 6th update. This bug allowed submissions that did not meet the file requirements (less than 300 words) to be processed and given an&nbsp; AI &nbsp;writing detection score.</p>
+<p>This issue has now been resolved.</p>
+<p>Some&nbsp; AI &nbsp;reports generated in this period (6th December to 15th December 2023) did not meet the file requirements but generated an&nbsp; AI &nbsp;writing detection score. Results show that our accuracy increases with a little more text so submissions that cont ai n less than 300 words may result in an&nbsp; AI &nbsp;writing score that is likely less accurate. Please be reminded that an&nbsp; AI &nbsp;Writing score should not be used as the sole basis for adverse actions against a student.</p>
+</div><h4 id="01J2EJ0FWT4W6H39HNRCCCW21R">2023 December 6th</h4><h3 id="01J2EJ0FWTXYFMSCKA3NEVMD0B">AI writing detection updates</h3><div class="callout callout--info">
+<p>AI &nbsp;word spinners are sometimes used to avoid identification of&nbsp; AI -generated text. We now detect likely&nbsp; AI -generated text even if it may have been paraphrased using an&nbsp;AI word spinner.</p>
+<p>Our&nbsp; AI &nbsp;paraphrasing detection is incorporated into our&nbsp; AI &nbsp;writing detection capability and does not require any change to your settings. There are no visual changes to the report, or the highlighting in the report, with this update. Previous reports will need to be resubmitted to detect likely&nbsp;AI paraphrasing.</p>
+</div><hr><h3 id="01J2EJ71S7C2ARXD7VBK1WMMGV">August 2023</h3><h4 id="01J2EJ1CKN9R0S8XYYV0ER4JH3">2023 August 9th</h4><h3 id="01J2EJ1CKNH9P2VMJN8AGGANRF">AI writing detection updates and bug fixes</h3><div class="callout callout--info">
+<h4 id="h_01J2EJ2S59GRY25F1NXSZFWCQD">Processing text in tables</h4>
+<p>We are now able to process long-form prose text in tables. Resubmit to reprocess existing submissions that contain tables.</p>
+<h4 id="h_01J2EJ2S5ATK1VWK8H290MMC9V">Maximum sentence length</h4>
+<p>We have increased the maximum word count for a sentence to include lengthy sentences when processing the report.</p>
+<h4 id="h_01J2EJ2S5AYD5DC5YTFKJ6SH4G">Bibliography</h4>
+<p>We have fixed a bug that was occasionally highlighting&nbsp; AI &nbsp;writing within references listed in a bibliography. Bibliographies are now excluded when processing the&nbsp; AI &nbsp;writing report. Resubmit to reprocess existing submissions that cont ai n highlighted reference sections.</p>
+</div><hr><h3 id="01J2EJ7BCGZV9XB6XB6S90RMRJ">May 2023</h3><h4 id="01J2EJ1JEC4722RQKW2GMW4FMZ">2023 May 24th</h4><h3 id="01J2EJ1JEC83VJ6P414X2YMX1P">Updates to address our customers' false positive concerns</h3><div class="callout callout--info">
+<h4 id="h_01J2EJ40ZR7JTNBW97HRCV3NX3">Improvements in detection at the start and end of documents</h4>
+<p>Since launch, we have observed a higher incidence of false positive detection in the first few or last few sentences of a document. Many times these sentences consist of introduction or conclusion content written in a generic way. As a result, we have changed our detection logic to help reduce these false positives.</p>
+<p>We also worked on making our segment boundaries detection more precise which could lead in some rare cases to change of boundaries compared with a previous version.</p>
+<h4 id="h_01J2EJ40ZRQ8GNBCTA5A136DKM">Fix for bugs in text formatting pipeline</h4>
+<p>We have fixed a bug that was causing inconsistent text formatting that was impacting the&nbsp; AI &nbsp;writing percentage. This fix ensures that the model provides more consistent and accurate determinations.</p>
+</div>
+          </div>
+
+          
+
+          <div data-prevnext></div>
+        </article>
+
+        
+       <footer class="lt-article-vote lt-d-print-none lt-mb-6 lt-p-5">
+            <div class="h5 lt-article-vote__question">Was this article helpful?</div>
+            <div class="lt-article-vote__controls lt-mb-3">
+              <button type="button" class="lt-btn lt-btn--default lt-article-vote__item lt-article-vote__item--up" data-helper="vote" data-item="article" data-type="up" data-id="28294949544717" data-upvote-count="281" data-vote-count="522" data-vote-sum="40" data-vote-url="/hc/en-us/articles/28294949544717/vote" data-value="null" data-label="281 out of 522 found this helpful" data-selected-class="lt-article-vote__item--voted" data-as="button" aria-label="This article was helpful" aria-pressed="false">Yes</button>
+              <button type="button" class="lt-btn lt-btn--default lt-article-vote__item lt-article-vote__item--down" data-helper="vote" data-item="article" data-type="down" data-id="28294949544717" data-upvote-count="281" data-vote-count="522" data-vote-sum="40" data-vote-url="/hc/en-us/articles/28294949544717/vote" data-value="null" data-label="281 out of 522 found this helpful" data-selected-class="lt-article-vote__item--voted" data-as="button" aria-label="This article was not helpful" aria-pressed="false">No</button>
+            </div>
+            <small class="lt-article-vote__count">
+              <span class="lt-article-vote-label" data-helper="vote" data-item="article" data-type="label" data-id="28294949544717" data-upvote-count="281" data-vote-count="522" data-vote-sum="40" data-vote-url="/hc/en-us/articles/28294949544717/vote" data-value="null" data-label="281 out of 522 found this helpful">281 out of 522 found this helpful</span>
+            </small>
+          </footer> 
+        
+
+        
+
+        
+      </div>
+      <div class="lt-article-container__column lt-article-container__toc lt-d-print-none">
+        <div data-toc='{"mobileBreakpoint": 991}'></div>
+      </div>
+      
+      <div class="lt-article-container__column lt-article-container__sidebar lt-d-print-none">
+        
+          <section class="lt-section-articles">
+            <h3 class="lt-section-articles__title">Articles in this section</h3>
+            <ul class="lt-section-articles__list">
+              
+                <li class="lt-section-articles__item">
+                  <a href="/hc/en-us/articles/22774058814093-Using-the-AI-Writing-Report"
+                    class="lt-section-articles__link ">Using the AI Writing Report</a>
+                </li>
+              
+                <li class="lt-section-articles__item">
+                  <a href="/hc/en-us/articles/28457596598925-How-to-access-the-AI-Writing-Report"
+                    class="lt-section-articles__link ">How to access the AI Writing Report</a>
+                </li>
+              
+                <li class="lt-section-articles__item">
+                  <a href="/hc/en-us/articles/28477544839821-Turnitin-s-AI-writing-detection-capabilities-FAQs"
+                    class="lt-section-articles__link ">Turnitin&#39;s AI writing detection capabilities FAQs</a>
+                </li>
+              
+                <li class="lt-section-articles__item">
+                  <a href="/hc/en-us/articles/28234943089933-File-requirements-for-an-AI-Writing-Report"
+                    class="lt-section-articles__link ">File requirements for an AI Writing Report</a>
+                </li>
+              
+                <li class="lt-section-articles__item">
+                  <a href="/hc/en-us/articles/27139000787853-How-should-I-review-the-AI-Writing-report"
+                    class="lt-section-articles__link ">How should I review the AI Writing report?</a>
+                </li>
+              
+                <li class="lt-section-articles__item">
+                  <a href="/hc/en-us/articles/27139113024269-What-should-I-do-if-the-AI-writing-percentage-is-high"
+                    class="lt-section-articles__link ">What should I do if the AI writing percentage is high?</a>
+                </li>
+              
+                <li class="lt-section-articles__item">
+                  <a href="/hc/en-us/articles/27139105513229-What-questions-do-I-ask-my-student-if-AI-is-detected"
+                    class="lt-section-articles__link ">What questions do I ask my student if AI is detected?</a>
+                </li>
+              
+                <li class="lt-section-articles__item">
+                  <a href="/hc/en-us/articles/27139177065485-How-might-students-use-AI-tools-in-their-work"
+                    class="lt-section-articles__link ">How might students use AI tools in their work?</a>
+                </li>
+              
+                <li class="lt-section-articles__item">
+                  <a href="/hc/en-us/articles/28294949544717-AI-writing-detection-model"
+                    class="lt-section-articles__link is-active">AI writing detection model</a>
+                </li>
+              
+            </ul>
+            
+          </section>
+        
+       
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  </main>
+
+  </div>
+  <footer class="lt-footer lt-container lt-py-6 lt-d-print-none">
+    <div class="lt-container-inner lt-d-flex lt-flex-column lt-flex-sm-row lt-justify-content-between">
+      <div class="lt-footer__copyright copyright lt-mb-4 lt-mb-sm-0">
+        <nav class="footer-nav">
+          <a href="https://www.turnitin.com" target="_blank">Turnitin.com</a>
+          <a href="https://guides.turnitin.com/hc/en-us/sections/27126967111949-Release-notes-and-known-issues" target="_blank">Release Notes and Known Issues</a>
+          <a href="https://guides.turnitin.com/hc/en-us/articles/27377195682317-Turnitin-Services-Privacy-Policy" target="_blank">Turnitin Services Privacy Policy</a>
+          
+          <p>&copy; <span class="year">2024</span> Turnitin, LLC. All rights reserved.</p>
+        </nav>
+      </div>
+      <div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<button class="lt-scroll-to-top fa fa-angle-up lt-d-print-none lt-p-0 lt-d-none lt-d-md-flex lt-justify-content-center lt-align-items-center" data-scroll-to-top>
+  <div class="sr-only">Return to top</div>
+</button>
+
+
+  <div hidden data-lt-i18n-dictionary>
+    <div data-lt-i18n="search_placeholder">
+    </div>
+  </div>
+
+  <script>
+    var $ltDictionary = $('[data-lt-i18n-dictionary]');
+    $('[role="search"] input[type="search"]').each(function (index, el) {
+      $(el).attr('placeholder', $ltDictionary.find('[data-lt-i18n="search_placeholder"]').html());
+    });
+  </script>
+
+
+<div 
+  class="lt-backdrop"
+  x-data=""
+  x-bind:class="{'is-active': $store.mobileMenu.isOpen}"
+  x-on:click="$store.mobileMenu.isOpen = false">
+</div>
+
+
+  <div data-custom-blocks-data hidden>
+    <div data-field="url">https://guides.turnitin.com/hc/en-us/categories/20524936751757-Turnitin-in-an-LMS</div>
+    <div data-field="imageUrl">/hc/theming_assets/01J0KP145M7N3YT6S5KYQDF83R</div>
+    <div data-field="title">
+      
+        
+      
+      </div>
+    <div data-field="description">
+      
+        
+      
+    </div>
+  </div>
+
+
+
+  <div data-custom-blocks-data hidden>
+    <div data-field="url">https://guides.turnitin.com/hc/en-us/categories/21850416398221-Student-hub</div>
+    <div data-field="imageUrl">/hc/theming_assets/01J0KP5NFCG0DDGE3R30AG839S</div>
+    <div data-field="title">
+      
+        
+      
+    </div>
+    <div data-field="description">
+      
+        
+      
+    </div>
+  </div>
+
+
+
+  <div data-custom-blocks-data hidden>
+    <div data-field="url">https://guides.turnitin.com/hc/en-us/categories/22044975882637-Class-and-assignment-management</div>
+    <div data-field="imageUrl">/hc/theming_assets/01J0KP10JJF07FHKNCK0TK1KPR</div>
+    <div data-field="title">
+      
+        
+      
+    </div>
+    <div data-field="description">
+      
+        
+      
+    </div>
+  </div>
+
+
+
+  <div data-custom-blocks-data hidden>
+    <div data-field="url">https://guides.turnitin.com/hc/en-us/categories/22037225052173-Academic-integrity-tools</div>
+    <div data-field="imageUrl">/hc/theming_assets/01J0KP113KK1EEABP8ZW04D0CP</div>
+    <div data-field="title">
+      
+        
+      
+    </div>
+    <div data-field="description">
+      
+        
+      
+    </div>
+  </div>
+
+
+
+  <div data-custom-blocks-data hidden>
+    <div data-field="url">https://guides.turnitin.com/hc/en-us/categories/22045083177485-Grading-and-feedback</div>
+    <div data-field="imageUrl">/hc/theming_assets/01J0KP410PG54ZGS5SHWPKJT7H</div>
+    <div data-field="title">
+      
+        
+      
+    </div>
+    <div data-field="description">
+      
+        
+      
+    </div>
+  </div>
+
+
+
+  <div data-custom-blocks-data hidden>
+    <div data-field="url">https://guides.turnitin.com/hc/en-us/categories/22045271357837-User-profile-settings</div>
+    <div data-field="imageUrl">/hc/theming_assets/01J0KP11RWJNN3Y1H6GEXHRW6N</div>
+    <div data-field="title">
+      
+        
+      
+    </div>
+    <div data-field="description">
+      
+        
+      
+    </div>
+  </div>
+
+
+
+  <div data-custom-blocks-data hidden>
+    <div data-field="url">https://guides.turnitin.com/hc/en-us/categories/21105164377357-Administrator-hub</div>
+    <div data-field="imageUrl">/hc/theming_assets/01J0KP0YZXPRG3TSYH7N13R72C</div>
+    <div data-field="title">
+      
+        
+      
+    </div>
+    <div data-field="description">
+      
+        
+      
+    </div>
+  </div>
+
+
+
+  <div data-custom-blocks-data hidden>
+    <div data-field="url">https://guides.turnitin.com/hc/en-us/categories/21928412547469-Manage-folders-and-files</div>
+    <div data-field="imageUrl">/hc/theming_assets/01J0KP47QG8QAD2Q2HXDS1YZXQ</div>
+    <div data-field="title">
+      
+        
+      
+    </div>
+    <div data-field="description">
+      
+        
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<div hidden data-popular-searches>
+  
+    
+  
+</div>
+<script src="/hc/theming_assets/01J09TQ5JHX0H6CHBRFFEYXR5A"></script>
+<script src="/hc/theming_assets/01J09TQ5TDAS341ZK3YPXWEV4R"></script>
+<script src="/hc/theming_assets/01J09TQ69ZHEZZ5M0TKTMEQYEQ"></script>
+<script src="/hc/theming_assets/01J09TQ5CQWXT5BRV4BZMY2GJ2"></script>
+
+<script>
+  
+  const thisDate = new Date();
+  document.querySelector('.year').textContent = thisDate.getFullYear();
+</script>
+
+    <div class="powered-by-zendesk">
+  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+    <path d="M12 8.2v14.5H0zM12 3c0 3.3-2.7 6-6 6S0 6.3 0 3h12zm2 19.7c0-3.3 2.7-6 6-6s6 2.7 6 6H14zm0-5.2V3h12z" />
+  </svg>
+
+  <a target="_blank" rel="nofollow" href="https://www.zendesk.com/service/help-center/?utm_source=helpcenter&utm_medium=poweredbyzendesk&utm_campaign=text&utm_content=Turnitin">Powered by Zendesk</a>
+</div>
+
+
+  <!-- / -->
+
+  
+  <script src="//static.zdassets.com/hc/assets/en-us.40d9559b3308c0ac84df.js"></script>
+  
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"turnitin","environment":"production","name":"Turnitin"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":"","role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"external_id":null,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":null,"shared_csrf_token":null},"usage_tracking":{"event":"article_viewed","data":"BAh7CDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoPYXJ0aWNsZV9pZGwrCA2jau67GToKX21ldGF7DDoPYWNjb3VudF9pZGkDDI2zOhNoZWxwX2NlbnRlcl9pZGwrCA2op7bmDzoNYnJhbmRfaWRsKwiNSe+n5g86DHVzZXJfaWQwOhN1c2VyX3JvbGVfbmFtZUkiDkFOT05ZTU9VUwY7BlQ7AEkiCmVuLXVzBjsGVDoaYW5vbnltb3VzX3RyYWNraW5nX2lkMA==--b16b6715223404e20dc7eb868c894f7ee143bb68","url":"https://guides.turnitin.com/hc/activity"},"current_record_id":"28294949544717","current_record_url":"/hc/en-us/articles/28294949544717-AI-writing-detection-model","current_record_title":"AI writing detection model","current_text_direction":"ltr","current_brand_id":17483334371725,"current_brand_name":"Turnitin Guides","current_brand_url":"https://turnitinguides.zendesk.com","current_brand_active":true,"current_path":"/hc/en-us/articles/28294949544717-AI-writing-detection-model","show_autocomplete_breadcrumbs":true,"user_info_changing_enabled":false,"has_user_profiles_enabled":true,"has_end_user_attachments":true,"user_aliases_enabled":false,"has_anonymous_kb_voting":true,"has_multi_language_help_center":true,"show_at_mentions":false,"embeddables_config":{"embeddables_web_widget":false,"embeddables_help_center_auth_enabled":false,"embeddables_connect_ipms":false},"answer_bot_subdomain":"static","gather_plan_state":"subscribed","has_article_verification":true,"has_gather":true,"has_ckeditor":false,"has_community_enabled":false,"has_community_badges":true,"has_community_post_content_tagging":false,"has_gather_content_tags":true,"has_guide_content_tags":true,"has_user_segments":true,"has_answer_bot_web_form_enabled":false,"has_garden_modals":false,"has_auth_email_less_sso":false,"theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-2-preview","is_preview":false,"has_search_settings_in_plan":true,"theming_api_version":2,"theming_settings":{"show_translations":true,"toggle_translations":true,"body_bg":"#fff","brand_primary":"rgba(0, 60, 70, 1)","text_color":"rgba(87, 87, 87, 1)","link_color":"rgba(0, 109, 186, 1)","button_color":"rgba(128, 158, 163, 1)","border_color":"rgba(239, 244, 244, 1)","block_bg":"rgba(0, 60, 70, 1)","block_hover_bg":"rgba(102, 138, 144, 1)","brand_info":"rgba(91, 192, 222, 1)","brand_success":"rgba(0, 204, 153, 1)","brand_warning":"rgba(250, 215, 130, 1)","brand_danger":"rgba(255, 82, 82, 1)","font_size_base":"16px","heading_font":"Montserrat, sans-serif","heading_font_weight":"700","font_family_base":"'Open Sans', sans-serif","line_height_base":"1.5","logo":"/hc/theming_assets/01JM22FA29VN0YYARZ226CQR0Y","logo_height":"50px","favicon":"/hc/theming_assets/01J09TQ7PPACH8986243SMR7KJ","border_radius_base":"4px","border_width":"2px","topbar_bg":"rgba(255, 255, 255, 1)","topbar_text_color":"rgba(87, 87, 87, 1)","topbar_link_color":"rgba(0, 104, 179, 1)","topbar_button_color":"rgba(87, 87, 87, 1)","show_alert_checkbox":false,"alert_text":"Welcome to Turnitin Guides. Please visit our orientation page to help you get acquainted.","alert_url":"https://guides.turnitin.com/hc/en-us/articles/24008452116749","show_help_center_name":false,"help_center_name":"Turnitin guides","show_category_menu":false,"show_sign_in":false,"show_submit_a_request":false,"product_specific_system":true,"status_product_number":"s6207dlh9dgl","toggle_header_topics":false,"user_guides_url":"https://ithenticateguides1700265601.zendesk.com/hc/en-us","knowledge_articles_url":"https://ithenticate-sandbox.zendesk.com/hc/en-us ","footer_bg":"rgba(0, 60, 70, 1)","footer_text_color":"rgba(255, 255, 255, 1)","footer_link_color":"rgba(255, 255, 255, 1)","footer_link_one_text":"Turnitin.com","footer_link_one_url":"https://www.turnitin.com","footer_link_two_text":"Release Notes and Known Issues","footer_link_two_url":"https://guides.turnitin.com/hc/en-us/sections/27126967111949-Release-notes-and-known-issues","footer_link_three_text":"Turnitin Services Privacy Policy","footer_link_three_url":"https://guides.turnitin.com/hc/en-us/articles/27377195682317-Turnitin-Services-Privacy-Policy","footer_link_four_text":"","footer_link_four_url":"","intro_title":"User Guides","show_info_block":false,"toggle_custom_blocks":false,"toggle_promoted_articles":true,"promoted_articles_type":"list","toggle_categories":true,"category_tree_type":"boxes","toggle_recent_activities":false,"toggle_bottom_cta":false,"categories_per_line":4,"promoted_articles_per_line":2,"hero_unit_mask_bg":"rgba(80, 80, 80, 0)","hero_homepage_image":"/hc/theming_assets/01J0P24E3GZGAN5KSBCZY84C2Y","hero_unit_bg":"rgba(0, 60, 70, 1)","hero_title":"Welcome to Turnitin Guides","search_placeholder":"Search","show_hero_unit_button":true,"show_popular_searches":false,"popular_searches_label":"","popular_searches_keywords":"","custom_blocks_per_line":4,"icon_color":"rgba(0, 104, 179, 1)","icon_height":"64px","custom_block_1_toggle":true,"custom_block_1_icon":"/hc/theming_assets/01J0KP145M7N3YT6S5KYQDF83R","custom_block_1_title":"Turnitin in an LMS","custom_block_1_url":"https://guides.turnitin.com/hc/en-us/categories/20524936751757-Turnitin-in-an-LMS","custom_block_1_text":"Configuring your integration and other LMS/VLE-specific guidance","custom_block_2_toggle":true,"custom_block_2_icon":"/hc/theming_assets/01J0KP5NFCG0DDGE3R30AG839S","custom_block_2_title":"Student hub","custom_block_2_url":"https://guides.turnitin.com/hc/en-us/categories/21850416398221-Student-hub","custom_block_2_text":"Student assistance for using and understanding Turnitin ","custom_block_3_toggle":true,"custom_block_3_icon":"/hc/theming_assets/01J0KP10JJF07FHKNCK0TK1KPR","custom_block_3_title":"Class and assignment management","custom_block_3_url":"https://guides.turnitin.com/hc/en-us/categories/22044975882637-Class-and-assignment-management","custom_block_3_text":"Managing your Turnitin classes, student rosters, and a variety of assignment types","custom_block_4_toggle":true,"custom_block_4_icon":"/hc/theming_assets/01J0KP113KK1EEABP8ZW04D0CP","custom_block_4_title":"Academic integrity tools","custom_block_4_url":"https://guides.turnitin.com/hc/en-us/categories/22037225052173-Academic-integrity-tools","custom_block_4_text":"Using and understanding the Similarity Report and other Turnitin integrity tools","custom_block_5_toggle":true,"custom_block_5_icon":"/hc/theming_assets/01J0KP410PG54ZGS5SHWPKJT7H","custom_block_5_title":"Grading and feedback","custom_block_5_url":"https://guides.turnitin.com/hc/en-us/categories/22045083177485-Grading-and-feedback","custom_block_5_text":"Grading and feedback tools for a variety of assignment and submission types","custom_block_6_toggle":true,"custom_block_6_icon":"/hc/theming_assets/01J0KP11RWJNN3Y1H6GEXHRW6N","custom_block_6_title":"User profile setting","custom_block_6_url":"https://guides.turnitin.com/hc/en-us/categories/22045271357837-User-profile-settings","custom_block_6_text":"Managing your Turnitin user settings and preferences","custom_block_7_toggle":true,"custom_block_7_icon":"/hc/theming_assets/01J0KP0YZXPRG3TSYH7N13R72C","custom_block_7_title":"Administrator hub","custom_block_7_url":"https://guides.turnitin.com/hc/en-us/categories/21105164377357-Administrator-hub","custom_block_7_text":"Managing your Turnitin classes, student rosters, and a variety of assignment types","custom_block_8_toggle":true,"custom_block_8_icon":"/hc/theming_assets/01J0KP47QG8QAD2Q2HXDS1YZXQ","custom_block_8_title":"Manage folders and files","custom_block_8_url":"https://guides.turnitin.com/hc/en-us/categories/21928412547469-Manage-folders-and-files","custom_block_8_text":"Managing folders and files for Similarity and SimCheck licenses ","custom_block_9_toggle":false,"custom_block_9_icon":"/hc/theming_assets/01J09TQAVGE9WVVSRPJXM86YA1","custom_block_9_title":"","custom_block_9_url":"","custom_block_9_text":"","custom_block_10_toggle":false,"custom_block_10_icon":"/hc/theming_assets/01J09TQAVGE9WVVSRPJXM86YA1","custom_block_10_title":"","custom_block_10_url":"","custom_block_10_text":"","bottom_cta_bg":"rgba(255, 255, 255, 1)","bottom_cta_title_color":"rgba(87, 87, 87, 1)","bottom_cta_subtitle_color":"rgba(87, 87, 87, 1)","bottom_cta_button_color":"rgba(128, 158, 163, 1)","bottom_cta_title":"Can't find what you're looking for?","bottom_cta_subtitle":"Let us help you!","show_articles_in_section":true,"show_article_author":false,"show_article_comments":false,"show_follow_article":false,"show_print_article":true,"show_article_sharing":false,"show_follow_section":false,"show_follow_community_post":false,"show_print_post":false,"show_community_post_sharing":false,"show_follow_community_topic":false,"show_new_request_tip":false,"new_request_tip_background":"#f3fafc","new_request_tip_text":"","error_page_articles_title":"These articles might be helpful","hours_expiration":"120","survey_primary_color":"rgba(0, 60, 70, 1)"},"has_pci_credit_card_custom_field":true,"help_center_restricted":false,"is_assuming_someone_else":false,"flash_messages":[],"user_photo_editing_enabled":true,"user_preferred_locale":"en-us","base_locale":"en-us","login_url":"https://turnitin.zendesk.com/access?locale=en-us\u0026brand_id=17483334371725\u0026return_to=https%3A%2F%2Fguides.turnitin.com%2Fhc%2Fen-us%2Farticles%2F28294949544717-AI-writing-detection-model","has_alternate_templates":true,"has_custom_statuses_enabled":false,"has_hc_generative_answers_setting_enabled":true,"has_suggested_initial_questions_enabled":false,"has_contentful_eap":false,"has_contentful_eap_eligible":false,"has_pdf_ingestion_eap":true,"has_pdf_ingestion_eap_eligible":true,"has_guide_saas_management":false,"has_knowledge_category_translation_modal":false,"has_guide_service_catalog":true,"has_service_catalog_search_poc":true,"has_service_catalog_multibranding":true,"has_csat_reverse_2_scale_in_mobile":false,"has_unified_navigation":true,"has_unified_navigation_eap_access":true,"has_knowledge_locale_display_names":false,"has_csat_bet365_branding":false,"has_csat_flora":false,"has_csat_theming_integration_phase_1":false,"has_help_center_gen_search_follow_up_conversation":true,"chat_page_renderable":false,"version":"v27948","dev_mode":false};
+</script>
+
+  
+  
+  <script src="//static.zdassets.com/hc/assets/hc_enduser-d4171b81a1c07bebee39deeb8ac3abe9.js"></script>
+  <script type="text/javascript" src="/hc/theming_assets/11767052/17483334371725/script.js?digest=49000087814669"></script>
+  
+</body>
+</html>

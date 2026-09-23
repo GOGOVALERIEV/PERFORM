@@ -1,0 +1,14 @@
+Mission C complete. Both files delivered:
+
+- **`realms/06-university/research/agent-logs/agentC-swu-workflow.md`** — 32KB full report, VERDICT at top
+- **`realms/06-university/research/agent-logs/agentC-progress.md`** — trail, ends with DONE
+
+## What was found (the 60-second version)
+
+**The machine:** SWU's disted.swu.bg links the official StrikePlagiarism Blackboard manuals for *both* students and teachers, so the integration is confirmed ground truth. The system computes **КС1** (5+ word matches) and **КС2** (25+ word matches — the serious number) against: the internet, **SWU's own archive of past papers**, other BG universities' databases (Database Exchange Program), and RefBooks (200M+ scientific texts). It catches paraphrases (SmartMarks), letter-swap tricks, hidden characters, and optionally translated plagiarism. The AI module ("AI Content Detection", BERT-based) colors every fragment green→red by AI-probability, default threshold 80%.
+
+**The human:** The report explicitly "does not indicate plagiarism" — the professor reads, accepts/excludes fragments, and decides Accept / Send for correction / Reject. Shumen's published rules show the BG norm: **КС1 > 50% + КС2 > 5%** is "high similarity", and even then "these values do not automatically indicate plagiarism". SWU's 2014 Учебен правилник has *zero* plagiarism articles — чл. 34 is just "текущ контрол", and чл. 60 (документална измама → removal from studies) is the fraud clause.
+
+**The safe pipeline:** own outline → own sentences (source closed) → few, perfectly formatted quotes → self-check on **plag.bg** (explicitly never adds files to any comparison DB) with its AI detector → submit once, final → keep draft history as human-proof. Worst realistic case for AI suspicion: oral defense of the paper to the professor, possibly re-do the assignment; escalation to a commission only at thesis level.
+
+**Honest research gaps** (flagged in the report): search engines were nearly all bot-walled this session (Bing RSS poisoned, Brave 429'd after two queries), so no independent 2024–2026 accuracy tests of the AI module were retrievable — the 94–98% claims are vendor marketing until verified. That's the one caveat I'd want you to know before relying on the report.

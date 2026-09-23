@@ -1,0 +1,17 @@
+{
+  "fetchedAt": 1789860587863,
+  "finalUrl": "https://ardes.bg/product/1tb-ssd-intenso-external-tx500-3827460-495234",
+  "httpStatus": 200,
+  "title": "1TB SSD Intenso External TX500 - 3827460 3827460 - на топ цена",
+  "price": {
+    "amount": 171.99,
+    "currency": "EUR"
+  },
+  "signals": {
+    "warranty": true,
+    "returnPolicy": true,
+    "official": false,
+    "storageRisk": true
+  },
+  "cached": false
+}

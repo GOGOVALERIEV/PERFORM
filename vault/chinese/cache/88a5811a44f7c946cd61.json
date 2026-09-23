@@ -1,0 +1,17 @@
+{
+  "fetchedAt": 1789860679756,
+  "finalUrl": "https://www.emag.bg/vynshen-ssd-sandisk-extreme-portable-ssd-encrypted-500-gb-external-portable-usb-3-2-gen-2-256-bit-aes-sdssde61-500g-g25/pd/DMVVBKMBM/",
+  "httpStatus": 200,
+  "title": "Външен SSD SanDisk Extreme Portable - SSD - encrypted - 500 GB - external (portable) - USB 3.2 Gen 2 - 256-bit AES SDSSDE61-500G-G25 - eMAG.bg",
+  "price": {
+    "amount": 224.77,
+    "currency": "EUR"
+  },
+  "signals": {
+    "warranty": true,
+    "returnPolicy": false,
+    "official": false,
+    "storageRisk": true
+  },
+  "cached": false
+}

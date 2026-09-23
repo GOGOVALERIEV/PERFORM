@@ -1,0 +1,71 @@
+{
+  "generatedAt": "2026-09-19T23:51:27.682Z",
+  "query": "външен SSD",
+  "budgetBgn": null,
+  "items": [
+    {
+      "source": "alibaba",
+      "title": "Външен SSD 1TB (преносим)",
+      "url": "https://example.invalid/olx-nearby-ssd",
+      "price": {
+        "amount": 15,
+        "currency": "EUR"
+      },
+      "suspiciousStorage": false,
+      "notes": [
+        "Alibaba is usually wholesale: reject listings with MOQ, unclear shipping, or no Trade Assurance.",
+        "HIGH RISK (still shown): Claimed 1TB storage is implausibly cheap (~29.34 BGN); Lower-trust marketplace/seller lane.",
+        "Mostly wholesale. For a personal purchase, check MOQ, shipping, Trade Assurance, and whether the listing is actually retail."
+      ],
+      "finalUrl": "https://example.invalid/olx-nearby-ssd",
+      "httpStatus": 200,
+      "sourceLabel": "Alibaba",
+      "availability": "Browser-collected offers only; verify MOQ, shipping, and Trade Assurance before buying.",
+      "score": 17,
+      "priceBgn": 29.33745,
+      "risk": "high",
+      "riskFlags": [
+        "Claimed 1TB storage is implausibly cheap (~29.34 BGN)",
+        "Lower-trust marketplace/seller lane"
+      ],
+      "history": {
+        "firstSeen": "2026-09-19T23:51:27.679Z",
+        "seenCount": 1,
+        "previousPriceBgn": null
+      }
+    },
+    {
+      "source": "alibaba",
+      "title": "ХАРД ДИСК 2TB HardDisk Extreme Pro Portable M.2",
+      "url": "https://example.invalid/olx-risky-storage",
+      "price": {
+        "amount": 29,
+        "currency": "EUR"
+      },
+      "suspiciousStorage": true,
+      "notes": [
+        "Alibaba is usually wholesale: reject listings with MOQ, unclear shipping, or no Trade Assurance.",
+        "HIGH RISK (still shown): Brand/model wording needs independent verification; Claimed 2TB storage is implausibly cheap (~56.72 BGN); Browser collector detected an implausible storage claim; Lower-trust marketplace/seller lane.",
+        "Mostly wholesale. For a personal purchase, check MOQ, shipping, Trade Assurance, and whether the listing is actually retail."
+      ],
+      "finalUrl": "https://example.invalid/olx-risky-storage",
+      "httpStatus": 200,
+      "sourceLabel": "Alibaba",
+      "availability": "Browser-collected offers only; verify MOQ, shipping, and Trade Assurance before buying.",
+      "score": 17,
+      "priceBgn": 56.71907,
+      "risk": "high",
+      "riskFlags": [
+        "Brand/model wording needs independent verification",
+        "Claimed 2TB storage is implausibly cheap (~56.72 BGN)",
+        "Browser collector detected an implausible storage claim",
+        "Lower-trust marketplace/seller lane"
+      ],
+      "history": {
+        "firstSeen": "2026-09-19T23:51:27.679Z",
+        "seenCount": 1,
+        "previousPriceBgn": null
+      }
+    }
+  ]
+}

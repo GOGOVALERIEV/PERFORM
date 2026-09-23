@@ -1,0 +1,427 @@
+{
+ "date_collected": "2026-09-19",
+ "store": "eMAG",
+ "n_deals": 42,
+ "deals": [
+  {
+   "store": "eMAG",
+   "name": "Нивелир за окачен таван CD60, KAJAWIS, размери 40х120 мм, цвят светло сив, комплект 1 брой",
+   "price": 2.71,
+   "old_price": 3.42,
+   "discount_pct": "-20%",
+   "lowest_30d": 3.42,
+   "category": "Гипсокартон и аксесоари",
+   "url": "https://www.emag.bg/product/86572989"
+  },
+  {
+   "store": "eMAG",
+   "name": "Спортни обувки Diadora Robin 4 179084-C2763, мъжки, сиви, 44",
+   "price": 27.31,
+   "old_price": 34.46,
+   "discount_pct": "-20%",
+   "lowest_30d": 34.46,
+   "category": "Мъжки спортни обувки",
+   "url": "https://www.emag.bg/product/61284545"
+  },
+  {
+   "store": "eMAG",
+   "name": "Комплект от 6 чувала, SWJOYOL, многоцветни, 50 кг, сгъваеми, перат се",
+   "price": 9,
+   "old_price": 9.52,
+   "discount_pct": "-5%",
+   "lowest_30d": 9.52,
+   "category": "Дамски чанти",
+   "url": "https://www.emag.bg/product/98715378"
+  },
+  {
+   "store": "eMAG",
+   "name": "Раница BESTLIFE Col-Skate, 42x30x15см, отделение за лаптоп 14.1\", бежово/кафяво",
+   "price": 28.12,
+   "old_price": 30.91,
+   "discount_pct": "-9%",
+   "lowest_30d": 30.91,
+   "category": "Ученически раници",
+   "url": "https://www.emag.bg/product/99332603"
+  },
+  {
+   "store": "eMAG",
+   "name": "Раница, Lexon, черна",
+   "price": 46.45,
+   "old_price": 52.78,
+   "discount_pct": "-11%",
+   "lowest_30d": 52.78,
+   "category": "Спортни раници",
+   "url": "https://www.emag.bg/product/62441878"
+  },
+  {
+   "store": "eMAG",
+   "name": "Монитор Gaming ASUS VY249HGR, 23.8\", FHD (1920x1080), IPS, 120Hz(OC), 1ms (MPRT), SmoothMotion, Adaptive Sync, Eye Care Plus, Blue Light Fil",
+   "price": 93.17,
+   "old_price": 103.97,
+   "discount_pct": "-10%",
+   "lowest_30d": 103.97,
+   "category": "LCD & LED Монитори",
+   "url": "https://www.emag.bg/product/122767661"
+  },
+  {
+   "store": "eMAG",
+   "name": "Допълнителен контакт Promet, черен",
+   "price": 19.69,
+   "old_price": 22.94,
+   "discount_pct": "-14%",
+   "lowest_30d": 22.94,
+   "category": "Електронни аксесоари за кола",
+   "url": "https://www.emag.bg/product/62417696"
+  },
+  {
+   "store": "eMAG",
+   "name": "Суха храна за котки Royal Canin Kitten, 10 кг",
+   "price": 60.84,
+   "old_price": 64.1,
+   "discount_pct": "-5%",
+   "lowest_30d": 64.1,
+   "category": "Храна за котки",
+   "url": "https://www.emag.bg/product/418164"
+  },
+  {
+   "store": "eMAG",
+   "name": "Нощни пелени Huggies DryNites, 13+ години, Момичета, 9 броя, 48-60 кг",
+   "price": 7,
+   "old_price": 7.38,
+   "discount_pct": "-5%",
+   "lowest_30d": 7.38,
+   "category": "Пелени и гащички",
+   "url": "https://www.emag.bg/product/82333147"
+  },
+  {
+   "store": "eMAG",
+   "name": "Преносима колонка Gembird Bluetooth, 10W, черен, батерия 1200mAh",
+   "price": 20.52,
+   "old_price": 22.25,
+   "discount_pct": "-7%",
+   "lowest_30d": 22.25,
+   "category": "Преносими тонколони",
+   "url": "https://www.emag.bg/product/94265198"
+  },
+  {
+   "store": "eMAG",
+   "name": "Мъжка тениска Skinarma Bolt, черна, 100% памук, модерен дизайн, овърсайз кройка, XL INTL",
+   "price": 46.26,
+   "old_price": 54.19,
+   "discount_pct": "-14%",
+   "lowest_30d": 54.19,
+   "category": "Мъжки тениски",
+   "url": "https://www.emag.bg/product/84411974"
+  },
+  {
+   "store": "eMAG",
+   "name": "Ръчна прахосмукачка за премахване на мъх, USB, двойна глава, 5 скорости, многоцветна",
+   "price": 10.93,
+   "old_price": 21.32,
+   "discount_pct": "-48%",
+   "lowest_30d": 21.32,
+   "category": "Прахосмукачки",
+   "url": "https://www.emag.bg/product/116108722"
+  },
+  {
+   "store": "eMAG",
+   "name": "Унисекс кецове Bit Bontimes Genny, сиви, 38",
+   "price": 12.01,
+   "old_price": 15.52,
+   "discount_pct": "-22%",
+   "lowest_30d": 15.52,
+   "category": "Дамски маратонки",
+   "url": "https://www.emag.bg/product/73530355"
+  },
+  {
+   "store": "eMAG",
+   "name": "Смарт часовник Denver SWC-156BEMK2, Bluetooth, бежов",
+   "price": 22.78,
+   "old_price": 24.36,
+   "discount_pct": "-6%",
+   "lowest_30d": 24.36,
+   "category": "Smartwatch",
+   "url": "https://www.emag.bg/product/94382831"
+  },
+  {
+   "store": "eMAG",
+   "name": "Лаптоп HP EliteBook 8 G1i AI 14\" Glacier Silver, AD4A1ET.64GB.500SSD, 14\", Intel Core Ultra 7 255U (12-ядрен), Intel Arc 8 Core, 64 GB 5600 ",
+   "price": 2212,
+   "old_price": 3158,
+   "discount_pct": "-29%",
+   "lowest_30d": 3158,
+   "category": "Лаптопи",
+   "url": "https://www.emag.bg/product/105007134"
+  },
+  {
+   "store": "eMAG",
+   "name": "Комплект стойка за сензор за XNT 9 20, черен, от пластмаса",
+   "price": 36.46,
+   "old_price": 38.5,
+   "discount_pct": "-5%",
+   "lowest_30d": 38.5,
+   "category": "Авточасти",
+   "url": "https://www.emag.bg/product/92903857"
+  },
+  {
+   "store": "eMAG",
+   "name": "Emporio Armani, Часовник от неръждаема стомана, Сребрист",
+   "price": 41.04,
+   "old_price": 43.2,
+   "discount_pct": "-5%",
+   "lowest_30d": 43.2,
+   "category": "Мъжки часовници",
+   "url": "https://www.emag.bg/product/66639291"
+  },
+  {
+   "store": "eMAG",
+   "name": "Borofone BN5 Sunlight Бяло мрежово зарядно устройство, QC 3.0, 18W, включен USB към MicroUSB кабел",
+   "price": 20.84,
+   "old_price": 23.89,
+   "discount_pct": "-12%",
+   "lowest_30d": 23.89,
+   "category": "Зарядни устройства за мобилни телефони",
+   "url": "https://www.emag.bg/product/45031169"
+  },
+  {
+   "store": "eMAG",
+   "name": "Суха храна за кученца Pro Plan SENSITIVE SKIN Junior, Богата на сьомга, Средна порода, 3кг",
+   "price": 17.15,
+   "old_price": 26.99,
+   "discount_pct": "-36%",
+   "lowest_30d": 26.99,
+   "category": "Храна за кучета",
+   "url": "https://www.emag.bg/product/30069211"
+  },
+  {
+   "store": "eMAG",
+   "name": "Лятна гума KUMHO ECSTA PS72 245/45R17 99Y XL",
+   "price": 95.3,
+   "old_price": 100.33,
+   "discount_pct": "-5%",
+   "lowest_30d": 100.33,
+   "category": "Автомобилни гуми",
+   "url": "https://www.emag.bg/product/89309529"
+  },
+  {
+   "store": "eMAG",
+   "name": "Натурален шампоан BeBio Baby Hair Complex",
+   "price": 13.04,
+   "old_price": 14.89,
+   "discount_pct": "-12%",
+   "lowest_30d": 14.89,
+   "category": "Шампоани",
+   "url": "https://www.emag.bg/product/64252002"
+  },
+  {
+   "store": "eMAG",
+   "name": "Пелени-гащички Pampers Active Baby XXL Box, Размер 5, 11kg-17kg, 152 броя",
+   "price": 101.17,
+   "old_price": 114.33,
+   "discount_pct": "-11%",
+   "lowest_30d": 114.33,
+   "category": "Пелени и гащички",
+   "url": "https://www.emag.bg/product/14372574"
+  },
+  {
+   "store": "eMAG",
+   "name": "Тоалетна вода Chanson D'Eau Original, 100 мл",
+   "price": 12.94,
+   "old_price": 16.31,
+   "discount_pct": "-20%",
+   "lowest_30d": 16.31,
+   "category": "Парфюми",
+   "url": "https://www.emag.bg/product/26551948"
+  },
+  {
+   "store": "eMAG",
+   "name": "Комплект строителни блокчета 100 части, SWJOYOL, дърво, многоцветно, за деца 3-8 години",
+   "price": 8.14,
+   "old_price": 8.61,
+   "discount_pct": "-5%",
+   "lowest_30d": 8.61,
+   "category": "Конструктори",
+   "url": "https://www.emag.bg/product/98917615"
+  },
+  {
+   "store": "eMAG",
+   "name": "Смарт часовник Denver SWC-156BEMK2, Bluetooth, бежов",
+   "price": 22.78,
+   "old_price": 24.36,
+   "discount_pct": "-6%",
+   "lowest_30d": 24.36,
+   "category": "Smartwatch",
+   "url": "https://www.emag.bg/product/94382831"
+  },
+  {
+   "store": "eMAG",
+   "name": "Спортни обувки Diadora Robin 4 179084-C2763, мъжки, сиви, 44",
+   "price": 27.31,
+   "old_price": 34.46,
+   "discount_pct": "-20%",
+   "lowest_30d": 34.46,
+   "category": "Мъжки спортни обувки",
+   "url": "https://www.emag.bg/product/61284545"
+  },
+  {
+   "store": "eMAG",
+   "name": "Комплект от 6 чувала, SWJOYOL, многоцветни, 50 кг, сгъваеми, перат се",
+   "price": 9,
+   "old_price": 9.52,
+   "discount_pct": "-5%",
+   "lowest_30d": 9.52,
+   "category": "Дамски чанти",
+   "url": "https://www.emag.bg/product/98715378"
+  },
+  {
+   "store": "eMAG",
+   "name": "Детски спортни обувки Puma Ferrari Drift Cat 4 L SF NM V Kids - black-rosso corsa-white - размер 24",
+   "price": 19.61,
+   "old_price": 25.35,
+   "discount_pct": "-22%",
+   "lowest_30d": 25.35,
+   "category": "Детски обувки",
+   "url": "https://www.emag.bg/product/72513562"
+  },
+  {
+   "store": "eMAG",
+   "name": "Раница Laut City Day Pack 12L, 12x32x44cm, водоустойчива, отделение за лаптоп, маслено зелена",
+   "price": 49.48,
+   "old_price": 55.22,
+   "discount_pct": "-10%",
+   "lowest_30d": 55.22,
+   "category": "Спортни раници",
+   "url": "https://www.emag.bg/product/81629309"
+  },
+  {
+   "store": "eMAG",
+   "name": "Таблет 10.36\" Octa-Core, 36(12+24)GB RAM, 256GB ROM, Android 14.0, SIM/4G LTE, 5GHz WIFI, 1920*1200 FHD, 8000mAh, 13MP+8MP, Black",
+   "price": 113.1,
+   "old_price": 136.25,
+   "discount_pct": "-16%",
+   "lowest_30d": 136.25,
+   "category": "Таблети",
+   "url": "https://www.emag.bg/product/100351681"
+  },
+  {
+   "store": "eMAG",
+   "name": "Комплект 24 вендузи за автомобилно предно стъкло от PVC",
+   "price": 23.29,
+   "old_price": 25.4,
+   "discount_pct": "-8%",
+   "lowest_30d": 25.4,
+   "category": "Тунинг аксесоари за автомобили",
+   "url": "https://www.emag.bg/product/92904314"
+  },
+  {
+   "store": "eMAG",
+   "name": "Капсули кафе Starbucks Dark Espresso Roast, Съвместимост Dolce Gusto, 12 капсули, 66 гр",
+   "price": 5.19,
+   "old_price": 5.99,
+   "discount_pct": "-13%",
+   "lowest_30d": 5.99,
+   "category": "Кафе",
+   "url": "https://www.emag.bg/product/32528457"
+  },
+  {
+   "store": "eMAG",
+   "name": "Силиконов Калъф за iPhone 13, Висококачествен, Прозрачен",
+   "price": 2.99,
+   "old_price": 3.98,
+   "discount_pct": "-24%",
+   "lowest_30d": 3.98,
+   "category": "Калъфи за мобилни телефони",
+   "url": "https://www.emag.bg/product/35722183"
+  },
+  {
+   "store": "eMAG",
+   "name": "Ръчна прахосмукачка за премахване на мъх, USB, двойна глава, 5 скорости, многоцветна",
+   "price": 10.93,
+   "old_price": 21.32,
+   "discount_pct": "-48%",
+   "lowest_30d": 21.32,
+   "category": "Прахосмукачки",
+   "url": "https://www.emag.bg/product/116108722"
+  },
+  {
+   "store": "eMAG",
+   "name": "Тоалетна вода Bruno Banani Magic Man, Мъже, 30 мл",
+   "price": 13.69,
+   "old_price": 16.37,
+   "discount_pct": "-16%",
+   "lowest_30d": 16.37,
+   "category": "Парфюми",
+   "url": "https://www.emag.bg/product/41945617"
+  },
+  {
+   "store": "eMAG",
+   "name": "Fossil, Овален часовник",
+   "price": 112.99,
+   "old_price": 130.99,
+   "discount_pct": "-13%",
+   "lowest_30d": 130.99,
+   "category": "Мъжки часовници",
+   "url": "https://www.emag.bg/product/2032369"
+  },
+  {
+   "store": "eMAG",
+   "name": "Комплект безжично зарядно устройство QI-FC15S, Антрацит",
+   "price": 19.8,
+   "old_price": 22.44,
+   "discount_pct": "-11%",
+   "lowest_30d": 22.44,
+   "category": "Зарядни устройства за мобилни телефони",
+   "url": "https://www.emag.bg/product/40664799"
+  },
+  {
+   "store": "eMAG",
+   "name": "Защитно фолио за поверителност, съвместимо със Samsung Galaxy S22 + 5G, Премиум качество",
+   "price": 2.57,
+   "old_price": 2.86,
+   "discount_pct": "-10%",
+   "lowest_30d": 2.86,
+   "category": "Защитни фолиа за мобилни телефони",
+   "url": "https://www.emag.bg/product/110599079"
+  },
+  {
+   "store": "eMAG",
+   "name": "Интерактивна играчка 3 в 1 Динозавър MOSMAOO, комплект за скачане, хвърляне на пръстени, изстрелване на ракети, на закрито/на открито, 3-8 г",
+   "price": 26.84,
+   "old_price": 28.31,
+   "discount_pct": "-5%",
+   "lowest_30d": 28.31,
+   "category": "Интерактивни играчки за деца",
+   "url": "https://www.emag.bg/product/113030970"
+  },
+  {
+   "store": "eMAG",
+   "name": "Нощни пелени Huggies DryNites, 13+ години, Момчета, 9 броя, 48-60 кг",
+   "price": 7,
+   "old_price": 7.38,
+   "discount_pct": "-5%",
+   "lowest_30d": 7.38,
+   "category": "Пелени и гащички",
+   "url": "https://www.emag.bg/product/82333145"
+  },
+  {
+   "store": "eMAG",
+   "name": "Комплект от 12 фигурки Paw Patrol, Mystery Box, Tnagora®, 6 cm",
+   "price": 8.81,
+   "old_price": 10.77,
+   "discount_pct": "-18%",
+   "lowest_30d": 10.77,
+   "category": "Фигурки",
+   "url": "https://www.emag.bg/product/76358657"
+  },
+  {
+   "store": "eMAG",
+   "name": "Таблет, Lenovo, Tab 10.1 инча, 4 GB RAM, 128 GB, Wi-Fi, сив, 154,5x235,7x7,5 мм",
+   "price": 195.17,
+   "old_price": 207.62,
+   "discount_pct": "-5%",
+   "lowest_30d": 207.62,
+   "category": "Таблети",
+   "url": "https://www.emag.bg/product/101459074"
+  }
+ ]
+}

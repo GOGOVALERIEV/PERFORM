@@ -1,0 +1,26 @@
+skipping already scored: ['glo-migracii', 'glo-sto', 'glo-sto-m2', 'his-sssr', 'his-sssr-m2', 'his-studena', 'his-studena-m2', 'phi-francia', 'pol-grajdani', 'pol-grajdani-m2', 'pol-izbori', 'pol-izbori-m2']
+batch: 3 papers
+
+[1/3]
+
+=== phi-germania | Обединението на Германия през 1990 година | chain ===
+  corpus: 0 words
+  P1 draft: 450 words
+  P2 sweep: 655 words (deepseek/deepseek-v4-flash-0731)
+  SCOREBOARD ROW: | phi-germania | chain | qwen/qwen3.7-flash -> deepseek/deepseek-v4-flash-0731 | 655 | ?/? | FAIL(18) | n/a | n/a | 0.00
+
+[2/3]
+
+=== pol-partii | Политическите партии и партийните системи | current-paid-control ===
+  corpus: 3968 words
+  OR(z-ai/glm-flash-latest) failed: HTTPError: HTTP Error 400: Bad Request
+
+[3/3]
+
+=== eng-coldwar | The Cold War: Origins, Crises and the End of Bipol | current-en ===
+  corpus: 15799 words
+  P1 draft: 438 words
+  P2 sweep: 306 words (mistralai/mistral-small-3.2-24b-instruct)
+  SCOREBOARD ROW: | eng-coldwar | current-en | mistralai/mistral-small-3.2-24b-instruct -> mistralai/mistra | 306 | 0/23.9 | FAIL(14) | n/
+
+BATCH DONE — scoreboard: C:\Users\User\Desktop\PERFORM\realms\06-university\state\benchmark\scoreboard.md

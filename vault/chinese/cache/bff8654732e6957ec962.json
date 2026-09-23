@@ -1,0 +1,17 @@
+{
+  "fetchedAt": 1789912326887,
+  "finalUrl": "https://www.emag.bg/ofis-stol-kring-fit-ergonomichen-mrezha-reguliruema-visochina-mehanizym-za-naklanjane-cheren-642622800372/pd/DH28QMBBM/",
+  "httpStatus": 200,
+  "title": "Офис стол Kring Fit, Ергономичен, Мрежа, Регулируема височина, Механизъм за накланяне, Черен - eMAG.bg",
+  "price": {
+    "amount": 51.99,
+    "currency": "EUR"
+  },
+  "signals": {
+    "warranty": true,
+    "returnPolicy": false,
+    "official": false,
+    "storageRisk": true
+  },
+  "cached": false
+}

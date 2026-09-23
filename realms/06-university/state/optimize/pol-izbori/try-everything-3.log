@@ -1,0 +1,24 @@
+=== NOISE: V8 scanned 3x (referee variance) ===
+  scan 1: 38.0%
+  scan 2: 82.0%
+  scan 3: 38.0%
+=== V12: word-order inversion ===
+    call fail (qwen3.7-flash) attempt 1: HTTPError — retry in 5s
+    call fail (qwen3.7-flash) attempt 2: HTTPError — retry in 10s
+    call fail (qwen3.7-flash) attempt 1: HTTPError — retry in 5s
+    call fail (qwen3.7-flash) attempt 2: HTTPError — retry in 10s
+  V12: 78.0%
+=== V13: vocabulary surprise (rare/archaic words) ===
+    call fail (qwen3.7-flash) attempt 1: HTTPError — retry in 5s
+    call fail (qwen3.7-flash) attempt 1: HTTPError — retry in 5s
+  V13: 58.0%
+=== V14: mixed register (formal/casual alternating) ===
+  V14: 99.0%
+=== V15: punctuation-heavy (dashes, semicolons) ===
+  V15: 74.0%
+=== V16: quote-rich ===
+  V16: 43.0%
+=== V17: fragment chains ===
+    call fail (qwen3.7-flash) attempt 1: HTTPError — retry in 5s
+  V17: 20.0%
+=== V18: temp 1.4 regeneration of all sentences ===

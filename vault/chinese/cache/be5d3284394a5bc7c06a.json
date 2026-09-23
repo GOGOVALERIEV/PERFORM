@@ -1,0 +1,17 @@
+{
+  "fetchedAt": 1789860680792,
+  "finalUrl": "https://www.emag.bg/vynshen-ssd-sandisk-extreme-pro-portable-v2-ssd-encrypted-1-tb-external-portable-usb-3-2-gen-2x2-usb-c-connector-256-bit-aes-sdssde81-1t00-g25/pd/D7VVBKMBM/",
+  "httpStatus": 200,
+  "title": "Външен SSD SanDisk Extreme PRO Portable V2 - SSD - encrypted - 1 TB - external (portable) - USB 3.2 Gen 2x2 (USB-C connector) - 256-bit AES SDSSDE81-1T00-G25 - eMAG.bg",
+  "price": {
+    "amount": 261.64,
+    "currency": "EUR"
+  },
+  "signals": {
+    "warranty": true,
+    "returnPolicy": false,
+    "official": false,
+    "storageRisk": true
+  },
+  "cached": false
+}

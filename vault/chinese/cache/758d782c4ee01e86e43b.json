@@ -1,0 +1,17 @@
+{
+  "fetchedAt": 1789860588262,
+  "finalUrl": "https://www.aliexpress.com/item/1005012574218739.html?algo_pvid=50087588-8786-49ad-9a0b-5b57542475c4&algo_exp_id=50087588-8786-49ad-9a0b-5b57542475c4-0&pdp_ext_f=%7B%22order%22%3A%221645%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21BGN%2129.00%2124.36%21%21%21113.40%2195.26%21%400b8848bf17898605833707639e0cd7%2112000058753360338%21sea%21BG%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A9cb4b3af%3Bm03_new_user%3A-29895&curPageLogUid=C2mwBGdRYbxX&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005012574218739%7C_p_origin_prod%3A",
+  "httpStatus": 200,
+  "title": "1TB Portable SSD External Hard Drive USB 3.1 High-Speed Storage for Laptop/Mac/PC Compact & Durable - AliExpress 7",
+  "price": {
+    "amount": 24.36,
+    "currency": "BGN"
+  },
+  "signals": {
+    "warranty": false,
+    "returnPolicy": false,
+    "official": false,
+    "storageRisk": true
+  },
+  "cached": false
+}

@@ -1,0 +1,17 @@
+{
+  "fetchedAt": 1789860590081,
+  "finalUrl": "https://ardes.bg/product/500gb-ssd-intenso-external-tx800-3828450-495675",
+  "httpStatus": 200,
+  "title": "500GB SSD Intenso External TX800 - 3828450 3828450 - на топ цена",
+  "price": {
+    "amount": 108.99,
+    "currency": "EUR"
+  },
+  "signals": {
+    "warranty": true,
+    "returnPolicy": true,
+    "official": false,
+    "storageRisk": true
+  },
+  "cached": false
+}

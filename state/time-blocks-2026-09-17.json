@@ -1,0 +1,142 @@
+{
+  "day_window": "09:00 wake, 01:00 sleep",
+  "fixed_walls": "10:00-13:00 college",
+  "tasks": [
+    {
+      "name": "Learn the Tony Stark machine fully",
+      "duration": 90,
+      "done": false
+    },
+    {
+      "name": "Use and test the machine live",
+      "duration": 120,
+      "done": false
+    },
+    {
+      "name": "Prep and demo to the squad",
+      "duration": 60,
+      "done": false
+    },
+    {
+      "name": "Errands: get car + return stuff to store",
+      "duration": 30,
+      "done": false
+    },
+    {
+      "name": "Take out trash",
+      "duration": 1,
+      "done": false
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Wake up + eat",
+      "start_m": 540,
+      "end_m": 570,
+      "type": "personal",
+      "start": "09:00",
+      "end": "09:30",
+      "duration": 30
+    },
+    {
+      "name": "Learn the Tony Stark machine fully (part 1)",
+      "start_m": 570,
+      "end_m": 600,
+      "type": "deep_work",
+      "start": "09:30",
+      "end": "10:00",
+      "duration": 30
+    },
+    {
+      "start_m": 600,
+      "end_m": 780,
+      "name": "FIXED WALL",
+      "type": "personal",
+      "start": "10:00",
+      "end": "13:00",
+      "duration": 180
+    },
+    {
+      "start_m": 780,
+      "end_m": 810,
+      "name": "lunch",
+      "type": "break",
+      "start": "13:00",
+      "end": "13:30",
+      "duration": 30
+    },
+    {
+      "name": "Learn the Tony Stark machine fully",
+      "start_m": 810,
+      "end_m": 900,
+      "type": "deep_work",
+      "start": "13:30",
+      "end": "15:00",
+      "duration": 90
+    },
+    {
+      "name": "Use and test the machine live",
+      "start_m": 900,
+      "end_m": 1020,
+      "type": "deep_work",
+      "start": "15:00",
+      "end": "17:00",
+      "duration": 120
+    },
+    {
+      "name": "Prep and demo to the squad",
+      "start_m": 1020,
+      "end_m": 1080,
+      "type": "deep_work",
+      "start": "17:00",
+      "end": "18:00",
+      "duration": 60
+    },
+    {
+      "start_m": 1080,
+      "end_m": 1110,
+      "name": "errands: get car and return stuff to store",
+      "type": "break",
+      "start": "18:00",
+      "end": "18:30",
+      "duration": 30
+    },
+    {
+      "name": "Errands: get car + return stuff to store",
+      "start_m": 1110,
+      "end_m": 1140,
+      "type": "deep_work",
+      "start": "18:30",
+      "end": "19:00",
+      "duration": 30
+    },
+    {
+      "name": "Take out trash",
+      "start_m": 1140,
+      "end_m": 1141,
+      "type": "deep_work",
+      "start": "19:00",
+      "end": "19:01",
+      "duration": 1
+    },
+    {
+      "start_m": 1170,
+      "end_m": 1200,
+      "name": "dinner",
+      "type": "break",
+      "start": "19:30",
+      "end": "20:00",
+      "duration": 30
+    },
+    {
+      "name": "Buffer / wind down",
+      "start_m": 1200,
+      "end_m": 1500,
+      "type": "personal",
+      "start": "20:00",
+      "end": "01:00",
+      "duration": 300
+    }
+  ],
+  "timestamp": "2026-09-17T08:52:54.448010"
+}

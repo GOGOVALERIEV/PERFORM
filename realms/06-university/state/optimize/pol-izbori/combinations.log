@@ -1,0 +1,229 @@
+=== C1: my-final recipe ===
+  call failed: IncompleteRead: IncompleteRead(22 bytes read)
+  call failed: IncompleteRead: IncompleteRead(121 bytes read)  call failed: IncompleteRead: IncompleteRead(55 bytes read)
+
+  call failed: IncompleteRead: IncompleteRead(440 bytes read)
+  call failed: IncompleteRead: IncompleteRead(297 bytes read)
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  >>> C1-final: None% JustDone
+=== C2: inversion-first ===
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  >>> C2-inversion-first: None% JustDone
+=== C3: vocab-attr-rewrite ===
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  >>> C3-vocab-attr-rewrite: None% JustDone
+=== C4: three-model sandwich ===
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  >>> C4-sandwich: None% JustDone
+=== C5: concrete-facts-first ===
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  call failed: URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+  >>> C5-concrete-first: None% JustDone
+
+================ COMBO STANDINGS ================
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\PERFORM\realms\06-university\scripts\combinations.py", line 159, in <module>
+    run()
+  File "C:\Users\User\Desktop\PERFORM\realms\06-university\scripts\combinations.py", line 150, in run
+    print(f'  {v:>6}%  {k}')
+              ^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__

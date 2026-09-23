@@ -1,0 +1,146 @@
+
+
+######## dl_ardes.html ########
+  NAME: Lenovo ThinkPad T495 - реновиран продукт
+  NAME: Dell Latitude 5420 - реновиран продукт
+  NAME: Lenovo ThinkPad T14s G2 - реновиран продукт
+  NAME: Dell Latitude 5430 - реновиран продукт
+  NAME: Dell Latitude 7310 - реновиран продукт
+  NAME: HP EliteBook 840 G6 - реновиран продукт
+  NAME: Lenovo ThinkPad T14 - реновиран продукт
+  NAME: Lenovo ThinkPad 11e Yoga G6 - реновиран продукт
+  NAME: Lenovo ThinkPad T15 G2 - реновиран продукт
+  NAME: HP ProBook 430 G6 - реновиран продукт
+  NAME: Dell Latitude 7320 - реновиран продукт
+  NAME: HP ProBook x360 11 G5 EE - реновиран продукт
+  NAME: Dell Latitude 5320 - реновиран продукт
+  ALL PRICES (BGN/EUR mixed): [99.0, 99.99, 100.0, 132.99, 149.99, 186.99, 199.99, 200.0, 209.99, 279.99, 289.99, 299.99, 351.99, 369.99, 376.99, 384.99, 386.99, 446.99, 500.0, 631.99, 729.99, 779.99, 979.99, 982.99, 1000.0, 1037.99, 1142.99, 1222.99, 1262.99, 2200.0]
+  LINKS: ['https://ardes.bg/upotrebyavani-laptopi/laptopi-vtora-upotreba', 'https://ardes.bg/upotrebyavani-laptopi/laptopi-vtora-upotreba/page/2', 'https://ardes.bg/laptopi/laptopi/promocii', 'https://ardes.bg/laptopi/laptopi/promocii/za-igri', 'https://ardes.bg/upotrebyavani-laptopi/laptopi-vtora-upotreba/promocii', 'https://ardes.bg/laptopi/laptopi/displey-diagonal-na-displeya-ot-12-do-14/promocii/teglo-do-1.5', 'https://ardes.bg/product/eset-nod-32-antivirus-oem-karta-s-produktov-klyuch-eset-nod32-oem-1year-29833', 'https://ardes.bg/products/promocii', 'https://ardes.bg/laptopi/laptopi', 'https://ardes.bg/laptopi/laptopi/displey-diagonal-na-displeya-ot-12-do-13.9/teglo-na-produkta-do-1.5', 'https://ardes.bg/laptopi/laptopi/za-igri', 'https://ardes.bg/laptopi/laptopi/protsesor-ot-60/videokarta-ot-70', 'https://ardes.bg/laptopi/laptopi/teglo-na-produkta-do-1.99', 'https://ardes.bg/laptopi/laptopi/remarketiran-produkt', 'https://ardes.bg/laptopi/dopalnitelni-garantsii']
+
+
+######## dl_hop_bg.html ########
+  NAME: ᐉ Buy refurbished Lenovo ThinkPad with guarantee | Hop.bg
+  NAME: LENOVO THINKPAD T460, i5-6200U CPU, 16GB, 256GB SSD, 14" IPS Full HD 1920x1080
+  NAME: Lenovo ThinkPad T580, i5-8350U, 16GB, 512GB SSD, 15.6" Touchscreen IPS Full HD 1920x1080
+  NAME: Lenovo ThinkPad L15, Ryzen 5 4500U, 16GB, 512GB SSD, 15.6" Touchscreen IPS Full HD 1920x1080
+  NAME: Lenovo ThinkPad T14s Gen 6 Like New, Snapdragon X Elite X1E-78-100, 32GB, 512GB SSD, 14'' IPS WUXGA 1920x1200
+  ALL PRICES (BGN/EUR mixed): [50.0, 99.0, 100.0, 199.0, 200.0, 299.0, 300.0, 399.0, 400.0, 499.0, 500.0, 699.0, 700.0, 999.0, 1000.0]
+  LINKS: ['https://hop.bg/en/laptops-111(filter=lenovo,brand=1)', 'https://hop.bg/bg/laptopi-111(filter=lenovo,brand=1)', 'https://hop.bg/en/laptops-111', 'https://hop.bg/en/discount-160(filter=laptops,select_cat=3)', 'https://hop.bg/en/laptops-111(filter=home-and-office,f=112)', 'https://hop.bg/en/laptops-111(filter=thin-and-light,f=115)', 'https://hop.bg/en/laptops-111(filter=mobile-workstation,f=117)', 'https://hop.bg/en/laptops-111(filter=touch-screen,f=125)', 'https://hop.bg/en/apple-products-117(filter=macbook-pro,f=122)', 'https://hop.bg/en/apple-products-117(filter=macbook-air,f=123)', 'https://hop.bg/en/laptops-111(filter=apple,brand=2)', 'https://hop.bg/en/laptops-111(filter=hp,brand=4)', 'https://hop.bg/en/laptops-111(filter=dell,brand=7)', 'https://hop.bg/en/laptops-111(filter=up to 200 €,price=60)', 'https://hop.bg/en/laptops-111(filter=up to 300 €,price=61)']
+
+
+######## dl_kvantservice.html ########
+  NAME: Лаптопи Lenovo Thinkpad втора ръка ➡️ ТОП Цени — Kvantservice.com
+  NAME: Лаптопи Lenovo Thinkpad втора употреба
+  NAME: Lenovo ThinkPad T490
+  NAME: Lenovo ThinkPad T480s
+  NAME: Lenovo ThinkPad T480
+  NAME: Lenovo ThinkPad T490s
+  NAME: Lenovo ThinkPad T14s Gen 1
+  NAME: Lenovo ThinkPad T590
+  NAME: Lenovo ThinkPad T580
+  NAME: Lenovo ThinkPad T15 Gen 1
+  NAME: Lenovo ThinkPad T15 Gen 2i
+  NAME: Лаптопи Lenovo ThinkPad
+  NAME: Какво отличава серията лаптопи Lenovo Thinkpad
+  NAME: За кого са подходящи преносимите компютри Lenovo Thinkpad
+  NAME: Каква е разликата между най-популярните модели Thinkpad
+  ALL PRICES (BGN/EUR mixed): [50.0, 65.0, 99.0, 119.0, 149.0, 169.0, 199.0, 229.0, 249.0, 299.0, 449.0, 499.0, 649.0, 799.0]
+  LINKS: ['https://www.kvantservice.com/laptopi/lenovo/thinkpad/', 'https://www.kvantservice.com/laptopi/', 'https://www.kvantservice.com/laptop-baterii/', 'https://www.kvantservice.com/product/lenovo-thinkpad-t490-24393-id55000/', 'https://www.kvantservice.com/product/lenovo-thinkpad-t480s-17255-id56308/', 'https://www.kvantservice.com/product/lenovo-thinkpad-t480-17013-id56095/', 'https://www.kvantservice.com/product/lenovo-thinkpad-t490-24393-id55534/', 'https://www.kvantservice.com/product/lenovo-thinkpad-t490-24393-id55648/', 'https://www.kvantservice.com/product/lenovo-thinkpad-t490s-31942-id56331/', 'https://www.kvantservice.com/product/lenovo-thinkpad-t490s-31942-id56524/', 'https://www.kvantservice.com/product/lenovo-thinkpad-t14s-gen-1-44363-id55075/', 'https://www.kvantservice.com/product/lenovo-thinkpad-t590-35995-id56017/', 'https://www.kvantservice.com/product/lenovo-thinkpad-t480-17013-id56288/', 'https://www.kvantservice.com/product/lenovo-thinkpad-t590-35995-id56018/', 'https://www.kvantservice.com/product/lenovo-thinkpad-t580-17207-id55381/']
+
+
+######## dl_outletpc.html ########
+  NAME: Lenovo Thinkpad
+  NAME: Dell Latitude
+  NAME: HP Probook
+  NAME: HP Elitebook
+  NAME: Лаптоп HP EliteBook x360 1030 G4 с процесор Intel Core i5, 8265U 1600MHz 6MB, 13.3", RAM 16GB LPDDR3, 256GB M.2 NVMe SSD, A клас
+  NAME: Лаптоп HP EliteBook 830 G8 с процесор Intel Core i5, 1135G7 up to 4.20GHz 8MB, 13.3", RAM 16GB So-Dimm DDR4, 256GB M.2 NVMe SSD, A- клас
+  NAME: Лаптоп Lenovo ThinkPad X390 с процесор Intel Core i5, 8365U 1600MHz 6MB, 13.3", RAM 16GB DDR4 Onboard, 256GB M.2 NVMe SSD, A клас
+  NAME: Лаптоп HP EliteBook 745 G6 с процесор AMD Ryzen 5 PRO 3500U 2100MHz 4MB, 14", RAM 8GB So-Dimm DDR4, A клас
+  NAME: Лаптоп Lenovo ThinkPad T490 с процесор Intel Core i7 8665U 1900MHz 8MB, 14", RAM 16GB DDR4 Onboard, 256GB M.2 NVMe SSD, A клас
+  NAME: Лаптоп HP EliteBook 840 G5 с процесор Intel Core i5, 8250U 1600MHz 6MB, 14", RAM 8192MB So-Dimm DDR4, 256 GB M.2 NVMe SSD, A- клас
+  NAME: Лаптоп HP EliteBook x360 830 G7 с процесор Intel Core i5 10210U up to 4.20GHz 6MB, 13.3", RAM 8GB So-Dimm DDR4, 256GB M.2 NVMe SSD, A- клас
+  NAME: Лаптоп HP ProBook x360 11 G7 EE Blue с процесор Intel Pentium Quad-Core Silver, N6000 1100MHz 4MB, 11.6", RAM 8192MB DDR4 Onboard, 128GB M.2
+  NAME: Лаптоп Lenovo ThinkPad T495 с процесор AMD Ryzen 5 PRO, 3500U 2100MHz 4MB, 14", RAM 8192MB DDR4 Onboard, 256GB M.2 NVMe SSD, A клас
+  NAME: Лаптоп Dell Latitude 3120 2-in-1 с процесор Intel Pentium Quad-Core Silver, N6000 1100MHz 4MB, 11.6", RAM 8192MB LPDDR4, 128GB M.2 NVMe SSD,
+  NAME: Лаптоп Dell Latitude 3310 с процесор Intel Core i3, 8145U 2100MHz 4MB, 13.3", RAM 8192MB So-Dimm DDR4, 256GB M.2 NVMe SSD, A клас
+  NAME: Лаптоп Dell Latitude 5320 с процесор Intel Core i5, 1145G7 2600MHz 8MB, 13.3", RAM 16GB DDR4 Onboard, 256GB M.2 NVMe SSD, A- клас
+  NAME: Лаптоп HP ProBook 640 G8 с процесор Intel Core i5, 1135G7 up to 4.20GHz 8MB, 14", RAM 16GB So-Dimm DDR4, 256GB M.2 NVMe SSD, A клас
+  NAME: Лаптоп HP EliteBook 840 G5 с процесор Intel Core i5, 8350U 1700MHz 6MB, 14", RAM 8192MB So-Dimm DDR4, 256 GB M.2 NVMe SSD, A- клас
+  NAME: Лаптоп HP EliteBook 850 G8 с процесор Intel Core i7, 1165G7 up to 4.70GHz 12MB, 15.6", RAM 16GB So-Dimm DDR4, 512GB M.2 NVMe SSD, A- клас
+  NAME: Лаптоп Lenovo ThinkPad X13 Gen 1 (Intel) с процесор Intel Core i7, 10610U up to 4.90GHz 8MB, 13.3", RAM 16GB DDR4 Onboard, 512GB M.2 NVMe SS
+  NAME: Лаптоп Dell Latitude 7490 с процесор Intel Core i5, 8250U 1600MHz 6MB, 14", RAM 8192MB So-Dimm DDR4, 256GB M.2 NVMe SSD, A- клас
+  NAME: Лаптоп Lenovo ThinkPad X13 Gen 2 (Intel) с процесор Intel Core i7 1165G7 up to 4.70GHz 12MB, 13.3", RAM 16GB LPDDR4X, 256GB M.2 NVMe SSD, A-
+  NAME: Лаптоп Dell Latitude 5400 с процесор Intel Core i5, 8265U 1600MHz 6MB, 14", RAM 8192MB So-Dimm DDR4, 256 GB M.2 NVMe SSD, A клас
+  NAME: Лаптоп Dell Latitude 7520 с процесор Intel Core i5, 1145G7 up to 4.40GHz 8MB, 15.6", RAM 16GB LPDDR4X, 512GB M.2 NVMe SSD, A- клас
+  NAME: Лаптоп HP EliteBook 830 G7 с процесор Intel Core i5, 10210U up to 4.20GHz 6MB, 13.3", RAM 8192MB So-Dimm DDR4, 256GB M.2 NVMe SSD, A клас
+  NAME: Лаптоп Lenovo ThinkPad T14s Gen 1 с процесор AMD Ryzen 7 PRO, 4750U 1700MHz 8MB, 14", RAM 16GB DDR4 Onboard, 256GB M.2 NVMe SSD, A- клас
+  NAME: Лаптоп Lenovo ThinkPad L13 с процесор Intel Core i5, 10210U up to 4.20GHz 6MB, 13.3", RAM 8192MB DDR4 Onboard, 256GB M.2 NVMe SSD, A- клас
+  NAME: Лаптоп HP EliteBook 830 G6 с процесор Intel Core i7, 8665U 1900MHz 8MB, 13.3", RAM 8192MB So-Dimm DDR4, 256 GB M.2 SATA SSD, A- клас
+  NAME: Лаптоп Lenovo ThinkPad T490s с процесор Intel Core i7, 8565U 1800MHz 8MB, 14", RAM 16GB DDR4 Onboard, 256GB M.2 NVMe SSD, A- клас
+  NAME: Лаптоп Dell Latitude 7290 с процесор Intel Core i7, 8650U 1900MHz 8MB, 12.5", RAM 8192MB So-Dimm DDR4, 256GB M.2 NVMe SSD, A- клас
+  NAME: Лаптоп Lenovo ThinkPad T490s с процесор Intel Core i5, 8265U 1600MHz 6MB, 14", RAM 8192MB DDR4 Onboard, 256GB M.2 NVMe SSD, A клас
+  NAME: Лаптоп Lenovo ThinkPad T14s Gen 3 (Intel) Thunder black с процесор Intel Core i5 1240P up to 4.40GHz 12MB, 14", RAM 16GB LPDDR5, 512GB M.2 N
+  NAME: Лаптоп HP EliteBook 830 G6 с процесор Intel Core i5, 8265U 1600MHz 6MB, 13.3", RAM 8192MB So-Dimm DDR4, 256 GB M.2 NVMe SSD, A- клас
+  NAME: Лаптоп HP EliteBook x360 830 G6 с процесор Intel Core i7, 8665U 1900MHz 8MB, 13.3", RAM 8192MB So-Dimm DDR4, 256GB M.2 SATA SSD, A клас
+  NAME: Лаптоп Dell Latitude 7430 с процесор Intel Core i7 1265U up to 4.80GHz 12MB, 14", RAM 32GB LPDDR4, 512GB M.2 NVMe SSD, A- клас
+  NAME: Лаптоп Lenovo ThinkPad T14s Gen 1 с процесор Intel Core i5, 10310U up to 4.40GHz 6MB, 14", RAM 16GB DDR4 Onboard, 256GB M.2 NVMe SSD, A- кла
+  NAME: Лаптоп Lenovo ThinkPad T14 Gen 1 (AMD) с процесор AMD Ryzen 5 PRO, 4650U 2100MHz 8MB, 14", RAM 16GB DDR4 Onboard, 256GB M.2 NVMe SSD, A- кла
+  NAME: Лаптоп DELL Latitude 7490 с процесор Intel Core i5, 8350U 1700MHz 6MB, 14", RAM 8192MB So-Dimm DDR4, 256 GB M.2 NVMe SSD, A- клас
+  ALL PRICES (BGN/EUR mixed): [93.31, 112.87, 144.0, 154.0, 164.0, 174.0, 184.0, 200.0, 204.0, 209.0, 219.0, 234.0, 239.0, 249.0, 254.0, 259.0, 264.0, 269.0, 276.59, 279.0, 281.64, 294.0, 300.0, 304.0, 314.0, 319.0, 320.76, 329.0, 334.0, 339.0, 340.31, 344.0, 354.0, 359.87, 369.0, 384.0, 386.68, 398.99, 408.77, 414.0, 428.33, 457.66, 467.44, 487.0, 496.78, 506.56, 524.0, 526.12, 545.68, 559.0, 569.0, 594.57, 614.13, 643.47, 653.25, 663.03, 672.81, 709.0, 721.7, 751.04]
+  LINKS: ['https://outletpc.bg/лаптопи-втора-употреба/hp/', 'https://outletpc.bg/лаптопи-втора-употреба/hp/probook/', 'https://outletpc.bg/лаптопи-втора-употреба/hp/elitebook/', 'https://outletpc.bg/компютри-втора-употреба/hp/', 'https://outletpc.bg/компютри-втора-употреба/hp/workstation/', 'https://outletpc.bg/index.php?route=product/compare']
+
+
+######## dl_technodream_all.html ########
+  NAME: Lenovo ThinkPad
+  NAME: Dell Latitude
+  NAME: HP EliteBook
+  NAME: HP ProBook
+  NAME: Лаптопи Lenovo ThinkPad втора употреба
+  NAME: Лаптопи Dell Latitude втора употреба
+  NAME: Лаптопи HP EliteBook втора употреба
+  NAME: Лаптопи HP ProBook втора употреба
+  NAME: Lenovo ThinkPad X1 Yoga Gen 6
+  NAME: Lenovo ThinkPad L470 - Intel Core i3-7100U / 8GB RAM / 256GB SSD
+  NAME: Lenovo ThinkPad P15 - Gen 1 - Intel Core i7-10850H / 16GB RAM / 1TB SSD / T1000
+  NAME: Lenovo ThinkPad P15 - Gen 1 - Intel Core i7-10850H / 32GB RAM / 512GB SSD / RTX 3000
+  NAME: Lenovo ThinkPad L490
+  NAME: Lenovo ThinkPad T495
+  NAME: Dell Latitude E7470
+  NAME: Lenovo ThinkPad L490 - 8GB RAM / 256GB SSD
+  NAME: Dell Latitude 5490
+  NAME: HP EliteBook 830 G6
+  NAME: Lenovo ThinkPad P15 V3
+  NAME: Lenovo ThinkPad P15 - Touchscreen
+  NAME: Лаптопи втора употреба с 12 месеца гаранция – Lenovo ThinkPad, Dell Latitude, HP EliteBook и Fujitsu LifeBook. Проверени модели и реални нал
+  NAME: – Lenovo ThinkPad, Dell Latitude, HP EliteBook/ProBook и Fujitsu LifeBook
+  NAME: Lenovo ThinkPad X1 Yoga Gen 6 - Премиум 2-в-1 лаптоп
+  ALL PRICES (BGN/EUR mixed): [71.58, 100.0, 179.0, 189.0, 199.0, 219.0, 229.0, 239.0, 249.0, 255.0, 259.0, 306.26, 694.85, 766.43, 899.0, 999.0]
+  LINKS: ['https://technodream.bg/category/laptopi-vtora-ruka', 'https://technodream.bg/category/laptopi-vtora-ruka?utm_source=google&utm_medium=cpc&utm_campaign=used_laptops_search&gad_source=1&gad_campaignid=23403177585&gclid=CjwKCAjwn67VBhBnEiwAXUIN1W9RnbxihsgF6GVR78rOz--TvQHVD5h3EJD7S06uSRFV04Sg5ByE4hoCpY0QAvD_BwE&page=2', 'https://technodream.bg/category/laptopi-lenovo-thinkpad-vtora-ruka', 'https://technodream.bg/category/laptopi-dell-vtora-ruka', 'https://technodream.bg/category/laptopi-hp-elitebook-vtora-ruka', 'https://technodream.bg/category/laptopi-hp-vtora-ruka', 'https://technodream.bg/category/laptopi-fujitsu-vtora-ruka', 'https://technodream.bg/category/chanti-za-laptopi', 'https://technodream.bg/product/fujitsu-lifebook-e736', 'https://technodream.bg/product/lenovo-thinkpad-x1-yoga-gen-6', 'https://technodream.bg/product/lenovo-thinkpad-l470-intel-core-i3-7100u-8gb-ram-256gb-ssd', 'https://technodream.bg/product/fujitsu-lifebook-u729-i5-8265u-16gb-ram-256gb-ssd', 'https://technodream.bg/product/lenovo-thinkpad-p15-gen-1-intel-core-i7-10850h-16gb-ram-1tb-ssd-t1000', 'https://technodream.bg/product/lenovo-thinkpad-p15-gen-1-intel-core-i7-10850h-32gb-ram-512gb-ssd-rtx-3000', 'https://technodream.bg/product/lenovo-thinkpad-l490']
+
+
+######## dl_technodream_thinkpad.html ########
+  NAME: Лаптопи Lenovo ThinkPad - втора ръка | TechnoDream.bg
+  NAME: Lenovo ThinkPad
+  NAME: Dell Latitude
+  NAME: HP EliteBook
+  NAME: HP ProBook
+  NAME: Лаптопи Lenovo ThinkPad втора употреба
+  NAME: Лаптопи Dell Latitude втора употреба
+  NAME: Лаптопи HP EliteBook втора употреба
+  NAME: Лаптопи HP ProBook втора употреба
+  NAME: Lenovo ThinkPad X1 Yoga Gen 6
+  NAME: Lenovo ThinkPad L470 - Intel Core i3-7100U / 8GB RAM / 256GB SSD
+  NAME: Lenovo ThinkPad P15 - Gen 1 - Intel Core i7-10850H / 16GB RAM / 1TB SSD / T1000
+  NAME: Lenovo ThinkPad P15 - Gen 1 - Intel Core i7-10850H / 32GB RAM / 512GB SSD / RTX 3000
+  NAME: Lenovo ThinkPad L490
+  NAME: Lenovo ThinkPad T495
+  NAME: Lenovo ThinkPad L490 - 8GB RAM / 256GB SSD
+  NAME: Lenovo ThinkPad P15 V3
+  NAME: Lenovo ThinkPad P15 - Touchscreen
+  NAME: Lenovo ThinkPad P1 Gen 2
+  NAME: Проверени лаптопи Lenovo ThinkPad серии T, X, P втора ръка с 12 месеца гаранция. Внос от Германия, отлично състояние и достъпни цени в Techn
+  NAME: Lenovo ThinkPad – висок клас лаптопи втора ръка с гаранция
+  NAME: Lenovo ThinkPad X1 Yoga Gen 6 - Премиум 2-в-1 лаптоп
+  ALL PRICES (BGN/EUR mixed): [71.58, 100.0, 179.0, 199.0, 219.0, 255.0, 259.0, 694.85, 699.0, 766.43, 899.0, 999.0]
+  LINKS: ['https://technodream.bg/category/laptopi-lenovo-thinkpad-vtora-ruka', 'https://technodream.bg/category/laptopi-vtora-ruka', 'https://technodream.bg/category/laptopi-dell-vtora-ruka', 'https://technodream.bg/category/laptopi-hp-elitebook-vtora-ruka', 'https://technodream.bg/category/laptopi-hp-vtora-ruka', 'https://technodream.bg/category/laptopi-fujitsu-vtora-ruka', 'https://technodream.bg/category/chanti-za-laptopi', 'https://technodream.bg/product/lenovo-thinkpad-x1-yoga-gen-6', 'https://technodream.bg/product/lenovo-thinkpad-l470-intel-core-i3-7100u-8gb-ram-256gb-ssd', 'https://technodream.bg/product/lenovo-thinkpad-p15-gen-1-intel-core-i7-10850h-16gb-ram-1tb-ssd-t1000', 'https://technodream.bg/product/lenovo-thinkpad-p15-gen-1-intel-core-i7-10850h-32gb-ram-512gb-ssd-rtx-3000', 'https://technodream.bg/product/lenovo-thinkpad-l490', 'https://technodream.bg/product/lenovo-thinkpad-t495', 'https://technodream.bg/product/lenovo-thinkpad-l490-8gb-ram-256gb-ssd', 'https://technodream.bg/product/lenovo-thinkpad-p15-v3']

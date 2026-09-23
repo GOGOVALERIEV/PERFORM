@@ -1,0 +1,320 @@
+{
+  "generatedAt": "2026-09-20T13:52:10.538Z",
+  "query": "офис стол",
+  "budgetBgn": 254,
+  "items": [
+    {
+      "title": "Офис стол Kring Fit, Ергономичен, Мрежа, Регулируема височина, Механизъм за накланяне, Черен - eMAG.bg",
+      "url": "https://www.emag.bg/ofis-stol-kring-fit-ergonomichen-mrezha-reguliruema-visochina-mehanizym-za-naklanjane-cheren-642622800372/pd/DH28QMBBM/",
+      "price": {
+        "amount": 51.99,
+        "currency": "EUR"
+      },
+      "source": "emag",
+      "discoveredBy": "store search",
+      "discoveredPrice": {
+        "amount": 99,
+        "currency": "EUR"
+      },
+      "fetchedAt": 1789912326887,
+      "finalUrl": "https://www.emag.bg/ofis-stol-kring-fit-ergonomichen-mrezha-reguliruema-visochina-mehanizym-za-naklanjane-cheren-642622800372/pd/DH28QMBBM/",
+      "httpStatus": 200,
+      "signals": {
+        "warranty": true,
+        "returnPolicy": false,
+        "official": false,
+        "storageRisk": true
+      },
+      "cached": false,
+      "sourceLabel": "eMAG Bulgaria",
+      "availability": "Courier delivery; pickup must be confirmed on the product page.",
+      "score": 100,
+      "priceBgn": 101.6836017,
+      "notes": [
+        "Check the actual marketplace seller, delivery fee, and warranty on the product page."
+      ],
+      "risk": "low",
+      "riskFlags": [],
+      "history": {
+        "firstSeen": "2026-09-20T13:52:10.535Z",
+        "seenCount": 1,
+        "previousPriceBgn": null
+      }
+    },
+    {
+      "title": "ОФИС СТОЛ KO03CZCZ",
+      "url": "https://www.technopolis.bg/bg/Stolove/OFIS-STOL-KO03CZCZ/p/224706",
+      "price": {
+        "amount": 56.24,
+        "currency": "EUR"
+      },
+      "source": "technopolis",
+      "discoveredBy": "store search",
+      "discoveredPrice": {
+        "amount": 56.24,
+        "currency": "EUR"
+      },
+      "fetchedAt": 1789912323595,
+      "finalUrl": "https://www.technopolis.bg/bg/Stolove/OFIS-STOL-KO03CZCZ/p/224706",
+      "httpStatus": 200,
+      "signals": {
+        "warranty": true,
+        "returnPolicy": false,
+        "official": false,
+        "storageRisk": false
+      },
+      "cached": false,
+      "sourceLabel": "Technopolis",
+      "availability": "Blagoevgrad branch: check this exact item for pickup today.",
+      "score": 100,
+      "priceBgn": 109.9958792,
+      "notes": [
+        "Local retailer; verify stock and warranty period."
+      ],
+      "risk": "low",
+      "riskFlags": [],
+      "history": {
+        "firstSeen": "2026-09-20T13:52:10.535Z",
+        "seenCount": 1,
+        "previousPriceBgn": null
+      }
+    },
+    {
+      "title": "МАСАЖНА СЕДАЛКА LANAFORM BACK MASSAGER СТЕПЕНИ НА РАБОТА 4",
+      "url": "https://www.technopolis.bg/bg/Masazhori/MASAZhNA-SEDALKA-LANAFORM-BACK-MASSAGER/p/838455",
+      "price": {
+        "amount": 59.9,
+        "currency": "EUR"
+      },
+      "source": "technopolis",
+      "discoveredBy": "store search",
+      "discoveredPrice": {
+        "amount": 59.9,
+        "currency": "EUR"
+      },
+      "fetchedAt": 1789912328558,
+      "finalUrl": "https://www.technopolis.bg/bg/Masazhori/MASAZhNA-SEDALKA-LANAFORM-BACK-MASSAGER/p/838455",
+      "httpStatus": 200,
+      "signals": {
+        "warranty": true,
+        "returnPolicy": false,
+        "official": false,
+        "storageRisk": false
+      },
+      "cached": false,
+      "sourceLabel": "Technopolis",
+      "availability": "Blagoevgrad branch: check this exact item for pickup today.",
+      "score": 100,
+      "priceBgn": 117.15421699999999,
+      "notes": [
+        "Local retailer; verify stock and warranty period."
+      ],
+      "risk": "low",
+      "riskFlags": [],
+      "history": {
+        "firstSeen": "2026-09-20T13:52:10.535Z",
+        "seenCount": 1,
+        "previousPriceBgn": null
+      }
+    },
+    {
+      "title": "Офис стол SENSE7 NOXO, Ергономична мрежа, Максимално тегло 150 кг, с лумбална опора, с регулируема облегалка за глава, с регулируема облегалка под ъгъл 90-130°, въртящ се, с заключващ механизъм, с регулируеми подлакътници, Черен - eMAG.bg",
+      "url": "https://www.emag.bg/ofis-stol-sense7-noxo-ergonomichna-mrezha-maksimalno-teglo-150-kg-s-lumbalna-opora-s-reguliruema-oblegalka-za-glava-s-reguliruema-oblegalka-pod-ygyl-90-130-vyrtjasht-se-s-zakljuchvasht-mehanizym-s-reg/pd/DB72KV3BM/",
+      "price": {
+        "amount": 86.28,
+        "currency": "EUR"
+      },
+      "source": "emag",
+      "discoveredBy": "store search",
+      "discoveredPrice": {
+        "amount": 90,
+        "currency": "EUR"
+      },
+      "fetchedAt": 1789912321565,
+      "finalUrl": "https://www.emag.bg/ofis-stol-sense7-noxo-ergonomichna-mrezha-maksimalno-teglo-150-kg-s-lumbalna-opora-s-reguliruema-oblegalka-za-glava-s-reguliruema-oblegalka-pod-ygyl-90-130-vyrtjasht-se-s-zakljuchvasht-mehanizym-s-reg/pd/DB72KV3BM/",
+      "httpStatus": 200,
+      "signals": {
+        "warranty": true,
+        "returnPolicy": false,
+        "official": false,
+        "storageRisk": true
+      },
+      "cached": false,
+      "sourceLabel": "eMAG Bulgaria",
+      "availability": "Courier delivery; pickup must be confirmed on the product page.",
+      "score": 100,
+      "priceBgn": 168.7490124,
+      "notes": [
+        "Check the actual marketplace seller, delivery fee, and warranty on the product page."
+      ],
+      "risk": "low",
+      "riskFlags": [],
+      "history": {
+        "firstSeen": "2026-09-20T13:52:10.535Z",
+        "seenCount": 1,
+        "previousPriceBgn": null
+      }
+    },
+    {
+      "title": "Офис стол Офис В Херкулес, черен - 3103000999280 3103000999280 - на топ цена",
+      "url": "https://ardes.bg/product/ofis-v-herkules-cheren-3103000999280-235356",
+      "price": {
+        "amount": 153.99,
+        "currency": "EUR"
+      },
+      "source": "ardes",
+      "discoveredBy": "store search",
+      "discoveredPrice": {
+        "amount": 153.99,
+        "currency": "EUR"
+      },
+      "fetchedAt": 1789912324958,
+      "finalUrl": "https://ardes.bg/product/ofis-v-herkules-cheren-3103000999280-235356",
+      "httpStatus": 200,
+      "signals": {
+        "warranty": true,
+        "returnPolicy": true,
+        "official": false,
+        "storageRisk": false
+      },
+      "cached": false,
+      "sourceLabel": "Ardes",
+      "availability": "Online delivery; confirm any pickup point and stock on the product page.",
+      "score": 80,
+      "priceBgn": 301.1782617,
+      "notes": [
+        "Over the stated item budget: ~301.18 BGN before any delivery charge.",
+        "Check stock, warranty, and delivery conditions for the exact model."
+      ],
+      "risk": "low",
+      "riskFlags": [],
+      "history": {
+        "firstSeen": "2026-09-20T13:52:10.535Z",
+        "seenCount": 1,
+        "previousPriceBgn": null
+      }
+    },
+    {
+      "title": "Офис стол Carmen 6514, бял - BI3520746_1 BI3520746_1 - на топ цена",
+      "url": "https://ardes.bg/product/carmen-6514-byal-bi3520746-1-536623",
+      "price": {
+        "amount": 162.99,
+        "currency": "EUR"
+      },
+      "source": "ardes",
+      "discoveredBy": "store search",
+      "discoveredPrice": {
+        "amount": 162.99,
+        "currency": "EUR"
+      },
+      "fetchedAt": 1789912329987,
+      "finalUrl": "https://ardes.bg/product/carmen-6514-byal-bi3520746-1-536623",
+      "httpStatus": 200,
+      "signals": {
+        "warranty": true,
+        "returnPolicy": true,
+        "official": false,
+        "storageRisk": false
+      },
+      "cached": false,
+      "sourceLabel": "Ardes",
+      "availability": "Online delivery; confirm any pickup point and stock on the product page.",
+      "score": 80,
+      "priceBgn": 318.7807317,
+      "notes": [
+        "Over the stated item budget: ~318.78 BGN before any delivery charge.",
+        "Check stock, warranty, and delivery conditions for the exact model."
+      ],
+      "risk": "low",
+      "riskFlags": [],
+      "history": {
+        "firstSeen": "2026-09-20T13:52:10.535Z",
+        "seenCount": 1,
+        "previousPriceBgn": null
+      }
+    },
+    {
+      "title": "Foldable Computer Table Laptop Table for Bed Office Desks Multifunctional Table Board Lap Desk Folding 8-Level Height & Nearly 180 ° Angle Adjustable Bracket, 15kg Load, Anti-Slip Drawer, Cup Holder - AliExpress 1503",
+      "url": "https://www.aliexpress.com/item/1005012793941056.html?algo_pvid=f87dd368-4472-4b4b-96a0-82ef055b55ae&algo_exp_id=f87dd368-4472-4b4b-96a0-82ef055b55ae-0&pdp_ext_f=%7B%22order%22%3A%2247%22%2C%22eval%22%3A%221%22%2C%22orig_sl_item_id%22%3A%221005012793941056%22%2C%22orig_item_id%22%3A%221005012438230234%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21BGN%2160.24%2152.47%21%21%2130.80%2126.83%21%40210381f017899123182218802e0dfe%2112000059356399931%21sea%21BG%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3Ac4b6c8a8%3Bm03_new_user%3A-29895&curPageLogUid=xl3KT8stAk5G&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005012793941056%7C_p_origin_prod%3A1005012438230234",
+      "price": {
+        "amount": 52.47,
+        "currency": "BGN"
+      },
+      "source": "aliexpress",
+      "discoveredBy": "store search",
+      "discoveredPrice": {
+        "amount": 52.47,
+        "currency": "BGN"
+      },
+      "fetchedAt": 1789912325499,
+      "finalUrl": "https://www.aliexpress.com/item/1005012793941056.html?algo_pvid=f87dd368-4472-4b4b-96a0-82ef055b55ae&algo_exp_id=f87dd368-4472-4b4b-96a0-82ef055b55ae-0&pdp_ext_f=%7B%22order%22%3A%2247%22%2C%22eval%22%3A%221%22%2C%22orig_sl_item_id%22%3A%221005012793941056%22%2C%22orig_item_id%22%3A%221005012438230234%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21BGN%2160.24%2152.47%21%21%2130.80%2126.83%21%40210381f017899123182218802e0dfe%2112000059356399931%21sea%21BG%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3Ac4b6c8a8%3Bm03_new_user%3A-29895&curPageLogUid=xl3KT8stAk5G&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005012793941056%7C_p_origin_prod%3A1005012438230234",
+      "httpStatus": 200,
+      "signals": {
+        "warranty": false,
+        "returnPolicy": false,
+        "official": false,
+        "storageRisk": false
+      },
+      "cached": false,
+      "sourceLabel": "AliExpress",
+      "availability": "International delivery; confirm final shipping, VAT, and delivery date at checkout.",
+      "score": 60,
+      "priceBgn": 52.47,
+      "notes": [
+        "Risk to check: Lower-trust marketplace/seller lane.",
+        "Prefer official stores, 4.7+ seller rating, 100+ orders, and Buyer Protection. Avoid fake capacity drives."
+      ],
+      "risk": "medium",
+      "riskFlags": [
+        "Lower-trust marketplace/seller lane"
+      ],
+      "history": {
+        "firstSeen": "2026-09-20T13:52:10.535Z",
+        "seenCount": 1,
+        "previousPriceBgn": null
+      }
+    },
+    {
+      "title": "Electric Standing Desk Height Adjustable Desk with Memory Function 3 Memory Position Sit Stand Table with 2 Hooks for Office Living R - AliExpress 1503",
+      "url": "https://www.aliexpress.com/item/1005012679561236.html?algo_pvid=f87dd368-4472-4b4b-96a0-82ef055b55ae&algo_exp_id=f87dd368-4472-4b4b-96a0-82ef055b55ae-1&pdp_ext_f=%7B%22order%22%3A%22-1%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21BGN%21674.63%21283.33%21%21%21344.94%21144.87%21%40210381f017899123182218802e0dfe%2112000059040915500%21sea%21BG%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3Ac4b6c8a8%3Bm03_new_user%3A-29895&curPageLogUid=ZDhhX5xhJWmh&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005012679561236%7C_p_origin_prod%3A",
+      "price": {
+        "amount": 283.33,
+        "currency": "BGN"
+      },
+      "source": "aliexpress",
+      "discoveredBy": "store search",
+      "discoveredPrice": {
+        "amount": 283.33,
+        "currency": "BGN"
+      },
+      "fetchedAt": 1789912330532,
+      "finalUrl": "https://www.aliexpress.com/item/1005012679561236.html?algo_pvid=f87dd368-4472-4b4b-96a0-82ef055b55ae&algo_exp_id=f87dd368-4472-4b4b-96a0-82ef055b55ae-1&pdp_ext_f=%7B%22order%22%3A%22-1%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21BGN%21674.63%21283.33%21%21%21344.94%21144.87%21%40210381f017899123182218802e0dfe%2112000059040915500%21sea%21BG%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3Ac4b6c8a8%3Bm03_new_user%3A-29895&curPageLogUid=ZDhhX5xhJWmh&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005012679561236%7C_p_origin_prod%3A",
+      "httpStatus": 200,
+      "signals": {
+        "warranty": false,
+        "returnPolicy": false,
+        "official": false,
+        "storageRisk": false
+      },
+      "cached": false,
+      "sourceLabel": "AliExpress",
+      "availability": "International delivery; confirm final shipping, VAT, and delivery date at checkout.",
+      "score": 32,
+      "priceBgn": 283.33,
+      "notes": [
+        "Risk to check: Lower-trust marketplace/seller lane.",
+        "Over the stated item budget: ~283.33 BGN before any delivery charge.",
+        "Prefer official stores, 4.7+ seller rating, 100+ orders, and Buyer Protection. Avoid fake capacity drives."
+      ],
+      "risk": "medium",
+      "riskFlags": [
+        "Lower-trust marketplace/seller lane"
+      ],
+      "history": {
+        "firstSeen": "2026-09-20T13:52:10.535Z",
+        "seenCount": 1,
+        "previousPriceBgn": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="application/vnd.ms-excel; charset=utf-8">
+</head>
+<style>
+    .table {
+        border-spacing: 0px;
+    }
+
+        .table tbody > tr > td > p {
+            font-size: 9pt;
+        }
+
+        .table tbody > tr > td {
+            display: normal;
+        }
+
+    body {
+        font-size: 9pt;
+    }
+
+    .td {
+        width: 75px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .td-group {
+        width: 18px;
+    }
+
+    .group {
+        width: 18px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .header {
+        font-size: 17px;
+    }
+</style>
+
+<p>
+    <span style="font-size:20px; font-weight:bold">Югозападен университет "Неофит Рилски" </span><br />
+
+    Период: 17/9/2026
+    - 8/1/2027
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Правно-исторически факултет 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Международни отношения - бакалавър, Първи курс (редовно)
+    <br />
+    Утвърдил:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Утвърдил:
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/Зам.-ректор ОД/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /Декан/
+
+</p>
+<h2>Седмично разписание</h2>
+<table class="table" border="1">
+
+    <tr>
+        <td class="td" style="background-color: #eeeeee">Ден</td>
+        <td class="td-group" style="background-color: #eeeeee"><span class="fa fa-users"></span></td>
+
+            <td class="td" style="background-color: #eeeeee">
+
+                7:30-8:15
+            </td>
+            <td class="td" style="background-color: #eeeeee">
+
+                8:30-9:15
+            </td>
+            <td class="td" style="background-color: #eeeeee">
+
+                9:30-10:15
+            </td>
+            <td class="td" style="background-color: #eeeeee">
+
+                10:30-11:15
+            </td>
+            <td class="td" style="background-color: #eeeeee">
+
+                11:30-12:15
+            </td>
+            <td class="td" style="background-color: #eeeeee">
+
+                12:30-13:15
+            </td>
+            <td class="td" style="background-color: #eeeeee">
+
+                13:30-14:15
+            </td>
+            <td class="td" style="background-color: #eeeeee">
+
+                14:30-15:15
+            </td>
+            <td class="td" style="background-color: #eeeeee">
+
+                15:30-16:15
+            </td>
+    </tr>
+        <tr>
+                <td class="td" style="background-color: #eee">
+ Понеделник
+                </td>
+                                <td class="group">1</td>
+                    <td class="td">
+                        
+                    </td>
+                    <td class="td">
+                        
+                    </td>
+                            <td class="td" colspan="3" style="background-color: #dff0d8">
+                                
+                                    <p>Английски език, 3 часа упражнения от СХ: 45 часа упражнения - доц.  д-р  Гергана Георгиева,  поток, 6302</p>
+
+                            </td>
+                    <td class="td">
+                        
+                    </td>
+                            <td class="td" colspan="3" style="background-color: #dff0d8">
+                                
+                                    <p>Политология, 3 часа леции от СХ: 45 часа лекции, в поток със специалност &quot;Право&quot; и &quot;Публична администрация&quot; - доц.  д-р  Николай Попов,  поток, 1208</p>
+
+                            </td>
+
+        </tr>
+        <tr>
+                <td class="td" style="background-color: #eee">
+ Вторник
+                </td>
+                                <td class="group">1</td>
+                    <td class="td">
+                        
+                    </td>
+                    <td class="td">
+                        
+                    </td>
+                            <td class="td" colspan="4" style="background-color: #dff0d8">
+                                
+                                    <p>История на международните отношения, 4 часа лекции от СХ: 60 часа лекции - доц.  д-р  Димитър Тюлеков,  поток, 6310</p>
+
+                            </td>
+                    <td class="td">
+                        
+                    </td>
+                            <td class="td" colspan="1" style="background-color: #dff0d8">
+                                
+                                    <p>Политология, 1 час упражнения от СХ: 15 часа упражнения - гл. ас.  д-р  Йосиф Кочев,  поток, 6309</p>
+
+                            </td>
+                    <td class="td">
+                        
+                    </td>
+
+        </tr>
+        <tr>
+                <td class="td" style="background-color: #eee">
+ Сряда
+                </td>
+                                <td class="group">1</td>
+                    <td class="td">
+                        
+                    </td>
+                            <td class="td" colspan="2" style="background-color: #dff0d8">
+                                
+                                    <p>Глобализъм, наука, технологии, 2 часа лекции от СХ: 30 часа лекции - гл. ас.  д-р  Мария Хаджипетрова-Лачова,  поток, 6310</p>
+
+                            </td>
+                            <td class="td" colspan="2" style="background-color: #dff0d8">
+                                
+                                    <p>Френски език, 2 часа упражнения от СХ: 30 часа упражнения - гл. ас.  д-р  Мария Хаджипетрова-Лачова,  поток, 6310</p>
+
+                            </td>
+                    <td class="td">
+                        
+                    </td>
+                    <td class="td">
+                        
+                    </td>
+                    <td class="td">
+                        
+                    </td>
+                    <td class="td">
+                        
+                    </td>
+
+        </tr>
+        <tr>
+                <td class="td" style="background-color: #eee">
+ Четвъртък
+                </td>
+                                <td class="group">1</td>
+                    <td class="td">
+                        
+                    </td>
+                            <td class="td" colspan="4" style="background-color: #dff0d8">
+                                
+                                    <p>Политическа история на Европа и САЩ, 4 часа лекции от СХ: 60 часа лекции - гл. ас.  д-р  Вероника Стоилова,  поток, 6311</p>
+
+                            </td>
+                            <td class="td" colspan="1" style="background-color: #dff0d8">
+                                
+                                    <p>Политическа история на Европа и САЩ, 1 час упражнения от СХ: 15 часа упражнения - гл. ас.  д-р  Вероника Стоилова,  поток, 6304</p>
+
+                            </td>
+                    <td class="td">
+                        
+                    </td>
+                            <td class="td" colspan="2" style="background-color: #dff0d8">
+                                
+                                        <p style="color:blue">История на международните отношения, 2 часа упражнения  от СХ: 15 часа упражнения, по дати: 17.09; 01.10; 15.10; 29.10;12.11; 26.11;10.12.2026 г. - х.преп.   Мартин Лалев,  поток, 6310 - нечетна</p>
+
+                            </td>
+
+        </tr>
+
+</table>
+
+
+
+    <h3>Допълнителна информация</h3>
+    <p>Забележка: Съгласно процедура за управление и организация на участието на студентите в задължителните занимания по спорт и физическа активност всеки студент избира вида спорт съобразно възможностите за посещение в седмичния график на своята специалност и срок за записване в Спортния комплекс на ЮЗУ &quot;Неофит Рилски&quot; от 14 до 25 септември 2026 г. (за учебната 2026-2027 г.) от 9:00 до 17:00 часа.</p>

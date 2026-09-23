@@ -1,0 +1,7 @@
+{
+  "energy": "top",
+  "main_block": "Top of Active Queue",
+  "recommendation": "Top of wave. Full load. Main Block: Top of Active Queue\n   NOTE: Goal anchor ('using the machine correctly, learn it fully') differs from queue top. Override if stronger.",
+  "goal_anchor": "using the machine correctly, learn it fully",
+  "timestamp": "2026-09-17T08:52:54.448010"
+}

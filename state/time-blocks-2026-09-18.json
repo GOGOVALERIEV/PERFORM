@@ -1,0 +1,87 @@
+{
+  "day_window": "16:00 wake, 02:00 sleep",
+  "fixed_walls": "nothing",
+  "tasks": [
+    {
+      "name": "Produce first shit video ad drafts",
+      "duration": 60,
+      "done": false
+    },
+    {
+      "name": "Produce GOOD video ads",
+      "duration": 93,
+      "done": false
+    },
+    {
+      "name": "Build the university system",
+      "duration": 120,
+      "done": false
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Wake up + eat",
+      "start_m": 963,
+      "end_m": 993,
+      "type": "personal",
+      "start": "16:03",
+      "end": "16:33",
+      "duration": 30
+    },
+    {
+      "name": "Produce first shit video ad drafts",
+      "start_m": 993,
+      "end_m": 1053,
+      "type": "deep_work",
+      "start": "16:33",
+      "end": "17:33",
+      "duration": 60
+    },
+    {
+      "name": "Produce GOOD video ads (part 1)",
+      "start_m": 1053,
+      "end_m": 1140,
+      "type": "deep_work",
+      "start": "17:33",
+      "end": "19:00",
+      "duration": 87
+    },
+    {
+      "start_m": 1140,
+      "end_m": 1170,
+      "name": "dinner",
+      "type": "break",
+      "start": "19:00",
+      "end": "19:30",
+      "duration": 30
+    },
+    {
+      "name": "Produce GOOD video ads",
+      "start_m": 1170,
+      "end_m": 1263,
+      "type": "deep_work",
+      "start": "19:30",
+      "end": "21:03",
+      "duration": 93
+    },
+    {
+      "name": "Build the university system",
+      "start_m": 1263,
+      "end_m": 1383,
+      "type": "deep_work",
+      "start": "21:03",
+      "end": "23:03",
+      "duration": 120
+    },
+    {
+      "name": "Buffer / wind down",
+      "start_m": 1383,
+      "end_m": 1560,
+      "type": "personal",
+      "start": "23:03",
+      "end": "02:00",
+      "duration": 177
+    }
+  ],
+  "timestamp": "2026-09-18T16:03:31.464145"
+}

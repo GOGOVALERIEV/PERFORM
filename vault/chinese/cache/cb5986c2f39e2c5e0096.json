@@ -1,0 +1,17 @@
+{
+  "fetchedAt": 1789860591180,
+  "finalUrl": "https://www.emag.bg/ssd-intenso-external-tx500-1tb-3827460/pd/DTZBLTYBM/",
+  "httpStatus": 200,
+  "title": "SSD Intenso External TX500, 1TB - eMAG.bg",
+  "price": {
+    "amount": 168.16,
+    "currency": "EUR"
+  },
+  "signals": {
+    "warranty": true,
+    "returnPolicy": false,
+    "official": false,
+    "storageRisk": true
+  },
+  "cached": false
+}

@@ -1,0 +1,2586 @@
+{
+ "date_collected": "2026-09-19",
+ "store": "Lidl",
+ "flyer": "Седмични предложения",
+ "validity": "от 14.09. до 20.09.",
+ "flyer_id": "14-09-20-09-105ab0",
+ "n_deals": 312,
+ "deals": [
+  {
+   "store": "Lidl",
+   "name": "Гарантирана",
+   "discount_pct": "-50",
+   "valid": "от 14.09. до 20.09.",
+   "page": 1,
+   "page_image": "https://imgproxy.leaflets.schwarz/lgL9A2oURt6QOuuL2mmIn7fq3sqJmCYnzpsWNtNxJDk/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDFfOGFkOWEwOTBiZDlhZDZhMzhmYTk3NTUxZWIxZjZjYjQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Родна Стряха Промо- Пакет",
+   "discount_pct": "-20",
+   "valid": "от 14.09. до 20.09.",
+   "page": 1,
+   "page_image": "https://imgproxy.leaflets.schwarz/lgL9A2oURt6QOuuL2mmIn7fq3sqJmCYnzpsWNtNxJDk/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDFfOGFkOWEwOTBiZDlhZDZhMzhmYTk3NTUxZWIxZjZjYjQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Плешка Кост Цяло Парче",
+   "discount_pct": "-21",
+   "valid": "от 14.09. до 20.09.",
+   "page": 1,
+   "page_image": "https://imgproxy.leaflets.schwarz/lgL9A2oURt6QOuuL2mmIn7fq3sqJmCYnzpsWNtNxJDk/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDFfOGFkOWEwOTBiZDlhZDZhMzhmYTk3NTUxZWIxZjZjYjQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Ръжено- Пшеничен Хляб",
+   "discount_pct": "-51",
+   "valid": "от 14.09. до 20.09.",
+   "page": 1,
+   "page_image": "https://imgproxy.leaflets.schwarz/lgL9A2oURt6QOuuL2mmIn7fq3sqJmCYnzpsWNtNxJDk/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDFfOGFkOWEwOTBiZDlhZDZhMzhmYTk3NTUxZWIxZjZjYjQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кухненска Хартия",
+   "discount_pct": "--43",
+   "valid": "от 14.09. до 20.09.",
+   "page": 1,
+   "page_image": "https://imgproxy.leaflets.schwarz/lgL9A2oURt6QOuuL2mmIn7fq3sqJmCYnzpsWNtNxJDk/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDFfOGFkOWEwOTBiZDlhZDZhMzhmYTk3NTUxZWIxZjZjYjQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Рози",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 1,
+   "page_image": "https://imgproxy.leaflets.schwarz/lgL9A2oURt6QOuuL2mmIn7fq3sqJmCYnzpsWNtNxJDk/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDFfOGFkOWEwOTBiZDlhZDZhMzhmYTk3NTUxZWIxZjZjYjQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Периодаянуари",
+   "discount_pct": "--54",
+   "valid": "от 14.09. до 20.09.",
+   "page": 3,
+   "page_image": "https://imgproxy.leaflets.schwarz/CyGLiEY-63x72fDgiuXHGUyi107sSS_aYNw5SJlPM_0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDNfMDg1MTBjYmY2YmU1OGY0NGYxOTk5ODY5ZGZmNTRmZTcucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Манго",
+   "discount_pct": "--35",
+   "valid": "от 14.09. до 20.09.",
+   "page": 3,
+   "page_image": "https://imgproxy.leaflets.schwarz/CyGLiEY-63x72fDgiuXHGUyi107sSS_aYNw5SJlPM_0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDNfMDg1MTBjYmY2YmU1OGY0NGYxOTk5ODY5ZGZmNTRmZTcucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Бразилия",
+   "discount_pct": "--41",
+   "valid": "от 14.09. до 20.09.",
+   "page": 3,
+   "page_image": "https://imgproxy.leaflets.schwarz/CyGLiEY-63x72fDgiuXHGUyi107sSS_aYNw5SJlPM_0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDNfMDg1MTBjYmY2YmU1OGY0NGYxOTk5ODY5ZGZmNTRmZTcucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Карфиол",
+   "discount_pct": "--33",
+   "valid": "от 14.09. до 20.09.",
+   "page": 3,
+   "page_image": "https://imgproxy.leaflets.schwarz/CyGLiEY-63x72fDgiuXHGUyi107sSS_aYNw5SJlPM_0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDNfMDg1MTBjYmY2YmU1OGY0NGYxOTk5ODY5ZGZmNTRmZTcucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската",
+   "discount_pct": "-33",
+   "valid": "от 14.09. до 20.09.",
+   "page": 3,
+   "page_image": "https://imgproxy.leaflets.schwarz/CyGLiEY-63x72fDgiuXHGUyi107sSS_aYNw5SJlPM_0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDNfMDg1MTBjYmY2YmU1OGY0NGYxOTk5ODY5ZGZmNTRmZTcucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Букет",
+   "discount_pct": "-20",
+   "valid": "от 14.09. до 20.09.",
+   "page": 4,
+   "page_image": "https://imgproxy.leaflets.schwarz/I-Rut7sYmfiwqkZyZqNstxhvR6gFj9xBmoXOFJig07E/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDRfOGE3MTAzMDYyNTAxMmFlZGMxMzQ2YTVhZmIxMzhhOWUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Височина",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 4,
+   "page_image": "https://imgproxy.leaflets.schwarz/I-Rut7sYmfiwqkZyZqNstxhvR6gFj9xBmoXOFJig07E/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDRfOGE3MTAzMDYyNTAxMmFlZGMxMzQ2YTVhZmIxMzhhOWUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Неделя",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 4,
+   "page_image": "https://imgproxy.leaflets.schwarz/I-Rut7sYmfiwqkZyZqNstxhvR6gFj9xBmoXOFJig07E/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDRfOGE3MTAzMDYyNTAxMmFlZGMxMzQ2YTVhZmIxMzhhOWUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Цветен Микс",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 5,
+   "page_image": "https://imgproxy.leaflets.schwarz/hi3D3J7VmdDLWFI27gb2Y8Z_3430u1_0v4E1_qs23Pg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDVfMmVmMTc5MzVjMTFkNzMwMjU2NjUzOGI2ZTZiYjk3ZDIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Декоративни Тикви",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 5,
+   "page_image": "https://imgproxy.leaflets.schwarz/hi3D3J7VmdDLWFI27gb2Y8Z_3430u1_0v4E1_qs23Pg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDVfMmVmMTc5MzVjMTFkNzMwMjU2NjUzOGI2ZTZiYjk3ZDIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Минимум Кошница",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 5,
+   "page_image": "https://imgproxy.leaflets.schwarz/hi3D3J7VmdDLWFI27gb2Y8Z_3430u1_0v4E1_qs23Pg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDVfMmVmMTc5MzVjMTFkNzMwMjU2NjUzOGI2ZTZiYjk3ZDIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Ерика Грацилис",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 5,
+   "page_image": "https://imgproxy.leaflets.schwarz/hi3D3J7VmdDLWFI27gb2Y8Z_3430u1_0v4E1_qs23Pg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDVfMmVmMTc5MzVjMTFkNzMwMjU2NjUzOGI2ZTZiYjk3ZDIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 5,
+   "page_image": "https://imgproxy.leaflets.schwarz/hi3D3J7VmdDLWFI27gb2Y8Z_3430u1_0v4E1_qs23Pg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDVfMmVmMTc5MzVjMTFkNzMwMjU2NjUzOGI2ZTZiYjk3ZDIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Четвъртък",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 5,
+   "page_image": "https://imgproxy.leaflets.schwarz/hi3D3J7VmdDLWFI27gb2Y8Z_3430u1_0v4E1_qs23Pg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDVfMmVmMTc5MzVjMTFkNzMwMjU2NjUzOGI2ZTZiYjk3ZDIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Пекарна",
+   "discount_pct": "-52",
+   "valid": "от 14.09. до 20.09.",
+   "page": 6,
+   "page_image": "https://imgproxy.leaflets.schwarz/Reo5085u3H4aA3sZ3C2l_lc8rIHaHDZRxFWVhipby_8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDZfYjAyMmFjYzk1NTNjYjNhYzM2MGM2YzFlNWQ1N2ZlM2UucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Съотношение",
+   "discount_pct": "-35",
+   "valid": "от 14.09. до 20.09.",
+   "page": 6,
+   "page_image": "https://imgproxy.leaflets.schwarz/Reo5085u3H4aA3sZ3C2l_lc8rIHaHDZRxFWVhipby_8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDZfYjAyMmFjYzk1NTNjYjNhYzM2MGM2YzFlNWQ1N2ZlM2UucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговските",
+   "discount_pct": "--33",
+   "valid": "от 14.09. до 20.09.",
+   "page": 6,
+   "page_image": "https://imgproxy.leaflets.schwarz/Reo5085u3H4aA3sZ3C2l_lc8rIHaHDZRxFWVhipby_8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDZfYjAyMmFjYzk1NTNjYjNhYzM2MGM2YzFlNWQ1N2ZlM2UucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Царевица",
+   "discount_pct": "-70",
+   "valid": "от 14.09. до 20.09.",
+   "page": 7,
+   "page_image": "https://imgproxy.leaflets.schwarz/x8uw4iJ0EDbpA9UPRnhBbThANZfLOlhc5G2VtScpCS4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDdfYjZlYmZkYTUwMTk0NmI5NTdjYTY5ZjIyNmJlNDQ2OWYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Зрял Минимум",
+   "discount_pct": "-21",
+   "valid": "от 14.09. до 20.09.",
+   "page": 7,
+   "page_image": "https://imgproxy.leaflets.schwarz/x8uw4iJ0EDbpA9UPRnhBbThANZfLOlhc5G2VtScpCS4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDdfYjZlYmZkYTUwMTk0NmI5NTdjYTY5ZjIyNmJlNDQ2OWYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Мляно Бут Филе",
+   "discount_pct": "-25",
+   "valid": "от 14.09. до 20.09.",
+   "page": 7,
+   "page_image": "https://imgproxy.leaflets.schwarz/x8uw4iJ0EDbpA9UPRnhBbThANZfLOlhc5G2VtScpCS4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDdfYjZlYmZkYTUwMTk0NmI5NTdjYTY5ZjIyNmJlNDQ2OWYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Свинско Бекон Пържен Лук",
+   "discount_pct": "-00",
+   "valid": "от 14.09. до 20.09.",
+   "page": 7,
+   "page_image": "https://imgproxy.leaflets.schwarz/x8uw4iJ0EDbpA9UPRnhBbThANZfLOlhc5G2VtScpCS4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDdfYjZlYmZkYTUwMTk0NmI5NTdjYTY5ZjIyNmJlNDQ2OWYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Пуешки Италия",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 7,
+   "page_image": "https://imgproxy.leaflets.schwarz/x8uw4iJ0EDbpA9UPRnhBbThANZfLOlhc5G2VtScpCS4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDdfYjZlYmZkYTUwMTk0NmI5NTdjYTY5ZjIyNmJlNDQ2OWYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 7,
+   "page_image": "https://imgproxy.leaflets.schwarz/x8uw4iJ0EDbpA9UPRnhBbThANZfLOlhc5G2VtScpCS4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDdfYjZlYmZkYTUwMTk0NmI5NTdjYTY5ZjIyNmJlNDQ2OWYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Лаврак Изчистен",
+   "discount_pct": "--21",
+   "valid": "от 14.09. до 20.09.",
+   "page": 8,
+   "page_image": "https://imgproxy.leaflets.schwarz/Taqnd7vOhX6E3stxX8yfmWBbHF8MawQtBATbRhUDrU4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDhfMDEzYWFlZDZlMDIzZDQ5ZTZhZDM1ZjZlNGQ1YzYxZjUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Рибни Специалитети",
+   "discount_pct": "-26",
+   "valid": "от 14.09. до 20.09.",
+   "page": 8,
+   "page_image": "https://imgproxy.leaflets.schwarz/Taqnd7vOhX6E3stxX8yfmWBbHF8MawQtBATbRhUDrU4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDhfMDEzYWFlZDZlMDIzZDQ5ZTZhZDM1ZjZlNGQ1YzYxZjUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Панирани Рибни Пръчици Филе",
+   "discount_pct": "--22",
+   "valid": "от 14.09. до 20.09.",
+   "page": 9,
+   "page_image": "https://imgproxy.leaflets.schwarz/-3oet0Axi4ydFJxix_zVTaeJtGmeY4jLfWHIAn2z4oE/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDlfODdiOTZkZjkxZWRlZGQ4NTI4OWFhMDExNmVkNjc5ZTkucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Калмари",
+   "discount_pct": "--23",
+   "valid": "от 14.09. до 20.09.",
+   "page": 9,
+   "page_image": "https://imgproxy.leaflets.schwarz/-3oet0Axi4ydFJxix_zVTaeJtGmeY4jLfWHIAn2z4oE/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDlfODdiOTZkZjkxZWRlZGQ4NTI4OWFhMDExNmVkNjc5ZTkucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Бургери Сьомга",
+   "discount_pct": "-22",
+   "valid": "от 14.09. до 20.09.",
+   "page": 9,
+   "page_image": "https://imgproxy.leaflets.schwarz/-3oet0Axi4ydFJxix_zVTaeJtGmeY4jLfWHIAn2z4oE/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDlfODdiOTZkZjkxZWRlZGQ4NTI4OWFhMDExNmVkNjc5ZTkucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Херинга Подправки Рапично Масло",
+   "discount_pct": "-23",
+   "valid": "от 14.09. до 20.09.",
+   "page": 9,
+   "page_image": "https://imgproxy.leaflets.schwarz/-3oet0Axi4ydFJxix_zVTaeJtGmeY4jLfWHIAn2z4oE/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDlfODdiOTZkZjkxZWRlZGQ4NTI4OWFhMDExNmVkNjc5ZTkucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Салата Хайвер",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 9,
+   "page_image": "https://imgproxy.leaflets.schwarz/-3oet0Axi4ydFJxix_zVTaeJtGmeY4jLfWHIAn2z4oE/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDlfODdiOTZkZjkxZWRlZGQ4NTI4OWFhMDExNmVkNjc5ZTkucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 9,
+   "page_image": "https://imgproxy.leaflets.schwarz/-3oet0Axi4ydFJxix_zVTaeJtGmeY4jLfWHIAn2z4oE/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMDlfODdiOTZkZjkxZWRlZGQ4NTI4OWFhMDExNmVkNjc5ZTkucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Продукти Допълнителната Онлайн Брошура",
+   "discount_pct": "--24",
+   "valid": "от 14.09. до 20.09.",
+   "page": 10,
+   "page_image": "https://imgproxy.leaflets.schwarz/0xbgpRZzZ5ey2B6yJfghhz1RU8-B23AI0KrWvBK2r5E/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTBfMTViNDYwMTM3MDdhY2RkODhlMWRiMjcwNDZkMmFkNWEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Бял Боб",
+   "discount_pct": "--15",
+   "valid": "от 14.09. до 20.09.",
+   "page": 10,
+   "page_image": "https://imgproxy.leaflets.schwarz/0xbgpRZzZ5ey2B6yJfghhz1RU8-B23AI0KrWvBK2r5E/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTBfMTViNDYwMTM3MDdhY2RkODhlMWRiMjcwNDZkMmFkNWEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Родна Стряха Сурова Наденица",
+   "discount_pct": "--19",
+   "valid": "от 14.09. до 20.09.",
+   "page": 10,
+   "page_image": "https://imgproxy.leaflets.schwarz/0xbgpRZzZ5ey2B6yJfghhz1RU8-B23AI0KrWvBK2r5E/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTBfMTViNDYwMTM3MDdhY2RkODhlMWRiMjcwNDZkMmFkNWEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Пастет Апетит Произведен",
+   "discount_pct": "--25",
+   "valid": "от 14.09. до 20.09.",
+   "page": 10,
+   "page_image": "https://imgproxy.leaflets.schwarz/0xbgpRZzZ5ey2B6yJfghhz1RU8-B23AI0KrWvBK2r5E/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTBfMTViNDYwMTM3MDdhY2RkODhlMWRiMjcwNDZkMmFkNWEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кисело Мляко Масленост",
+   "discount_pct": "--18",
+   "valid": "от 14.09. до 20.09.",
+   "page": 10,
+   "page_image": "https://imgproxy.leaflets.schwarz/0xbgpRZzZ5ey2B6yJfghhz1RU8-B23AI0KrWvBK2r5E/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTBfMTViNDYwMTM3MDdhY2RkODhlMWRiMjcwNDZkMmFkNWEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Салата Италиански Микс",
+   "discount_pct": "--17",
+   "valid": "от 14.09. до 20.09.",
+   "page": 10,
+   "page_image": "https://imgproxy.leaflets.schwarz/0xbgpRZzZ5ey2B6yJfghhz1RU8-B23AI0KrWvBK2r5E/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTBfMTViNDYwMTM3MDdhY2RkODhlMWRiMjcwNDZkMmFkNWEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Купи Продукти",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 11,
+   "page_image": "https://imgproxy.leaflets.schwarz/bXDo73taXuy1gn-bBfXaebxbKNujH--thYqKHyDejoM/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTFfZDAxNjgyYTAwZTliZDcxYzYyZTdlMDgwODRmYmM1ZTMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Прахосмукачка",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 11,
+   "page_image": "https://imgproxy.leaflets.schwarz/bXDo73taXuy1gn-bBfXaebxbKNujH--thYqKHyDejoM/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTFfZDAxNjgyYTAwZTliZDcxYzYyZTdlMDgwODRmYmM1ZTMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Пълните Правила",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 11,
+   "page_image": "https://imgproxy.leaflets.schwarz/bXDo73taXuy1gn-bBfXaebxbKNujH--thYqKHyDejoM/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTFfZDAxNjgyYTAwZTliZDcxYzYyZTdlMDgwODRmYmM1ZTMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 11,
+   "page_image": "https://imgproxy.leaflets.schwarz/bXDo73taXuy1gn-bBfXaebxbKNujH--thYqKHyDejoM/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTFfZDAxNjgyYTAwZTliZDcxYzYyZTdlMDgwODRmYmM1ZTMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Твоето Мнение",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 12,
+   "page_image": "https://imgproxy.leaflets.schwarz/UvrsalvveRCSG7TbZbX6Yc3ASje3wEHC9mEAX0YB28Q/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTJfNDYyNGYxYzQ1YjA0MmUzZjcyZDJlZjgzOWRiMDcwNWEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Направим",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 12,
+   "page_image": "https://imgproxy.leaflets.schwarz/UvrsalvveRCSG7TbZbX6Yc3ASje3wEHC9mEAX0YB28Q/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTJfNDYyNGYxYzQ1YjA0MmUzZjcyZDJlZjgzOWRiMDcwNWEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Еър Ваучера Пазаруване Стойност",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 12,
+   "page_image": "https://imgproxy.leaflets.schwarz/UvrsalvveRCSG7TbZbX6Yc3ASje3wEHC9mEAX0YB28Q/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTJfNDYyNGYxYzQ1YjA0MmUzZjcyZDJlZjgzOWRiMDcwNWEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Печели Рулетката",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 13,
+   "page_image": "https://imgproxy.leaflets.schwarz/GS6I4ItzdaDHQzz_pWwVwsDWxF1jDVsVlMFbEM0i-4c/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTNfODRiMjI3YjUyYzQ2NjBiN2I5NmQwYTdhYWI3ZGZhZjEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Пазарувай Касов Бон",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 13,
+   "page_image": "https://imgproxy.leaflets.schwarz/GS6I4ItzdaDHQzz_pWwVwsDWxF1jDVsVlMFbEM0i-4c/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTNfODRiMjI3YjUyYzQ2NjBiN2I5NmQwYTdhYWI3ZGZhZjEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Касата Завърти Приложението",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 13,
+   "page_image": "https://imgproxy.leaflets.schwarz/GS6I4ItzdaDHQzz_pWwVwsDWxF1jDVsVlMFbEM0i-4c/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTNfODRiMjI3YjUyYzQ2NjBiN2I5NmQwYTdhYWI3ZGZhZjEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 13,
+   "page_image": "https://imgproxy.leaflets.schwarz/GS6I4ItzdaDHQzz_pWwVwsDWxF1jDVsVlMFbEM0i-4c/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTNfODRiMjI3YjUyYzQ2NjBiN2I5NmQwYTdhYWI3ZGZhZjEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Свежо",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 14,
+   "page_image": "https://imgproxy.leaflets.schwarz/3C1z5sv1Gzo6C5GUv_OAP7dFup6OwEZEUBB68oTzLyk/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTRfZjM4NmM3MzRkYmQ2MDMwOTUzY2M5ZTdjY2NhYmQ3ODcucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската",
+   "discount_pct": "-00",
+   "valid": "от 14.09. до 20.09.",
+   "page": 15,
+   "page_image": "https://imgproxy.leaflets.schwarz/KCstSsUpnQt2rfaI93oSmAfNFb5PLFjOufQiRktFlws/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTVfYzYxMmI1YjcxMTc4ZWI1YTc3MjMxOTNlODJhNTE2NDUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Италиански Хрупкави Вафлички Редовна",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 15,
+   "page_image": "https://imgproxy.leaflets.schwarz/KCstSsUpnQt2rfaI93oSmAfNFb5PLFjOufQiRktFlws/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTVfYzYxMmI1YjcxMTc4ZWI1YTc3MjMxOTNlODJhNTE2NDUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Точки Гланц Съдомиялна",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 15,
+   "page_image": "https://imgproxy.leaflets.schwarz/KCstSsUpnQt2rfaI93oSmAfNFb5PLFjOufQiRktFlws/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTVfYzYxMmI1YjcxMTc4ZWI1YTc3MjMxOTNlODJhNTE2NDUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кетчуп",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 15,
+   "page_image": "https://imgproxy.leaflets.schwarz/KCstSsUpnQt2rfaI93oSmAfNFb5PLFjOufQiRktFlws/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTVfYzYxMmI1YjcxMTc4ZWI1YTc3MjMxOTNlODJhNTE2NDUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Шунка Пуешки Гърди Нарязана",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 15,
+   "page_image": "https://imgproxy.leaflets.schwarz/KCstSsUpnQt2rfaI93oSmAfNFb5PLFjOufQiRktFlws/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTVfYzYxMmI1YjcxMTc4ZWI1YTc3MjMxOTNlODJhNTE2NDUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кашу Печено Овкусено",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 15,
+   "page_image": "https://imgproxy.leaflets.schwarz/KCstSsUpnQt2rfaI93oSmAfNFb5PLFjOufQiRktFlws/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTVfYzYxMmI1YjcxMTc4ZWI1YTc3MjMxOTNlODJhNTE2NDUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Вземи",
+   "discount_pct": "-40",
+   "valid": "от 14.09. до 20.09.",
+   "page": 16,
+   "page_image": "https://imgproxy.leaflets.schwarz/ABhCMc6bl_OCpzxzNQ_fJWRpAErdh2jbeWanlPLKT78/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTZfMTRkMmRhNjg1NjU4ZWU4ZjFlMWM0YjNmN2FkNmRjYWMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Тенеси Уиски",
+   "discount_pct": "-33",
+   "valid": "от 14.09. до 20.09.",
+   "page": 16,
+   "page_image": "https://imgproxy.leaflets.schwarz/ABhCMc6bl_OCpzxzNQ_fJWRpAErdh2jbeWanlPLKT78/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTZfMTRkMmRhNjg1NjU4ZWU4ZjFlMWM0YjNmN2FkNmRjYWMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Водка",
+   "discount_pct": "-28",
+   "valid": "от 14.09. до 20.09.",
+   "page": 16,
+   "page_image": "https://imgproxy.leaflets.schwarz/ABhCMc6bl_OCpzxzNQ_fJWRpAErdh2jbeWanlPLKT78/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTZfMTRkMmRhNjg1NjU4ZWU4ZjFlMWM0YjNmN2FkNmRjYWMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Изворна Вода Минерална",
+   "discount_pct": "--30",
+   "valid": "от 14.09. до 20.09.",
+   "page": 16,
+   "page_image": "https://imgproxy.leaflets.schwarz/ABhCMc6bl_OCpzxzNQ_fJWRpAErdh2jbeWanlPLKT78/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTZfMTRkMmRhNjg1NjU4ZWU4ZjFlMWM0YjNmN2FkNmRjYWMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Бира",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 16,
+   "page_image": "https://imgproxy.leaflets.schwarz/ABhCMc6bl_OCpzxzNQ_fJWRpAErdh2jbeWanlPLKT78/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTZfMTRkMmRhNjg1NjU4ZWU4ZjFlMWM0YjNmN2FkNmRjYWMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Консумира Отговорно Умерено Лица",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 16,
+   "page_image": "https://imgproxy.leaflets.schwarz/ABhCMc6bl_OCpzxzNQ_fJWRpAErdh2jbeWanlPLKT78/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTZfMTRkMmRhNjg1NjU4ZWU4ZjFlMWM0YjNmN2FkNmRjYWMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Немско Масло",
+   "discount_pct": "-82",
+   "valid": "от 14.09. до 20.09.",
+   "page": 17,
+   "page_image": "https://imgproxy.leaflets.schwarz/YQYdTrmaLCapSOUC7Z7ZVeK0U0ddR7Jem_dlpwgTpB4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTdfYTQyZGZlZTgwZmViZWZjYTI4YWM0ODc1ZmNhNmVhNzAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Масленост Млекарката Мляко",
+   "discount_pct": "-46",
+   "valid": "от 14.09. до 20.09.",
+   "page": 17,
+   "page_image": "https://imgproxy.leaflets.schwarz/YQYdTrmaLCapSOUC7Z7ZVeK0U0ddR7Jem_dlpwgTpB4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTdfYTQyZGZlZTgwZmViZWZjYTI4YWM0ODc1ZmNhNmVhNzAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Бира",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 17,
+   "page_image": "https://imgproxy.leaflets.schwarz/YQYdTrmaLCapSOUC7Z7ZVeK0U0ddR7Jem_dlpwgTpB4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTdfYTQyZGZlZTgwZmViZWZjYTI4YWM0ODc1ZmNhNmVhNzAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кафе Капсули",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 17,
+   "page_image": "https://imgproxy.leaflets.schwarz/YQYdTrmaLCapSOUC7Z7ZVeK0U0ddR7Jem_dlpwgTpB4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTdfYTQyZGZlZTgwZmViZWZjYTI4YWM0ODc1ZmNhNmVhNzAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Съвместими Кафемашини",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 17,
+   "page_image": "https://imgproxy.leaflets.schwarz/YQYdTrmaLCapSOUC7Z7ZVeK0U0ddR7Jem_dlpwgTpB4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTdfYTQyZGZlZTgwZmViZWZjYTI4YWM0ODc1ZmNhNmVhNzAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 17,
+   "page_image": "https://imgproxy.leaflets.schwarz/YQYdTrmaLCapSOUC7Z7ZVeK0U0ddR7Jem_dlpwgTpB4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTdfYTQyZGZlZTgwZmViZWZjYTI4YWM0ODc1ZmNhNmVhNzAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Консумира Отговорно Умерено Лица",
+   "discount_pct": "-39",
+   "valid": "от 14.09. до 20.09.",
+   "page": 18,
+   "page_image": "https://imgproxy.leaflets.schwarz/2QU2nRCtyndyeFxOWgtwaXTQtEG7O1YN5QLxqzMNaCU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMThfMTM5YzI3N2Q3NWFmMGYwNzBiNWVkODY2YWQ2ZTAyM2QucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Сос Барбекю Бургер Чедър",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 18,
+   "page_image": "https://imgproxy.leaflets.schwarz/2QU2nRCtyndyeFxOWgtwaXTQtEG7O1YN5QLxqzMNaCU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMThfMTM5YzI3N2Q3NWFmMGYwNzBiNWVkODY2YWQ2ZTAyM2QucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Сладък",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 18,
+   "page_image": "https://imgproxy.leaflets.schwarz/2QU2nRCtyndyeFxOWgtwaXTQtEG7O1YN5QLxqzMNaCU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMThfMTM5YzI3N2Q3NWFmMGYwNzBiNWVkODY2YWQ2ZTAyM2QucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кетчуп Добавени Захар Сол",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 18,
+   "page_image": "https://imgproxy.leaflets.schwarz/2QU2nRCtyndyeFxOWgtwaXTQtEG7O1YN5QLxqzMNaCU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMThfMTM5YzI3N2Q3NWFmMGYwNzBiNWVkODY2YWQ2ZTAyM2QucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Протеинов Чипс",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 18,
+   "page_image": "https://imgproxy.leaflets.schwarz/2QU2nRCtyndyeFxOWgtwaXTQtEG7O1YN5QLxqzMNaCU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMThfMTM5YzI3N2Q3NWFmMGYwNzBiNWVkODY2YWQ2ZTAyM2QucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Бира Загорка",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 18,
+   "page_image": "https://imgproxy.leaflets.schwarz/2QU2nRCtyndyeFxOWgtwaXTQtEG7O1YN5QLxqzMNaCU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMThfMTM5YzI3N2Q3NWFmMGYwNzBiNWVkODY2YWQ2ZTAyM2QucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кафе Капсули",
+   "discount_pct": "-00",
+   "valid": "от 14.09. до 20.09.",
+   "page": 19,
+   "page_image": "https://imgproxy.leaflets.schwarz/ie1rddosZyCztiuRzxY7wsedqiRJkiG5TbgTqBvoeQY/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTlfMjU5NzJjMGY4NDc3Y2UzY2Q3NGU2YWJmMjI0ZmNkN2YucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Арабика Съвместими Кафемашини",
+   "discount_pct": "-30",
+   "valid": "от 14.09. до 20.09.",
+   "page": 19,
+   "page_image": "https://imgproxy.leaflets.schwarz/ie1rddosZyCztiuRzxY7wsedqiRJkiG5TbgTqBvoeQY/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTlfMjU5NzJjMGY4NDc3Y2UzY2Q3NGU2YWJmMjI0ZmNkN2YucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Пиварка Сладки Охладени",
+   "discount_pct": "-28",
+   "valid": "от 14.09. до 20.09.",
+   "page": 19,
+   "page_image": "https://imgproxy.leaflets.schwarz/ie1rddosZyCztiuRzxY7wsedqiRJkiG5TbgTqBvoeQY/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTlfMjU5NzJjMGY4NDc3Y2UzY2Q3NGU2YWJmMjI0ZmNkN2YucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Нуга Крем",
+   "discount_pct": "--26",
+   "valid": "от 14.09. до 20.09.",
+   "page": 19,
+   "page_image": "https://imgproxy.leaflets.schwarz/ie1rddosZyCztiuRzxY7wsedqiRJkiG5TbgTqBvoeQY/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTlfMjU5NzJjMGY4NDc3Y2UzY2Q3NGU2YWJmMjI0ZmNkN2YucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кроасани Пълнеж Вкус Ягода",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 19,
+   "page_image": "https://imgproxy.leaflets.schwarz/ie1rddosZyCztiuRzxY7wsedqiRJkiG5TbgTqBvoeQY/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTlfMjU5NzJjMGY4NDc3Y2UzY2Q3NGU2YWJmMjI0ZmNkN2YucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Боровец Вафли",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 19,
+   "page_image": "https://imgproxy.leaflets.schwarz/ie1rddosZyCztiuRzxY7wsedqiRJkiG5TbgTqBvoeQY/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMTlfMjU5NzJjMGY4NDc3Y2UzY2Q3NGU2YWJmMjI0ZmNkN2YucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Италия",
+   "discount_pct": "-11",
+   "valid": "от 14.09. до 20.09.",
+   "page": 20,
+   "page_image": "https://imgproxy.leaflets.schwarz/wVtXvPzA64jhiH4CJJOIdk06vgk7rIYQA_mq5erhk0Q/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjBfYzdkMTgwYWY5ZmJlMTI2NGMwZDMwZjM4Y2ZkMGM1ZTAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Тинто Червено Испания",
+   "discount_pct": "--30",
+   "valid": "от 14.09. до 20.09.",
+   "page": 20,
+   "page_image": "https://imgproxy.leaflets.schwarz/wVtXvPzA64jhiH4CJJOIdk06vgk7rIYQA_mq5erhk0Q/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjBfYzdkMTgwYWY5ZmJlMTI2NGMwZDMwZjM4Y2ZkMGM1ZTAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Салчичон Нарязан",
+   "discount_pct": "--27",
+   "valid": "от 14.09. до 20.09.",
+   "page": 20,
+   "page_image": "https://imgproxy.leaflets.schwarz/wVtXvPzA64jhiH4CJJOIdk06vgk7rIYQA_mq5erhk0Q/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjBfYzdkMTgwYWY5ZmJlMTI2NGMwZDMwZjM4Y2ZkMGM1ZTAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Брезаола Дела Валтелина",
+   "discount_pct": "-21",
+   "valid": "от 14.09. до 20.09.",
+   "page": 20,
+   "page_image": "https://imgproxy.leaflets.schwarz/wVtXvPzA64jhiH4CJJOIdk06vgk7rIYQA_mq5erhk0Q/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjBfYzdkMTgwYWY5ZmJlMTI2NGMwZDMwZjM4Y2ZkMGM1ZTAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Говеждо Месо Нарязана",
+   "discount_pct": "-34",
+   "valid": "от 14.09. до 20.09.",
+   "page": 20,
+   "page_image": "https://imgproxy.leaflets.schwarz/wVtXvPzA64jhiH4CJJOIdk06vgk7rIYQA_mq5erhk0Q/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjBfYzdkMTgwYWY5ZmJlMTI2NGMwZDMwZjM4Y2ZkMGM1ZTAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Зрял Месеца Екстра",
+   "discount_pct": "-22",
+   "valid": "от 14.09. до 20.09.",
+   "page": 20,
+   "page_image": "https://imgproxy.leaflets.schwarz/wVtXvPzA64jhiH4CJJOIdk06vgk7rIYQA_mq5erhk0Q/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjBfYzdkMTgwYWY5ZmJlMTI2NGMwZDMwZjM4Y2ZkMGM1ZTAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Канадско Уиски",
+   "discount_pct": "-40",
+   "valid": "от 14.09. до 20.09.",
+   "page": 21,
+   "page_image": "https://imgproxy.leaflets.schwarz/AbEc-18I99kHOWLqIcrp7oXLdm8djcjhngTwbeoQYxA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjFfNzNjMjdlNjlhOWMwZDNjM2M2M2VlOTMyMTc3Y2I0NmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Узо",
+   "discount_pct": "--21",
+   "valid": "от 14.09. до 20.09.",
+   "page": 21,
+   "page_image": "https://imgproxy.leaflets.schwarz/AbEc-18I99kHOWLqIcrp7oXLdm8djcjhngTwbeoQYxA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjFfNzNjMjdlNjlhOWMwZDNjM2M2M2VlOTMyMTc3Y2I0NmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Шотландско",
+   "discount_pct": "--20",
+   "valid": "от 14.09. до 20.09.",
+   "page": 21,
+   "page_image": "https://imgproxy.leaflets.schwarz/AbEc-18I99kHOWLqIcrp7oXLdm8djcjhngTwbeoQYxA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjFfNzNjMjdlNjlhOWMwZDNjM2M2M2VlOTMyMTc3Y2I0NmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Коктейл Аперитив",
+   "discount_pct": "-41",
+   "valid": "от 14.09. до 20.09.",
+   "page": 21,
+   "page_image": "https://imgproxy.leaflets.schwarz/AbEc-18I99kHOWLqIcrp7oXLdm8djcjhngTwbeoQYxA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjFfNzNjMjdlNjlhOWMwZDNjM2M2M2VlOTMyMTc3Y2I0NmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Родна Стряха Гроздова Ракия",
+   "discount_pct": "-22",
+   "valid": "от 14.09. до 20.09.",
+   "page": 21,
+   "page_image": "https://imgproxy.leaflets.schwarz/AbEc-18I99kHOWLqIcrp7oXLdm8djcjhngTwbeoQYxA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjFfNzNjMjdlNjlhOWMwZDNjM2M2M2VlOTMyMTc3Y2I0NmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Водка Вкус Лайм",
+   "discount_pct": "-30",
+   "valid": "от 14.09. до 20.09.",
+   "page": 21,
+   "page_image": "https://imgproxy.leaflets.schwarz/AbEc-18I99kHOWLqIcrp7oXLdm8djcjhngTwbeoQYxA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjFfNzNjMjdlNjlhOWMwZDNjM2M2M2VlOTMyMTc3Y2I0NmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Месен Специалитет",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 23,
+   "page_image": "https://imgproxy.leaflets.schwarz/EE42DTdTdK43fCfFVW6rjSPa03MQZ68cnBqnR5a7fl8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjNfYjUzZmU0NGVmZTI5NmU1NzI4YzkyZTRiMjYwNDE5ZWEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 23,
+   "page_image": "https://imgproxy.leaflets.schwarz/EE42DTdTdK43fCfFVW6rjSPa03MQZ68cnBqnR5a7fl8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjNfYjUzZmU0NGVmZTI5NmU1NzI4YzkyZTRiMjYwNDE5ZWEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Френско Сирене Камембер Бри",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 24,
+   "page_image": "https://imgproxy.leaflets.schwarz/WgP79Canf0ErP28-vpr97baKskepm6rbQ2KlMCItYnM/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjRfMGJjOWZjMTc2YTJjYmZmYmI2OTUwYTFiZjgwMTUzNmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Сушени Въздух",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 24,
+   "page_image": "https://imgproxy.leaflets.schwarz/WgP79Canf0ErP28-vpr97baKskepm6rbQ2KlMCItYnM/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjRfMGJjOWZjMTc2YTJjYmZmYmI2OTUwYTFiZjgwMTUzNmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 25,
+   "page_image": "https://imgproxy.leaflets.schwarz/Nb5TNlPzdnqPSNgMU5RRGqfG_RKtMw_obNOmlSS1yoA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjVfMzFkMTJiYWM5MTU3OGEzOTVhOGY3M2FhMDZkYjkxMGYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Мини Огретени",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 26,
+   "page_image": "https://imgproxy.leaflets.schwarz/0dgD7t9OVkTYscUk_kD4S8hEifmjlZy-a4kc2veE3-8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjZfZjM3MWJhOWY1ZWJmYTljMTNkOWY1MjEzMmNjYWI0MGQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Блан Брут",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 27,
+   "page_image": "https://imgproxy.leaflets.schwarz/yBjhbtsTOUQhVukNVNtTNeKzWpb2Mnls3puIrAChAf8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjdfOTE5ZTVhOTUwNTk5YmZlNWM0Y2VkMzgzMWViNGE1ZDQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Розе",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 28,
+   "page_image": "https://imgproxy.leaflets.schwarz/uLxUwCosP7HZZabU9JdWs1TefNaDVWP11PHiDD3VMiU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjhfYmUyOGQzOTM3M2ZhN2M1ODRiYWY0ZWIyN2Q0OTc2NTYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Консумира Отговорно Умерено Лица",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 28,
+   "page_image": "https://imgproxy.leaflets.schwarz/uLxUwCosP7HZZabU9JdWs1TefNaDVWP11PHiDD3VMiU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjhfYmUyOGQzOTM3M2ZhN2M1ODRiYWY0ZWIyN2Q0OTc2NTYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кот Дьо Рон",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 29,
+   "page_image": "https://imgproxy.leaflets.schwarz/TXY51qwsIwbLbBbBjLMm9XwgFuJ4FLIuwnRjI6fjgI4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjlfOGEzMjNhMTRjMTQ2MmQ1YjhkNmRmZTEzYmI2ZjU0M2MucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кафе",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 29,
+   "page_image": "https://imgproxy.leaflets.schwarz/TXY51qwsIwbLbBbBjLMm9XwgFuJ4FLIuwnRjI6fjgI4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjlfOGEzMjNhMTRjMTQ2MmQ1YjhkNmRmZTEzYmI2ZjU0M2MucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 29,
+   "page_image": "https://imgproxy.leaflets.schwarz/TXY51qwsIwbLbBbBjLMm9XwgFuJ4FLIuwnRjI6fjgI4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMjlfOGEzMjNhMTRjMTQ2MmQ1YjhkNmRmZTEzYmI2ZjU0M2MucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 31,
+   "page_image": "https://imgproxy.leaflets.schwarz/xbxRb7SHVFnl_MlsktXoRTmNpPKPX6nxHbgrtYy8iDw/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzFfN2M3NjRlMTE4ZjI5NzU2ZmMzYzFlYjZjMjA5M2FhY2MucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Соленки",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 32,
+   "page_image": "https://imgproxy.leaflets.schwarz/SRrudHM2khE7K-7elslY5PwDNnzJNmJQSKvHlSXfcUg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzJfMGNhYmI5Y2QyMDdjM2EzZjc1MzRhOTU2NWEzNDQ2MDMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Вкус",
+   "discount_pct": "--29",
+   "valid": "от 14.09. до 20.09.",
+   "page": 33,
+   "page_image": "https://imgproxy.leaflets.schwarz/XbKPqVsyJQtWzqEo3rRT-DjQIMHvXmPbIi-x39v7xZY/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzNfOTZmYzE4NjM0ZWE2MWRkMGI2MjczOGU0MzJiZjY5MjcucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Бисквити",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 33,
+   "page_image": "https://imgproxy.leaflets.schwarz/XbKPqVsyJQtWzqEo3rRT-DjQIMHvXmPbIi-x39v7xZY/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzNfOTZmYzE4NjM0ZWE2MWRkMGI2MjczOGU0MzJiZjY5MjcucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Картофен Снакс",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 33,
+   "page_image": "https://imgproxy.leaflets.schwarz/XbKPqVsyJQtWzqEo3rRT-DjQIMHvXmPbIi-x39v7xZY/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzNfOTZmYzE4NjM0ZWE2MWRkMGI2MjczOGU0MzJiZjY5MjcucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 33,
+   "page_image": "https://imgproxy.leaflets.schwarz/XbKPqVsyJQtWzqEo3rRT-DjQIMHvXmPbIi-x39v7xZY/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzNfOTZmYzE4NjM0ZWE2MWRkMGI2MjczOGU0MzJiZjY5MjcucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Четки Зъби",
+   "discount_pct": "-21",
+   "valid": "от 14.09. до 20.09.",
+   "page": 34,
+   "page_image": "https://imgproxy.leaflets.schwarz/xdfvWexqLktB9p0xPa9Z6PvRmXsrGGJQkd_PToXcj0A/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzRfMjIxYzczN2FlNWI1MWQ1ZDNjZTMxOGNjMjY4NGJjMGEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Део",
+   "discount_pct": "-24",
+   "valid": "от 14.09. до 20.09.",
+   "page": 34,
+   "page_image": "https://imgproxy.leaflets.schwarz/xdfvWexqLktB9p0xPa9Z6PvRmXsrGGJQkd_PToXcj0A/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzRfMjIxYzczN2FlNWI1MWQ1ZDNjZTMxOGNjMjY4NGJjMGEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Течен Сапун",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 34,
+   "page_image": "https://imgproxy.leaflets.schwarz/xdfvWexqLktB9p0xPa9Z6PvRmXsrGGJQkd_PToXcj0A/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzRfMjIxYzczN2FlNWI1MWQ1ZDNjZTMxOGNjMjY4NGJjMGEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Спрей Отстраняване Петна",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 34,
+   "page_image": "https://imgproxy.leaflets.schwarz/xdfvWexqLktB9p0xPa9Z6PvRmXsrGGJQkd_PToXcj0A/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzRfMjIxYzczN2FlNWI1MWQ1ZDNjZTMxOGNjMjY4NGJjMGEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Препарат Пране Капсули",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 34,
+   "page_image": "https://imgproxy.leaflets.schwarz/xdfvWexqLktB9p0xPa9Z6PvRmXsrGGJQkd_PToXcj0A/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzRfMjIxYzczN2FlNWI1MWQ1ZDNjZTMxOGNjMjY4NGJjMGEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Съдомиялна Измивания Изпирания",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 34,
+   "page_image": "https://imgproxy.leaflets.schwarz/xdfvWexqLktB9p0xPa9Z6PvRmXsrGGJQkd_PToXcj0A/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzRfMjIxYzczN2FlNWI1MWQ1ZDNjZTMxOGNjMjY4NGJjMGEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Храна Кучета Хапки Сос",
+   "discount_pct": "-28",
+   "valid": "от 14.09. до 20.09.",
+   "page": 35,
+   "page_image": "https://imgproxy.leaflets.schwarz/TP8TRFCNxOth-uFpxfmg2WhJqc4VQKNh0Y4uEy0LxKA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzVfMDBjODc1NTc3YTU0ODc2MzZhOTU3ZGZkMjU1ODU3MGYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Дентални Пръчици Кучета",
+   "discount_pct": "--42",
+   "valid": "от 14.09. до 20.09.",
+   "page": 35,
+   "page_image": "https://imgproxy.leaflets.schwarz/TP8TRFCNxOth-uFpxfmg2WhJqc4VQKNh0Y4uEy0LxKA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzVfMDBjODc1NTc3YTU0ODc2MzZhOTU3ZGZkMjU1ODU3MGYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Течно Лакомство Котки",
+   "discount_pct": "--35",
+   "valid": "от 14.09. до 20.09.",
+   "page": 35,
+   "page_image": "https://imgproxy.leaflets.schwarz/TP8TRFCNxOth-uFpxfmg2WhJqc4VQKNh0Y4uEy0LxKA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzVfMDBjODc1NTc3YTU0ODc2MzZhOTU3ZGZkMjU1ODU3MGYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Тоалетна Хартия",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 35,
+   "page_image": "https://imgproxy.leaflets.schwarz/TP8TRFCNxOth-uFpxfmg2WhJqc4VQKNh0Y4uEy0LxKA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzVfMDBjODc1NTc3YTU0ODc2MzZhOTU3ZGZkMjU1ODU3MGYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Влажни Кърпички",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 35,
+   "page_image": "https://imgproxy.leaflets.schwarz/TP8TRFCNxOth-uFpxfmg2WhJqc4VQKNh0Y4uEy0LxKA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzVfMDBjODc1NTc3YTU0ODc2MzZhOTU3ZGZkMjU1ODU3MGYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кухненска",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 35,
+   "page_image": "https://imgproxy.leaflets.schwarz/TP8TRFCNxOth-uFpxfmg2WhJqc4VQKNh0Y4uEy0LxKA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzVfMDBjODc1NTc3YTU0ODc2MzZhOTU3ZGZkMjU1ODU3MGYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Ароматизатор Автомобил Пълнителя",
+   "discount_pct": "-21",
+   "valid": "от 14.09. до 20.09.",
+   "page": 36,
+   "page_image": "https://imgproxy.leaflets.schwarz/wy5ZBBNJho4o2yxw_q312GU6nAkubMFxgjLrFaX-otI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzZfNzM2OWVmYTcwNWQ4MmM5YjQ0OGFhNzU3MjJmNWYzNWUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Аромати Свеж Аромат",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 36,
+   "page_image": "https://imgproxy.leaflets.schwarz/wy5ZBBNJho4o2yxw_q312GU6nAkubMFxgjLrFaX-otI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzZfNzM2OWVmYTcwNWQ4MmM5YjQ0OGFhNzU3MjJmNWYzNWUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Хартиена Ролка",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 36,
+   "page_image": "https://imgproxy.leaflets.schwarz/wy5ZBBNJho4o2yxw_q312GU6nAkubMFxgjLrFaX-otI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzZfNzM2OWVmYTcwNWQ4MmM5YjQ0OGFhNzU3MjJmNWYzNWUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Къса",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 36,
+   "page_image": "https://imgproxy.leaflets.schwarz/wy5ZBBNJho4o2yxw_q312GU6nAkubMFxgjLrFaX-otI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzZfNzM2OWVmYTcwNWQ4MmM5YjQ0OGFhNzU3MjJmNWYzNWUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Инструменти Градина Принадлежности",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 37,
+   "page_image": "https://imgproxy.leaflets.schwarz/TGNnozTvK1GWxPdHd-MXNhrqZe0WmmwbRLg1NdMaJOI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzdfN2U4MzFjMmFhYTAzMTViODNjZjBkY2FhZWE1ZTA5YWMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Водоструйка",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 37,
+   "page_image": "https://imgproxy.leaflets.schwarz/TGNnozTvK1GWxPdHd-MXNhrqZe0WmmwbRLg1NdMaJOI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzdfN2U4MzFjMmFhYTAzMTViODNjZjBkY2FhZWE1ZTA5YWMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Филтърни Торби",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 37,
+   "page_image": "https://imgproxy.leaflets.schwarz/TGNnozTvK1GWxPdHd-MXNhrqZe0WmmwbRLg1NdMaJOI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzdfN2U4MzFjMmFhYTAzMTViODNjZjBkY2FhZWE1ZTA5YWMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Тресчотка Накрайници",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 37,
+   "page_image": "https://imgproxy.leaflets.schwarz/TGNnozTvK1GWxPdHd-MXNhrqZe0WmmwbRLg1NdMaJOI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzdfN2U4MzFjMmFhYTAzMTViODNjZjBkY2FhZWE1ZTA5YWMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Стомана Комплект",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 37,
+   "page_image": "https://imgproxy.leaflets.schwarz/TGNnozTvK1GWxPdHd-MXNhrqZe0WmmwbRLg1NdMaJOI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzdfN2U4MzFjMmFhYTAzMTViODNjZjBkY2FhZWE1ZTA5YWMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Текстилна Лента Гар Анц",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 37,
+   "page_image": "https://imgproxy.leaflets.schwarz/TGNnozTvK1GWxPdHd-MXNhrqZe0WmmwbRLg1NdMaJOI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzdfN2U4MzFjMmFhYTAzMTViODNjZjBkY2FhZWE1ZTA5YWMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Инструменти Градина Принадлежности",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 38,
+   "page_image": "https://imgproxy.leaflets.schwarz/auG7PRga96LgJreSv24GT1xMcaYccvmyMuVYBf8ML2g/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzhfNjg2MzEzZWZkOTYxMDhhNDQzNjdjYzc2MjQzY2IyZDQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Клещи Занитване",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 38,
+   "page_image": "https://imgproxy.leaflets.schwarz/auG7PRga96LgJreSv24GT1xMcaYccvmyMuVYBf8ML2g/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzhfNjg2MzEzZWZkOTYxMDhhNDQzNjdjYzc2MjQzY2IyZDQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Комплект",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 38,
+   "page_image": "https://imgproxy.leaflets.schwarz/auG7PRga96LgJreSv24GT1xMcaYccvmyMuVYBf8ML2g/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzhfNjg2MzEzZWZkOTYxMDhhNDQzNjdjYzc2MjQzY2IyZDQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Електрическо Ренде Вентилатор Изхвърляне",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 38,
+   "page_image": "https://imgproxy.leaflets.schwarz/auG7PRga96LgJreSv24GT1xMcaYccvmyMuVYBf8ML2g/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzhfNjg2MzEzZWZkOTYxMDhhNDQzNjdjYzc2MjQzY2IyZDQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Отвертки Битове Магнитен Връх",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 38,
+   "page_image": "https://imgproxy.leaflets.schwarz/auG7PRga96LgJreSv24GT1xMcaYccvmyMuVYBf8ML2g/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzhfNjg2MzEzZWZkOTYxMDhhNDQzNjdjYzc2MjQzY2IyZDQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Гар Анц",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 38,
+   "page_image": "https://imgproxy.leaflets.schwarz/auG7PRga96LgJreSv24GT1xMcaYccvmyMuVYBf8ML2g/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzhfNjg2MzEzZWZkOTYxMDhhNDQzNjdjYzc2MjQzY2IyZDQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Принадлежности",
+   "discount_pct": "-27",
+   "valid": "от 14.09. до 20.09.",
+   "page": 39,
+   "page_image": "https://imgproxy.leaflets.schwarz/dw5Cc4LCib-lALlB1lpR6K-1KMk_9-Z-r4vjIkBolmY/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzlfN2QzNDFiZWE2OGU2OGMwZjVmYzI3ODdhMzZhNDg2OTYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кримп Клещи",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 39,
+   "page_image": "https://imgproxy.leaflets.schwarz/dw5Cc4LCib-lALlB1lpR6K-1KMk_9-Z-r4vjIkBolmY/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzlfN2QzNDFiZWE2OGU2OGMwZjVmYzI3ODdhMzZhNDg2OTYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Комплект",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 39,
+   "page_image": "https://imgproxy.leaflets.schwarz/dw5Cc4LCib-lALlB1lpR6K-1KMk_9-Z-r4vjIkBolmY/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzlfN2QzNDFiZWE2OGU2OGMwZjVmYzI3ODdhMzZhNDg2OTYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Анция",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 39,
+   "page_image": "https://imgproxy.leaflets.schwarz/dw5Cc4LCib-lALlB1lpR6K-1KMk_9-Z-r4vjIkBolmY/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzlfN2QzNDFiZWE2OGU2OGMwZjVmYzI3ODdhMzZhNDg2OTYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Нци Ъглошлайф",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 39,
+   "page_image": "https://imgproxy.leaflets.schwarz/dw5Cc4LCib-lALlB1lpR6K-1KMk_9-Z-r4vjIkBolmY/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzlfN2QzNDFiZWE2OGU2OGMwZjVmYzI3ODdhMzZhNDg2OTYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Регулиране Оборотите Части Обороти",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 39,
+   "page_image": "https://imgproxy.leaflets.schwarz/dw5Cc4LCib-lALlB1lpR6K-1KMk_9-Z-r4vjIkBolmY/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtMzlfN2QzNDFiZWE2OGU2OGMwZjVmYzI3ODdhMzZhNDg2OTYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Алуминиева Стълба Амперметър Клещи",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 40,
+   "page_image": "https://imgproxy.leaflets.schwarz/nHVP6SQIfeQSXPIqpTzW-H3wbC6_USbo2a_gTJRmrqs/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDBfNjNjYWU3YTFmMWMzNTg4ZDA5OGFlY2EwYjY5ZjZmYzgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Гар Анц",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 40,
+   "page_image": "https://imgproxy.leaflets.schwarz/nHVP6SQIfeQSXPIqpTzW-H3wbC6_USbo2a_gTJRmrqs/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDBfNjNjYWU3YTFmMWMzNTg4ZDA5OGFlY2EwYjY5ZjZmYzgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Анция",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 40,
+   "page_image": "https://imgproxy.leaflets.schwarz/nHVP6SQIfeQSXPIqpTzW-H3wbC6_USbo2a_gTJRmrqs/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDBfNjNjYWU3YTFmMWMzNTg4ZDA5OGFlY2EwYjY5ZjZmYzgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Нци Принадлежности",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 40,
+   "page_image": "https://imgproxy.leaflets.schwarz/nHVP6SQIfeQSXPIqpTzW-H3wbC6_USbo2a_gTJRmrqs/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDBfNjNjYWU3YTFmMWMzNTg4ZDA5OGFlY2EwYjY5ZjZmYzgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Осветление Обороти",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 40,
+   "page_image": "https://imgproxy.leaflets.schwarz/nHVP6SQIfeQSXPIqpTzW-H3wbC6_USbo2a_gTJRmrqs/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDBfNjNjYWU3YTFmMWMzNTg4ZDA5OGFlY2EwYjY5ZjZmYzgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Предавка",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 40,
+   "page_image": "https://imgproxy.leaflets.schwarz/nHVP6SQIfeQSXPIqpTzW-H3wbC6_USbo2a_gTJRmrqs/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDBfNjNjYWU3YTFmMWMzNTg4ZDA5OGFlY2EwYjY5ZjZmYzgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Държач Тръба",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 41,
+   "page_image": "https://imgproxy.leaflets.schwarz/BDiy7d-M9VZqFXKa46-k1LeZqxvPlMPYU5QLjuKx31Q/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDFfYjkwNTMwMWI1YTg4OWY2NzBjZWM5YTQ1YjVhMjVlNTMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Осветление Скорост Осцилация",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 41,
+   "page_image": "https://imgproxy.leaflets.schwarz/BDiy7d-M9VZqFXKa46-k1LeZqxvPlMPYU5QLjuKx31Q/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDFfYjkwNTMwMWI1YTg4OWY2NzBjZWM5YTQ1YjVhMjVlNTMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Работно Налягане",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 41,
+   "page_image": "https://imgproxy.leaflets.schwarz/BDiy7d-M9VZqFXKa46-k1LeZqxvPlMPYU5QLjuKx31Q/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDFfYjkwNTMwMWI1YTg4OWY2NzBjZWM5YTQ1YjVhMjVlNTMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Мощност",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 41,
+   "page_image": "https://imgproxy.leaflets.schwarz/BDiy7d-M9VZqFXKa46-k1LeZqxvPlMPYU5QLjuKx31Q/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDFfYjkwNTMwMWI1YTg4OWY2NzBjZWM5YTQ1YjVhMjVlNTMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Дебит",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 41,
+   "page_image": "https://imgproxy.leaflets.schwarz/BDiy7d-M9VZqFXKa46-k1LeZqxvPlMPYU5QLjuKx31Q/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDFfYjkwNTMwMWI1YTg4OWY2NzBjZWM5YTQ1YjVhMjVlNTMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Анция",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 41,
+   "page_image": "https://imgproxy.leaflets.schwarz/BDiy7d-M9VZqFXKa46-k1LeZqxvPlMPYU5QLjuKx31Q/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDFfYjkwNTMwMWI1YTg4OWY2NzBjZWM5YTQ1YjVhMjVlNTMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Инструменти Градина",
+   "discount_pct": "-28",
+   "valid": "от 14.09. до 20.09.",
+   "page": 42,
+   "page_image": "https://imgproxy.leaflets.schwarz/FHQrHbpLdiGb8s4tmSJavWc6jpCKqq0tLnoxxf_f4h8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDJfNTAwNzI0NGE3Y2E3MTRlODM4YmMzZWU0NTU4ZDQxNzEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Гар Анц",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 42,
+   "page_image": "https://imgproxy.leaflets.schwarz/FHQrHbpLdiGb8s4tmSJavWc6jpCKqq0tLnoxxf_f4h8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDJfNTAwNzI0NGE3Y2E3MTRlODM4YmMzZWU0NTU4ZDQxNzEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Анция",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 42,
+   "page_image": "https://imgproxy.leaflets.schwarz/FHQrHbpLdiGb8s4tmSJavWc6jpCKqq0tLnoxxf_f4h8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDJfNTAwNzI0NGE3Y2E3MTRlODM4YmMzZWU0NTU4ZDQxNzEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Нци",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 42,
+   "page_image": "https://imgproxy.leaflets.schwarz/FHQrHbpLdiGb8s4tmSJavWc6jpCKqq0tLnoxxf_f4h8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDJfNTAwNzI0NGE3Y2E3MTRlODM4YmMzZWU0NTU4ZDQxNzEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Елек Водоотблъскваща Лицева Страна",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 42,
+   "page_image": "https://imgproxy.leaflets.schwarz/FHQrHbpLdiGb8s4tmSJavWc6jpCKqq0tLnoxxf_f4h8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDJfNTAwNzI0NGE3Y2E3MTRlODM4YmMzZWU0NTU4ZDQxNzEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Осветление Намери Специалната Витрина",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 42,
+   "page_image": "https://imgproxy.leaflets.schwarz/FHQrHbpLdiGb8s4tmSJavWc6jpCKqq0tLnoxxf_f4h8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDJfNTAwNzI0NGE3Y2E3MTRlODM4YmMzZWU0NTU4ZDQxNzEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Оберфреза Адаптер Външен Прахоуловител",
+   "discount_pct": "-31",
+   "valid": "от 14.09. до 20.09.",
+   "page": 43,
+   "page_image": "https://imgproxy.leaflets.schwarz/Nqcypn2Jz6jECIf67ZH0Hf94DU6itlJZgBbregyenVg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDNfOGIwMGE1OTY2ZTdmODA1NGYzODMxYWEwZTc4N2UzYmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Стомана Гар Анц",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 43,
+   "page_image": "https://imgproxy.leaflets.schwarz/Nqcypn2Jz6jECIf67ZH0Hf94DU6itlJZgBbregyenVg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDNfOGIwMGE1OTY2ZTdmODA1NGYzODMxYWEwZTc4N2UzYmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Анция",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 43,
+   "page_image": "https://imgproxy.leaflets.schwarz/Nqcypn2Jz6jECIf67ZH0Hf94DU6itlJZgBbregyenVg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDNfOGIwMGE1OTY2ZTdmODA1NGYzODMxYWEwZTc4N2UzYmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Нци Части",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 43,
+   "page_image": "https://imgproxy.leaflets.schwarz/Nqcypn2Jz6jECIf67ZH0Hf94DU6itlJZgBbregyenVg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDNfOGIwMGE1OTY2ZTdmODA1NGYzODMxYWEwZTc4N2UzYmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Фрезата Работа Провеждащи Ток",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 43,
+   "page_image": "https://imgproxy.leaflets.schwarz/Nqcypn2Jz6jECIf67ZH0Hf94DU6itlJZgBbregyenVg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDNfOGIwMGE1OTY2ZTdmODA1NGYzODMxYWEwZTc4N2UzYmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Регулиране Височината",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 43,
+   "page_image": "https://imgproxy.leaflets.schwarz/Nqcypn2Jz6jECIf67ZH0Hf94DU6itlJZgBbregyenVg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDNfOGIwMGE1OTY2ZTdmODA1NGYzODMxYWEwZTc4N2UzYmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Предложения Седмицата Топ",
+   "discount_pct": "-28",
+   "valid": "от 14.09. до 20.09.",
+   "page": 44,
+   "page_image": "https://imgproxy.leaflets.schwarz/niYWfB2rphbMRrMxBjZpN66w-_Kn8ZD6ncIQywy7H6c/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDRfZGE2YjY0MzUwOTkxNjFiZjYzNmM1YTc1YWE4YTU1ZjMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Работен Панталон Съдържание Памук",
+   "discount_pct": "-31",
+   "valid": "от 14.09. до 20.09.",
+   "page": 44,
+   "page_image": "https://imgproxy.leaflets.schwarz/niYWfB2rphbMRrMxBjZpN66w-_Kn8ZD6ncIQywy7H6c/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDRfZGE2YjY0MzUwOTkxNjFiZjYzNmM1YTc1YWE4YTU1ZjMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Принадлежности Ремонт Части",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 44,
+   "page_image": "https://imgproxy.leaflets.schwarz/niYWfB2rphbMRrMxBjZpN66w-_Kn8ZD6ncIQywy7H6c/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDRfZGE2YjY0MzUwOTkxNjFiZjYzNmM1YTc1YWE4YTU1ZjMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Източник",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 45,
+   "page_image": "https://imgproxy.leaflets.schwarz/0ytQMW-toTWE8k5c0BMcL08rGN9iro26FOUKuVCemSg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDVfOTE5YWZmNWZmNzJjNGY3ODQxMTUwNTkxZTYwZWI2MTcucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Поръчково Проучване Проведено Юни",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 45,
+   "page_image": "https://imgproxy.leaflets.schwarz/0ytQMW-toTWE8k5c0BMcL08rGN9iro26FOUKuVCemSg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDVfOTE5YWZmNWZmNzJjNGY3ODQxMTUwNTkxZTYwZWI2MTcucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Поред",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 45,
+   "page_image": "https://imgproxy.leaflets.schwarz/0ytQMW-toTWE8k5c0BMcL08rGN9iro26FOUKuVCemSg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDVfOTE5YWZmNWZmNzJjNGY3ODQxMTUwNTkxZTYwZWI2MTcucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Марка Поредни",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 45,
+   "page_image": "https://imgproxy.leaflets.schwarz/0ytQMW-toTWE8k5c0BMcL08rGN9iro26FOUKuVCemSg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDVfOTE5YWZmNWZmNzJjNGY3ODQxMTUwNTkxZTYwZWI2MTcucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Компресор",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 45,
+   "page_image": "https://imgproxy.leaflets.schwarz/0ytQMW-toTWE8k5c0BMcL08rGN9iro26FOUKuVCemSg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDVfOTE5YWZmNWZmNzJjNGY3ODQxMTUwNTkxZTYwZWI2MTcucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Гар Анц",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 45,
+   "page_image": "https://imgproxy.leaflets.schwarz/0ytQMW-toTWE8k5c0BMcL08rGN9iro26FOUKuVCemSg/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDVfOTE5YWZmNWZmNzJjNGY3ODQxMTUwNTkxZTYwZWI2MTcucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Комплект Почистване",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 46,
+   "page_image": "https://imgproxy.leaflets.schwarz/ZgOYbfuDHIBP1_28_fEpkNa9dZdslIgS8JDZcTJgz_k/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDZfOGIzOWIwNmQ2ZDY1NzEyOTQwNWQ5Yjg1YzFhNTNjMTAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кухня Домакинство",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 46,
+   "page_image": "https://imgproxy.leaflets.schwarz/ZgOYbfuDHIBP1_28_fEpkNa9dZdslIgS8JDZcTJgz_k/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDZfOGIzOWIwNmQ2ZDY1NzEyOTQwNWQ5Yjg1YzFhNTNjMTAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Акумулаторна Прахосмукачка",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 46,
+   "page_image": "https://imgproxy.leaflets.schwarz/ZgOYbfuDHIBP1_28_fEpkNa9dZdslIgS8JDZcTJgz_k/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDZfOGIzOWIwNmQ2ZDY1NzEyOTQwNWQ5Yjg1YzFhNTNjMTAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Осветление",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 46,
+   "page_image": "https://imgproxy.leaflets.schwarz/ZgOYbfuDHIBP1_28_fEpkNa9dZdslIgS8JDZcTJgz_k/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDZfOGIzOWIwNmQ2ZDY1NzEyOTQwNWQ5Yjg1YzFhNTNjMTAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Анция",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 46,
+   "page_image": "https://imgproxy.leaflets.schwarz/ZgOYbfuDHIBP1_28_fEpkNa9dZdslIgS8JDZcTJgz_k/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDZfOGIzOWIwNmQ2ZDY1NzEyOTQwNWQ5Yjg1YzFhNTNjMTAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Нци Принадлежности Почистване",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 46,
+   "page_image": "https://imgproxy.leaflets.schwarz/ZgOYbfuDHIBP1_28_fEpkNa9dZdslIgS8JDZcTJgz_k/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDZfOGIzOWIwNmQ2ZDY1NzEyOTQwNWQ5Yjg1YzFhNTNjMTAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кутии Съхранение",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 47,
+   "page_image": "https://imgproxy.leaflets.schwarz/RVxtnGDNiMaV6D9HJF_GO5sq-yufbXVIg3NlnNj9gWU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDdfNWI1NDMzZmFjMmM2ZDYzOTUyMTBjZWY1MzhhM2IxNDUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Комплект",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 47,
+   "page_image": "https://imgproxy.leaflets.schwarz/RVxtnGDNiMaV6D9HJF_GO5sq-yufbXVIg3NlnNj9gWU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDdfNWI1NDMzZmFjMmM2ZDYzOTUyMTBjZWY1MzhhM2IxNDUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Акумулаторна Метла Принадлежности",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 47,
+   "page_image": "https://imgproxy.leaflets.schwarz/RVxtnGDNiMaV6D9HJF_GO5sq-yufbXVIg3NlnNj9gWU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDdfNWI1NDMzZmFjMmM2ZDYzOTUyMTBjZWY1MzhhM2IxNDUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 47,
+   "page_image": "https://imgproxy.leaflets.schwarz/RVxtnGDNiMaV6D9HJF_GO5sq-yufbXVIg3NlnNj9gWU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDdfNWI1NDMzZmFjMmM2ZDYzOTUyMTBjZWY1MzhhM2IxNDUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Куки Вакуумни Закачалки",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 48,
+   "page_image": "https://imgproxy.leaflets.schwarz/9i4QA9AdhduP50NqW9E34ZcDLnGbG5HsBR-rYOqI9yk/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDhfMTFjMDcwYTZlNzhhZTY0ODg5MWMxNGE0NWI3MjIyN2UucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Комплект",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 48,
+   "page_image": "https://imgproxy.leaflets.schwarz/9i4QA9AdhduP50NqW9E34ZcDLnGbG5HsBR-rYOqI9yk/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDhfMTFjMDcwYTZlNzhhZTY0ODg5MWMxNGE0NWI3MjIyN2UucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кутии Съхранение",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 48,
+   "page_image": "https://imgproxy.leaflets.schwarz/9i4QA9AdhduP50NqW9E34ZcDLnGbG5HsBR-rYOqI9yk/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDhfMTFjMDcwYTZlNzhhZTY0ODg5MWMxNGE0NWI3MjIyN2UucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Яке Момчета",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 49,
+   "page_image": "https://imgproxy.leaflets.schwarz/eFZMbBUN7FUu-YZLNY0C_O7I4M26fB6XBFyR8hRSl5s/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDlfMjA4ZTc3MGQ2ZTZmOTVkZWEzODIyZGUzZTNjNjhhNDQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 49,
+   "page_image": "https://imgproxy.leaflets.schwarz/eFZMbBUN7FUu-YZLNY0C_O7I4M26fB6XBFyR8hRSl5s/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNDlfMjA4ZTc3MGQ2ZTZmOTVkZWEzODIyZGUzZTNjNjhhNDQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Тениски",
+   "discount_pct": "-00",
+   "valid": "от 14.09. до 20.09.",
+   "page": 51,
+   "page_image": "https://imgproxy.leaflets.schwarz/BJGxLsGCBFsBojhNuVSzXFTB_ouAmB3KbyEoJosKtvM/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTFfZmRlNjQ1ODZhNjlmZjBiMWVlM2Y1MGU0YmU2Mzk4MmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Памук Момичета Момчета",
+   "discount_pct": "-95",
+   "valid": "от 14.09. до 20.09.",
+   "page": 51,
+   "page_image": "https://imgproxy.leaflets.schwarz/BJGxLsGCBFsBojhNuVSzXFTB_ouAmB3KbyEoJosKtvM/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTFfZmRlNjQ1ODZhNjlmZjBiMWVlM2Y1MGU0YmU2Mzk4MmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Комплект",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 51,
+   "page_image": "https://imgproxy.leaflets.schwarz/BJGxLsGCBFsBojhNuVSzXFTB_ouAmB3KbyEoJosKtvM/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTFfZmRlNjQ1ODZhNjlmZjBiMWVlM2Y1MGU0YmU2Mzk4MmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Бутилка Кутия Храна Клинове",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 51,
+   "page_image": "https://imgproxy.leaflets.schwarz/BJGxLsGCBFsBojhNuVSzXFTB_ouAmB3KbyEoJosKtvM/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTFfZmRlNjQ1ODZhNjlmZjBiMWVlM2Y1MGU0YmU2Mzk4MmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Гащеризон",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 51,
+   "page_image": "https://imgproxy.leaflets.schwarz/BJGxLsGCBFsBojhNuVSzXFTB_ouAmB3KbyEoJosKtvM/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTFfZmRlNjQ1ODZhNjlmZjBiMWVlM2Y1MGU0YmU2Mzk4MmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Яке Подплата Полар",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 51,
+   "page_image": "https://imgproxy.leaflets.schwarz/BJGxLsGCBFsBojhNuVSzXFTB_ouAmB3KbyEoJosKtvM/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTFfZmRlNjQ1ODZhNjlmZjBiMWVlM2Y1MGU0YmU2Mzk4MmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Мода Аксесоари",
+   "discount_pct": "-99",
+   "valid": "от 14.09. до 20.09.",
+   "page": 52,
+   "page_image": "https://imgproxy.leaflets.schwarz/NE81-vWoTJCDqkJIeKriLCWG7nppWWqUFhQIu-u_PpM/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTJfNmZlMjEzZTY1MzIzMmYzNTQ2NDlmZDQ2ZDYxMjc4YmEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Блуза Високо Съдържание Памук",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 52,
+   "page_image": "https://imgproxy.leaflets.schwarz/NE81-vWoTJCDqkJIeKriLCWG7nppWWqUFhQIu-u_PpM/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTJfNmZlMjEzZTY1MzIzMmYzNTQ2NDlmZDQ2ZDYxMjc4YmEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Дънки",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 52,
+   "page_image": "https://imgproxy.leaflets.schwarz/NE81-vWoTJCDqkJIeKriLCWG7nppWWqUFhQIu-u_PpM/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTJfNmZlMjEzZTY1MzIzMmYzNTQ2NDlmZDQ2ZDYxMjc4YmEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Яке Водоотблъскваща Лицева Страна",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 52,
+   "page_image": "https://imgproxy.leaflets.schwarz/NE81-vWoTJCDqkJIeKriLCWG7nppWWqUFhQIu-u_PpM/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTJfNmZlMjEzZTY1MzIzMmYzNTQ2NDlmZDQ2ZDYxMjc4YmEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Четвъртък",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 52,
+   "page_image": "https://imgproxy.leaflets.schwarz/NE81-vWoTJCDqkJIeKriLCWG7nppWWqUFhQIu-u_PpM/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTJfNmZlMjEzZTY1MzIzMmYzNTQ2NDlmZDQ2ZDYxMjc4YmEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Домашен Комплект",
+   "discount_pct": "-26",
+   "valid": "от 14.09. до 20.09.",
+   "page": 53,
+   "page_image": "https://imgproxy.leaflets.schwarz/8F9YvDDzDKtT5nL2qNH85HLLvM6Q7Gv4tfIpZpq_m0s/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTNfNzdlMjBjZTg0ODNmYmViZmY0MmUxZDBiNmIxYTM1YzMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Елек",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 53,
+   "page_image": "https://imgproxy.leaflets.schwarz/8F9YvDDzDKtT5nL2qNH85HLLvM6Q7Gv4tfIpZpq_m0s/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTNfNzdlMjBjZTg0ODNmYmViZmY0MmUxZDBiNmIxYTM1YzMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Спортни Обувки",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 53,
+   "page_image": "https://imgproxy.leaflets.schwarz/8F9YvDDzDKtT5nL2qNH85HLLvM6Q7Gv4tfIpZpq_m0s/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTNfNzdlMjBjZTg0ODNmYmViZmY0MmUxZDBiNmIxYTM1YzMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Подметка Чифт",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 53,
+   "page_image": "https://imgproxy.leaflets.schwarz/8F9YvDDzDKtT5nL2qNH85HLLvM6Q7Gv4tfIpZpq_m0s/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTNfNzdlMjBjZTg0ODNmYmViZmY0MmUxZDBiNmIxYTM1YzMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Съчетай",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 53,
+   "page_image": "https://imgproxy.leaflets.schwarz/8F9YvDDzDKtT5nL2qNH85HLLvM6Q7Gv4tfIpZpq_m0s/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTNfNzdlMjBjZTg0ODNmYmViZmY0MmUxZDBiNmIxYTM1YzMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Редовна",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 53,
+   "page_image": "https://imgproxy.leaflets.schwarz/8F9YvDDzDKtT5nL2qNH85HLLvM6Q7Gv4tfIpZpq_m0s/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTNfNzdlMjBjZTg0ODNmYmViZmY0MmUxZDBiNmIxYTM1YzMucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Мода Аксесоари",
+   "discount_pct": "-95",
+   "valid": "от 14.09. до 20.09.",
+   "page": 54,
+   "page_image": "https://imgproxy.leaflets.schwarz/nQ_j1GkHm_TmmaB5SOJSzwD4soUDpgLLzR6atPA47SA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTRfYTMxOTU2OTgyYzI1MWM4ODI2NTQ4YmE5YmRhMDU0YmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Джегингс Високо Съдържание Памук",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 54,
+   "page_image": "https://imgproxy.leaflets.schwarz/nQ_j1GkHm_TmmaB5SOJSzwD4soUDpgLLzR6atPA47SA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTRfYTMxOTU2OTgyYzI1MWM4ODI2NTQ4YmE5YmRhMDU0YmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Блуза Рипсена Материя Рокля",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 54,
+   "page_image": "https://imgproxy.leaflets.schwarz/nQ_j1GkHm_TmmaB5SOJSzwD4soUDpgLLzR6atPA47SA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTRfYTMxOTU2OTgyYzI1MWM4ODI2NTQ4YmE5YmRhMDU0YmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Ръкави",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 54,
+   "page_image": "https://imgproxy.leaflets.schwarz/nQ_j1GkHm_TmmaB5SOJSzwD4soUDpgLLzR6atPA47SA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTRfYTMxOTU2OTgyYzI1MWM4ODI2NTQ4YmE5YmRhMDU0YmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Шлифер Водоотблъскваща Лицева Страна",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 54,
+   "page_image": "https://imgproxy.leaflets.schwarz/nQ_j1GkHm_TmmaB5SOJSzwD4soUDpgLLzR6atPA47SA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTRfYTMxOTU2OTgyYzI1MWM4ODI2NTQ4YmE5YmRhMDU0YmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Четвъртък",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 54,
+   "page_image": "https://imgproxy.leaflets.schwarz/nQ_j1GkHm_TmmaB5SOJSzwD4soUDpgLLzR6atPA47SA/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTRfYTMxOTU2OTgyYzI1MWM4ODI2NTQ4YmE5YmRhMDU0YmQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Комплект",
+   "discount_pct": "-95",
+   "valid": "от 14.09. до 20.09.",
+   "page": 55,
+   "page_image": "https://imgproxy.leaflets.schwarz/0PCI2lPNedRL4LQU_LFft2aawMnVVQOpRYWXbVnf8AI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTVfMzUxMTdjOGNmMWZjNzA0M2E1YTU2YjViNzAwNjZlNjgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Панталон",
+   "discount_pct": "-00",
+   "valid": "от 14.09. до 20.09.",
+   "page": 55,
+   "page_image": "https://imgproxy.leaflets.schwarz/0PCI2lPNedRL4LQU_LFft2aawMnVVQOpRYWXbVnf8AI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTVfMzUxMTdjOGNmMWZjNzA0M2E1YTU2YjViNzAwNjZlNjgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Клин",
+   "discount_pct": "-76",
+   "valid": "от 14.09. до 20.09.",
+   "page": 55,
+   "page_image": "https://imgproxy.leaflets.schwarz/0PCI2lPNedRL4LQU_LFft2aawMnVVQOpRYWXbVnf8AI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTVfMzUxMTdjOGNmMWZjNzA0M2E1YTU2YjViNzAwNjZlNjgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Потници",
+   "discount_pct": "-98",
+   "valid": "от 14.09. до 20.09.",
+   "page": 55,
+   "page_image": "https://imgproxy.leaflets.schwarz/0PCI2lPNedRL4LQU_LFft2aawMnVVQOpRYWXbVnf8AI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTVfMzUxMTdjOGNmMWZjNzA0M2E1YTU2YjViNzAwNjZlNjgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Рипсена Материя Сутиен Банели",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 55,
+   "page_image": "https://imgproxy.leaflets.schwarz/0PCI2lPNedRL4LQU_LFft2aawMnVVQOpRYWXbVnf8AI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTVfMzUxMTdjOGNmMWZjNzA0M2E1YTU2YjViNzAwNjZlNjgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Карго",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 55,
+   "page_image": "https://imgproxy.leaflets.schwarz/0PCI2lPNedRL4LQU_LFft2aawMnVVQOpRYWXbVnf8AI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTVfMzUxMTdjOGNmMWZjNzA0M2E1YTU2YjViNzAwNjZlNjgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Съчетай",
+   "discount_pct": "-26",
+   "valid": "от 14.09. до 20.09.",
+   "page": 56,
+   "page_image": "https://imgproxy.leaflets.schwarz/Wc5_Ufitp9ZP6Ejm6gBlybpNxvED8XT4ln-YXz1Ar34/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTZfMzRkYzgwZGJmNDk4YmY3YjcyODIwMDkwMTE1ZDUwMzAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Редовна",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 56,
+   "page_image": "https://imgproxy.leaflets.schwarz/Wc5_Ufitp9ZP6Ejm6gBlybpNxvED8XT4ln-YXz1Ar34/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTZfMzRkYzgwZGJmNDk4YmY3YjcyODIwMDkwMTE1ZDUwMzAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Цената Валидна",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 56,
+   "page_image": "https://imgproxy.leaflets.schwarz/Wc5_Ufitp9ZP6Ejm6gBlybpNxvED8XT4ln-YXz1Ar34/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTZfMzRkYzgwZGJmNDk4YmY3YjcyODIwMDkwMTE1ZDUwMzAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Четвъртък",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 56,
+   "page_image": "https://imgproxy.leaflets.schwarz/Wc5_Ufitp9ZP6Ejm6gBlybpNxvED8XT4ln-YXz1Ar34/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTZfMzRkYzgwZGJmNDk4YmY3YjcyODIwMDkwMTE1ZDUwMzAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Инструменти Градина",
+   "discount_pct": "-25",
+   "valid": "от 14.09. до 20.09.",
+   "page": 57,
+   "page_image": "https://imgproxy.leaflets.schwarz/50rHspLvMI4xsfvhGWgE3mGeh3lNIHNVe9A32KkXuw8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTdfMjk1MjM2Yjg2NmQ2Y2JhMzdiMjYzYmQ0MTdlMmQ0M2QucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Седмицата Топ",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 57,
+   "page_image": "https://imgproxy.leaflets.schwarz/50rHspLvMI4xsfvhGWgE3mGeh3lNIHNVe9A32KkXuw8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTdfMjk1MjM2Yjg2NmQ2Y2JhMzdiMjYzYmQ0MTdlMmQ0M2QucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Акумулаторна Батерия",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 57,
+   "page_image": "https://imgproxy.leaflets.schwarz/50rHspLvMI4xsfvhGWgE3mGeh3lNIHNVe9A32KkXuw8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTdfMjk1MjM2Yjg2NmQ2Y2JhMzdiMjYzYmQ0MTdlMmQ0M2QucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската Четвъртък",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 57,
+   "page_image": "https://imgproxy.leaflets.schwarz/50rHspLvMI4xsfvhGWgE3mGeh3lNIHNVe9A32KkXuw8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTdfMjk1MjM2Yjg2NmQ2Y2JhMzdiMjYzYmQ0MTdlMmQ0M2QucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Инструменти Градина",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 58,
+   "page_image": "https://imgproxy.leaflets.schwarz/9G4_hdXWLX-j883Wu8h_D5OQ7gX7fW2zGWeeD-vCE50/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNThfZGI1N2MyNDE0NjI1MzRlMWVmZmUwYThmMWUyZTFmZDAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Принадлежности Гар Анц",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 58,
+   "page_image": "https://imgproxy.leaflets.schwarz/9G4_hdXWLX-j883Wu8h_D5OQ7gX7fW2zGWeeD-vCE50/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNThfZGI1N2MyNDE0NjI1MzRlMWVmZmUwYThmMWUyZTFmZDAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Анция",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 58,
+   "page_image": "https://imgproxy.leaflets.schwarz/9G4_hdXWLX-j883Wu8h_D5OQ7gX7fW2zGWeeD-vCE50/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNThfZGI1N2MyNDE0NjI1MzRlMWVmZmUwYThmMWUyZTFmZDAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Въздушния Поток Уред Необходими",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 58,
+   "page_image": "https://imgproxy.leaflets.schwarz/9G4_hdXWLX-j883Wu8h_D5OQ7gX7fW2zGWeeD-vCE50/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNThfZGI1N2MyNDE0NjI1MzRlMWVmZmUwYThmMWUyZTFmZDAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Акумулаторни",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 58,
+   "page_image": "https://imgproxy.leaflets.schwarz/9G4_hdXWLX-j883Wu8h_D5OQ7gX7fW2zGWeeD-vCE50/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNThfZGI1N2MyNDE0NjI1MzRlMWVmZmUwYThmMWUyZTFmZDAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Четвъртък",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 58,
+   "page_image": "https://imgproxy.leaflets.schwarz/9G4_hdXWLX-j883Wu8h_D5OQ7gX7fW2zGWeeD-vCE50/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNThfZGI1N2MyNDE0NjI1MzRlMWVmZmUwYThmMWUyZTFmZDAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Градински Маркуч Съвместим Системи",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 59,
+   "page_image": "https://imgproxy.leaflets.schwarz/zjYXh_8tAtxKDuLizg4HK06ek6bbDcH7Cy_PSm1IG6s/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTlfY2NmMjFjM2I4NjVlYTJhYWNlN2MyMWJlNzliMzA4YWIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Налягане",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 59,
+   "page_image": "https://imgproxy.leaflets.schwarz/zjYXh_8tAtxKDuLizg4HK06ek6bbDcH7Cy_PSm1IG6s/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTlfY2NmMjFjM2I4NjVlYTJhYWNlN2MyMWJlNzliMzA4YWIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кабел Накрайник",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 59,
+   "page_image": "https://imgproxy.leaflets.schwarz/zjYXh_8tAtxKDuLizg4HK06ek6bbDcH7Cy_PSm1IG6s/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTlfY2NmMjFjM2I4NjVlYTJhYWNlN2MyMWJlNzliMzA4YWIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Комплект Части",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 59,
+   "page_image": "https://imgproxy.leaflets.schwarz/zjYXh_8tAtxKDuLizg4HK06ek6bbDcH7Cy_PSm1IG6s/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTlfY2NmMjFjM2I4NjVlYTJhYWNlN2MyMWJlNzliMzA4YWIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Анция",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 59,
+   "page_image": "https://imgproxy.leaflets.schwarz/zjYXh_8tAtxKDuLizg4HK06ek6bbDcH7Cy_PSm1IG6s/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTlfY2NmMjFjM2I4NjVlYTJhYWNlN2MyMWJlNzliMzA4YWIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Нци Уред Необходими",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 59,
+   "page_image": "https://imgproxy.leaflets.schwarz/zjYXh_8tAtxKDuLizg4HK06ek6bbDcH7Cy_PSm1IG6s/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNTlfY2NmMjFjM2I4NjVlYTJhYWNlN2MyMWJlNzliMzA4YWIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Инструменти Градина",
+   "discount_pct": "-25",
+   "valid": "от 14.09. до 20.09.",
+   "page": 60,
+   "page_image": "https://imgproxy.leaflets.schwarz/8vyKDS2lwZhdfr_4CcGjRyUpCmidt3Jd3hrJFnNUVMI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjBfOGEwMmZmOTUyMDJhZjIzY2NmNjQ4YmI1MGI2MjM4NzYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Гар Анц",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 60,
+   "page_image": "https://imgproxy.leaflets.schwarz/8vyKDS2lwZhdfr_4CcGjRyUpCmidt3Jd3hrJFnNUVMI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjBfOGEwMmZmOTUyMDJhZjIzY2NmNjQ4YmI1MGI2MjM4NzYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Анция",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 60,
+   "page_image": "https://imgproxy.leaflets.schwarz/8vyKDS2lwZhdfr_4CcGjRyUpCmidt3Jd3hrJFnNUVMI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjBfOGEwMmZmOTUyMDJhZjIzY2NmNjQ4YmI1MGI2MjM4NzYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Нци",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 60,
+   "page_image": "https://imgproxy.leaflets.schwarz/8vyKDS2lwZhdfr_4CcGjRyUpCmidt3Jd3hrJFnNUVMI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjBfOGEwMmZmOTUyMDJhZjIzY2NmNjQ4YmI1MGI2MjM4NzYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Четвъртък",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 60,
+   "page_image": "https://imgproxy.leaflets.schwarz/8vyKDS2lwZhdfr_4CcGjRyUpCmidt3Jd3hrJFnNUVMI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjBfOGEwMmZmOTUyMDJhZjIzY2NmNjQ4YmI1MGI2MjM4NzYucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Градински Инструмент",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 61,
+   "page_image": "https://imgproxy.leaflets.schwarz/CUSjsdpRuglLh2jDca29LX4b1m6bfXxZVreUy9ABbao/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjFfMjU1OTY3YzcwNjE5NDExMTgwNzJkOGE4NTA1NDUzOGQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Градинска Ножица",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 61,
+   "page_image": "https://imgproxy.leaflets.schwarz/CUSjsdpRuglLh2jDca29LX4b1m6bfXxZVreUy9ABbao/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjFfMjU1OTY3YzcwNjE5NDExMTgwNzJkOGE4NTA1NDUzOGQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Соларна",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 61,
+   "page_image": "https://imgproxy.leaflets.schwarz/CUSjsdpRuglLh2jDca29LX4b1m6bfXxZVreUy9ABbao/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjFfMjU1OTY3YzcwNjE5NDExMTgwNzJkOGE4NTA1NDUzOGQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Анция",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 61,
+   "page_image": "https://imgproxy.leaflets.schwarz/CUSjsdpRuglLh2jDca29LX4b1m6bfXxZVreUy9ABbao/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjFfMjU1OTY3YzcwNjE5NDExMTgwNzJkOGE4NTA1NDUzOGQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Нци Части Налягане",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 61,
+   "page_image": "https://imgproxy.leaflets.schwarz/CUSjsdpRuglLh2jDca29LX4b1m6bfXxZVreUy9ABbao/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjFfMjU1OTY3YzcwNjE5NDExMTgwNzJkOGE4NTA1NDUzOGQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската Четвъртък",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 61,
+   "page_image": "https://imgproxy.leaflets.schwarz/CUSjsdpRuglLh2jDca29LX4b1m6bfXxZVreUy9ABbao/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjFfMjU1OTY3YzcwNjE5NDExMTgwNzJkOGE4NTA1NDUzOGQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Дом Обзавеждане",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 62,
+   "page_image": "https://imgproxy.leaflets.schwarz/286XknI-wHpBFOP1M-7MW-Ni7AVdO7lsMbLXLtJMYXU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjJfZWE5Y2ZhZDM1YWM2Yjg3MDc4MGE0NjM2N2ZlMWFhMzgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Шкаф Телевизор",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 62,
+   "page_image": "https://imgproxy.leaflets.schwarz/286XknI-wHpBFOP1M-7MW-Ni7AVdO7lsMbLXLtJMYXU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjJfZWE5Y2ZhZDM1YWM2Yjg3MDc4MGE0NjM2N2ZlMWFhMzgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Полица",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 62,
+   "page_image": "https://imgproxy.leaflets.schwarz/286XknI-wHpBFOP1M-7MW-Ni7AVdO7lsMbLXLtJMYXU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjJfZWE5Y2ZhZDM1YWM2Yjg3MDc4MGE0NjM2N2ZlMWFhMzgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Декоративна Кошница",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 62,
+   "page_image": "https://imgproxy.leaflets.schwarz/286XknI-wHpBFOP1M-7MW-Ni7AVdO7lsMbLXLtJMYXU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjJfZWE5Y2ZhZDM1YWM2Yjg3MDc4MGE0NjM2N2ZlMWFhMzgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Помощни Маси Комплект",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 62,
+   "page_image": "https://imgproxy.leaflets.schwarz/286XknI-wHpBFOP1M-7MW-Ni7AVdO7lsMbLXLtJMYXU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjJfZWE5Y2ZhZDM1YWM2Yjg3MDc4MGE0NjM2N2ZlMWFhMzgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Четвъртък",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 62,
+   "page_image": "https://imgproxy.leaflets.schwarz/286XknI-wHpBFOP1M-7MW-Ni7AVdO7lsMbLXLtJMYXU/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjJfZWE5Y2ZhZDM1YWM2Yjg3MDc4MGE0NjM2N2ZlMWFhMzgucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Етажерка Прахово Покритие",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 63,
+   "page_image": "https://imgproxy.leaflets.schwarz/Y1LpgglaY3GVksknWJhH7MObJUY8WTdOG_qXm3VOZa4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjNfNDcxYTU3YTg1ODY1NDUyNTIyY2RlZThiMjc0OGJkMzkucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кресло Метална Конструкция",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 63,
+   "page_image": "https://imgproxy.leaflets.schwarz/Y1LpgglaY3GVksknWJhH7MObJUY8WTdOG_qXm3VOZa4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjNfNDcxYTU3YTg1ODY1NDUyNTIyY2RlZThiMjc0OGJkMzkucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската Четвъртък",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 63,
+   "page_image": "https://imgproxy.leaflets.schwarz/Y1LpgglaY3GVksknWJhH7MObJUY8WTdOG_qXm3VOZa4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjNfNDcxYTU3YTg1ODY1NDUyNTIyY2RlZThiMjc0OGJkMzkucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Шалте",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 64,
+   "page_image": "https://imgproxy.leaflets.schwarz/cYABNie7uDYgcO_qI0EEk0za-4tyZrlHw60X6ukYApI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjRfN2IxZGRiZmMzYjViMGMzNmMxNzg2YWZiMTRlN2Y5NzIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Четвъртък",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 64,
+   "page_image": "https://imgproxy.leaflets.schwarz/cYABNie7uDYgcO_qI0EEk0za-4tyZrlHw60X6ukYApI/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjRfN2IxZGRiZmMzYjViMGMzNmMxNzg2YWZiMTRlN2Y5NzIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Периодаянуари",
+   "discount_pct": "-54",
+   "valid": "от 14.09. до 20.09.",
+   "page": 65,
+   "page_image": "https://imgproxy.leaflets.schwarz/521dzPVKfGIcZKxNiw_ym9wq5wXIYgyZYw2AcqbjNd0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjVfZTBmNTY4YmE5ZWFiY2M2NDdkMDM3OGE5ZmYyOGY3ZDQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Българска Тиква Сорт Матилда",
+   "discount_pct": "--37",
+   "valid": "от 14.09. до 20.09.",
+   "page": 65,
+   "page_image": "https://imgproxy.leaflets.schwarz/521dzPVKfGIcZKxNiw_ym9wq5wXIYgyZYw2AcqbjNd0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjVfZTBmNTY4YmE5ZWFiY2M2NDdkMDM3OGE5ZmYyOGY3ZDQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Бяло Грозде Семки",
+   "discount_pct": "--34",
+   "valid": "от 14.09. до 20.09.",
+   "page": 65,
+   "page_image": "https://imgproxy.leaflets.schwarz/521dzPVKfGIcZKxNiw_ym9wq5wXIYgyZYw2AcqbjNd0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjVfZTBmNTY4YmE5ZWFiY2M2NDdkMDM3OGE5ZmYyOGY3ZDQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Гърция",
+   "discount_pct": "--50",
+   "valid": "от 14.09. до 20.09.",
+   "page": 65,
+   "page_image": "https://imgproxy.leaflets.schwarz/521dzPVKfGIcZKxNiw_ym9wq5wXIYgyZYw2AcqbjNd0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjVfZTBmNTY4YmE5ZWFiY2M2NDdkMDM3OGE5ZmYyOGY3ZDQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Авокадо Перу Краставица",
+   "discount_pct": "--30",
+   "valid": "от 14.09. до 20.09.",
+   "page": 65,
+   "page_image": "https://imgproxy.leaflets.schwarz/521dzPVKfGIcZKxNiw_ym9wq5wXIYgyZYw2AcqbjNd0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjVfZTBmNTY4YmE5ZWFiY2M2NDdkMDM3OGE5ZmYyOGY3ZDQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Български Деликатесен Пъпеш Лук",
+   "discount_pct": "--46",
+   "valid": "от 14.09. до 20.09.",
+   "page": 65,
+   "page_image": "https://imgproxy.leaflets.schwarz/521dzPVKfGIcZKxNiw_ym9wq5wXIYgyZYw2AcqbjNd0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjVfZTBmNTY4YmE5ZWFiY2M2NDdkMDM3OGE5ZmYyOGY3ZDQucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Вкусни Моменти Край",
+   "discount_pct": "--35",
+   "valid": "от 14.09. до 20.09.",
+   "page": 66,
+   "page_image": "https://imgproxy.leaflets.schwarz/VE5z17--NiUCedNT4VMNJEM000Wr0jpSM0Plbolofk0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjZfMTg2ZGI3NWYyM2FlNTJjMzczYTExYThjNWQ0N2Y5ZjEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Газирана Безалкохолна Напитка",
+   "discount_pct": "--55",
+   "valid": "от 14.09. до 20.09.",
+   "page": 66,
+   "page_image": "https://imgproxy.leaflets.schwarz/VE5z17--NiUCedNT4VMNJEM000Wr0jpSM0Plbolofk0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjZfMTg2ZGI3NWYyM2FlNTJjMzczYTExYThjNWQ0N2Y5ZjEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Нектар",
+   "discount_pct": "-22",
+   "valid": "от 14.09. до 20.09.",
+   "page": 66,
+   "page_image": "https://imgproxy.leaflets.schwarz/VE5z17--NiUCedNT4VMNJEM000Wr0jpSM0Plbolofk0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjZfMTg2ZGI3NWYyM2FlNTJjMzczYTExYThjNWQ0N2Y5ZjEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Маслини Каламата",
+   "discount_pct": "--34",
+   "valid": "от 14.09. до 20.09.",
+   "page": 66,
+   "page_image": "https://imgproxy.leaflets.schwarz/VE5z17--NiUCedNT4VMNJEM000Wr0jpSM0Plbolofk0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjZfMTg2ZGI3NWYyM2FlNTJjMzczYTExYThjNWQ0N2Y5ZjEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Чабата",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 66,
+   "page_image": "https://imgproxy.leaflets.schwarz/VE5z17--NiUCedNT4VMNJEM000Wr0jpSM0Plbolofk0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjZfMTg2ZGI3NWYyM2FlNTJjMzczYTExYThjNWQ0N2Y5ZjEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Четвъртък",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 66,
+   "page_image": "https://imgproxy.leaflets.schwarz/VE5z17--NiUCedNT4VMNJEM000Wr0jpSM0Plbolofk0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjZfMTg2ZGI3NWYyM2FlNTJjMzczYTExYThjNWQ0N2Y5ZjEucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Скир",
+   "discount_pct": "--24",
+   "valid": "от 14.09. до 20.09.",
+   "page": 67,
+   "page_image": "https://imgproxy.leaflets.schwarz/NCSILSPbYuD_bl-aRlW0jrteLu4wiT3vkokqO9avpo0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjdfNzI3YWYzOTIwN2UxMjY4ZGZjMTBiNTI1N2I0MWZjMzUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Краве Сирене Саламура",
+   "discount_pct": "--26",
+   "valid": "от 14.09. до 20.09.",
+   "page": 67,
+   "page_image": "https://imgproxy.leaflets.schwarz/NCSILSPbYuD_bl-aRlW0jrteLu4wiT3vkokqO9avpo0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjdfNzI3YWYzOTIwN2UxMjY4ZGZjMTBiNTI1N2I0MWZjMzUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Кефир Масленост",
+   "discount_pct": "--23",
+   "valid": "от 14.09. до 20.09.",
+   "page": 67,
+   "page_image": "https://imgproxy.leaflets.schwarz/NCSILSPbYuD_bl-aRlW0jrteLu4wiT3vkokqO9avpo0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjdfNzI3YWYzOTIwN2UxMjY4ZGZjMTBiNTI1N2I0MWZjMzUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Сандвич Чабата",
+   "discount_pct": "--21",
+   "valid": "от 14.09. до 20.09.",
+   "page": 67,
+   "page_image": "https://imgproxy.leaflets.schwarz/NCSILSPbYuD_bl-aRlW0jrteLu4wiT3vkokqO9avpo0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjdfNzI3YWYzOTIwN2UxMjY4ZGZjMTBiNTI1N2I0MWZjMzUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Одрински Кори Баница",
+   "discount_pct": "-22",
+   "valid": "от 14.09. до 20.09.",
+   "page": 67,
+   "page_image": "https://imgproxy.leaflets.schwarz/NCSILSPbYuD_bl-aRlW0jrteLu4wiT3vkokqO9avpo0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjdfNzI3YWYzOTIwN2UxMjY4ZGZjMTBiNTI1N2I0MWZjMzUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Поничка Плодов Пълнеж",
+   "discount_pct": "--29",
+   "valid": "от 14.09. до 20.09.",
+   "page": 67,
+   "page_image": "https://imgproxy.leaflets.schwarz/NCSILSPbYuD_bl-aRlW0jrteLu4wiT3vkokqO9avpo0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjdfNzI3YWYzOTIwN2UxMjY4ZGZjMTBiNTI1N2I0MWZjMzUucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Шоколадови Белгийски Бонбони Пълнеж",
+   "discount_pct": "--25",
+   "valid": "от 14.09. до 20.09.",
+   "page": 68,
+   "page_image": "https://imgproxy.leaflets.schwarz/VyvuGskscrReKAQzN2NF-g1WnZJ6Wxb1XyBvqsu4UYo/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjhfZGViZmZmMmExYjg0ZWZiY2M0MTJjMDMwY2I0YTgzOGIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Мляно Кафе Класик",
+   "discount_pct": "-40",
+   "valid": "от 14.09. до 20.09.",
+   "page": 68,
+   "page_image": "https://imgproxy.leaflets.schwarz/VyvuGskscrReKAQzN2NF-g1WnZJ6Wxb1XyBvqsu4UYo/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjhfZGViZmZmMmExYjg0ZWZiY2M0MTJjMDMwY2I0YTgzOGIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Мини Брауни Парченца Шоколад",
+   "discount_pct": "-22",
+   "valid": "от 14.09. до 20.09.",
+   "page": 68,
+   "page_image": "https://imgproxy.leaflets.schwarz/VyvuGskscrReKAQzN2NF-g1WnZJ6Wxb1XyBvqsu4UYo/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjhfZGViZmZmMmExYjg0ZWZiY2M0MTJjMDMwY2I0YTgzOGIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Тоалетна Хартия",
+   "discount_pct": "-26",
+   "valid": "от 14.09. до 20.09.",
+   "page": 68,
+   "page_image": "https://imgproxy.leaflets.schwarz/VyvuGskscrReKAQzN2NF-g1WnZJ6Wxb1XyBvqsu4UYo/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjhfZGViZmZmMmExYjg0ZWZiY2M0MTJjMDMwY2I0YTgzOGIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Безкофеиново",
+   "discount_pct": "-28",
+   "valid": "от 14.09. до 20.09.",
+   "page": 68,
+   "page_image": "https://imgproxy.leaflets.schwarz/VyvuGskscrReKAQzN2NF-g1WnZJ6Wxb1XyBvqsu4UYo/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjhfZGViZmZmMmExYjg0ZWZiY2M0MTJjMDMwY2I0YTgzOGIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Чипс Сол",
+   "discount_pct": "-50",
+   "valid": "от 14.09. до 20.09.",
+   "page": 68,
+   "page_image": "https://imgproxy.leaflets.schwarz/VyvuGskscrReKAQzN2NF-g1WnZJ6Wxb1XyBvqsu4UYo/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjhfZGViZmZmMmExYjg0ZWZiY2M0MTJjMDMwY2I0YTgzOGIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Купи",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 69,
+   "page_image": "https://imgproxy.leaflets.schwarz/dIWUEq18mepswWSq90wHUjoyr8LGLr3ZliKvdDFxAnk/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjlfZGE5ZWU0NGQ4NzA3MDA1ZTY4NTlhOTg1NDlhOWZhMGIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Конфитюр Кайсии Редовна",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 69,
+   "page_image": "https://imgproxy.leaflets.schwarz/dIWUEq18mepswWSq90wHUjoyr8LGLr3ZliKvdDFxAnk/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjlfZGE5ZWU0NGQ4NzA3MDA1ZTY4NTlhOTg1NDlhOWZhMGIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската Четвъртък",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 69,
+   "page_image": "https://imgproxy.leaflets.schwarz/dIWUEq18mepswWSq90wHUjoyr8LGLr3ZliKvdDFxAnk/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNjlfZGE5ZWU0NGQ4NzA3MDA1ZTY4NTlhOTg1NDlhOWZhMGIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Пудинг Карамел",
+   "discount_pct": "-58",
+   "valid": "от 14.09. до 20.09.",
+   "page": 70,
+   "page_image": "https://imgproxy.leaflets.schwarz/TLlj0-wg7CFrRIB6yDTSlFD6yhr_CB2kN7AOXwtIJm4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNzBfN2Q5MWJjN2U1Y2E2OWZiOTVjMjQ0NTg2OGZlZGJkNDIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Пшенично Брашно",
+   "discount_pct": "-26",
+   "valid": "от 14.09. до 20.09.",
+   "page": 70,
+   "page_image": "https://imgproxy.leaflets.schwarz/TLlj0-wg7CFrRIB6yDTSlFD6yhr_CB2kN7AOXwtIJm4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNzBfN2Q5MWJjN2U1Y2E2OWZiOTVjMjQ0NTg2OGZlZGJkNDIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Смокиня",
+   "discount_pct": "-33",
+   "valid": "от 14.09. до 20.09.",
+   "page": 70,
+   "page_image": "https://imgproxy.leaflets.schwarz/TLlj0-wg7CFrRIB6yDTSlFD6yhr_CB2kN7AOXwtIJm4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNzBfN2Q5MWJjN2U1Y2E2OWZiOTVjMjQ0NTg2OGZlZGJkNDIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Турция",
+   "discount_pct": "-25",
+   "valid": "от 14.09. до 20.09.",
+   "page": 70,
+   "page_image": "https://imgproxy.leaflets.schwarz/TLlj0-wg7CFrRIB6yDTSlFD6yhr_CB2kN7AOXwtIJm4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNzBfN2Q5MWJjN2U1Y2E2OWZiOTVjMjQ0NTg2OGZlZGJkNDIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Събота",
+   "discount_pct": "-30",
+   "valid": "от 14.09. до 20.09.",
+   "page": 70,
+   "page_image": "https://imgproxy.leaflets.schwarz/TLlj0-wg7CFrRIB6yDTSlFD6yhr_CB2kN7AOXwtIJm4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNzBfN2Q5MWJjN2U1Y2E2OWZiOTVjMjQ0NTg2OGZlZGJkNDIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Търговската Можеш Свържеш",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 70,
+   "page_image": "https://imgproxy.leaflets.schwarz/TLlj0-wg7CFrRIB6yDTSlFD6yhr_CB2kN7AOXwtIJm4/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNzBfN2Q5MWJjN2U1Y2E2OWZiOTVjMjQ0NTg2OGZlZGJkNDIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Бъди",
+   "discount_pct": "-25",
+   "valid": "от 14.09. до 20.09.",
+   "page": 71,
+   "page_image": "https://imgproxy.leaflets.schwarz/46V_DNXTeSzqfgNpxT5QhMaL9yFFWv1dSqalQmJLQL0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNzFfMjk2MDQxN2E2YWM0MmJkM2NjYzZlY2FlYTRjOWNjYTIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Партньорите",
+   "discount_pct": "-62",
+   "valid": "от 14.09. до 20.09.",
+   "page": 71,
+   "page_image": "https://imgproxy.leaflets.schwarz/46V_DNXTeSzqfgNpxT5QhMaL9yFFWv1dSqalQmJLQL0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNzFfMjk2MDQxN2E2YWM0MmJkM2NjYzZlY2FlYTRjOWNjYTIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Вземи Топ Отстъпки",
+   "discount_pct": "-20",
+   "valid": "от 14.09. до 20.09.",
+   "page": 71,
+   "page_image": "https://imgproxy.leaflets.schwarz/46V_DNXTeSzqfgNpxT5QhMaL9yFFWv1dSqalQmJLQL0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNzFfMjk2MDQxN2E2YWM0MmJkM2NjYzZlY2FlYTRjOWNjYTIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Отстъпка",
+   "discount_pct": "-10",
+   "valid": "от 14.09. до 20.09.",
+   "page": 71,
+   "page_image": "https://imgproxy.leaflets.schwarz/46V_DNXTeSzqfgNpxT5QhMaL9yFFWv1dSqalQmJLQL0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNzFfMjk2MDQxN2E2YWM0MmJkM2NjYzZlY2FlYTRjOWNjYTIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Обучение Адаптираш Промяната",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 71,
+   "page_image": "https://imgproxy.leaflets.schwarz/46V_DNXTeSzqfgNpxT5QhMaL9yFFWv1dSqalQmJLQL0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNzFfMjk2MDQxN2E2YWM0MmJkM2NjYzZlY2FlYTRjOWNjYTIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Фотокниги Корици Меки",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 71,
+   "page_image": "https://imgproxy.leaflets.schwarz/46V_DNXTeSzqfgNpxT5QhMaL9yFFWv1dSqalQmJLQL0/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNzFfMjk2MDQxN2E2YWM0MmJkM2NjYzZlY2FlYTRjOWNjYTIucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Ела",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 73,
+   "page_image": "https://imgproxy.leaflets.schwarz/Qq8PesS1MJ3Hfd1YSJDVfHMVWLhdglPk3gwuiPJ1yP8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNzNfYmFjMmI3Nzk2ZjhmMDJkY2QyNmQ4MTgzNDRmZTk2YTAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "София",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 73,
+   "page_image": "https://imgproxy.leaflets.schwarz/Qq8PesS1MJ3Hfd1YSJDVfHMVWLhdglPk3gwuiPJ1yP8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNzNfYmFjMmI3Nzk2ZjhmMDJkY2QyNmQ4MTgzNDRmZTk2YTAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Стартова Заплата Втората",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 73,
+   "page_image": "https://imgproxy.leaflets.schwarz/Qq8PesS1MJ3Hfd1YSJDVfHMVWLhdglPk3gwuiPJ1yP8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNzNfYmFjMmI3Nzk2ZjhmMDJkY2QyNmQ4MTgzNDRmZTk2YTAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Посочени Суми Бруто Заплащане",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 73,
+   "page_image": "https://imgproxy.leaflets.schwarz/Qq8PesS1MJ3Hfd1YSJDVfHMVWLhdglPk3gwuiPJ1yP8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNzNfYmFjMmI3Nzk2ZjhmMDJkY2QyNmQ4MTgzNDRmZTk2YTAucG5n.jpg"
+  },
+  {
+   "store": "Lidl",
+   "name": "Ваучери Храна Подбор",
+   "discount_pct": null,
+   "valid": "от 14.09. до 20.09.",
+   "page": 73,
+   "page_image": "https://imgproxy.leaflets.schwarz/Qq8PesS1MJ3Hfd1YSJDVfHMVWLhdglPk3gwuiPJ1yP8/rs:fit:1200:1200:1/g:no/czM6Ly9sZWFmbGV0cy9pbWFnZXMvMDFhMDdmNDUtMjZjMi03NjJlLTk2ZTItMGJhNGNjMDkxODFlL3BhZ2UtNzNfYmFjMmI3Nzk2ZjhmMDJkY2QyNmQ4MTgzNDRmZTk2YTAucG5n.jpg"
+  }
+ ],
+ "deals_vision_read": [
+  {
+   "name": "Български моркови (кг)",
+   "old_price": "1.27",
+   "price": "0.65",
+   "discount": "-48%",
+   "valid": "21-27.09"
+  },
+  {
+   "name": "Целина (бр)",
+   "old_price": "1.78",
+   "price": "1.19",
+   "discount": "-33%",
+   "valid": "21-27.09"
+  },
+  {
+   "name": "Българска салата Айсберг",
+   "old_price": "1.53",
+   "price": "0.99",
+   "discount": "-35%",
+   "valid": "21-27.09"
+  },
+  {
+   "name": "Нар (Lidl Plus)",
+   "old_price": "1.89",
+   "price": "0.99",
+   "discount": "-47%",
+   "valid": "21-27.09"
+  },
+  {
+   "name": "Български мити картофи 5кг (кг)",
+   "old_price": "0.99",
+   "price": "0.45",
+   "discount": "-54%",
+   "valid": "21-27.09"
+  },
+  {
+   "name": "Deutsche Markenbutter 250г",
+   "old_price": null,
+   "price": "2.19",
+   "discount": "Акция",
+   "valid": "21-27.09"
+  },
+  {
+   "name": "Свински бут без кост (кг, Lidl Plus)",
+   "old_price": "3.35",
+   "price": "2.59",
+   "discount": "-22%",
+   "valid": "21-27.09"
+  },
+  {
+   "name": "Пиринско Бира 12x0.5л",
+   "old_price": null,
+   "price": "6.59",
+   "discount": "-34% (1бр=0.84)",
+   "valid": "21-27.09"
+  },
+  {
+   "name": "Philadelphia Промопакет 2x300г",
+   "old_price": null,
+   "price": "5.85",
+   "discount": "-32%",
+   "valid": "21-27.09"
+  },
+  {
+   "name": "Българско бяло грозде 500г (Lidl Plus)",
+   "old_price": "1.69",
+   "price": "0.89",
+   "discount": "-47%",
+   "valid": "21-27.09"
+  },
+  {
+   "name": "Milde тоалетна хартия 40р (32+8)",
+   "old_price": null,
+   "price": "12.26",
+   "discount": "SUPER PROMO",
+   "valid": "21-27.09"
+  }
+ ],
+ "validity_of_vision_reads": "21.09 - 27.09.2026 (NEXT week - planning gold)"
+}

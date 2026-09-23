@@ -1,0 +1,17 @@
+{
+ "v1_retell": 96.0,
+ "v2_shuffled": 91.0,
+ "v3_punctuation": 96.0,
+ "v4_spoken": 99.0,
+ "v5_isolated": 71.0,
+ "v6_alternating": 72.0,
+ "v7_AB_concrete": 74.0,
+ "v8_micro_rewrite": 38.0,
+ "v9_micro_iter2": 20.0,
+ "v10_micro_iter3": 73.0,
+ "v11_quality_gated": 73.0,
+ "v11_quality_stats": {
+  "improved": 14,
+  "kept_original": 11
+ }
+}

@@ -1,0 +1,3497 @@
+{
+ "paraphrase|downloads": [
+  {
+   "id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+   "downloads": 45742916,
+   "likes": 1407,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "tf",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+   "downloads": 9948737,
+   "likes": 521,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "tf",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "xlm-roberta",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "sentence-transformers/paraphrase-mpnet-base-v2",
+   "downloads": 1736640,
+   "likes": 51,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "tf",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "mpnet",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "sentence-transformers/paraphrase-MiniLM-L6-v2",
+   "downloads": 1516916,
+   "likes": 150,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "tf",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "prithivida/parrot_paraphraser_on_T5",
+   "downloads": 1390979,
+   "likes": 161,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "pytorch",
+    "t5",
+    "text2text-generation",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us",
+    "deploy:azure"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "Xenova/paraphrase-multilingual-MiniLM-L12-v2",
+   "downloads": 675300,
+   "likes": 18,
+   "pipeline_tag": "feature-extraction",
+   "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers.js"
+  },
+  {
+   "id": "sentence-transformers/paraphrase-MiniLM-L3-v2",
+   "downloads": 667551,
+   "likes": 31,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "tf",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "sentence-transformers/paraphrase-albert-small-v2",
+   "downloads": 551200,
+   "likes": 12,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "tf",
+    "rust",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "albert",
+    "feature-extraction",
+    "sentence-similarity"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q",
+   "downloads": 290032,
+   "likes": 6,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "transformers",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us",
+    "deploy:azure"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "sentence-transformers/paraphrase-MiniLM-L12-v2",
+   "downloads": 239814,
+   "likes": 7,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "tf",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "shibing624/text2vec-base-chinese-paraphrase",
+   "downloads": 154566,
+   "likes": 79,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "safetensors",
+    "ernie",
+    "feature-extraction",
+    "text2vec",
+    "sentence-similarity",
+    "transformers",
+    "zh",
+    "dataset:shibing624/nli-zh-all"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "gmunkhtur/paraphrase-multilingual-minilm-l12-v3-mn",
+   "downloads": 150334,
+   "likes": 0,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:11113",
+    "loss:CosineSimilarityLoss",
+    "arxiv:1908.10084",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "sdadas/st-polish-paraphrase-from-mpnet",
+   "downloads": 117689,
+   "likes": 5,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "safetensors",
+    "roberta",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers",
+    "pl",
+    "license:lgpl",
+    "text-embeddings-inference"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "GPTCache/paraphrase-albert-small-v2",
+   "downloads": 85953,
+   "likes": 2,
+   "pipeline_tag": "feature-extraction",
+   "tags": [
+    "transformers",
+    "albert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "Vamsi/T5_Paraphrase_Paws",
+   "downloads": 83624,
+   "likes": 44,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "paraphrase-generation",
+    "text-generation",
+    "Conditional Generation"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "sentence-transformers/paraphrase-distilroberta-base-v1",
+   "downloads": 54217,
+   "likes": 7,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "roberta",
+    "feature-extraction",
+    "sentence-similarity"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "tuner007/pegasus_paraphrase",
+   "downloads": 54176,
+   "likes": 204,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "pytorch",
+    "pegasus",
+    "text2text-generation",
+    "paraphrasing",
+    "seq2seq",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "sentence-transformers/paraphrase-distilroberta-base-v2",
+   "downloads": 36566,
+   "likes": 11,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "roberta",
+    "feature-extraction",
+    "sentence-similarity"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "sentence-transformers/paraphrase-TinyBERT-L6-v2",
+   "downloads": 27532,
+   "likes": 5,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "tf",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "garak-llm/pegasus_paraphrase",
+   "downloads": 24390,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "safetensors",
+    "pegasus",
+    "paraphrasing",
+    "seq2seq",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": null
+  }
+ ],
+ "text humanizer|downloads": [
+  {
+   "id": "voperl/gemma4_text_humanizer_ru",
+   "downloads": 82,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "arunsingh80475/ai-text-humanizer-7b",
+   "downloads": 37,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen2.5-7B-bnb-4bit",
+    "grpo",
+    "lora",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational"
+   ],
+   "lastModified": "",
+   "library": "peft"
+  },
+  {
+   "id": "textsightai/textsight-humanizer-t5-large",
+   "downloads": 33,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:google-t5/t5-large",
+    "base_model:finetune:google-t5/t5-large",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "textsightai/humanizer-t5-base",
+   "downloads": 9,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "safetensors",
+    "t5",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "textsightai/humanizer-t5-small",
+   "downloads": 7,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "safetensors",
+    "t5",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "aikenml/AI-text-humanizer-deberta",
+   "downloads": 6,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "keras"
+  },
+  {
+   "id": "vishal-adithya/ministral-8B-texthumanizer",
+   "downloads": 0,
+   "likes": 1,
+   "pipeline_tag": null,
+   "tags": [
+    "mlx",
+    "finetune",
+    "en",
+    "dataset:vishal-adithya/texthumanizer-preprocessed-data",
+    "base_model:mistralai/Ministral-8B-Instruct-2410",
+    "base_model:finetune:mistralai/Ministral-8B-Instruct-2410",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "mlx"
+  },
+  {
+   "id": "PradeepKundekar/my-text-humanizer",
+   "downloads": 0,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  }
+ ],
+ "humanize|downloads": [
+  {
+   "id": "jialinyyzz/humanizer-gemma-4-e4b",
+   "downloads": 3549,
+   "likes": 4,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "image-text-to-text",
+    "text-rewriting",
+    "humanizer",
+    "paraphrase",
+    "gemma",
+    "mlx"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "bartowski/Nemo-12b-Humanize-KTO-v0.1-GGUF",
+   "downloads": 1897,
+   "likes": 7,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:cgato/Nemo-12b-Humanize-KTO-v0.1",
+    "base_model:quantized:cgato/Nemo-12b-Humanize-KTO-v0.1",
+    "license:cc-by-nc-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "mradermacher/Nemo-12b-Humanize-KTO-Experimental-Latest-i1-GGUF",
+   "downloads": 851,
+   "likes": 3,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:cgato/Nemo-12b-Humanize-KTO-Experimental-Latest",
+    "base_model:quantized:cgato/Nemo-12b-Humanize-KTO-Experimental-Latest",
+    "license:cc-by-nc-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "mradermacher/Nemo-12b-Humanize-SFT-v0.2.5-KTO-i1-GGUF",
+   "downloads": 851,
+   "likes": 1,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:cgato/Nemo-12b-Humanize-SFT-v0.2.5-KTO",
+    "base_model:quantized:cgato/Nemo-12b-Humanize-SFT-v0.2.5-KTO",
+    "license:cc-by-nc-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "cive202/humanize-ai-text-bart-large",
+   "downloads": 760,
+   "likes": 2,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "bart",
+    "text2text-generation",
+    "text-generation",
+    "style-transfer",
+    "rewriting",
+    "humanization",
+    "seq2seq",
+    "evaluation"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "mradermacher/Nemo-12b-Humanize-KTO-v0.1-i1-GGUF",
+   "downloads": 714,
+   "likes": 2,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:cgato/Nemo-12b-Humanize-KTO-v0.1",
+    "base_model:quantized:cgato/Nemo-12b-Humanize-KTO-v0.1",
+    "license:cc-by-nc-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "mradermacher/Nemo-Patricide-Humanize-12B-v1-GGUF",
+   "downloads": 705,
+   "likes": 1,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:ThomasComics/Nemo-Patricide-Humanize-12B-v1",
+    "base_model:quantized:ThomasComics/Nemo-Patricide-Humanize-12B-v1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "mradermacher/evade-humanizer-v1-i1-GGUF",
+   "downloads": 613,
+   "likes": 2,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Vaibhav1231/evade-humanizer-v1",
+    "base_model:quantized:Vaibhav1231/evade-humanizer-v1",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "mradermacher/humanizer-72b-i1-GGUF",
+   "downloads": 564,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:denuchie/humanizer-72b",
+    "base_model:quantized:denuchie/humanizer-72b",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "mradermacher/Nemo-12b-Humanize-SFT-v0.2-Quarter-i1-GGUF",
+   "downloads": 517,
+   "likes": 3,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:cgato/Nemo-12b-Humanize-SFT-v0.2-Quarter",
+    "base_model:quantized:cgato/Nemo-12b-Humanize-SFT-v0.2-Quarter",
+    "license:cc-by-nc-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "mradermacher/humanizerAI-GGUF",
+   "downloads": 471,
+   "likes": 4,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "mradermacher/phi2-humanizer-merged-i1-GGUF",
+   "downloads": 404,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:judesv/phi2-humanizer-merged",
+    "base_model:quantized:judesv/phi2-humanizer-merged",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "Usama1100/humanizer-llama3-8b-fp16-v3",
+   "downloads": 401,
+   "likes": 1,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "base_model:unsloth/llama-3-8b-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-bnb-4bit",
+    "license:apache-2.0"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "XiaoXu123123/academic-humanize-qwen25-7b-dpo-v2-lora",
+   "downloads": 399,
+   "likes": 5,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "dpo",
+    "academic-writing",
+    "text-rewriting",
+    "academic-humanization",
+    "text-generation",
+    "conversational"
+   ],
+   "lastModified": "",
+   "library": "peft"
+  },
+  {
+   "id": "mradermacher/Qwen2.5-14B-Humanizer-GGUF",
+   "downloads": 390,
+   "likes": 6,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:barmyman/Qwen2.5-14B-Humanizer",
+    "base_model:quantized:barmyman/Qwen2.5-14B-Humanizer",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "mradermacher/Ai-Humanizer-Llama-3.2-3B-GGUF",
+   "downloads": 387,
+   "likes": 4,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:KNipun/Ai-Humanizer-Llama-3.2-3B",
+    "base_model:quantized:KNipun/Ai-Humanizer-Llama-3.2-3B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "mradermacher/Humanize-Rei-Slerp-GGUF",
+   "downloads": 350,
+   "likes": 2,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:Edens-Gate/Humanize-Rei-Slerp",
+    "base_model:quantized:Edens-Gate/Humanize-Rei-Slerp",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "gohumanize/gohumanize-open-humanizer",
+   "downloads": 324,
+   "likes": 1,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "humanizer",
+    "text-rewriting",
+    "style-transfer",
+    "unsloth",
+    "lora"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "mradermacher/Nemo-12b-Humanize-KTO-Experimental-Latest-GGUF",
+   "downloads": 304,
+   "likes": 3,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:cgato/Nemo-12b-Humanize-KTO-Experimental-Latest",
+    "base_model:quantized:cgato/Nemo-12b-Humanize-KTO-Experimental-Latest",
+    "license:cc-by-nc-4.0",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "mradermacher/humanizer_structured_no_thinking_v1_fix-GGUF",
+   "downloads": 270,
+   "likes": 2,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Surfer/humanizer_structured_no_thinking_v1_fix",
+    "base_model:quantized:Surfer/humanizer_structured_no_thinking_v1_fix",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  }
+ ],
+ "dipper|downloads": [
+  {
+   "id": "kalpeshk2011/dipper-paraphraser-xxl",
+   "downloads": 9251,
+   "likes": 55,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "xxl",
+    "rewriting",
+    "paraphrase",
+    "paraphrase-generation",
+    "paraphrasing"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "SamSJackson/paraphrase-dipper-no-ctx",
+   "downloads": 150,
+   "likes": 2,
+   "pipeline_tag": "summarization",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "paraphraser",
+    "summarization",
+    "arxiv:2303.13408",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "catninja123/dipper-humanizer-lora",
+   "downloads": 146,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:SamSJackson/paraphrase-dipper-no-ctx",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:SamSJackson/paraphrase-dipper-no-ctx",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "peft"
+  },
+  {
+   "id": "Dipper00/ppo-Huggy",
+   "downloads": 67,
+   "likes": 0,
+   "pipeline_tag": "reinforcement-learning",
+   "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "ml-agents"
+  },
+  {
+   "id": "kalpeshk2011/dipper-paraphraser-xxl-no-context",
+   "downloads": 49,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "pytorch",
+    "t5",
+    "text2text-generation",
+    "xxl",
+    "rewriting",
+    "paraphrase",
+    "paraphrase-generation",
+    "paraphrasing",
+    "text-generation"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "zaddyzaddy/dipper-8bit",
+   "downloads": 26,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "gerasimovmaxim02/dipper-rebuilt",
+   "downloads": 18,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "pytorch",
+    "safetensors",
+    "t5",
+    "xxl",
+    "rewriting",
+    "paraphrase",
+    "paraphrase-generation",
+    "paraphrasing",
+    "text-generation",
+    "text2text-generation"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "cPower/dipper-paraphraser-xxl-tokeninc",
+   "downloads": 14,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "pytorch",
+    "t5",
+    "text2text-generation",
+    "xxl",
+    "rewriting",
+    "paraphrase",
+    "paraphrase-generation",
+    "paraphrasing",
+    "text-generation"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "gerasimovmaxim02/paraphrase-dipper-no-ctx-rebuilt",
+   "downloads": 11,
+   "likes": 1,
+   "pipeline_tag": "summarization",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "paraphraser",
+    "summarization",
+    "arxiv:2303.13408",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "Dipper00/distilbert-base-uncased-finetuned-squad-d5716d28",
+   "downloads": 7,
+   "likes": 0,
+   "pipeline_tag": "question-answering",
+   "tags": [
+    "pytorch",
+    "distilbert",
+    "question-answering",
+    "en",
+    "dataset:squad",
+    "arxiv:1910.01108",
+    "license:apache-2.0",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "cookjohn/chinese_dipper_final",
+   "downloads": 7,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "safetensors",
+    "mt5",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "csbao/kip-dipper-large",
+   "downloads": 7,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "safetensors",
+    "t5",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "pigc/chinese_dipper_final",
+   "downloads": 7,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "safetensors",
+    "mt5",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "Alirina/dipper_ru_no_cont",
+   "downloads": 6,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "turkmen/dipperTR",
+   "downloads": 0,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "dataset:turkmen/dipperTR",
+    "license:openrail",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "RosinoSuperRosa/DipperPinesItalian",
+   "downloads": 0,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "license:openrail",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "Homiebear/DipperPines",
+   "downloads": 0,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "license:openrail",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "Tsuinzues/dipperpines",
+   "downloads": 0,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "license:openrail",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "Thundergb/Dipperbr",
+   "downloads": 0,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "license:openrail",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "iamalexcaspian/DipperPines-GravityFalls-RusDub",
+   "downloads": 0,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": null
+  }
+ ],
+ "ai-text-detector|downloads": [
+  {
+   "id": "desklib/ai-text-detector-v1.01",
+   "downloads": 41407,
+   "likes": 43,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "en",
+    "dataset:liamdugan/raid",
+    "base_model:microsoft/deberta-v3-large",
+    "base_model:finetune:microsoft/deberta-v3-large",
+    "license:mit",
+    "text-embeddings-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "vraj33/ai-text-detector-deberta",
+   "downloads": 13479,
+   "likes": 2,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "ai-detection",
+    "nlp",
+    "deberta-v3",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "Oxidane/tmr-ai-text-detector",
+   "downloads": 6418,
+   "likes": 11,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "ai-detection",
+    "robeta",
+    "focal-loss",
+    "raid-benchmark",
+    "en",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "onnx-community/tmr-ai-text-detector-ONNX",
+   "downloads": 4221,
+   "likes": 0,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "transformers.js",
+    "onnx",
+    "roberta",
+    "text-classification",
+    "ai-detection",
+    "robeta",
+    "focal-loss",
+    "raid-benchmark",
+    "en",
+    "base_model:Oxidane/tmr-ai-text-detector"
+   ],
+   "lastModified": "",
+   "library": "transformers.js"
+  },
+  {
+   "id": "rasbt/ai-text-detector-modernbert",
+   "downloads": 2116,
+   "likes": 0,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "ai-text-detection",
+    "binary-classification",
+    "en",
+    "dataset:rasbt/human-vs-ai-50k",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "desklib/ai-text-detector-academic-v1.01",
+   "downloads": 1869,
+   "likes": 9,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "en",
+    "base_model:microsoft/deberta-v3-large",
+    "base_model:finetune:microsoft/deberta-v3-large",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "followsci/bert-ai-text-detector",
+   "downloads": 1724,
+   "likes": 6,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "ai-detection",
+    "academic-text",
+    "ai-generated-text-detection",
+    "en",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "ShantanuT01/vanguard-ai-text-detector",
+   "downloads": 1388,
+   "likes": 0,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "ai-generated-text-detection",
+    "en",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "license:mit",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "ShantanuT01/dactyl-ai-text-detector",
+   "downloads": 927,
+   "likes": 0,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "ai-generated-text-detection",
+    "llm-generated-text-detection",
+    "dataset:ShantanuT01/DACTYL",
+    "arxiv:2508.00619",
+    "base_model:microsoft/deberta-v3-large",
+    "base_model:finetune:microsoft/deberta-v3-large"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "ShantanuT01/gradient-ai-text-detector",
+   "downloads": 907,
+   "likes": 2,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "ai-generated-text-detection",
+    "deberta-v3",
+    "en",
+    "base_model:microsoft/deberta-v3-large",
+    "base_model:finetune:microsoft/deberta-v3-large",
+    "license:mit",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "Joshfcooper/ai-text-detector-optimized",
+   "downloads": 827,
+   "likes": 0,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "transformers",
+    "onnx",
+    "ai_text_detector",
+    "text-classification",
+    "ai-detection",
+    "pytorch",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM-135M",
+    "base_model:quantized:HuggingFaceTB/SmolLM-135M",
+    "license:apache-2.0"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "VSAsteroid/ai-text-detector-hc3",
+   "downloads": 444,
+   "likes": 0,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "ai-detection",
+    "human-vs-ai",
+    "pytorch",
+    "en",
+    "dataset:Hello-SimpleAI/HC3",
+    "arxiv:2301.07597",
+    "base_model:distilbert/distilbert-base-uncased"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "wasitaigeneratedcom/ai-text-detector-small",
+   "downloads": 432,
+   "likes": 1,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "ai-detector",
+    "ai-detection",
+    "ai-text-detector",
+    "ai-content-detection",
+    "chatgpt-detector",
+    "gpt-detector",
+    "llm-detection"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "ahmediqbal/ai-text-detector-model",
+   "downloads": 391,
+   "likes": 0,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "ai-detection",
+    "nlp",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "rasbt/ai-text-detector-distilbert",
+   "downloads": 356,
+   "likes": 0,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "ai-text-detection",
+    "binary-classification",
+    "en",
+    "dataset:rasbt/human-vs-ai-50k",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "jaspai/modernbert-ai-text-detector-raid-mix",
+   "downloads": 326,
+   "likes": 0,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "safetensors",
+    "modernbert",
+    "ai-text-detection",
+    "machine-generated-text",
+    "text-classification",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:mit",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "mradermacher/ai-text-detector-hc3-GGUF",
+   "downloads": 289,
+   "likes": 1,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "transformers",
+    "gguf",
+    "text-classification",
+    "ai-detection",
+    "human-vs-ai",
+    "distilbert",
+    "pytorch",
+    "en",
+    "dataset:Hello-SimpleAI/HC3",
+    "base_model:VSAsteroid/ai-text-detector-hc3"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "sabaridsnfuji/arabic-ai-text-detector",
+   "downloads": 272,
+   "likes": 0,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arabic",
+    "ai-detection",
+    "ai-generated-text",
+    "human-vs-ai",
+    "arabert",
+    "transformer",
+    "nlp"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "mokawa3018/cmj-chinese-aigc-text-detector",
+   "downloads": 178,
+   "likes": 1,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "transformers",
+    "pytorch",
+    "onnx",
+    "bert",
+    "text-classification",
+    "aigc-detection",
+    "chinese",
+    "zh",
+    "license:apache-2.0",
+    "text-embeddings-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "ads2009/turkish-ai-text-detector-berturk-v10",
+   "downloads": 151,
+   "likes": 0,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  }
+ ],
+ "paraphrase-multilingual|downloads": [
+  {
+   "id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+   "downloads": 45742916,
+   "likes": 1407,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "tf",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+   "downloads": 9948737,
+   "likes": 521,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "tf",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "xlm-roberta",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "Xenova/paraphrase-multilingual-MiniLM-L12-v2",
+   "downloads": 675300,
+   "likes": 18,
+   "pipeline_tag": "feature-extraction",
+   "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers.js"
+  },
+  {
+   "id": "Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q",
+   "downloads": 290032,
+   "likes": 6,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "transformers",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us",
+    "deploy:azure"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "gmunkhtur/paraphrase-multilingual-minilm-l12-v3-mn",
+   "downloads": 150334,
+   "likes": 0,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:11113",
+    "loss:CosineSimilarityLoss",
+    "arxiv:1908.10084",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "sentence-transformers/paraphrase-xlm-r-multilingual-v1",
+   "downloads": 22225,
+   "likes": 71,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "tf",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "xlm-roberta",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "Xenova/paraphrase-multilingual-mpnet-base-v2",
+   "downloads": 20515,
+   "likes": 4,
+   "pipeline_tag": "feature-extraction",
+   "tags": [
+    "transformers.js",
+    "onnx",
+    "xlm-roberta",
+    "feature-extraction",
+    "base_model:sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "base_model:quantized:sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers.js"
+  },
+  {
+   "id": "AIDA-UPM/mstsb-paraphrase-multilingual-mpnet-base-v2",
+   "downloads": 2447,
+   "likes": 12,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "transformers",
+    "pytorch",
+    "xlm-roberta",
+    "feature-extraction",
+    "sentence-similarity",
+    "multilingual",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us",
+    "deploy:azure"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "software-mansion/react-native-executorch-paraphrase-multilingual-MiniLM-L12-v2",
+   "downloads": 2233,
+   "likes": 0,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "executorch",
+    "sentence-similarity",
+    "license:apache-2.0",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "executorch"
+  },
+  {
+   "id": "lang-uk/ukr-paraphrase-multilingual-mpnet-base",
+   "downloads": 1922,
+   "likes": 12,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "xlm-roberta",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers",
+    "multilingual",
+    "ar",
+    "bg",
+    "ca"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "mykor/paraphrase-multilingual-MiniLM-L12-v2.gguf",
+   "downloads": 538,
+   "likes": 3,
+   "pipeline_tag": null,
+   "tags": [
+    "gguf",
+    "multilingual",
+    "ar",
+    "bg",
+    "ca",
+    "cs",
+    "da",
+    "de",
+    "el",
+    "en"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "cstr/paraphrase-multilingual-MiniLM-L12-v2-GGUF",
+   "downloads": 468,
+   "likes": 0,
+   "pipeline_tag": "feature-extraction",
+   "tags": [
+    "gguf",
+    "embeddings",
+    "ggml",
+    "text-embeddings",
+    "bert",
+    "crispembed",
+    "feature-extraction",
+    "multilingual",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "mradermacher/TRoTR-paraphrase-multilingual-MiniLM-L12-v2-GGUF",
+   "downloads": 293,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "topic-relatedness",
+    "semantic-relatedness",
+    "en",
+    "dataset:FrancescoPeriti/TRoTR",
+    "base_model:FrancescoPeriti/TRoTR-paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:quantized:FrancescoPeriti/TRoTR-paraphrase-multilingual-MiniLM-L12-v2",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "onnx-community/paraphrase-multilingual-MiniLM-L12-v2-ONNX",
+   "downloads": 224,
+   "likes": 1,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "sentence-transformers",
+    "sentence-similarity",
+    "transformers",
+    "multilingual",
+    "ar",
+    "bg"
+   ],
+   "lastModified": "",
+   "library": "transformers.js"
+  },
+  {
+   "id": "kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2",
+   "downloads": 215,
+   "likes": 3,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "camembert",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "projecte-aina/ST-NLI-ca_paraphrase-multilingual-mpnet-base",
+   "downloads": 211,
+   "likes": 1,
+   "pipeline_tag": "sentence-similarity",
+   "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "xlm-roberta",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "lawinsider/paraphrase-multilingual-MiniLM-L12-v2-quantized",
+   "downloads": 171,
+   "likes": 0,
+   "pipeline_tag": "feature-extraction",
+   "tags": [
+    "transformers",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "mykor/paraphrase-multilingual-mpnet-base-v2.gguf",
+   "downloads": 164,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "gguf",
+    "multilingual",
+    "ar",
+    "bg",
+    "ca",
+    "cs",
+    "da",
+    "de",
+    "el",
+    "en"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "mykor/paraphrase-xlm-r-multilingual-v1.gguf",
+   "downloads": 117,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "gguf",
+    "base_model:sentence-transformers/paraphrase-xlm-r-multilingual-v1",
+    "base_model:quantized:sentence-transformers/paraphrase-xlm-r-multilingual-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "JONNYVERSE/paraphrase-multilingual-MiniLM-L12-v2",
+   "downloads": 112,
+   "likes": 0,
+   "pipeline_tag": "feature-extraction",
+   "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers.js"
+  }
+ ],
+ "bulgarian|downloads": [
+  {
+   "id": "infinitejoy/wav2vec2-large-xls-r-300m-bulgarian",
+   "downloads": 29771,
+   "likes": 4,
+   "pipeline_tag": "automatic-speech-recognition",
+   "tags": [
+    "transformers",
+    "pytorch",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "mozilla-foundation/common_voice_7_0",
+    "generated_from_trainer",
+    "bg",
+    "robust-speech-event",
+    "model_for_talk",
+    "hf-asr-leaderboard"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "mradermacher/SambaLingo-Bulgarian-Base-i1-GGUF",
+   "downloads": 1186,
+   "likes": 3,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "bg",
+    "en",
+    "dataset:uonlp/CulturaX",
+    "base_model:sambanovasystems/SambaLingo-Bulgarian-Base",
+    "base_model:quantized:sambanovasystems/SambaLingo-Bulgarian-Base",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "mradermacher/SambaLingo-Bulgarian-Base-GGUF",
+   "downloads": 417,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "bg",
+    "en",
+    "dataset:uonlp/CulturaX",
+    "base_model:sambanovasystems/SambaLingo-Bulgarian-Base",
+    "base_model:quantized:sambanovasystems/SambaLingo-Bulgarian-Base",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "sam8000/whisper-large-v3-turbo-bulgarian-bulgaria",
+   "downloads": 405,
+   "likes": 3,
+   "pipeline_tag": "automatic-speech-recognition",
+   "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "dataset:fleurs",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "mradermacher/SambaLingo-Bulgarian-Chat-i1-GGUF",
+   "downloads": 295,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "bg",
+    "en",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:HuggingFaceH4/ultrafeedback_binarized",
+    "dataset:HuggingFaceH4/cai-conversation-harmless",
+    "base_model:sambanovasystems/SambaLingo-Bulgarian-Chat",
+    "base_model:quantized:sambanovasystems/SambaLingo-Bulgarian-Chat",
+    "license:llama2"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "sambanovasystems/SambaLingo-Bulgarian-Base",
+   "downloads": 156,
+   "likes": 27,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "pytorch",
+    "llama",
+    "text-generation",
+    "bg",
+    "en",
+    "dataset:uonlp/CulturaX",
+    "arxiv:2404.05829",
+    "arxiv:2311.05741",
+    "license:llama2"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "mradermacher/SambaLingo-Bulgarian-Chat-GGUF",
+   "downloads": 116,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "bg",
+    "en",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:HuggingFaceH4/ultrafeedback_binarized",
+    "dataset:HuggingFaceH4/cai-conversation-harmless",
+    "base_model:sambanovasystems/SambaLingo-Bulgarian-Chat",
+    "base_model:quantized:sambanovasystems/SambaLingo-Bulgarian-Chat",
+    "license:llama2"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "ai-forever/mGPT-1.3B-bulgarian",
+   "downloads": 93,
+   "likes": 6,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "pytorch",
+    "gpt2",
+    "text-generation",
+    "gpt3",
+    "mgpt",
+    "bg",
+    "en",
+    "ru",
+    "license:mit"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "sambanovasystems/SambaLingo-Bulgarian-Chat",
+   "downloads": 82,
+   "likes": 32,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "bg",
+    "en",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:HuggingFaceH4/ultrafeedback_binarized",
+    "dataset:HuggingFaceH4/cai-conversation-harmless"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "vislupus/bulgarian-joke-master-Qwen2.5-0.5B-Instruct-bnb-4bit-gguf",
+   "downloads": 82,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "qwen2",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "base_model:unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit",
+    "base_model:quantized:unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "BuzzASR/bulgarian",
+   "downloads": 76,
+   "likes": 0,
+   "pipeline_tag": "automatic-speech-recognition",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "bulgarian",
+    "buzzasr",
+    "bg",
+    "dataset:google/fleurs",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "deboradum/bulgariansocialistposters",
+   "downloads": 58,
+   "likes": 0,
+   "pipeline_tag": "text-to-image",
+   "tags": [
+    "diffusers",
+    "text-to-image",
+    "flux",
+    "lora",
+    "template:sd-lora",
+    "fluxgym",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "license:other",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "diffusers"
+  },
+  {
+   "id": "vislupus/bulgarian-joke-master-BgGPT-Gemma-2-2.6B-gguf",
+   "downloads": 50,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "gemma2",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "base_model:INSAIT-Institute/BgGPT-Gemma-2-2.6B-IT-v1.0",
+    "base_model:quantized:INSAIT-Institute/BgGPT-Gemma-2-2.6B-IT-v1.0",
+    "license:apache-2.0",
+    "endpoints_compatible"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "iarfmoose/roberta-base-bulgarian",
+   "downloads": 48,
+   "likes": 1,
+   "pipeline_tag": "fill-mask",
+   "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "roberta",
+    "fill-mask",
+    "bg",
+    "arxiv:1907.11692",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "KoichiYasuoka/modernbert-large-bulgarian-uncased-ud-embeds",
+   "downloads": 41,
+   "likes": 0,
+   "pipeline_tag": "token-classification",
+   "tags": [
+    "pytorch",
+    "modernbert",
+    "bulgarian",
+    "token-classification",
+    "pos",
+    "dependency-parsing",
+    "bg",
+    "dataset:universal_dependencies",
+    "base_model:AIaLT-IICT/modern_bert_bg_large_uncased",
+    "base_model:finetune:AIaLT-IICT/modern_bert_bg_large_uncased"
+   ],
+   "lastModified": "",
+   "library": null
+  },
+  {
+   "id": "vislupus/bulgarian-joke-master-Llama-3.2-1B-Instruct-bnb-4bit-gguf",
+   "downloads": 32,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "llama",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "base_model:unsloth/Llama-3.2-1B-Instruct-bnb-4bit",
+    "base_model:quantized:unsloth/Llama-3.2-1B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "vislupus/bulgarian-joke-master-gemma-2-2b-it-bnb-4bit-gguf",
+   "downloads": 31,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "gemma2",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "base_model:unsloth/gemma-2-2b-it-bnb-4bit",
+    "base_model:quantized:unsloth/gemma-2-2b-it-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "vislupus/bulgarian-joke-master-SmolLM2-135M-Instruct-bnb-4bit-gguf",
+   "downloads": 29,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "llama",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "base_model:unsloth/SmolLM2-135M-Instruct-bnb-4bit",
+    "base_model:quantized:unsloth/SmolLM2-135M-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "vislupus/bulgarian-joke-master-BgGPT-Gemma-2-2.6B-v2.0-gguf",
+   "downloads": 29,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "gemma2",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "base_model:INSAIT-Institute/BgGPT-Gemma-2-2.6B-IT-v1.0",
+    "base_model:quantized:INSAIT-Institute/BgGPT-Gemma-2-2.6B-IT-v1.0",
+    "license:apache-2.0",
+    "endpoints_compatible"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "thebogko/mt5-finetuned-bulgarian-grammar-mistakes",
+   "downloads": 28,
+   "likes": 2,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "bg",
+    "dataset:thebogko/bulgarian-grammar-mistakes",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  }
+ ],
+ "bgpt|downloads": [
+  {
+   "id": "mradermacher/i3-bGPT2-GGUF",
+   "downloads": 203,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:i3-lab/i3-bGPT2",
+    "base_model:quantized:i3-lab/i3-bGPT2",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "catherinearnett/B-GPT_en_pl_simultaneous",
+   "downloads": 171,
+   "likes": 1,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "en",
+    "pl",
+    "dataset:oscar-corpus/OSCAR-2109",
+    "arxiv:2503.03962",
+    "license:apache-2.0",
+    "text-generation-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "catherinearnett/B-GPT_nl_en_simultaneous",
+   "downloads": 163,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "nl",
+    "en",
+    "dataset:oscar-corpus/OSCAR-2109",
+    "arxiv:2503.03962",
+    "license:apache-2.0",
+    "text-generation-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "catherinearnett/B-GPT_es_en_sequential",
+   "downloads": 154,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "es",
+    "en",
+    "dataset:oscar-corpus/OSCAR-2109",
+    "arxiv:2503.03962",
+    "license:apache-2.0",
+    "text-generation-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "catherinearnett/B-GPT_nl_en_sequential",
+   "downloads": 132,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "nl",
+    "en",
+    "dataset:oscar-corpus/OSCAR-2109",
+    "arxiv:2503.03962",
+    "license:apache-2.0",
+    "text-generation-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "catherinearnett/B-GPT_en_nl_simultaneous",
+   "downloads": 83,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "en",
+    "nl",
+    "dataset:oscar-corpus/OSCAR-2109",
+    "arxiv:2503.03962",
+    "license:apache-2.0",
+    "text-generation-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "catherinearnett/B-GPT_es_en_simultaneous",
+   "downloads": 76,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "es",
+    "en",
+    "dataset:oscar-corpus/OSCAR-2109",
+    "arxiv:2503.03962",
+    "license:apache-2.0",
+    "text-generation-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "catherinearnett/B-GPT_el_en_sequential",
+   "downloads": 73,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "el",
+    "en",
+    "dataset:oscar-corpus/OSCAR-2109",
+    "arxiv:2503.03962",
+    "license:apache-2.0",
+    "text-generation-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "catherinearnett/B-GPT_pl_en_simultaneous",
+   "downloads": 62,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "pl",
+    "en",
+    "dataset:oscar-corpus/OSCAR-2109",
+    "arxiv:2503.03962",
+    "license:apache-2.0",
+    "text-generation-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "catherinearnett/B-GPT_el_en_simultaneous",
+   "downloads": 60,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "el",
+    "en",
+    "dataset:oscar-corpus/OSCAR-2109",
+    "arxiv:2503.03962",
+    "license:apache-2.0",
+    "text-generation-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "catherinearnett/B-GPT_pl_en_sequential",
+   "downloads": 55,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "pl",
+    "en",
+    "dataset:oscar-corpus/OSCAR-2109",
+    "arxiv:2503.03962",
+    "license:apache-2.0",
+    "text-generation-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "catherinearnett/B-GPT_en_nl_sequential",
+   "downloads": 41,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "en",
+    "nl",
+    "dataset:oscar-corpus/OSCAR-2109",
+    "arxiv:2503.03962",
+    "license:apache-2.0",
+    "text-generation-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "catherinearnett/B-GPT_en_es_simultaneous",
+   "downloads": 40,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "en",
+    "es",
+    "dataset:oscar-corpus/OSCAR-2109",
+    "arxiv:2503.03962",
+    "license:apache-2.0",
+    "text-generation-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "catherinearnett/B-GPT_en_el_simultaneous",
+   "downloads": 30,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "en",
+    "el",
+    "dataset:oscar-corpus/OSCAR-2109",
+    "arxiv:2503.03962",
+    "license:apache-2.0",
+    "text-generation-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "catherinearnett/B-GPT_en_pl_sequential",
+   "downloads": 28,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "en",
+    "pl",
+    "dataset:oscar-corpus/OSCAR-2109",
+    "arxiv:2503.03962",
+    "license:apache-2.0",
+    "text-generation-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "catherinearnett/B-GPT_en_el_sequential",
+   "downloads": 27,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "en",
+    "el",
+    "dataset:oscar-corpus/OSCAR-2109",
+    "arxiv:2503.03962",
+    "license:apache-2.0",
+    "text-generation-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "catherinearnett/B-GPT_en_es_sequential",
+   "downloads": 24,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "en",
+    "es",
+    "dataset:oscar-corpus/OSCAR-2109",
+    "arxiv:2503.03962",
+    "license:apache-2.0",
+    "text-generation-inference"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "lgb35/B-GPT-es-fineweb-beginner-alpacaEnglish",
+   "downloads": 17,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "i3-lab/i3-bGPT",
+   "downloads": 16,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "ctkang/b_gpt2-xl_10",
+   "downloads": 14,
+   "likes": 0,
+   "pipeline_tag": "text-generation",
+   "tags": [
+    "transformers",
+    "pytorch",
+    "gpt2",
+    "text-generation",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  }
+ ],
+ "translation bg|downloads": [
+  {
+   "id": "lz039/translation-ft-de-bg",
+   "downloads": 5,
+   "likes": 0,
+   "pipeline_tag": null,
+   "tags": [
+    "safetensors",
+    "marian",
+    "de",
+    "bg",
+    "base_model:Helsinki-NLP/opus-mt-de-bg",
+    "base_model:finetune:Helsinki-NLP/opus-mt-de-bg",
+    "license:apache-2.0",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": null
+  }
+ ],
+ "ai generated text detection|downloads": [
+  {
+   "id": "Juner/AI-generated-text-detection",
+   "downloads": 94,
+   "likes": 3,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  },
+  {
+   "id": "Juner/AI-generated-text-detection-pair",
+   "downloads": 19,
+   "likes": 4,
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "zh",
+    "arxiv:1910.09700",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+   ],
+   "lastModified": "",
+   "library": "transformers"
+  }
+ ],
+ "MODEL:kalpeshk2011/dipper-paraphraser-xxl": {
+  "_id": "643ce35611ea48e2465477d5",
+  "id": "kalpeshk2011/dipper-paraphraser-xxl",
+  "private": false,
+  "pipeline_tag": "text-generation",
+  "library_name": "transformers",
+  "tags": [
+   "transformers",
+   "pytorch",
+   "safetensors",
+   "t5",
+   "text2text-generation",
+   "xxl",
+   "rewriting",
+   "paraphrase",
+   "paraphrase-generation",
+   "paraphrasing",
+   "text-generation",
+   "en",
+   "arxiv:2303.13408",
+   "license:apache-2.0",
+   "text-generation-inference",
+   "endpoints_compatible",
+   "deploy:azure",
+   "region:us"
+  ],
+  "downloads": 9251,
+  "likes": 55,
+  "modelId": "kalpeshk2011/dipper-paraphraser-xxl",
+  "author": "kalpeshk2011",
+  "sha": "c1fbf7a958a2aab022e9e6f81f7a3139f9e6ee3c",
+  "lastModified": "2024-05-25T20:23:05.000Z",
+  "gated": false,
+  "disabled": false,
+  "widgetData": [
+   {
+    "text": "Hi, what can you help me with?"
+   },
+   {
+    "text": "What is 84 * 3 / 2?"
+   },
+   {
+    "text": "Tell me an interesting fact about the universe!"
+   },
+   {
+    "text": "Explain quantum computing in simple terms."
+   }
+  ],
+  "model-index": null,
+  "config": {
+   "architectures": [
+    "T5ForConditionalGeneration"
+   ],
+   "model_type": "t5"
+  },
+  "cardData": {
+   "language": [
+    "en"
+   ],
+   "tags": [
+    "t5",
+    "xxl",
+    "rewriting",
+    "paraphrase",
+    "paraphrase-generation",
+    "paraphrasing",
+    "pytorch",
+    "text-generation",
+    "text2text-generation"
+   ],
+   "license": "apache-2.0"
+  },
+  "transformersInfo": {
+   "auto_model": "AutoModelForSeq2SeqLM",
+   "pipeline_tag": "text2text-generation",
+   "processor": "AutoTokenizer"
+  },
+  "siblings": [
+   {
+    "rfilename": ".gitattributes"
+   },
+   {
+    "rfilename": "README.md"
+   },
+   {
+    "rfilename": "config.json"
+   },
+   {
+    "rfilename": "model-00001-of-00005.safetensors"
+   },
+   {
+    "rfilename": "model-00002-of-00005.safetensors"
+   },
+   {
+    "rfilename": "model-00003-of-00005.safetensors"
+   },
+   {
+    "rfilename": "model-00004-of-00005.safetensors"
+   },
+   {
+    "rfilename": "model-00005-of-00005.safetensors"
+   },
+   {
+    "rfilename": "model.safetensors.index.json"
+   },
+   {
+    "rfilename": "pytorch_model-00001-of-00005.bin"
+   },
+   {
+    "rfilename": "pytorch_model-00002-of-00005.bin"
+   },
+   {
+    "rfilename": "pytorch_model-00003-of-00005.bin"
+   },
+   {
+    "rfilename": "pytorch_model-00004-of-00005.bin"
+   },
+   {
+    "rfilename": "pytorch_model-00005-of-00005.bin"
+   },
+   {
+    "rfilename": "pytorch_model.bin.index.json"
+   }
+  ],
+  "spaces": [
+   "relytsikcaj/kalpeshk2011-dipper-paraphraser-xxl",
+   "EdysorEdutech/human_final",
+   "alexdev404/paraphraser2",
+   "alexdev404/paraphraser3",
+   "AnonymousResearch/WatermarkLeaderboard",
+   "dishitanagi/llm",
+   "catninja123/dipper-xxl-paraphraser",
+   "grdito1111/DIPPER_Paraphraser"
+  ],
+  "createdAt": "2023-04-17T06:12:38.000Z",
+  "safetensors": {
+   "parameters": {
+    "F32": 11266928640
+   },
+   "total": 11266928640
+  },
+  "usedStorage": 90135681412
+ },
+ "MODEL:huangjj877/TempParaphraser": {
+  "_id": "67de673c967404f8c29cd614",
+  "id": "huangjj877/TempParaphraser",
+  "private": false,
+  "pipeline_tag": "text-generation",
+  "tags": [
+   "safetensors",
+   "llama",
+   "text-generation",
+   "conversational",
+   "en",
+   "base_model:meta-llama/Llama-3.2-1B-Instruct",
+   "base_model:finetune:meta-llama/Llama-3.2-1B-Instruct",
+   "region:us"
+  ],
+  "downloads": 43,
+  "likes": 0,
+  "modelId": "huangjj877/TempParaphraser",
+  "author": "huangjj877",
+  "sha": "1661098709801badd162a5afac99a5de6cc7291b",
+  "lastModified": "2025-11-17T01:54:07.000Z",
+  "gated": false,
+  "disabled": false,
+  "widgetData": [
+   {
+    "text": "Hi, what can you help me with?"
+   },
+   {
+    "text": "What is 84 * 3 / 2?"
+   },
+   {
+    "text": "Tell me an interesting fact about the universe!"
+   },
+   {
+    "text": "Explain quantum computing in simple terms."
+   }
+  ],
+  "model-index": null,
+  "config": {
+   "architectures": [
+    "LlamaForCausalLM"
+   ],
+   "model_type": "llama",
+   "tokenizer_config": {
+    "bos_token": "<|begin_of_text|>",
+    "chat_template": "{{- bos_token }}\n{%- if custom_tools is defined %}\n    {%- set tools = custom_tools %}\n{%- endif %}\n{%- if not tools_in_user_message is defined %}\n    {%- set tools_in_user_message = true %}\n{%- endif %}\n{%- if not date_string is defined %}\n    {%- if strftime_now is defined %}\n        {%- set date_string = strftime_now(\"%d %b %Y\") %}\n    {%- else %}\n        {%- set date_string = \"26 Jul 2024\" %}\n    {%- endif %}\n{%- endif %}\n{%- if not tools is defined %}\n    {%- set tools = none %}\n{%- endif %}\n\n{#- This block extracts the system message, so we can slot it into the right place. #}\n{%- if messages[0]['role'] == 'system' %}\n    {%- set system_message = messages[0]['content']|trim %}\n    {%- set messages = messages[1:] %}\n{%- else %}\n    {%- set system_message = \"\" %}\n{%- endif %}\n\n{#- System message #}\n{{- \"<|start_header_id|>system<|end_header_id|>\\n\\n\" }}\n{%- if tools is not none %}\n    {{- \"Environment: ipython\\n\" }}\n{%- endif %}\n{{- \"Cutting Knowledge Date: December 2023\\n\" }}\n{{- \"Today Date: \" + date_string + \"\\n\\n\" }}\n{%- if tools is not none and not tools_in_user_message %}\n    {{- \"You have access to the following functions. To call a function, please respond with JSON for a function call.\" }}\n    {{- 'Respond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.' }}\n    {{- \"Do not use variables.\\n\\n\" }}\n    {%- for t in tools %}\n        {{- t | tojson(indent=4) }}\n        {{- \"\\n\\n\" }}\n    {%- endfor %}\n{%- endif %}\n{{- system_message }}\n{{- \"<|eot_id|>\" }}\n\n{#- Custom tools are passed in a user message with some extra guidance #}\n{%- if tools_in_user_message and not tools is none %}\n    {#- Extract the first user message so we can plug it in here #}\n    {%- if messages | length != 0 %}\n        {%- set first_user_message = messages[0]['content']|trim %}\n        {%- set messages = messages[1:] %}\n    {%- else %}\n        {{- raise_exception(\"Cannot put tools in the first user message when there's no first user message!\") }}\n{%- endif %}\n    {{- '<|start_header_id|>user<|end_header_id|>\\n\\n' -}}\n    {{- \"Given the following functions, please respond with a JSON for a function call \" }}\n    {{- \"with its proper arguments that best answers the given prompt.\\n\\n\" }}\n    {{- 'Respond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.' }}\n    {{- \"Do not use variables.\\n\\n\" }}\n    {%- for t in tools %}\n        {{- t | tojson(indent=4) }}\n        {{- \"\\n\\n\" }}\n    {%- endfor %}\n    {{- first_user_message + \"<|eot_id|>\"}}\n{%- endif %}\n\n{%- for message in messages %}\n    {%- if not (message.role == 'ipython' or message.role == 'tool' or 'tool_calls' in message) %}\n        {{- '<|start_header_id|>' + message['role'] + '<|end_header_id|>\\n\\n'+ message['content'] | trim + '<|eot_id|>' }}\n    {%- elif 'tool_calls' in message %}\n        {%- if not message.tool_calls|length == 1 %}\n            {{- raise_exception(\"This model only supports single tool-calls at once!\") }}\n        {%- endif %}\n        {%- set tool_call = message.tool_calls[0].function %}\n        {{- '<|start_header_id|>assistant<|end_header_id|>\\n\\n' -}}\n        {{- '{\"name\": \"' + tool_call.name + '\", ' }}\n        {{- '\"parameters\": ' }}\n        {{- tool_call.arguments | tojson }}\n        {{- \"}\" }}\n        {{- \"<|eot_id|>\" }}\n    {%- elif message.role == \"tool\" or message.role == \"ipython\" %}\n        {{- \"<|start_header_id|>ipython<|end_header_id|>\\n\\n\" }}\n        {%- if message.content is mapping or message.content is iterable %}\n            {{- message.content | tojson }}\n        {%- else %}\n            {{- message.content }}\n        {%- endif %}\n        {{- \"<|eot_id|>\" }}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|start_header_id|>assistant<|end_header_id|>\\n\\n' }}\n{%- endif %}\n",
+    "eos_token": "<|eot_id|>",
+    "pad_token": "<|eot_id|>"
+   }
+  },
+  "cardData": {
+   "language": [
+    "en"
+   ],
+   "base_model": [
+    "meta-llama/Llama-3.2-1B-Instruct"
+   ],
+   "pipeline_tag": "text-generation"
+  },
+  "siblings": [
+   {
+    "rfilename": ".gitattributes"
+   },
+   {
+    "rfilename": "README.md"
+   },
+   {
+    "rfilename": "config.json"
+   },
+   {
+    "rfilename": "generation_config.json"
+   },
+   {
+    "rfilename": "model.safetensors"
+   },
+   {
+    "rfilename": "special_tokens_map.json"
+   },
+   {
+    "rfilename": "tokenizer.json"
+   },
+   {
+    "rfilename": "tokenizer_config.json"
+   }
+  ],
+  "spaces": [],
+  "createdAt": "2025-03-22T07:31:08.000Z",
+  "safetensors": {
+   "parameters": {
+    "F32": 1235814400
+   },
+   "total": 1235814400
+  },
+  "usedStorage": 4960484248
+ },
+ "MODEL:tuner007/pegasus_paraphrase": {
+  "_id": "621ffdc136468d709f181146",
+  "id": "tuner007/pegasus_paraphrase",
+  "private": false,
+  "library_name": "transformers",
+  "tags": [
+   "transformers",
+   "pytorch",
+   "pegasus",
+   "text2text-generation",
+   "paraphrasing",
+   "seq2seq",
+   "en",
+   "license:apache-2.0",
+   "endpoints_compatible",
+   "deploy:azure",
+   "region:us"
+  ],
+  "downloads": 54176,
+  "likes": 204,
+  "modelId": "tuner007/pegasus_paraphrase",
+  "author": "tuner007",
+  "sha": "0159e2949ca73657a2f1329898f51b7bb53b9ab2",
+  "lastModified": "2021-03-22T21:11:33.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {
+   "architectures": [
+    "PegasusForConditionalGeneration"
+   ],
+   "model_type": "pegasus",
+   "tokenizer_config": {}
+  },
+  "cardData": {
+   "language": "en",
+   "license": "apache-2.0",
+   "tags": [
+    "pegasus",
+    "paraphrasing",
+    "seq2seq"
+   ]
+  },
+  "transformersInfo": {
+   "auto_model": "AutoModelForSeq2SeqLM",
+   "pipeline_tag": "text2text-generation",
+   "processor": "AutoTokenizer"
+  },
+  "siblings": [
+   {
+    "rfilename": ".gitattributes"
+   },
+   {
+    "rfilename": "README.md"
+   },
+   {
+    "rfilename": "config.json"
+   },
+   {
+    "rfilename": "pytorch_model.bin"
+   },
+   {
+    "rfilename": "special_tokens_map.json"
+   },
+   {
+    "rfilename": "spiece.model"
+   },
+   {
+    "rfilename": "tokenizer_config.json"
+   }
+  ],
+  "spaces": [
+   "Siddhant-Jain/ai-text-humanizer",
+   "eduagarcia/multilingual-tokenizer-leaderboard",
+   "aakashb95/paraphrase-sentences",
+   "imseldrith/Article_Rewrite-Paraphrasing_Tool",
+   "datasciencedojo/Paraphrasing",
+   "imseldrith/Article-Rewriter",
+   "abdulmatinomotoso/Article_paraphraser",
+   "amitkayal/Article-Rewriter",
+   "GuiltySpark/amikus_text_summarizer",
+   "Eddevs/brian-challenge",
+   "fyodorschnotzdinger/paraphraser",
+   "onkar-waghmode/Text-Paraphraser-Expander",
+   "Wootang01/Paraphraser_two",
+   "AdityaMahimkar/ParaPhraser",
+   "ITOCJ/qnagenerator",
+   "awacke1/Writing-Grammar-And-Paraphrase-w-Pegasus",
+   "joacoetruu/telegram-bot-paraphraser",
+   "awacke1/Topic-modeling",
+   "taha092/HumanizerV2",
+   "makanaan/paraphrase",
+   "shaneavh/ada",
+   "masjc/agc",
+   "segestic/paraphraseArticle",
+   "segestic/ArticlePara",
+   "Vaishakhh/Word_Paraphraser_Seq-2-Seq",
+   "SmonF/Dialogue_summarizer",
+   "Nattiman/chatsummarizercapstoneproject",
+   "poiiii/clefourrier-graphormer-base-pcqm4mv1",
+   "fereen5/infinityai-tools",
+   "karim323/nlp-analysis-api",
+   "thoristhor/racoon",
+   "Basitjamil/paragraph",
+   "MFahadAlam/paraphrasing",
+   "jaredcodling/tinypara",
+   "segestic/ParaphraseStreamlt",
+   "mano96/paraphrase",
+   "Nouman1/para",
+   "Almoooo/schoolAPI",
+   "ethanrom/chat2",
+   "Dalbaebb/RephraserGlobal",
+   "Namit2111/pegasus_paraphrase",
+   "Farhan1572/paraphrase",
+   "Nattiman/SIC_Dialogue_Summarizer",
+   "Farhan1572/paraphraserApi",
+   "vijay399/testing",
+   "shahzaibelbert/tuner007-pegasus_paraphrase",
+   "SaraHossam/Paraphrasing",
+   "Priyanhsu/Grammarly_Beta",
+   "jozef96/paraphrasing",
+   "jozef96/paraphase",
+   "osgoh/Parapharase",
+   "trexxxy/astronaut",
+   "wynnwebtools/paraphrase",
+   "asifkhan23/Text-Paraphrase",
+   "obntutor/tuner007-pegasus_paraphrase",
+   "allweb/saints",
+   "snehvora/paraphrase",
+   "chiraggulati098/tuner007-pegasus_paraphrases2",
+   "chiraggulati098/tuner007-pegasus_paraphrase3",
+   "chiraggulati098/tuner007-pegasus_paraphrases",
+   "chiraggulati098/tuner007-pegasus_paraphrase",
+   "digitalframmt/paraphrasiere-problem",
+   "Jaane/paraphrase",
+   "saimiz/pegasus_paraphrase",
+   "Guilianno/cognitive-models",
+   "lahiruchamika27/tools4u",
+   "lahiruchamika27/ptdevtest",
+   "harshithasudhakar/text-simplification",
+   "vikigitonga11/humanizer",
+   "mudabbirulsaad/para-humanizer",
+   "parthgajera/rewrite_description",
+   "parthgajera/Description-Rewriter",
+   "parthgajera/description",
+   "TiberiuCristianLeon/FastAPIMT",
+   "codetechdevx/Rephraser",
+   "romasahani/AI-Paraphrase-Generator",
+   "Gandhij/myspace",
+   "Gandhij/Dataset-Generator",
+   "TehreemTariq/paraphrasing_app",
+   "drvsbrkcn/NadaPlagiarism",
+   "Niranjan0345/ai-text-complexity-analyzer-2",
+   "shareen1/text-morph-shareen",
+   "RamizXhah/R_app",
+   "RamizXhah/RephrasiaApp",
+   "RamizXhah/Rephrasia",
+   "RamizXhah/R_app_h",
+   "ahmeeeddddd/waleej_rephrasia",
+   "eduroutes/Paraphraser",
+   "Neptests/ai-detection-api",
+   "ayoshinri/paraphraser-ai",
+   "jamsaaar/my-bulk-paraphraser",
+   "dandushi98/ai-text-humanizer",
+   "atingupta2005/Paraphrasing",
+   "chirax/Vibe-Humanizer",
+   "catninja123/humaneyes-paraphrase",
+   "nottri360/adv-humnizer",
+   "ayushpallav1/TempHal",
+   "MUmarAlam/ai-text-humanizer"
+  ],
+  "createdAt": "2022-03-02T23:29:05.000Z",
+  "usedStorage": 4550701110
+ },
+ "MODEL:BAAI/bge-reranker-v2-m3": {
+  "_id": "65f44de295b7d70871c368eb",
+  "id": "BAAI/bge-reranker-v2-m3",
+  "private": false,
+  "pipeline_tag": "text-classification",
+  "library_name": "sentence-transformers",
+  "tags": [
+   "sentence-transformers",
+   "safetensors",
+   "xlm-roberta",
+   "text-classification",
+   "transformers",
+   "text-embeddings-inference",
+   "multilingual",
+   "arxiv:2312.15503",
+   "arxiv:2402.03216",
+   "license:apache-2.0",
+   "endpoints_compatible",
+   "deploy:azure",
+   "region:us"
+  ],
+  "downloads": 17465321,
+  "likes": 1206,
+  "modelId": "BAAI/bge-reranker-v2-m3",
+  "author": "BAAI",
+  "sha": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+  "lastModified": "2024-06-24T14:08:45.000Z",
+  "gated": false,
+  "disabled": false,
+  "mask_token": "<mask>",
+  "model-index": null,
+  "config": {
+   "architectures": [
+    "XLMRobertaForSequenceClassification"
+   ],
+   "model_type": "xlm-roberta",
+   "tokenizer_config": {
+    "bos_token": "<s>",
+    "cls_token": "<s>",
+    "eos_token": "</s>",
+    "mask_token": "<mask>",
+    "pad_token": "<pad>",
+    "sep_token": "</s>",
+    "unk_token": "<unk>"
+   }
+  },
+  "cardData": {
+   "license": "apache-2.0",
+   "pipeline_tag": "text-classification",
+   "tags": [
+    "transformers",
+    "sentence-transformers",
+    "text-embeddings-inference"
+   ],
+   "language": [
+    "multilingual"
+   ]
+  },
+  "transformersInfo": {
+   "auto_model": "AutoModelForSequenceClassification",
+   "pipeline_tag": "text-classification",
+   "processor": "AutoTokenizer"
+  },
+  "siblings": [
+   {
+    "rfilename": ".gitattributes"
+   },
+   {
+    "rfilename": "README.md"
+   },
+   {
+    "rfilename": "assets/BEIR-bge-en-v1.5.png"
+   },
+   {
+    "rfilename": "assets/BEIR-e5-mistral.png"
+   },
+   {
+    "rfilename": "assets/CMTEB-retrieval-bge-zh-v1.5.png"
+   },
+   {
+    "rfilename": "assets/llama-index.png"
+   },
+   {
+    "rfilename": "assets/miracl-bge-m3.png"
+   },
+   {
+    "rfilename": "config.json"
+   },
+   {
+    "rfilename": "model.safetensors"
+   },
+   {
+    "rfilename": "sentencepiece.bpe.model"
+   },
+   {
+    "rfilename": "special_tokens_map.json"
+   },
+   {
+    "rfilename": "tokenizer.json"
+   },
+   {
+    "rfilename": "tokenizer_config.json"
+   }
+  ],
+  "spaces": [
+   "embedl/hfviewer",
+   "mteb/leaderboard",
+   "hakari-bench/leaderboard",
+   "eduagarcia/multilingual-tokenizer-leaderboard",
+   "lightmate/llm-chatbot",
+   "build-small-hackathon/HearthNet",
+   "kaengreg/rusBEIR",
+   "TheJimmy/ai-builder-bookIdentifier-HF",
+   "aihuashanying/aileeao",
+   "Param20h/PDF-Assit_RAG",
+   "Shriharshan/Autism-RAG",
+   "sadaisystems/sdmrec-docker",
+   "ncn2569/hcmut-rag-chatbot",
+   "dtunkelang/bag-of-documents-demo",
+   "Abdelrahman023/edu-egypt",
+   "huggingface/ml-intern-api-docs",
+   "akryldigital/audit_assistant",
+   "atkiya110/hybrid_actions",
+   "ValerioBotto/GraphRag",
+   "AshJem/Nolej",
+   "crgmail/bge",
+   "doniyor117/yurika-backend",
+   "amrit55555/neural-rag-explorer",
+   "Witherthrottled/JarvisAi",
+   "MuhammadHamza33/RAG-e-Qanoon",
+   "maxpar1/leaderboard",
+   "sanim05/RAG-disease",
+   "Peterase/rag-api-node-1",
+   "hritikm15/kcc-agri",
+   "VanshPatel2002/research-pilot",
+   "arjun10g/na-tech-jobs",
+   "Neshaki/ARQ-RAG-Turboquant",
+   "Alender777/RAG_ReAct_Now",
+   "Kurapika993/papermind",
+   "build-small-hackathon/HearthNet-Nemotron",
+   "esra2001/winncare",
+   "winkyq/aura",
+   "AIyoyo442/menguu-bot",
+   "guto-farias/chatbot-ifc-videira",
+   "MDFaisalSheikh/BanglaRAG",
+   "hauit/financialanalysis",
+   "Luan220703/vietnam-law-chatbot-api",
+   "latimal/benchmarks",
+   "doducdat642004/LuatGiaoThongDuongBoAI",
+   "isshak-abd/ulit-backend",
+   "opnsrcntrbtrian/sebi-circular-rag-demo",
+   "farkhanisme/asistendesatieng",
+   "maufadel/wattgpu",
+   "ziyingsk/BW_RAG",
+   "DanHX/KHome",
+   "Runnies23/AI_Builder",
+   "LukaBondi/osuosutesttest",
+   "vadjs/rag-homework",
+   "ldd12/BAAI-bge-reranker-v2-m3",
+   "SebastianSchramm/qa-api",
+   "jeongsk/WDS-QA-Bot",
+   "lintasmediadanawa/hf-llm-api",
+   "JiakaiDu/RAG_Test",
+   "zxsipola123456/ragflow",
+   "EbeshaAI/dummy-license-plate",
+   "EbeshaAI/dummy-license-plate-2",
+   "Prabu17/askmydocs",
+   "EbeshaAI/dummy-license-plate-api",
+   "EbeshaAI/dummy-license-plate-api-2",
+   "retopara/ragflow",
+   "fikriazain/Hemodialysis-Bot",
+   "Adhin/HemoVDB",
+   "samlax12/agent",
+   "Starowo/ragflow",
+   "aihuashanying/aileeao_test",
+   "Korawan/domae02",
+   "gabor1/bge-reranker-api",
+   "daniel-dona/sparql-era-demo-zerogpu",
+   "zakir0605/zak",
+   "Vanajamuthaiyan/DS",
+   "Vanajamuthaiyan/VM",
+   "Ambika0905/testt",
+   "aipatseer/bge-reranker-v2-m3-Endpoint",
+   "rm-lht/lightrag",
+   "kukdonglover/simple_rag",
+   "azzmannorelimane/airjobit-cv-matcher",
+   "azzmannorelimane/airjobit-cv-matcher1",
+   "IZOARA/Chatbot-RAGv2",
+   "PercivalFletcher/Chai-Tea-Latte",
+   "Harsh0304/gitasphere-ai",
+   "militarybearz/bge",
+   "juanludataanalyst/bge-spanish-salon-crossencoder",
+   "malexandersalazar/citadel_of_adun",
+   "Harsh0304/GitaSphere-AI-V2",
+   "lucioY250/VisionDoc-RAG-Backend",
+   "Hamdyai/egyptian-legal-agent-v3",
+   "Hamdyai/egyptian-legal-agent-v4",
+   "Hamdyai/hamdy-almadrasah-legal-agent-v5-2",
+   "pedrozwy/ofix",
+   "Kienvt/BAAI-bge-reranker-v2-m3",
+   "Keyjun/chatbot-dtu-demo",
+   "celalkartoglu/turkce-rag-qa-space",
+   "awellis/bfh-studadmin-assist",
+   "26tanishabanik/fir-case-management",
+   "PhysicsUncomplicated/PhysicsUncomplicated-bodhagpt"
+  ],
+  "createdAt": "2024-03-15T13:32:18.000Z",
+  "safetensors": {
+   "parameters": {
+    "F32": 567755777
+   },
+   "total": 567755777
+  },
+  "inference": "warm",
+  "usedStorage": 7975830160
+ }
+}

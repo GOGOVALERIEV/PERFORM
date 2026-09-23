@@ -1,0 +1,14 @@
+eng-coldwar	98%
+glo-migracii	89%
+glo-sto	91%
+glo-sto-m2	99%
+his-sssr	100%
+his-sssr-m2	70%
+his-studena	100%
+his-studena-m2	73%
+phi-francia	100%
+phi-germania	100%
+pol-grajdani	95%
+pol-grajdani-m2	100%
+pol-izbori	93%
+pol-izbori-m2	100%

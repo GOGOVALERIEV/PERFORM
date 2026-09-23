@@ -1,0 +1,20 @@
+Mission B complete. Both deliverables are in place:
+
+- **`realms/06-university/research/agent-logs/agentB-simple-detectors.md`** — full report (24KB) with VERDICT table at top
+- **`agentB-progress.md`** — research trail ending in `DONE`
+
+## Headline findings
+
+**Only 4 tools claim Bulgarian at all** (verified by direct fetch, not marketing copy):
+1. **GPTZero** — Bulgarian explicitly on the official language list, *but its multilingual accuracy blog posts are now 404* — claims pulled, no BG accuracy data published. #1 ranked threat.
+2. **Originality.ai** — Multilingual model 2.0.0, BG explicitly listed, self-reports 98.42% acc / 1.77% FNR — but it's a **vendor's own benchmark** and the tool is **paid-only**, so unlikely a SWU professor uses it.
+3. **Copyleaks** — BG confirmed for the *plagiarism* side (30+ cross-language docs); AI-detector BG unverified.
+4. **ZeroGPT** — vague "all languages" claim, free, noisy — dangerous as a false-alarm machine, not a truth-finder.
+
+**Explicitly blind to BG:** Scribbr (verified: En/Es/De/Fr only), Grammarly, Sapling. **Turnitin has no free web version** — "T-detector" sites are clones.
+
+**The Bulgarian gap is real:** zero academic studies 2024–26 test detectors on Bulgarian (searched arXiv + OpenAlex). Only adjacent evidence exists — Urdu/Hindi/Arabic case studies showing degradation, and the Stanford non-native-English bias study (verified, 590 citations).
+
+**2025–26 tide turned against detectors:** Curtin, Massey, UCT, SUSS all dropped AI detection; the Adelphi student lawsuit was **won** (Feb 2026); The Times (Aug 2026) reports a student winning again.
+
+**The strategic takeaway for George:** a BG referat faces a *suspicion amplifier* (unreliable scores triggered only when a professor's native eye gets suspicious), while **English homework faces actual working detectors** — plus documented bias against non-native writers even when innocent. The most dangerous path at SWU isn't a free website: it's the professor pasting a paragraph into StrikePlagiarism's web UI with its stylometry module.

@@ -1,0 +1,64 @@
+{
+  "day_window": "14:30 wake, 03:00 sleep",
+  "fixed_walls": "nothing - no college",
+  "tasks": [
+    {
+      "name": "Watch copywriter youtube videos + take notes",
+      "duration": 180,
+      "done": false
+    },
+    {
+      "name": "Read the notebooks - load the corpus",
+      "duration": 106,
+      "done": false
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Watch copywriter youtube videos + take notes",
+      "start_m": 946,
+      "end_m": 1126,
+      "type": "deep_work",
+      "start": "15:46",
+      "end": "18:46",
+      "duration": 180
+    },
+    {
+      "name": "Read the notebooks - load the corpus (part 1)",
+      "start_m": 1126,
+      "end_m": 1200,
+      "type": "deep_work",
+      "start": "18:46",
+      "end": "20:00",
+      "duration": 74
+    },
+    {
+      "start_m": 1200,
+      "end_m": 1230,
+      "name": "dinner (light - overfeeding kills the evening)",
+      "type": "break",
+      "start": "20:00",
+      "end": "20:30",
+      "duration": 30
+    },
+    {
+      "name": "Read the notebooks - load the corpus",
+      "start_m": 1230,
+      "end_m": 1336,
+      "type": "deep_work",
+      "start": "20:30",
+      "end": "22:16",
+      "duration": 106
+    },
+    {
+      "name": "Buffer / wind down",
+      "start_m": 1336,
+      "end_m": 1620,
+      "type": "personal",
+      "start": "22:16",
+      "end": "03:00",
+      "duration": 284
+    }
+  ],
+  "timestamp": "2026-09-22T15:46:58.243603"
+}

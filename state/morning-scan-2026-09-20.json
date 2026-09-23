@@ -1,0 +1,22 @@
+{
+  "sinusoid": {
+    "label": "Sinusoid Check",
+    "answer": "top after honest reset - yesterday was a zero day, today is war",
+    "timestamp": "2026-09-20T16:49:02.317165"
+  },
+  "boardroom": {
+    "label": "Boardroom Check",
+    "answer": "health 7, friends 5, fun 3, money 4 (1500 euro/month, livable for 18, wants more)",
+    "timestamp": "2026-09-20T16:49:02.317165"
+  },
+  "braindump": {
+    "label": "Brain Dump",
+    "answer": "tasks: watch good copywriter youtube video and take notes, write 1000 hooks by hand as reps, read notebooks (corpus), learn LFS, use LFS for scripts, rewrite ad script. fires: inability to write perfect copy. lesson from yesterday: dopamine before work kills the day",
+    "timestamp": "2026-09-20T16:49:02.317165"
+  },
+  "goal_anchor": {
+    "label": "Goal Anchor",
+    "answer": "grasp and fix my copywriting - diagnosis through reps",
+    "timestamp": "2026-09-20T16:49:02.317165"
+  }
+}

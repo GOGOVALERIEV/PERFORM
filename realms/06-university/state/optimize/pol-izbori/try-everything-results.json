@@ -1,0 +1,16 @@
+{
+ "NOISE_v8_3scans": [
+  38.0,
+  70.0,
+  70.0
+ ],
+ "NOISE_range": 32.0,
+ "v12_inversion": 72.0,
+ "v13_vocab": null,
+ "v14_mixed": null,
+ "v15_punct": null,
+ "v16_quotes": "n/a",
+ "v17_fragments": null,
+ "v18_hot": null,
+ "v19_combo": null
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: Learning System
+  short_description: Study any source through Codex
+  default_prompt: Help me learn from this material using the PERFORM learning system.

@@ -1,0 +1,22 @@
+George, I have to be the not-yes-man here, so let me be straight with you before anything else.
+
+## What I can't build
+
+The mission as written is a **detection-evasion playbook**: the goal is LLM-drafted papers engineered so that StrikePlagiarism — including SmartMarks, the layer specifically designed to catch *disguised copying* — "shows nothing that looks like disguised copying." Prompts like "read, close, write from memory, reopen to verify" aren't a study technique in this pipeline; they're a provenance-laundering step whose output gets submitted under your name with no disclosure. That's academic dishonesty with extra engineering, and I won't design it. Not because of rules on a wall — because it fails your own metric: the achievement you're actually building (a career, a degree, an architecture brain) collapses the moment the output is fake and the system catches it. StrikePlagiarism vendors update models; evasions decay; the report trail is permanent.
+
+## What I can build — and it's 80% of what you asked for
+
+Almost everything on your list is real academic craft that writing centers teach, and it serves an honest goal: papers that score low **because they're genuinely yours**. Specifically I can write a full playbook covering:
+
+1. **A drafting protocol that makes text yours** — LLM as *sparring partner*, not ghostwriter: outline help, critique, fact-checking, question-answering — with the actual BG/EN prompt texts. You write the sentences; the LLM interrogates and corrects. This produces genuinely low КС1/КС2 for the honest reason.
+2. **Definitions decision rules** — exactly as you specified: max 2–3 proper quotes per paper, or re-derive in own words + citation. Pure craft, no evasion.
+3. **Quote hygiene spec** — кавички, citation format, bibliography, the purple layer, one-click professor exclusion. Legitimate and useful.
+4. **Factual sentences done right** — how to write dates/treaties/lists as *integrated prose in your own analytical frame* (which is what good papers do anyway), so overlap is naturally minimal without fragmenting-for-evasion gymnastics.
+5. **Do/Don't table** — accidental overlap traps (syllabus text, assignment prompt phrasing, sentence-by-sentence translation) are a *real* problem honest students hit, and worth a table with fixes.
+6. **Self-check protocol on the similarity report** — how to read orange/quote layers, when to stop, how to interpret % without a published SWU threshold. Legitimate QC of your own work.
+
+## The one thing you should do instead
+
+Check SWU's actual LLM policy and, where allowed, **disclose LLM assistance** in the paper (one line: "Drafting assistance from Claude; all final text and analysis my own"). A disclosed, low-similarity, well-cited paper is bulletproof. An undisclosed laundered one is a time bomb with your name on it.
+
+Want me to write the legitimate version to the same file path (`realms/06-university/research/agent-logs/counter1-similarity-playbook.md`) with that title and framing? Say the word and I'll build the whole thing, progress trail included.

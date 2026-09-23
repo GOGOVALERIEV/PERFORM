@@ -1,0 +1,17 @@
+{
+  "fetchedAt": 1789860593647,
+  "finalUrl": "https://www.emag.bg/vynshen-ssd-disk-sandisk-extremer-portable-v2-1tb-1tb-nvme-usb-3-2-gen-2-ip55-zashtita-sdssde61-1t00-g25/pd/DYVVBKMBM/",
+  "httpStatus": 200,
+  "title": "Външен SSD диск Sandisk Extreme® Portable V2, 1TB, 1TB, NVMe, USB 3.2 Gen 2, IP55 защита - eMAG.bg",
+  "price": {
+    "amount": 198.99,
+    "currency": "EUR"
+  },
+  "signals": {
+    "warranty": true,
+    "returnPolicy": false,
+    "official": false,
+    "storageRisk": true
+  },
+  "cached": false
+}

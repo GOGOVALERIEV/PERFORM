@@ -1,0 +1,49 @@
+=== deepseek/deepseek-v4-flash-0731 ===
+  OK  [слепени думи + къ->към] -> VERDICT: GRESHKA: СЛЕПЕНИ ДУМИ, „КЪ“ ВМЕСТО „КЪМ“.
+  OK  [формулирова -> формулира] -> VERDICT: GRESHKA РУСИЗМИ: ФОРМУЛИРОВА, СТАНА.
+  OK  [зада->зададе, оста->се оказа] -> VERDICT: GRESHKA: "ЗАДА" И "ОСТА" СА ГРЕШНИ ФОРМИ.
+  OK  [слепени думи (твърдят+то)] -> VERDICT: GRESHKA ТВЪРДЯТОНА НЕ Е ДУМА
+  OK  [руска дума 'она'] -> VERDICT: GRESHKA - КРИТИЦИ, ОНА, ФРАГМЕНТАЦИЯ.
+  OK  [русизъм 'преимущества' -> 'предимст] -> VERDICT: GRESHKA: РУСИЗМ "ПРЕИМУЩЕСТВА" ВМЕСТО "ПР
+  OK  [слепени думи (видяхме+хората)] -> GRESHKA: СЛЯТО "ВИДЯХМЕХОРАТА"
+  OK  [слепени думи (правило+още)] -> VERDICT: GRESHKA - КОЛКОТО, ПРАВИЛОТООЩЕ, ТОЙ ВМЕС
+  ERROR: 'NoneType' object has no attribute 'strip'
+  FP! [clean] -> VERDICT: GRESHKA: РУСИЗМ „РАЗПРЕДЕЛЯ".
+  OK  [clean] -> VERDICT: CHISTA. НЯМА ГРАМАТИЧЕСКИ ГРЕШКИ.
+  OK  [clean] -> VERDICT: CHISTA
+  FP! [clean] -> VERDICT: GRESHKA: РУСИЗЪМ "ПО ПРИМЕРУ"
+
+=== qwen/qwen3.7-flash ===
+  OK  [слепени думи + къ->към] -> GRESHKA: ПОКАЗАОБЩЕСТВОТО, ПРОЯВЯ, КЪ
+  OK  [формулирова -> формулира] -> VERDICT: GRESHKA: ФОРМУЛИРОВА Е НЕВАЛИДНА ГЛАГОЛНА
+  OK  [зада->зададе, оста->се оказа] -> VERDICT: GRESHKA: ЗАДА, ОСТА
+  OK  [слепени думи (твърдят+то)] -> GRESHKA: ТВЪРДЯТОНА Е НЕСЪЩЕСТВУВАЩА ДУМА.
+  OK  [руска дума 'она'] -> VERDICT: GRESHKA: „ОНА“ Е РУСКА ДУМА.
+  OK  [русизъм 'преимущества' -> 'предимст] -> GRESHKA: РУСКА ДУМА „ПРЕИМУЩЕСТВА“
+  OK  [слепени думи (видяхме+хората)] -> VERDICT: GRESHKA: СЛЕПЕНА ДУМА „ВИДЯХМЕХОРАТА“.
+  OK  [слепени думи (правило+още)] -> VERDICT: GRESHKA: КОЛКОТО ДО, ПРАВИЛОТООЩЕ.
+  MISS [халюцинация 'янтарна стена'] -> VERDICT: CHISTA: НЯМА ГРАМАТИЧЕСКИ ГРЕШКИ.
+  OK  [clean] -> VERDICT: CHISTA
+  FP! [clean] -> VERDICT: GRESHKA: ГРЕШКА „ЗАТО“, ПРАВИЛНО „ЗАТОВА“
+  OK  [clean] -> VERDICT: CHISTA
+  FP! [clean] -> VERDICT: GRESHKA: „ПО ПРИМЕРУ“ Е РУСИЗЪМ.
+
+=== mistralai/mistral-small-3.2-24b-instruct ===
+  OK  [слепени думи + къ->към] -> VERDICT: GRESHKA: "ПОКАЗАОБЩЕСТВОТО"
+  OK  [формулирова -> формулира] -> VERDICT: GRESHKA: "ФОРМУЛИРОВА"
+  OK  [зада->зададе, оста->се оказа] -> VERDICT: GRESHKA: "ЗАДА ВЪПРОС"
+  OK  [слепени думи (твърдят+то)] -> VERDICT: GRESHKA: "ТВЪРДЯТОНА"
+  OK  [руска дума 'она'] -> VERDICT: GRESHKA: "ОНА"
+  OK  [русизъм 'преимущества' -> 'предимст] -> VERDICT: GRESHKA: ПРЕИМУЩЕСТВА
+  OK  [слепени думи (видяхме+хората)] -> VERDICT: GRESHKA: ВИДЯХМЕХОРАТА
+  OK  [слепени думи (правило+още)] -> VERDICT: GRESHKA: "ПРАВИЛОТООЩЕ", "ТЛАСКА"
+  OK  [халюцинация 'янтарна стена'] -> VERDICT: GRESHKA: "ЯНТАРНАТА СТЕНА"
+  OK  [clean] -> VERDICT: CHISTA
+  FP! [clean] -> VERDICT: GRESHKA: "НИДЕРЛАНДИЯ"
+  OK  [clean] -> VERDICT: CHISTA
+  OK  [clean] -> VERDICT: CHISTA
+
+================ SCORES ================
+deepseek/deepseek-v4-flash-0731: caught 8/8 (100%) | false positives 2/4
+qwen/qwen3.7-flash: caught 8/9 (89%) | false positives 2/4
+mistralai/mistral-small-3.2-24b-instruct: caught 9/9 (100%) | false positives 1/4

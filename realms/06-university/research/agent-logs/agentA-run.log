@@ -1,0 +1,18 @@
+Done. Both deliverables are written:
+
+- **`realms/06-university/research/agent-logs/agentA-bg-system.md`** — full report with VERDICT at top
+- **`realms/06-university/research/agent-logs/agentA-progress.md`** — research trail, ends with DONE
+
+## The Answer (short version)
+
+**The "Bulgarian/government system" is real and it's called StrikePlagiarism.com** — but it's Polish, and the *government connection* is the interesting part:
+
+1. **МОН (Ministry of Education) bought it for the whole country.** In June 2022, МОН signed a 3-year public-procurement contract (~500,000 лв/year, 2 лв per user, 237,000 users) with Plagiat-Sistem Antiplagiat prin Internet SRL — the Bucharest subsidiary of the Polish company **Plagiat.pl**. From **September 2022, "по решение на МОН", StrikePlagiarism was rolled out into every Bulgarian university**. Uni-Ruse's own page says this verbatim, and МОН's own news page (#5251, March 2023) confirms the national deployment with a 35-million-source database.
+
+2. **The AI-catching part:** StrikePlagiarism has an AI-generated-content detection module (announced in Bulgaria Nov 2023; marketed on their Bulgarian site). **SWU's instance runs inside Blackboard** — the disted.swu.bg manual links the official StrikePlagiarism-Blackboard student manual. That's what "catching AI people" actually is.
+
+3. **Plot twist: the central МОН contract died in mid-2025.** МОН refused to renew, told universities to buy their own — which is why SWU now runs its own paid integration.
+
+4. **plag.bg is a red herring — it's Lithuanian** (Plagramme / Lingua Intellegens UAB, Vilnius), a commercial self-check tool some universities *recommend to teachers*. Not Bulgarian, not government, not PlagiarismCheck.org.
+
+5. **SWU's own documents:** the Правилник (чл. 60) gives a **1-year removal** for plagiarism in diploma work, and the authorship declaration (quoted verbatim in the report) has **no AI clause** — the enforcement is improvised per professor via StrikePlagiarism reports. That legal gap is your opportunity.

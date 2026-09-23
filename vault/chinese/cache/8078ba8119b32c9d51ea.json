@@ -1,0 +1,17 @@
+{
+  "fetchedAt": 1789912323595,
+  "finalUrl": "https://www.technopolis.bg/bg/Stolove/OFIS-STOL-KO03CZCZ/p/224706",
+  "httpStatus": 200,
+  "title": "ОФИС СТОЛ KO03CZCZ",
+  "price": {
+    "amount": 56.24,
+    "currency": "EUR"
+  },
+  "signals": {
+    "warranty": true,
+    "returnPolicy": false,
+    "official": false,
+    "storageRisk": false
+  },
+  "cached": false
+}

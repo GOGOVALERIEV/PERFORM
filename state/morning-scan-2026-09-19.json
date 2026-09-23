@@ -1,0 +1,22 @@
+{
+  "sinusoid": {
+    "label": "Sinusoid Check",
+    "answer": "top",
+    "timestamp": "2026-09-19T15:41:39.444766"
+  },
+  "boardroom": {
+    "label": "Boardroom Check",
+    "answer": "health 7 (gym soon), friends 5 (college connections, plan to sell uni system to other universities), fun 3 (ok with it), money 4 (1500 euro/month, livable for 18 but wants more; self-aware: needs needle-pushers over side projects)",
+    "timestamp": "2026-09-19T15:41:39.444766"
+  },
+  "braindump": {
+    "label": "Brain Dump",
+    "answer": "tasks: read the notebooks, learn the LFS system, try doing scripts with it. Boris/Argon feedback: ad script idea good but badly written - useless lines, unclear. The gap is copywriting - clean and clear. notebooks = the research corpus i was missing. ideas: sell uni system to universities with commission sellers, seat protection, monthly pricing, business cards with telegram + crypto legality check. fires: incapability to write perfect copy",
+    "timestamp": "2026-09-19T15:41:39.444766"
+  },
+  "goal_anchor": {
+    "label": "Goal Anchor",
+    "answer": "grasp what is wrong with my writing abilities - diagnosis before repair",
+    "timestamp": "2026-09-19T15:41:39.444766"
+  }
+}

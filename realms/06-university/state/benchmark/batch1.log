@@ -1,0 +1,73 @@
+skipping already scored: ['pol-izbori']
+batch: 9 papers
+
+[1/9]
+
+=== his-studena | Студената война: произход, фази и край | current ===
+  corpus: 3597 words
+  P1 draft: 564 words
+  P2 sweep: 506 words (deepseek/deepseek-v4-flash-0731)
+  SCOREBOARD ROW: | his-studena | current | deepseek/deepseek-v4-flash-0731 -> deepseek/deepseek-v4-flas | 506 | 0/0.78 | FAIL(4) | n/a | 
+
+[2/9]
+
+=== phi-francia | Френската революция и нейното влияние върху Европа | current ===
+  corpus: 6766 words
+  P1 draft: 487 words
+  P2 sweep: 447 words (qwen/qwen3.7-flash)
+  SCOREBOARD ROW: | phi-francia | current | qwen/qwen3.7-flash -> qwen/qwen3.7-flash | 447 | 0/0.0 | PASS | n/a | n/a | 0.0012 |
+
+[3/9]
+
+=== glo-sto | Световната търговия и световната търговска организ | current ===
+  corpus: 7107 words
+  P1 draft: 385 words
+  P2 sweep: 394 words (mistralai/mistral-small-3.2-24b-instruct)
+  SCOREBOARD ROW: | glo-sto | current | mistralai/mistral-small-3.2-24b-instruct -> mistralai/mistra | 394 | 0/2.03 | FAIL(22) | n/a | n/a
+
+[4/9]
+
+=== pol-grajdani | Гражданското общество и неговите функции | aggressive ===
+  corpus: 350 words
+  P1 draft: 452 words
+  P2 sweep: 512 words (qwen/qwen3.7-flash)
+  SCOREBOARD ROW: | pol-grajdani | aggressive | qwen/qwen3.7-flash -> qwen/qwen3.7-flash | 512 | 0/0.0 | FAIL(8) | n/a | n/a | 0.0012 |
+
+[5/9]
+
+=== his-sssr | Разпадът на СССР и краят на bipolarnия свят | aggressive ===
+  corpus: 0 words
+  P1 draft: 542 words
+  P2 sweep: 559 words (deepseek/deepseek-v4-flash-0731)
+  SCOREBOARD ROW: | his-sssr | aggressive | deepseek/deepseek-v4-flash-0731 -> deepseek/deepseek-v4-flas | 559 | ?/? | FAIL(4) | n/a | n/a
+
+[6/9]
+
+=== phi-germania | Обединението на Германия през 1990 година | chain ===
+  corpus: 0 words
+  OR(qwen/qwen3.7-flash) failed: URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has fai
+
+[7/9]
+
+=== glo-migracii | Миграционните потоци и Европейският съюз | chain ===
+  corpus fetch failed for Европейски съюз: URLError
+  corpus: 88 words
+  P1 draft: 508 words
+  OR(qwen/qwen3.7-flash) failed: URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has fai
+  P2 sweep: 508 words (qwen/qwen3.7-flash)
+  SCOREBOARD ROW: | glo-migracii | chain | deepseek/deepseek-v4-flash-0731 -> qwen/qwen3.7-flash | 508 | 0/0.0 | FAIL(16) | n/a | n/a | 0.
+
+[8/9]
+
+=== pol-partii | Политическите партии и партийните системи | current-paid-control ===
+  corpus: 3968 words
+  OR(z-ai/glm-flash-latest) failed: HTTPError: HTTP Error 400: Bad Request
+
+[9/9]
+
+=== eng-coldwar | The Cold War: Origins, Crises and the End of Bipol | current-en ===
+  corpus fetch failed for Cold War: URLError
+  corpus: 0 words
+  OR(mistralai/mistral-small-3.2-24b-instruct) failed: URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has fai
+
+BATCH DONE — scoreboard: C:\Users\User\Desktop\PERFORM\realms\06-university\state\benchmark\scoreboard.md

@@ -1,0 +1,88 @@
+{
+ "date_collected": "2026-09-19",
+ "store": "Billa",
+ "validity": "17.09 - 23.09.2026",
+ "pages": [
+  {
+   "page": 1,
+   "image": "C:\\Users\\User\\Desktop\\project-test\\output\\deals\\billa_pages\\page-01.jpg"
+  },
+  {
+   "page": 2,
+   "image": "C:\\Users\\User\\Desktop\\project-test\\output\\deals\\billa_pages\\page-02.jpg"
+  },
+  {
+   "page": 3,
+   "image": "C:\\Users\\User\\Desktop\\project-test\\output\\deals\\billa_pages\\page-03.jpg"
+  },
+  {
+   "page": 4,
+   "image": "C:\\Users\\User\\Desktop\\project-test\\output\\deals\\billa_pages\\page-04.jpg"
+  },
+  {
+   "page": 5,
+   "image": "C:\\Users\\User\\Desktop\\project-test\\output\\deals\\billa_pages\\page-05.jpg"
+  },
+  {
+   "page": 6,
+   "image": "C:\\Users\\User\\Desktop\\project-test\\output\\deals\\billa_pages\\page-06.jpg"
+  }
+ ],
+ "deals_vision_read": [
+  {
+   "name": "Мелничарски хляб 400г",
+   "old_price": "2.02",
+   "price": "1.69",
+   "discount": "-16%"
+  },
+  {
+   "name": "Кроасан 80г",
+   "old_price": "0.76",
+   "price": "0.69",
+   "discount": "-16%"
+  },
+  {
+   "name": "BILLA Селска шунка слайс 150г",
+   "old_price": "3.16",
+   "price": "2.59",
+   "discount": "-18%"
+  },
+  {
+   "name": "CLEVER Сушеница 280г",
+   "old_price": "3.20",
+   "price": "2.59",
+   "discount": "-19%"
+  },
+  {
+   "name": "ТАНДЕМ Шпек Бургас 210г",
+   "old_price": "4.75",
+   "price": "3.35",
+   "discount": "-29%"
+  },
+  {
+   "name": "ВЕДАРЕ Извара 400г",
+   "old_price": "2.14",
+   "price": "1.69",
+   "discount": "-21%"
+  },
+  {
+   "name": "BILLA Протеинов йогурт 500г",
+   "old_price": "1.99",
+   "price": "1.69",
+   "discount": "-15%"
+  },
+  {
+   "name": "OLYMPUS Кефир 330мл",
+   "old_price": "1.17",
+   "price": "0.99",
+   "discount": "-15%"
+  },
+  {
+   "name": "BILLA Кафява тръстикова захар 500г",
+   "old_price": "1.02",
+   "price": "0.85",
+   "discount": "-16%"
+  }
+ ],
+ "validity_of_vision_reads": "CURRENT week (buy now)"
+}

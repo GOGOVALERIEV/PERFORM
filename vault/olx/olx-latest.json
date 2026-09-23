@@ -1,0 +1,45 @@
+{
+  "collectedAt": "2026-09-19T23:51:27.208Z",
+  "query": "външен SSD",
+  "source": "olx",
+  "listings": [
+    {
+      "source": "olx",
+      "sourceLabel": "OLX private listing",
+      "title": "Външен SSD 1TB (преносим)",
+      "url": "https://example.invalid/olx-nearby-ssd",
+      "price": {
+        "amount": 15,
+        "currency": "€"
+      },
+      "location": "с. Джерман",
+      "nearby": true,
+      "condition": "used",
+      "suspiciousStorage": false,
+      "score": 58,
+      "notes": [
+        "Nearby: inspect in person before paying.",
+        "Private listing: confirm exact model, condition, accessories, and serial number."
+      ]
+    },
+    {
+      "source": "olx",
+      "sourceLabel": "OLX private listing",
+      "title": "ХАРД ДИСК 2TB HardDisk Extreme Pro Portable M.2",
+      "url": "https://example.invalid/olx-risky-storage",
+      "price": {
+        "amount": 29,
+        "currency": "€"
+      },
+      "location": "гр. Благоевград, Ален мак",
+      "nearby": true,
+      "condition": "new",
+      "suspiciousStorage": true,
+      "score": 26,
+      "notes": [
+        "Nearby: inspect in person before paying.",
+        "High risk: capacity/brand claim looks implausible for the price. Reject unless independently verified."
+      ]
+    }
+  ]
+}

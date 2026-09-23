@@ -1,0 +1,17 @@
+Mission complete. **DONE** — report written to `research/agent-logs/agentD-humanizers.md` (20 KB, 131 lines), progress trail in `agentD-progress.md`, evidence files kept in `work/`.
+
+## Summary of findings
+
+**The 3 verdict picks — free TODAY on 400 Bulgarian words:**
+1. **Humbot** — only major tool whose free tier (≈3,000 words/mo, 500-word input cap) covers a full referat in **one pass**, and it has Bulgarian in its official language selector.
+2. **HIX Bypass** — Bulgarian **explicitly named** on the product page; free without signup (~80–125 words/chunk, so 400 words = 4 passes or a free signup).
+3. **WriteHuman** — Bulgarian in its explicit 40+ language list; 250 words/request free (~2 requests).
+
+**The three realities that matter most:**
+- ⚠️ **No vendor even claims to beat JustDone or StrikePlagiarism** — they all target GPTZero/Turnitin/Originality/ZeroGPT. Our real enemies are off their radar. JustDone publishes 98% accuracy on academic text and explicitly claims to catch paraphrased/grammar-tool-passed AI.
+- Turnitin's own release notes confirm the Aug-27-2025 bypasser-detection update — **but its AI detection only runs on English/Spanish/Japanese/Arabic; Bulgarian is not processed at all**.
+- Independent Jul-2026 benchmark (12 tools, real detector APIs): best tool leaves ~10% residual GPTZero AI-score; 8 of 12 get caught >50%. ZeroGPT is gameable junk (a formality meter) — humanizers sail through it while failing GPTZero 100% (proven per-tool in Dec 2025–Jan 2026 reviews).
+
+**Bulgarian reality:** 6 vendors officially list Bulgarian (HIX, WriteHuman, Netus, Humbot, BypassGPT, Uncheck); Grubby is explicitly English-only; RewriteAI warns its model degrades on non-English. **Zero third-party tests exist on Bulgarian or any Slavic language** — that's the #1 empirical gap, and the report ends with a concrete browser test protocol (fixed BG paragraph → Humbot/HIX/WriteHuman/Netus → score with JustDone + GPTZero free tiers).
+
+Caveat flagged in the report: smarter money is on humanizer-as-draft-cleaner + manual editing, not as a magic bypass — quality loss and grammar breakage are documented across all tested tools.

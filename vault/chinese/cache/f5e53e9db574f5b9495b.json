@@ -1,0 +1,17 @@
+{
+  "fetchedAt": 1789860680140,
+  "finalUrl": "https://www.aliexpress.com/item/1005011830755377.html?algo_pvid=283ac991-0c2d-4a53-a39f-5c362b2cd373&algo_exp_id=283ac991-0c2d-4a53-a39f-5c362b2cd373-1&pdp_ext_f=%7B%22order%22%3A%22856%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21BGN%2133.10%2131.04%21%21%21129.46%21121.42%21%402103849717898606784097733e14d0%2112000056719653809%21sea%21BG%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3Ab67ad183%3Bm03_new_user%3A-29895&curPageLogUid=n7ODKEwrZ3ib&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005011830755377%7C_p_origin_prod%3A",
+  "httpStatus": 200,
+  "title": "32TB High-Speed Portable SSD External Hard Drive USB 3.1 Type-C for Phone/Laptop/Mac/PC 2TB 4TB Mass Storage Solution - AliExpress 44",
+  "price": {
+    "amount": 31.04,
+    "currency": "BGN"
+  },
+  "signals": {
+    "warranty": false,
+    "returnPolicy": false,
+    "official": false,
+    "storageRisk": true
+  },
+  "cached": false
+}

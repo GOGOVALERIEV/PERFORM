@@ -3,3 +3,7 @@ config/google-credentials.json
 config/google-token.pickle
 *.session
 __pycache__/
+deal-hunter/output/
+
+# battery account credentials (George, never commit)
+realms/06-university/config/*credentials*.txt

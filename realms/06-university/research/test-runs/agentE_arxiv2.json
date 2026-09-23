@@ -1,0 +1,26 @@
+{
+ "all:TempParaphraser": {
+  "error": "HTTP Error 406: Not Acceptable"
+ },
+ "all:paraphrasing AND all:evades AND all:detectors": {
+  "error": "HTTP Error 406: Not Acceptable"
+ },
+ "all:recursive AND all:paraphrasing AND all:detection": {
+  "error": "HTTP Error 406: Not Acceptable"
+ },
+ "all:evade AND all:AI-text AND all:detection": {
+  "error": "HTTP Error 406: Not Acceptable"
+ },
+ "all:translation AND all:evade AND all:detection AND all:AI": {
+  "error": "HTTP Error 406: Not Acceptable"
+ },
+ "all:perplexity AND all:burstiness AND all:GPTZero": {
+  "error": "HTTP Error 406: Not Acceptable"
+ },
+ "all:owt AND all:paraphrase AND all:detector": {
+  "error": "HTTP Error 406: Not Acceptable"
+ },
+ "all:detectGPT AND all:evasion": {
+  "error": "HTTP Error 406: Not Acceptable"
+ }
+}

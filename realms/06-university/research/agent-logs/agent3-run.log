@@ -1,0 +1,21 @@
+Mission complete. Both deliverables written, nothing else touched:
+
+- **`realms/06-university/research/agent-logs/agent3-infra.md`** (24 KB — full report, 6 questions, sources)
+- **`realms/06-university/research/agent-logs/agent3-progress.md`** (trail, ends with DONE)
+
+## Headline findings (all live-verified today)
+
+**Q1 — The portal map is different than assumed:**
+- `suni.swu.bg` **doesn't exist** (NXDOMAIN). Real stack: `stud.swu.bg/WebStudent/` (WEB-Студент), `ais.swu.bg` (АИС), `tt.swu.bg` (public timetables), `moodle.swu.bg` (exists in DNS but unreachable from George's network — likely campus-only)
+- Student email = **Microsoft 365** (verified via Microsoft's userrealm endpoint: swu.bg is a managed M365 tenant). Forwarding path: Outlook settings → Gmail, with Gmail POP-pull as fallback if the tenant blocks forwarding
+- **Exam "signup" is physical** — stamp in the студентска книжка by the faculty inspector. No online registration to automate. Full official **2026/27 academic calendar extracted** (winter session 11.01–29.01.27, summer 25.05–08.06.27, etc.) — ready to hard-code.
+
+**Q3 —** RRULE syntax for biweekly: `FREQ=WEEKLY;INTERVAL=2;BYDAY=TH;WKST=MO` with the anchor date carrying the even/odd parity, `UNTIL` in UTC.
+
+**Q4 —** Task Scheduler for daily scans (schtasks syntax verified on this machine); **win11toast 0.36.3 (2026-01) is the maintained toast lib**, winotify is 4 years stale.
+
+**Q5 —** De-facto BG norms documented (TNR 14, 1.5 spacing, margins 3/1.5/2, БДС ISO 690 citation) — but honestly flagged: **SWU has no university-wide standard**, it's per-lecturer.
+
+**Q6 —** Read-only + human-in-the-loop for anything university-facing; George clicks "upload" himself, always.
+
+All unverifiable items are explicitly marked **[UNVERIFIED]** (student UPN format, forwarding policy, per-lecturer formatting sheets) with a failed-approaches appendix so nobody re-burns time on Bing-scraping dead ends.

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anthropic&#x27;s Own Prompt to Eliminate &#x27;Claude Speak&#x27;</title>
+
+    <link rel="stylesheet" href="https://www.theaimarketers.ai/assets/built/screen.css?v=DnlPt9py4hALcvZc">
+
+    <meta name="description" content="Anthropic&#x27;s prompt that strips &quot;Claude speak&quot; from AI writing. Paste it above any request and get plain statements instead of metaphor. Works with any model.">
+    <link rel="canonical" href="https://www.theaimarketers.ai/eliminate-claude-speak/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="AI Marketers">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Anthropic&#x27;s Own Prompt to Eliminate &#x27;Claude Speak&#x27;">
+    <meta property="og:description" content="xAI&#x27;s team wrote five guides to running Grok Bot, where each bot is an always-on agent with its own computer. A product manager, a sales lead, a designer, and a solo game developer each show the bot setups they&#x27;ve built and what those bots do all day.">
+    <meta property="og:url" content="https://www.theaimarketers.ai/eliminate-claude-speak/">
+    <meta property="og:image" content="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w1200/2026/09/Frame-3734-1.png">
+    <meta property="article:published_time" content="2026-09-07T00:05:00.000Z">
+    <meta property="article:modified_time" content="2026-09-07T00:05:00.000Z">
+    <meta property="article:publisher" content="https://www.facebook.com/groups/theaimarketers">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Anthropic&#x27;s Own Prompt to Eliminate &#x27;Claude Speak&#x27;">
+    <meta name="twitter:description" content="Anthropic&#x27;s prompt that strips &quot;Claude speak&quot; from AI writing. Paste it above any request and get plain statements instead of metaphor. Works with any model.">
+    <meta name="twitter:url" content="https://www.theaimarketers.ai/eliminate-claude-speak/">
+    <meta name="twitter:image" content="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w1200/2026/09/Frame-3734-nframe.png">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Andrew V McDermot">
+    <meta name="twitter:site" content="@ghost">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="675">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "AI Marketers",
+        "url": "https://www.theaimarketers.ai/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2024/09/logo-v-4.png"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Andrew V McDermot",
+        "url": "https://www.theaimarketers.ai/author/andrew/",
+        "sameAs": []
+    },
+    "headline": "Anthropic's Own Prompt to Eliminate 'Claude Speak'",
+    "url": "https://www.theaimarketers.ai/eliminate-claude-speak/",
+    "datePublished": "2026-09-07T00:05:00.000Z",
+    "dateModified": "2026-09-07T00:05:00.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w1200/2026/09/Frame-3734-1.png",
+        "width": 1200,
+        "height": 675
+    },
+    "description": "Anthropic's prompt that strips \"Claude speak\" from AI writing. Paste it above any request and get plain statements instead of metaphor. Works with any model.",
+    "mainEntityOfPage": "https://www.theaimarketers.ai/eliminate-claude-speak/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 6.65">
+    <link rel="alternate" type="application/rss+xml" title="AI Marketers" href="https://www.theaimarketers.ai/rss/">
+    <script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.71/umd/portal.min.js" data-i18n="true" data-ghost="https://www.theaimarketers.ai/" data-key="e65236fb5ab26f3c310b8a8f20" data-api="https://aimarketers.ghost.io/ghost/api/content/" data-locale="en" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.8/umd/sodo-search.min.js" data-key="e65236fb5ab26f3c310b8a8f20" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.8/umd/main.css" data-sodo-search="https://aimarketers.ghost.io/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="https://www.theaimarketers.ai/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=ShRHxgy4po8zN-Wf"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=WwnU9jw5ancNC8Gc">
+    <script defer src="/public/member-attribution.min.js?v=AKG4hWena9j3yX3I"></script>
+    <script defer src="/public/ghost-stats.min.js?v=vFcCUf6ZQ0Hyhc8h" data-stringify-payload="false" data-datasource="analytics_events" data-storage="localStorage" data-host="https://www.theaimarketers.ai/.ghost/analytics/api/v1/page_hit"  tb_site_uuid="40b20fac-3092-4d7d-92de-227ddbaff057" tb_post_uuid="c76bfbbc-947f-48b5-8c69-4b6fc9ebc850" tb_post_type="post" tb_member_uuid="undefined" tb_member_status="undefined" tb_gift_link=""></script><style>:root {--ghost-accent-color: #00C2C7;}</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link href="https://www.theaimarketers.aid00&display=swap" rel="stylesheet">
+
+<style>	
+    @font-face {
+  	font-family: "PontiacInlineRegular";
+  	src: url('https://www.theaimarketers.ai/assets/fonts/PontiacInlineRegular/font.woff2') format('woff2'), url('https://www.theaimarketers.ai/assets/fonts/PontiacInlineRegular/font.woff') format('woff');
+	}
+
+    h1, h3, h4, h5, h6 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    h2 {
+		font-family: PontiacInlineRegular !important;
+        font-weight: 500;
+    }    
+    
+    .post {
+    	font-family: 'Roboto', sans-serif !important;
+		font-weight: 300;
+    }
+    
+    :root {
+    	--content-font-size: 2.1rem;
+    }  
+    
+    .gh-head-members {
+        display: none;
+    }
+    
+    .single-media {
+        max-width: 720px;
+        margin: 4.5rem auto 0 auto !important;
+        float: none !important;
+	}
+    .feed-image {
+        height: 90px;
+    }
+    .single-header {
+    	margin-bottom: 0 !important;
+    }
+
+.kg-card.kg-button-card .kg-btn {
+    font-size: 35px;
+}
+.gh-head-logo img {
+    max-height: 100px;
+}
+</style>
+</head>
+
+<body class="post-template is-head-middle-logo is-head-brand">
+<div class="site">
+
+    <header id="gh-head" class="gh-head gh-outer">
+        <div class="gh-head-inner">
+            <div class="gh-head-brand">
+                <div class="gh-head-brand-wrapper">
+                    <a class="gh-head-logo" href="https://www.theaimarketers.ai">
+                            <img src="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2024/09/logo-v-4.png" alt="AI Marketers">
+                    </a>
+                </div>
+                <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                <button class="gh-burger"></button>
+            </div>
+
+            <nav class="gh-head-menu">
+                
+            </nav>
+
+            <div class="gh-head-actions">
+                    <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                    <div class="gh-head-members">
+                                <a class="gh-head-link" href="#/portal/signin" data-portal="signin">Sign in</a>
+                                <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Subscribe</a>
+                    </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="site-content">
+        
+<main class="site-main">
+
+        <article class="single post">
+
+    <header class="single-header gh-canvas">
+        <div class="single-meta">
+            <span class="single-meta-item single-meta-date">
+                <time datetime="2026-09-06">
+                    Sep 6, 2026
+                </time>
+            </span>
+            <span class="single-meta-item single-meta-length">
+                6 min read
+            </span>
+        </div>
+
+        <h1 class="single-title">Anthropic&#x27;s Own Prompt to Eliminate &#x27;Claude Speak&#x27;</h1>
+
+            <div class="single-excerpt">
+                Anthropic&#x27;s prompt that strips &quot;Claude speak&quot; from AI writing. Paste it above any request and get plain statements instead of metaphor. Works with any model.
+            </div>
+
+            <figure class="single-media kg-width-wide">
+                <img srcset="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w400/2026/09/Frame-3734-1.png 400w,
+https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w750/2026/09/Frame-3734-1.png 750w,
+https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w960/2026/09/Frame-3734-1.png 960w,
+https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w1140/2026/09/Frame-3734-1.png 1140w" sizes="(min-width: 1023px) 920px, calc(90vw)" src="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w960/2026/09/Frame-3734-1.png" alt="Anthropic&#x27;s Own Prompt to Eliminate &#x27;Claude Speak&#x27;">
+            </figure>
+    </header>
+
+    <div class="single-content gh-content gh-canvas">
+        <h2 id="top-insights"><strong>Top Insights </strong></h2><h3 id="understanding-chatgpt-work">Understanding ChatGPT Work</h3><p>Simon Willison, creator of the Datasette data tool and Django co-creator, spent weeks testing ChatGPT Work for his blog. OpenAI's own advice says use Work for briefs, decks, and analyses - jobs Chat already handles - so he hunted for the features Work has that Chat doesn't.</p><p><strong>💡 Key Insights:</strong></p><ul><li>GPT can now act on the open web much more freely...Work runs code with internet access, pulls in projects from GitHub, and drives a Chrome browser that fills forms and hands you the login screen when a site wants your password.</li><li>A sentence becomes a live website...Willison asked for every London spot with a "pelican in her piety" and got a 28-site census, built on files that persist between chats so tomorrow's session picks up today's work.</li><li>Work will write its own missing manual if you ask...Willison prompted it to build a site listing every tool, and it surfaced 223 tools plus 44 skills OpenAI doesn't publish, covering spreadsheets, PDFs, and dashboards.</li></ul><p><a href="https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/?ref=theaimarketers.ai"><strong>Read the Full Guide</strong></a></p><h3 id="the-state-of-product-experience-2026">The State of Product Experience 2026</h3><p>Syndigo, the product-content platform behind 3,500+ enterprise catalogs, had YouGov survey 8,736 adults across six countries this June on how they decide what to buy. The State of Product Experience 2026 asks one question: once a shopper or an AI finds your product, what gets it chosen?</p><figure class="kg-card kg-image-card"><a href="https://syndigo.com/ebook/state-of-product-experience-2026/?ref=theaimarketers.ai"><img src="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2026/09/image-15-1.png" class="kg-image" alt="" loading="lazy" width="2000" height="1411" srcset="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w600/2026/09/image-15-1.png 600w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w1000/2026/09/image-15-1.png 1000w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w1600/2026/09/image-15-1.png 1600w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2026/09/image-15-1.png 2000w" sizes="(min-width: 720px) 720px"></a></figure><p><strong>💡 Key Insights:</strong></p><ul><li>A discount buys one sale while a review keeps selling for free...53% of shoppers now rank reviews among their top purchase factors and 52% pick detailed descriptions, both ahead of a deal at 49%.</li><li>Your product page is doing your brand's job...only 35% weigh the maker's reputation when buying, yet 80% say a sloppy listing makes them think less of the brand, up four years running.</li><li>AI can't hold your product, so it judges your data...only 8% trust an AI's pick over their own research today, yet 32% would let one buy for them, and the brands winning those recommendations feed it the cleanest structured content.</li></ul><p><a href="https://syndigo.com/ebook/state-of-product-experience-2026/?ref=theaimarketers.ai"><strong>Get the Full Report Here</strong></a></p><hr><p>🚀<strong> WATCH: How These AI Copy Bots Are Producing World-Class Sales Copy 50X Faster Than Even The "BEST" Copywriters On The Market…</strong></p><p><em>(Plus… They Don't Get Sick, Miss Deadlines, Or Ask For Raises Either!)</em><br><br><a href="https://secures.copycoders.ai/referral/LLxNkAjV/hCp6lBE4VQuwPMeq?utm_source=aimarketers&utm_campaign=090626&utm_content=ad1" rel="noreferrer"><strong>Watch the full AI Copywriting Tell-All Video Here </strong></a></p><hr><h2 id="prompt-of-the-week"><strong>Prompt of the Week</strong></h2><figure class="kg-card kg-image-card"><a href="https://secures.copycoders.ai/referral/LLxNkAjV/hCp6lBE4VQuwPMeq?utm_source=aimarketers&utm_campaign=090626&utm_content=ad2"><img src="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2026/09/claudespeak.png" class="kg-image" alt="" loading="lazy" width="1547" height="663" srcset="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w600/2026/09/claudespeak.png 600w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w1000/2026/09/claudespeak.png 1000w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2026/09/claudespeak.png 1547w" sizes="(min-width: 720px) 720px"></a></figure><p><strong>This Week's Feature:</strong><em>  Say What You Mean, Claude</em></p><p>You can feel AI writing before you can name it. A point "earns its keep." A parameter becomes "a dial worth turning." Each phrase performs instead of telling you anything.</p><p>With the launch of Fable 5.1, Anthropic also released a prompt to train the habit out of Claude. It calls the problem mannered prose: metaphor standing in for plain statement, which makes you work harder so the writer can show off, and drags in meanings nobody chose.</p><p>Drop it into your system prompt or above any writing request, and the model trades the flourish for the literal phrase. Works with any AI too. </p><p><strong>THE FULL PROMPT:</strong></p><figure class="kg-card kg-image-card"><img src="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2026/08/bar1--1--1.png" class="kg-image" alt="" loading="lazy" width="1249" height="15" srcset="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w600/2026/08/bar1--1--1.png 600w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w1000/2026/08/bar1--1--1.png 1000w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2026/08/bar1--1--1.png 1249w" sizes="(min-width: 720px) 720px"></figure><p>Mannered prose substitutes metaphor and flourish for direct statement. Instead of "a parameter worth varying," the mannered writer produces "a dial worth turning." Instead of "this point still matters," they write "this point earns its keep." The phrases exist to display the writer, not to convey the idea, and readers can tell. </p><p>That is why mannered prose irritates: it makes the reader work harder so the writer can perform. It is also imprecise. Metaphors drag in connotations the writer did not choose and cannot control. The fix is to say what you mean. When a literal phrase is available, use it.</p><figure class="kg-card kg-image-card"><img src="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2026/08/bar1--1--2.png" class="kg-image" alt="" loading="lazy" width="1249" height="15" srcset="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w600/2026/08/bar1--1--2.png 600w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w1000/2026/08/bar1--1--2.png 1000w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2026/08/bar1--1--2.png 1249w" sizes="(min-width: 720px) 720px"></figure><p><a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-1?ref=theaimarketers.ai#writing-density"><em>*Other prompting tips and guidance for Fable.1</em></a></p><h2 id="tool-to-try"><strong>Tool to Try</strong></h2><figure class="kg-card kg-image-card"><a href="https://www.caretta.so/?ref=theaimarketers.ai"><img src="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2026/09/caretta.png" class="kg-image" alt="" loading="lazy" width="1326" height="634" srcset="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w600/2026/09/caretta.png 600w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w1000/2026/09/caretta.png 1000w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2026/09/caretta.png 1326w" sizes="(min-width: 720px) 720px"></a></figure><p><strong>Caretta </strong>is a realtime AI copilot for sales calls, backed by Y Combinator and Robinhood Ventures. It listens to the live conversation and feeds the rep grounded answers, objection handlers, and next steps through a small notch on screen... then writes the notes, updates the CRM, and drafts the follow up before you stand up from the desk. </p><p><strong>AI Tool Highlights:</strong></p><p><strong>📋 A Gameplan for Every Call: </strong>Before you join, Caretta pulls your past calls, documents, and CRM into a brief for that specific account... what to lead with, which discovery questions are still open, and what to watch for, like procurement showing up when pricing was last week's open thread.<br><br><strong>🎯 Answers Live in the Notch: </strong>A curveball from a CTO gets a grounded answer while you are still talking... the brief sits in the notch, so nothing is lost the moment you join.<br><br><strong>🌐 Research and Act Without Leaving the Call:</strong> Hit the web, run tailored discovery, and take actions mid conversation... the rep stays in the moment instead of promising to circle back.</p><figure class="kg-card kg-image-card"><a href="https://www.caretta.so/?ref=theaimarketers.ai"><img src="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2026/09/image-16-1.png" class="kg-image" alt="" loading="lazy" width="1458" height="852" srcset="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w600/2026/09/image-16-1.png 600w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w1000/2026/09/image-16-1.png 1000w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2026/09/image-16-1.png 1458w" sizes="(min-width: 720px) 720px"></a></figure><p><strong>✅ The Follow Up, Handled Before You Stand Up: </strong>Notes written, next steps with owners and dates, CRM fields and deal stage updated, insights routed to Slack, the follow up email drafted and the next meeting booked... and the memory carries into your next call with that account.<br><br><strong>📊 Score Calls Against Your Own Playbook:</strong> Write what a good call looks like in your words and Caretta grades every call against it, alongside a built in library for talk ratio, objections, discovery, and next steps... then ask your call data a question in plain English and pin the answer to your dashboard as a chart that keeps updating, per rep, over 7, 30, or 90 days.<br><br><a href="https://www.caretta.so/?ref=theaimarketers.ai"><strong>Try Caretta Here</strong></a></p><h2 id="one-more-need-to-know-news-story"><strong>One More Need-to-Know News Story</strong><a href="https://x.com/XBusiness/status/2049843732141256979?ref=theaimarketers.ai"><br></a></h2><p><br><strong>GPT-6 Astra Has OpenAI's President Saying the AGI Era Is Here</strong><br>Greg Brockman reached for the industry's biggest word on launch day. OpenAI's president told reporters that "it's not unreasonable to feel that we are now in the AGI era," AGI meaning systems that outperform humans at most valuable work. He meant GPT-6 Astra, the model OpenAI says now leads the field on computer use, coding, science, and professional work.</p><p><strong>📋 The Details:</strong>&nbsp;OpenAI calls Astra a major advance for scientific discovery, math, and health. Sam Altman's favorite example came from his own desk though.</p><p>He gave it a chip supply chain to research and it came back pointing out the part of the chain he'd never asked about. He also calls it OpenAI's most aligned model yet, one that respects task boundaries and says what it's doing as it works.</p><p><strong>🎯 Why You Need to Know:</strong>&nbsp;You scope the research job, and a model that spots the question you skipped hands back the blind spots with the answer.</p><p><strong>⚡ Your Move:</strong>&nbsp;Give Astra a research job you think you've already scoped, a competitor teardown works, and see what it raises unprompted.</p><p><a href="https://www.foxbusiness.com/technology/openai-unveils-gpt-6-astra-major-advances-ai-capabilities?ref=theaimarketers.ai"><strong>Full Story</strong></a></p><hr><figure class="kg-card kg-image-card"><a href="https://secures.copycoders.ai/referral/WpSLuEj2/hCp6lBE4VQuwPMeq?utm_source=+aimarketers&utm_medium=newsletter&utm_campaign=lift090626&utm_content=ad2"><img src="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2026/06/image-10.png" class="kg-image" alt="" loading="lazy" width="1536" height="768" srcset="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w600/2026/06/image-10.png 600w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w1000/2026/06/image-10.png 1000w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2026/06/image-10.png 1536w" sizes="(min-width: 720px) 720px"></a></figure><hr><h2 id="mind-fodder"><strong>Mind Fodder</strong></h2><figure class="kg-card kg-image-card"><a href="https://x.com/arimorcos/status/2094468461623955477?ref=theaimarketers.ai"><img src="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2026/09/image-18.png" class="kg-image" alt="" loading="lazy" width="1366" height="1092" srcset="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w600/2026/09/image-18.png 600w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w1000/2026/09/image-18.png 1000w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2026/09/image-18.png 1366w" sizes="(min-width: 720px) 720px"></a></figure><hr><p>Thanks for reading.</p><p>Until next time!</p><p>The AI Marketers<br><br><strong>P.S. Help shape the future of this newsletter – </strong>take a short 2-minute survey so we can deliver even better AI marketing insights, prompts, and tools. <br><br><a href="https://forms.gle/BgBzvVQah8odNYzp8?ref=theaimarketers.ai" rel="noreferrer"><strong>[Take Survey Here]</strong></a><br></p><figure class="kg-card kg-image-card"><a href="https://www.facebook.com/groups/theaimarketers/posts/1469702526915178/"><img src="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2023/06/footer.png" class="kg-image" alt="" loading="lazy" width="2000" height="146" srcset="https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w600/2023/06/footer.png 600w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w1000/2023/06/footer.png 1000w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/size/w1600/2023/06/footer.png 1600w, https://storage.ghost.io/c/40/b2/40b20fac-3092-4d7d-92de-227ddbaff057/content/images/2023/06/footer.png 2000w" sizes="(min-width: 720px) 720px"></a></figure>
+    </div>
+
+    <div class="gh-canvas">
+    <footer class="single-footer">
+
+        <div class="single-footer-left">
+            <div class="navigation navigation-previous">
+                <a class="navigation-link" href="/need-to-know-news-september-4th-2026/" aria-label="Previous post">
+                    <span class="navigation-icon"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <path d="M26.667 14.667v2.667h-16L18 24.667l-1.893 1.893L5.547 16l10.56-10.56L18 7.333l-7.333 7.333h16z"></path>
+</svg></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="single-footer-middle">
+        </div>
+
+        <div class="single-footer-right">
+            <div class="navigation navigation-next">
+                <a class="navigation-link" href="/mondaymemo-09-08-26/" aria-label="Next post">
+                    <span class="navigation-icon"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <path d="M5.333 14.667v2.667h16L14 24.667l1.893 1.893L26.453 16 15.893 5.44 14 7.333l7.333 7.333h-16z"></path>
+</svg></span>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    </div>
+
+</article>
+
+        
+</main>
+    </div>
+
+    <footer class="gh-foot gh-outer">
+        <div class="gh-foot-inner gh-inner">
+            <div class="gh-copyright">
+                AI Marketers © 2026
+            </div>
+            <nav class="gh-foot-menu">
+                <ul class="nav">
+    <li class="nav-sign-up"><a href="#/portal/">Sign up</a></li>
+</ul>
+
+            </nav>
+            <div class="gh-powered-by">
+                <a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    if (document.body.classList.contains('with-full-cover') && (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform))) {
+        document.getElementsByClassName('cover')[0].style.height = window.innerHeight + 'px';
+    }
+</script>
+
+<script src="https://www.theaimarketers.ai/assets/built/main.min.js?v=GR2W7mBNrJTIE5OT"></script>
+
+
+
+</body>
+</html>

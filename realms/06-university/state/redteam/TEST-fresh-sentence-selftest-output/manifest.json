@@ -1,0 +1,54 @@
+{
+  "testOnly": true,
+  "mode": "mock",
+  "qualityJudge": "openai/gpt-4.1-mini",
+  "createdAt": "2026-09-20T16:41:36.995Z",
+  "brief": {
+    "id": "TEST-fresh-sentence-smoke",
+    "topic": "Controlled detector robustness smoke test"
+  },
+  "records": [
+    {
+      "fact": "1949: НАТО е създадена като отбранителен съюз.",
+      "candidate": "През 1949 г. НАТО е създадена като отбранителен съюз.",
+      "sentence": "През 1949 г. НАТО е създадена като отбранителен съюз.",
+      "accepted": true,
+      "gate": "mock judge: mechanical gate only",
+      "attempts": [
+        {
+          "candidate": "През 1949 г. НАТО е създадена като отбранителен съюз.",
+          "accepted": true,
+          "gate": "mock judge: mechanical gate only"
+        }
+      ]
+    },
+    {
+      "fact": "През 1962 г. Кубинската ракетна криза доближава света до ядрена война.",
+      "candidate": "През 1962 г. Кубинската ракетна криза доближава света до ядрена война.",
+      "sentence": "През 1962 г. Кубинската ракетна криза доближава света до ядрена война.",
+      "accepted": true,
+      "gate": "mock judge: mechanical gate only",
+      "attempts": [
+        {
+          "candidate": "През 1962 г. Кубинската ракетна криза доближава света до ядрена война.",
+          "accepted": true,
+          "gate": "mock judge: mechanical gate only"
+        }
+      ]
+    },
+    {
+      "fact": "През 1991 г. СССР се разпада и Студената война приключва.",
+      "candidate": "Тук се вижда нещо конкретно: През 1991 г. СССР се разпада и Студената война приключва.",
+      "sentence": "Тук се вижда нещо конкретно: През 1991 г. СССР се разпада и Студената война приключва.",
+      "accepted": true,
+      "gate": "mock judge: mechanical gate only",
+      "attempts": [
+        {
+          "candidate": "Тук се вижда нещо конкретно: През 1991 г. СССР се разпада и Студената война приключва.",
+          "accepted": true,
+          "gate": "mock judge: mechanical gate only"
+        }
+      ]
+    }
+  ]
+}

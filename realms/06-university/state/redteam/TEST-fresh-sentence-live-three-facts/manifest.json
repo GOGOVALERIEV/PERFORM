@@ -1,0 +1,33 @@
+{
+  "testOnly": true,
+  "mode": "live",
+  "qualityJudge": "enabled",
+  "createdAt": "2026-09-20T14:08:01.666Z",
+  "brief": {
+    "id": "TEST-fresh-sentence-smoke",
+    "topic": "Controlled detector robustness smoke test"
+  },
+  "records": [
+    {
+      "fact": "1949: НАТО е създадена като отбранителен съюз.",
+      "candidate": "НАТО е създадена в 1949 година като отбранителен съюз.",
+      "sentence": null,
+      "accepted": false,
+      "gate": "FAIL"
+    },
+    {
+      "fact": "През 1962 г. Кубинската ракетна криза доближава света до ядрена война.",
+      "candidate": "През 1962 г. Кубинската ракетна криза доближава света до ядрена война.",
+      "sentence": null,
+      "accepted": false,
+      "gate": "FAIL"
+    },
+    {
+      "fact": "През 1991 г. СССР се разпада и Студената война приключва.",
+      "candidate": "През 1991 г. СССР се разпада и Студената война приключва.",
+      "sentence": null,
+      "accepted": false,
+      "gate": "FAIL"
+    }
+  ]
+}

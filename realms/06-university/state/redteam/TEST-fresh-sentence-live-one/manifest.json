@@ -1,0 +1,17 @@
+{
+  "testOnly": true,
+  "mode": "live",
+  "createdAt": "2026-09-20T13:53:47.086Z",
+  "brief": {
+    "id": "TEST-fresh-sentence-smoke",
+    "topic": "Controlled detector robustness smoke test"
+  },
+  "records": [
+    {
+      "fact": "1949: НАТО е създадена като отбранителен съюз.",
+      "sentence": "В 1949 година НАТО е създадена като отбранителен съюз.",
+      "accepted": true,
+      "gate": "PASS"
+    }
+  ]
+}

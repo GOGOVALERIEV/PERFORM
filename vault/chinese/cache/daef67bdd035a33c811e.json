@@ -1,0 +1,17 @@
+{
+  "fetchedAt": 1789857723450,
+  "finalUrl": "https://www.emag.bg/vynshen-ssd-intenso-external-ssd-1tb-premium-blue-ext-1tb-blu-3823465/pd/DPJ6ST3BM/",
+  "httpStatus": 200,
+  "title": "Външен SSD Intenso External SSD 1TB Premium blue EXT-1TB-BLU - eMAG.bg",
+  "price": {
+    "amount": 161,
+    "currency": "EUR"
+  },
+  "signals": {
+    "warranty": true,
+    "returnPolicy": true,
+    "official": false,
+    "storageRisk": true
+  },
+  "cached": false
+}

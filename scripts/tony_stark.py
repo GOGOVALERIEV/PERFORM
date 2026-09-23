@@ -95,10 +95,19 @@ def log_event(step, message):
 
 
 def read_obsidian_active_queue():
-    """Read Daily System.md for Active Queue"""
+    """Read the Active Queue: open tasks from ToDo/All.md (the real queue).
+    Legacy fallback: Goals/Daily System.md '## Active Queue' section."""
+    # Primary: ToDo/All.md — open (unchecked) tasks
+    if TODO_ALL.exists():
+        with open(TODO_ALL, "r", encoding="utf-8") as f:
+            open_tasks = [ln.rstrip() for ln in f if ln.strip().startswith("- [ ]")]
+        if open_tasks:
+            header = "## Active Queue (open tasks from ToDo/All.md)"
+            return header + "\n" + "\n".join(open_tasks)
+    # Legacy fallback: Daily System.md
     path = OB_DIR / "Daily System.md"
     if not path.exists():
-        return "Daily System.md not found."
+        return "No active queue found (All.md empty and Daily System.md missing)."
     with open(path, "r", encoding="utf-8") as f:
         content = f.read()
     # Find Active Queue section
@@ -398,25 +407,42 @@ def seed_clockify_from_blocks(blocks):
         except urllib.error.HTTPError as e:
             return {"_error": e.code, "_msg": e.read().decode()}
 
-    # Wipe today's entries
+    # Wipe recent entries so ONLY today's tasks remain.
+    # 72h window + pagination — the old 20h single-page wipe left stale entries behind.
     uid = clk("/user")
     if not uid or "id" not in uid:
         return False, f"Could not get Clockify user: {uid}"
     uid = uid["id"]
     now = datetime.datetime.now(datetime.timezone.utc)
-    start = (now - datetime.timedelta(hours=20)).strftime("%Y-%m-%dT%H:%M:%SZ")
-    entries = clk(f"/workspaces/{workspace}/user/{uid}/time-entries?start={start}&page-size=200")
+    start = (now - datetime.timedelta(hours=72)).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+    # Stop any running timer first (Clockify refuses to delete a running entry)
+    running = clk(f"/workspaces/{workspace}/user/{uid}/time-entries/in-progress")
+    if isinstance(running, dict) and running.get("id"):
+        clk(f"/workspaces/{workspace}/time-entries/{running['id']}", "PATCH",
+            {"end": now.strftime("%Y-%m-%dT%H:%M:%SZ")})
+
+    entries, page = [], 1
+    while True:
+        batch = clk(f"/workspaces/{workspace}/user/{uid}/time-entries?start={start}&page={page}&page-size=200")
+        if not batch:
+            break
+        entries.extend(batch)
+        if len(batch) < 200:
+            break
+        page += 1
     wiped = 0
-    for e in (entries or []):
+    for e in entries:
         r = clk(f"/workspaces/{workspace}/time-entries/{e['id']}", "DELETE")
-        wiped += 1
+        if not (isinstance(r, dict) and "_error" in r):
+            wiped += 1
 
     # Seed new entries with real durations
     today = datetime.date.today()
     created = 0
     for i, b in enumerate(blocks):
-        if b.get("type") == "personal":
-            continue
+        if b.get("type") in ("personal", "break"):
+            continue  # Clockify = work only. Breaks live on the Calendar.
         sh, sm = map(int, b["start"].split(":"))
         eh, em = map(int, b["end"].split(":"))
         start_dt = datetime.datetime(today.year, today.month, today.day, sh, sm, tzinfo=datetime.timezone.utc)
@@ -431,7 +457,7 @@ def seed_clockify_from_blocks(blocks):
         res = clk(f"/workspaces/{workspace}/time-entries", "POST", body)
         if res and "id" in res:
             created += 1
-    return True, f"Wiped {wiped} entries, created {created} entries with real durations."
+    return True, f"Wiped {wiped} entries (last 72h), created {created} entries with real durations."
 
 
 def delete_calendar_events_in_window(service, window_start_hours=-6, window_end_hours=18):
@@ -710,6 +736,75 @@ def _min_to_str(mins):
     return f"{mins // 60:02d}:{mins % 60:02d}"
 
 
+def _infer_ampm(name, h):
+    """Guess am/pm for a bare break time from context.
+    George wakes midday and sleeps after midnight, so bare hours 1-6 are evening,
+    and meal words (lunch/dinner/supper) are PM. 'dinner 8:30' -> 20:30."""
+    nl = (name or "").lower()
+    if 1 <= h <= 6:
+        return "pm"
+    if h < 12 and any(w in nl for w in ("lunch", "dinner", "supper")):
+        return "pm"
+    return ""
+
+
+def _parse_breaks(break_str):
+    """Parse free-text breaks into blocks, comma-separated.
+    Handles: '15:00-15:30 lunch', '15:00 lunch', '3pm-4pm gym', 'dinner 8:30' (name first)."""
+    breaks = []
+    for seg in re.split(r'[,;]+', break_str or ""):
+        seg = seg.strip()
+        if not seg:
+            continue
+
+        def _mk(sh, smn, eh, emn, name):
+            bs = _time_to_min(sh, smn)
+            be = _time_to_min(eh, emn)
+            if be <= bs:
+                be += 24 * 60
+            return {"start_m": bs, "end_m": be, "name": name.strip() or "Break", "type": "break"}
+
+        def _name_around(m):
+            return re.sub(r'\b(am|pm)\b', '', (seg[:m.start()] + " " + seg[m.end():]), flags=re.IGNORECASE).strip()
+
+        # colon range "15:00-15:30 lunch"
+        m = re.search(r'(\d{1,2}):(\d{2})\s*[-–—]\s*(\d{1,2}):(\d{2})', seg)
+        if m:
+            name = _name_around(m)
+            sh, eh = int(m.group(1)), int(m.group(3))
+            if _infer_ampm(name, sh) == "pm":
+                if sh < 12: sh += 12
+                if eh < 12: eh += 12
+            breaks.append(_mk(sh, int(m.group(2)), eh, int(m.group(4)), name))
+            continue
+        # am/pm range "3pm-4pm gym"
+        m = re.search(r'(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*[-–—to]+\s*(\d{1,2})(?::(\d{2}))?\s*(am|pm)', seg, flags=re.IGNORECASE)
+        if m:
+            name = _name_around(m)
+            breaks.append(_mk(_parse_ampm(m.group(1), m.group(3)), int(m.group(2) or 0),
+                              _parse_ampm(m.group(4), m.group(6)), int(m.group(5) or 0), name))
+            continue
+        # single time with colon: "15:00 lunch" or "dinner 8:30" (name first or last)
+        m = re.search(r'(\d{1,2}):(\d{2})', seg)
+        if m:
+            name = _name_around(m)
+            sh = int(m.group(1))
+            if _infer_ampm(name, sh) == "pm" and sh < 12:
+                sh += 12
+            smn = int(m.group(2))
+            breaks.append(_mk(sh, smn, sh, smn + 30, name))
+            continue
+        # single am/pm time "3pm lunch"
+        m = re.search(r'(\d{1,2})(?::(\d{2}))?\s*(am|pm)', seg, flags=re.IGNORECASE)
+        if m:
+            name = _name_around(m)
+            sh = _parse_ampm(m.group(1), m.group(3))
+            smn = int(m.group(2) or 0)
+            breaks.append(_mk(sh, smn, sh, smn + 30, name))
+            continue
+    return breaks
+
+
 def step_5_time_calculator(calculation, day_context=None):
     print("\n" + "="*60)
     print("STEP 5: TIME CALCULATOR")
@@ -758,20 +853,95 @@ def step_5_time_calculator(calculation, day_context=None):
                     times.append((h, 0))
         return times
 
-    times = _extract_times(day_start)
-    if len(times) >= 2:
-        (start_h, start_m), (end_h, end_m) = times[0], times[-1]
-    elif len(times) == 1:
-        start_h, start_m = times[0]
-        end_h, end_m = 2, 0
+    # Keyword-aware wake/sleep extraction. _extract_times above is the generic fallback.
+    # Handles typos ("sleap"), word order ("woke up at 1", "12:30 wake"), ranges ("2 3").
+    generic_times = _extract_times(day_start)
+    WAKE_KW = r'(?:woken?|wake|waking|got\s+up|get\s+up|out\s+of\s+bed|up\s+at)'
+    SLEEP_KW = r'(?:sleap|sleep|asleep|go\s+to\s+bed|bed\s*time|crash|pass\s*out|knock\s*out)'
+
+    low_day = day_start.lower()
+
+    # All raw times with positions, so keywords can claim the time that belongs to them
+    raw_times = []
+    for m in re.finditer(r'(\d{1,2})(?:\s*[:;.]\s*(\d{2}))?\s*(am|pm)?', low_day, flags=re.IGNORECASE):
+        h = int(m.group(1))
+        if h > 24:
+            continue
+        raw_times.append({
+            "pos": m.start(), "end": m.end(), "h": h, "mn": int(m.group(2) or 0),
+            "ap": (m.group(3) or "").lower(), "claimed": None,
+        })
+
+    kw_sleep = re.search(SLEEP_KW, low_day)
+    kw_wake = re.search(WAKE_KW, low_day)
+
+    def _claim(kw_match, side, max_gap):
+        """Claim the nearest unclaimed time on the given side of a keyword.
+        after = first time within max_gap chars after keyword; before = closest time before it."""
+        if not kw_match:
+            return None
+        cands = [t for t in raw_times if t["claimed"] is None]
+        if side == "after":
+            cands = [t for t in cands if kw_match.end() <= t["pos"] <= kw_match.end() + max_gap]
+            cands.sort(key=lambda t: t["pos"])
+        else:
+            cands = [t for t in cands if kw_match.start() - max_gap <= t["end"] <= kw_match.start()]
+            cands.sort(key=lambda t: t["pos"], reverse=True)
+        return cands[0] if cands else None
+
+    # SLEEP claims first: time before it ("02:00 sleep") or first after ("sleap in 2 3").
+    # A range partner ("2 3") gets claimed too, so WAKE never steals it.
+    st = _claim(kw_sleep, "before", 8) or _claim(kw_sleep, "after", 15)
+    if st:
+        st["claimed"] = "sleep"
+        partner = next((t for t in raw_times
+                        if t["claimed"] is None and 0 < t["pos"] - st["end"] <= 4), None)
+        if partner:
+            partner["claimed"] = "sleep"
+    # WAKE: prefer time before it ("12:30 wake"), else time after ("woke up at 1")
+    wt = _claim(kw_wake, "before", 8) or _claim(kw_wake, "after", 15)
+    if wt:
+        wt["claimed"] = "wake"
+
+    def _apply_ampm(h, mn, ap, kind):
+        """Explicit am/pm wins. Bare hours inferred from George's profile:
+        wake 1-7 = afternoon (nobody here wakes at 1-7 AM); sleep 7-11 = PM, 12 = midnight, 1-6 = AM."""
+        if ap == "pm" and h != 12:
+            h += 12
+        elif ap == "am" and h == 12:
+            h = 0
+        elif not ap:
+            if kind == "wake" and 1 <= h <= 7:
+                h += 12
+            elif kind == "sleep":
+                if 7 <= h <= 11:
+                    h += 12
+                elif h == 12:
+                    h = 0
+        return h, mn
+
+    if wt and st:
+        start_h, start_m = _apply_ampm(wt["h"], wt["mn"], wt["ap"], "wake")
+        end_h, end_m = _apply_ampm(st["h"], st["mn"], st["ap"], "sleep")
     else:
-        start_h, start_m = 12, 0
-        end_h, end_m = 2, 0
+        times = generic_times
+        if len(times) >= 2:
+            (start_h, start_m), (end_h, end_m) = times[0], times[-1]
+        elif len(times) == 1:
+            start_h, start_m = times[0]
+            end_h, end_m = 2, 0
+        else:
+            start_h, start_m = 12, 0
+            end_h, end_m = 2, 0
 
     wake_m = _time_to_min(start_h, start_m)
     sleep_m = _time_to_min(end_h, end_m)
     if sleep_m <= wake_m:
         sleep_m += 24 * 60
+
+    # The machine must know the real current time — schedule from NOW, never guess
+    now_dt = datetime.datetime.now()
+    now_m = now_dt.hour * 60 + now_dt.minute
 
     # Parse walls (colon and am/pm tolerant)
     walls = []
@@ -794,32 +964,9 @@ def step_5_time_calculator(calculation, day_context=None):
         if we <= ws:
             we += 24 * 60
         walls.append({"start_m": ws, "end_m": we, "name": "FIXED WALL", "type": "personal"})
-    # Parse breaks (same am/pm / colon tolerance as walls, but keep name)
+    # Parse breaks — handles '15:00-15:30 lunch', '15:00 lunch', '3pm-4pm gym', 'dinner 8:30'
     break_str = day_context.get("breaks", {}).get("answer", "") if day_context else ""
-    breaks = []
-    # Range style: "15:00-15:30 lunch"
-    for w in re.findall(r'(\d{1,2}):(\d{2})\s*[-–—]\s*(\d{1,2}):(\d{2})\s*(.+)', break_str):
-        bs = _time_to_min(int(w[0]), int(w[1]))
-        be = _time_to_min(int(w[2]), int(w[3]))
-        if be <= bs: be += 24 * 60
-        breaks.append({"start_m": bs, "end_m": be, "name": w[4].strip(), "type": "break"})
-    # Single time: "15:00 lunch" -> default 30 min
-    for w in re.findall(r'(\d{1,2}):(\d{2})\s+(.+)', break_str):
-        bs = _time_to_min(int(w[0]), int(w[1]))
-        be = bs + 30
-        breaks.append({"start_m": bs, "end_m": be, "name": w[2].strip(), "type": "break"})
-    # am/pm range: "3pm-4pm gym"
-    for w in re.findall(r'(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*[-–—to]+\s*(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*(.+)', break_str, flags=re.IGNORECASE):
-        sh = _parse_ampm(w[0], w[2]); sm = int(w[1]) if w[1] else 0
-        eh = _parse_ampm(w[3], w[5]); em = int(w[4]) if w[4] else 0
-        bs = _time_to_min(sh, sm); be = _time_to_min(eh, em)
-        if be <= bs: be += 24 * 60
-        breaks.append({"start_m": bs, "end_m": be, "name": w[6].strip(), "type": "break"})
-    # Single am/pm: "3pm lunch" -> default 30 min
-    for w in re.findall(r'(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s+(.+)', break_str, flags=re.IGNORECASE):
-        sh = _parse_ampm(w[0], w[2]); sm = int(w[1]) if w[1] else 0
-        bs = _time_to_min(sh, sm); be = bs + 30
-        breaks.append({"start_m": bs, "end_m": be, "name": w[3].strip(), "type": "break"})
+    breaks = _parse_breaks(break_str)
 
     # Merge walls + breaks into fixed_blocks
     fixed_blocks = walls + breaks
@@ -832,6 +979,9 @@ def step_5_time_calculator(calculation, day_context=None):
     # Clip anything that starts after sleep
     fixed_blocks = [fb for fb in fixed_blocks if fb["start_m"] < sleep_m]
 
+    # Blocks that already happened are history — drop them (schedule starts from NOW)
+    fixed_blocks = [fb for fb in fixed_blocks if fb["end_m"] > now_m]
+
     # Parse tasks from today's_tasks answer
     tasks = parse_today_tasks(today_tasks_str) if today_tasks_str.strip() else []
     if not tasks:
@@ -843,11 +993,15 @@ def step_5_time_calculator(calculation, day_context=None):
     fixed_total = sum(b["end_m"] - b["start_m"] for b in fixed_blocks)
     free_minutes = total_day - fixed_total
 
-    # Assign durations to tasks without them
+    # Assign durations to tasks without them — capped by the deep work capacity
+    # George declared. A day with '5 hours capacity' must never get a 13-hour block.
+    m_dc = re.search(r'(\d+)', str(deep_capacity))
+    deep_cap_min = int(m_dc.group(1)) * 60 if m_dc else 180
     explicit = sum(t["duration"] or 0 for t in tasks)
     undefined = [t for t in tasks if not t["duration"]]
     if undefined:
         remaining = max(0, free_minutes - 60 - explicit)  # reserve 60 min buffer/wind-down
+        remaining = min(remaining, deep_cap_min)
         per_undef = remaining // len(undefined) if remaining > 0 else 30
         for t in undefined:
             t["duration"] = max(15, per_undef)
@@ -857,27 +1011,43 @@ def step_5_time_calculator(calculation, day_context=None):
             for t in tasks:
                 t["duration"] = max(15, int(t["duration"] * scale))
 
+    # Schedule from NOW, not from wake time — blocks in the past are useless.
+    sched_start = max(wake_m, now_m)
+    if sched_start >= sleep_m:
+        sched_start = wake_m  # edge case: running past sleep — fall back to the day window
+
     # Schedule blocks: interleave tasks, walls, personal blocks
     blocks = []
-    cursor = wake_m
+    cursor = sched_start
 
-    # Wake block (30 min)
-    blocks.append({
-        "name": "Wake up + eat",
-        "start_m": cursor, "end_m": min(cursor + 30, sleep_m),
-        "type": "personal"
-    })
-    cursor = blocks[-1]["end_m"]
+    # Wake block (30 min) — only if it hasn't already happened
+    if now_m < wake_m + 30:
+        blocks.append({
+            "name": "Wake up + eat",
+            "start_m": cursor, "end_m": min(cursor + 30, sleep_m),
+            "type": "personal"
+        })
+        cursor = blocks[-1]["end_m"]
 
-    # Merge fixed blocks (walls + breaks) and tasks in chronological order
+    # Merge fixed blocks (walls + breaks) and tasks in chronological order.
+    # A task longer than the gap gets SPLIT around the break instead of truncated.
     remaining_tasks = list(tasks)
+    part_no = {}
     for fb in fixed_blocks:
-        # Fill gap before fixed block
         while cursor < fb["start_m"] and remaining_tasks:
-            t = remaining_tasks.pop(0)
-            end_t = min(cursor + t["duration"], fb["start_m"])
+            t = remaining_tasks[0]
+            space = fb["start_m"] - cursor
+            if t["duration"] <= space:
+                remaining_tasks.pop(0)
+                end_t = cursor + t["duration"]
+                label = t["name"]
+            else:
+                t["duration"] -= space
+                end_t = fb["start_m"]
+                part_no[t["name"]] = part_no.get(t["name"], 0) + 1
+                label = f"{t['name']} (part {part_no[t['name']]})"
             blocks.append({
-                "name": t["name"],
+                "name": label,
                 "start_m": cursor, "end_m": end_t,
                 "type": "deep_work"
             })
@@ -927,7 +1097,7 @@ def step_5_time_calculator(calculation, day_context=None):
     }
     save_state(f"time-blocks-{TODAY}.json", time_state)
 
-    print(f"\n⏰ Total day window: {day_start} | Free time: {free_minutes} min")
+    print(f"\n⏰ Day window: {day_start} | Scheduling from NOW: {_min_to_str(now_m)} | Free time: {free_minutes} min")
     print(f"📅 Scheduled blocks:")
     for b in blocks:
         print(f"   {b['start']} - {b['end']}: {b['name']} ({b['duration']}min) [{b['type']}]")
@@ -1173,15 +1343,20 @@ def open_tools():
     # 3. Open Obsidian vault
     obsidian_vault = Path.home() / "Desktop" / "personal-ob"
     try:
-        # Try opening Obsidian app with the vault
-        obsidian_exe = Path.home() / "AppData" / "Local" / "Obsidian" / "Obsidian.exe"
-        if obsidian_exe.exists():
+        # Try known Obsidian.exe locations (user-level install first)
+        obsidian_candidates = [
+            Path.home() / "Obsidian" / "Obsidian.exe",
+            Path.home() / "AppData" / "Local" / "Obsidian" / "Obsidian.exe",
+            Path.home() / "AppData" / "Local" / "Programs" / "Obsidian" / "Obsidian.exe",
+        ]
+        obsidian_exe = next((p for p in obsidian_candidates if p.exists()), None)
+        if obsidian_exe:
             subprocess.Popen([str(obsidian_exe), f"--vault={obsidian_vault}"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-            print("   ✅ Opened Obsidian vault")
+            print(f"   ✅ Opened Obsidian app (vault: {obsidian_vault.name}) via {obsidian_exe}")
         else:
-            # Fallback: open the folder
+            # Last resort: open the vault folder (not ideal — flag it loudly)
             os.startfile(str(obsidian_vault))
-            print("   ✅ Opened Obsidian vault folder")
+            print("   ⚠️ Obsidian.exe NOT FOUND — opened vault FOLDER instead. Fix install path!")
     except Exception as e:
         print(f"   ⚠️ Could not open Obsidian: {e}")
         print(f"   Manual: {obsidian_vault}")
@@ -1312,6 +1487,17 @@ def main():
             step_num = int(sys.argv[sys.argv.index("--step") + 1])
         except (IndexError, ValueError):
             step_num = 0
+    elif "--fresh" in sys.argv:
+        step_num = 0
+        # Wipe today's cached state so everything re-asks
+        for f in [f"morning-scan-{TODAY}.json", f"machine-check-{TODAY}.json",
+                  f"calculation-{TODAY}.json", f"day-list-{TODAY}.json",
+                  f"day-context-{TODAY}.json", f"time-blocks-{TODAY}.json"]:
+            p = STATE_DIR / f
+            if p.exists():
+                p.unlink()
+                print(f"   🗑️  Cleared cached state: {f}")
+        step_num = 0
     else:
         step_num = 0
 

@@ -1,0 +1,34 @@
+{
+  "collectedAt": "2026-09-19T23:51:27.287Z",
+  "query": "външен SSD",
+  "source": "temu",
+  "listings": [
+    {
+      "source": "temu",
+      "title": "Външен SSD 1TB (преносим)",
+      "url": "https://example.invalid/olx-nearby-ssd",
+      "price": {
+        "amount": 15,
+        "currency": "EUR"
+      },
+      "suspiciousStorage": false,
+      "notes": [
+        "Browser-read marketplace card: verify seller, shipping, final tax, and return terms."
+      ]
+    },
+    {
+      "source": "temu",
+      "title": "ХАРД ДИСК 2TB HardDisk Extreme Pro Portable M.2",
+      "url": "https://example.invalid/olx-risky-storage",
+      "price": {
+        "amount": 29,
+        "currency": "EUR"
+      },
+      "suspiciousStorage": true,
+      "notes": [
+        "Browser-read marketplace card: verify seller, shipping, final tax, and return terms.",
+        "High risk: storage claim/model wording needs independent verification."
+      ]
+    }
+  ]
+}

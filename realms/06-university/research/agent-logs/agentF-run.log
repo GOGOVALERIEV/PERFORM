@@ -1,0 +1,18 @@
+Mission 3 complete. Both deliverables written and verified.
+
+## TL;DR — what I found
+
+**The model George heard about:** **GPT-5.6 Sol "Ultrafast"** — the **Cerebras × OpenAI** announcement (Aug 13, 2026, ~713 HN points, the hottest AI story right now). Cerebras' wafer-scale CS-4 chips serve OpenAI's frontier model at **up to 750 tokens/sec** — officially 11x faster than Claude (Fable 5), 5x than Opus 4.8 Fast, HLE 2,500 questions in 11h11m vs 78h27m.
+
+**Where "200x" comes from:** not Cerebras' own copy — it's the HN community math on that story (silicon POC at 14,000 tok/s, "etch a 27B model into an ASIC" → "subagents 200x faster/cheaper"). I found the exact phrasing verbatim in the top comment thread.
+
+**The practical part — can we use it?**
+- **Cerebras/Ultrafast: NO.** Zero presence on OpenRouter (checked all 446 models); it's OpenAI-API invite-gated with no published price.
+- **But I live-tested the real "cheap-fast" class with our own key** ($74.8 lifetime, ~$39–44 left):
+  - `ling-3.0-flash` — **346 tok/s at ~$0.0003 per full Bulgarian draft** (~159x cheaper per output token than GPT-5.6 Sol). Wrote natural, non-templated academic Bulgarian (sample quoted in the report).
+  - DeepSeek V4 Flash 84–104 tok/s, Qwen3.7-flash 67–80 tok/s; GLM-5.3-FlashX was rate-limited (429) — flagged for retry.
+- Cost per ~500-word paper: **Ling ~$0.0006, DeepSeek ~$0.0015, Qwen ~$0.0012**. Full benchmark runs hundreds of times for under a dollar.
+
+**Verdict (in the report):** don't chase the Cerebras tier — unreachable and it's a speed product, not a text economy. Keep the flash class as workhorse (batch2 already uses it), and add `openai/gpt-5.6-sol` as a one-shot **frontier control** (~$1.40/batch) to answer the genuinely new question: does frontier-class text score differently on ZeroGPT/GPTZero than the cheap class?
+
+Deliverables: `agentF-new-model.md` (report), `agentF-progress.md` (trail, ends in DONE), plus evidence files `agentF-live-test.py`, `agentF-live-results.json`, `tmp_or.json`.

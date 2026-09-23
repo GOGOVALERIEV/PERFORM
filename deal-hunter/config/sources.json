@@ -1,0 +1,115 @@
+{
+  "country": "BG",
+  "sources": [
+    {
+      "id": "emag",
+      "domain": "emag.bg",
+      "label": "eMAG Bulgaria",
+      "kind": "retailer",
+      "trust": 88,
+      "availability": "Courier delivery; pickup must be confirmed on the product page.",
+      "searchUrl": "https://www.emag.bg/search/{q}",
+      "parser": "emag",
+      "notes": "Check the actual marketplace seller, delivery fee, and warranty on the product page."
+    },
+    {
+      "id": "technopolis",
+      "domain": "technopolis.bg",
+      "label": "Technopolis",
+      "kind": "retailer",
+      "trust": 90,
+      "availability": "Blagoevgrad branch: check this exact item for pickup today.",
+      "nearby": true,
+      "searchUrl": "https://www.technopolis.bg/bg/search?query={q}",
+      "parser": "technopolis",
+      "notes": "Local retailer; verify stock and warranty period."
+    },
+    {
+      "id": "technomarket",
+      "domain": "technomarket.bg",
+      "label": "Technomarket",
+      "kind": "retailer",
+      "trust": 88,
+      "notes": "Local retailer; verify stock and warranty period."
+    },
+    {
+      "id": "office1",
+      "domain": "office1.bg",
+      "label": "Office 1",
+      "kind": "retailer",
+      "trust": 82,
+      "availability": "Check the exact item's delivery or Blagoevgrad pickup availability on its product page.",
+      "searchUrl": "https://office1.bg/search?q={q}",
+      "parser": "office1",
+      "notes": "Check the exact seller, delivery charge, and warranty terms."
+    },
+    {
+      "id": "ardes",
+      "domain": "ardes.bg",
+      "label": "Ardes",
+      "kind": "retailer",
+      "trust": 85,
+      "availability": "Online delivery; confirm any pickup point and stock on the product page.",
+      "searchUrl": "https://ardes.bg/products?q={q}",
+      "parser": "ardes",
+      "notes": "Check stock, warranty, and delivery conditions for the exact model."
+    },
+    {
+      "id": "ozone",
+      "domain": "ozone.bg",
+      "label": "Ozone",
+      "kind": "retailer",
+      "trust": 86,
+      "notes": "Check seller and exact return/warranty terms."
+    },
+    {
+      "id": "amazon_de",
+      "domain": "amazon.de",
+      "label": "Amazon Germany",
+      "kind": "marketplace",
+      "trust": 82,
+      "notes": "Prefer items sold by Amazon or the brand; confirm delivery to Bulgaria and final VAT."
+    },
+    {
+      "id": "aliexpress",
+      "domain": "aliexpress.com",
+      "label": "AliExpress",
+      "kind": "marketplace",
+      "trust": 58,
+      "availability": "International delivery; confirm final shipping, VAT, and delivery date at checkout.",
+      "searchUrl": "https://www.aliexpress.com/w/wholesale-{q}.html",
+      "parser": "aliexpress",
+      "notes": "Prefer official stores, 4.7+ seller rating, 100+ orders, and Buyer Protection. Avoid fake capacity drives."
+    },
+    {
+      "id": "olx",
+      "domain": "olx.bg",
+      "label": "OLX private listings",
+      "kind": "private",
+      "trust": 38,
+      "browserOnly": true,
+      "availability": "Private seller; prioritize Blagoevgrad/nearby pickup and inspect before paying.",
+      "notes": "Never prepay a private seller. For electronics, inspect in person or use courier inspection; verify the exact model and test it."
+    },
+    {
+      "id": "temu",
+      "domain": "temu.com",
+      "label": "Temu",
+      "kind": "marketplace",
+      "trust": 48,
+      "browserOnly": true,
+      "availability": "Browser-collected offers only; confirm final shipping, VAT, and returns at checkout.",
+      "notes": "Use only for low-risk accessories. Do not buy storage where capacity/authenticity matters without independent proof."
+    },
+    {
+      "id": "alibaba",
+      "domain": "alibaba.com",
+      "label": "Alibaba",
+      "kind": "marketplace",
+      "trust": 45,
+      "browserOnly": true,
+      "availability": "Browser-collected offers only; verify MOQ, shipping, and Trade Assurance before buying.",
+      "notes": "Mostly wholesale. For a personal purchase, check MOQ, shipping, Trade Assurance, and whether the listing is actually retail."
+    }
+  ]
+}

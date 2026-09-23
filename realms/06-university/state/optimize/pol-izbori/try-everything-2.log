@@ -1,0 +1,144 @@
+=== NOISE: V8 scanned 3x (referee variance) ===
+  scan 1: 38.0%
+  scan 2: 70.0%
+  scan 3: 70.0%
+=== V12: word-order inversion ===
+  V12: 72.0%
+=== V13: vocabulary surprise (rare/archaic words) ===
+    call fail (qwen3.7-flash): HTTPError
+    call fail (qwen3.7-flash): IncompleteRead
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+  V13: None%
+=== V14: mixed register (formal/casual alternating) ===
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+  V14: None%
+=== V15: punctuation-heavy (dashes, semicolons) ===
+  V15: None%
+=== V16: quote-rich ===
+    call fail (deepseek-v4-flash-0731): URLError
+=== V17: fragment chains ===
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+  V17: None%
+=== V18: temp 1.4 regeneration of all sentences ===
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (mistral-small-3.2-24b-instruct): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (mistral-small-3.2-24b-instruct): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (mistral-small-3.2-24b-instruct): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (mistral-small-3.2-24b-instruct): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (mistral-small-3.2-24b-instruct): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (mistral-small-3.2-24b-instruct): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (mistral-small-3.2-24b-instruct): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (mistral-small-3.2-24b-instruct): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+  V18: None%
+=== V19: inversion + vocab surprise combined ===
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+    call fail (qwen3.7-flash): URLError
+    call fail (deepseek-v4-flash-0731): URLError
+  V19: None%
+
+================ FULL RESULTS ================
+referee noise on V8 (3 scans): [38.0, 70.0, 70.0] -> range 32.0
+  v12_inversion: 72.0%
+  v13_vocab: None%
+  v14_mixed: None%
+  v15_punct: None%
+  v16_quotes: n/a%
+  v17_fragments: None%
+  v18_hot: None%
+  v19_combo: None%
+saved: C:\Users\User\Desktop\PERFORM\realms\06-university\state\optimize\pol-izbori\try-everything-results.json

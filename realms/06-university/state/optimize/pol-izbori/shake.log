@@ -1,0 +1,24 @@
+base: 35 sentences, 634 words
+
+=== STAGE A: micro-rewrites ===
+  [1/35] Обявявайки стратегията на сдържане през 1947 година, доктрин...
+  [6/35] Планът Маршал, внедрен през 1948 г., материалнaизира икономи...
+  [11/35] Октомври 1962 година, когато кубинската ракетна криза изправ...
+  [16/35] Облекчението, което настъпва през десетилетието на 70-те год...
+  [21/35] Съветският комунизъм беше на ръба на вътрешен колапс, когата...
+  [26/35] Берлинската стена падна под натиска на демонстрантите през Н...
+  [31/35] Краят на Студената война настъпи не с подписан мирен договор...
+
+=== STAGE B: code assembly ===
+  assembled: 7 paragraphs
+
+=== STAGE C: inversion ===
+
+=== STAGE D: attributions ===
+
+=== STAGE E: vocab surprise ===
+
+=== STAGE F: punctuation jitter ===
+
+FINAL: 889 words
+all stages saved in C:\Users\User\Desktop\PERFORM\realms\06-university\state\optimize\shake

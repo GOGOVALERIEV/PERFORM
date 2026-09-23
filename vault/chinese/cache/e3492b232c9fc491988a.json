@@ -1,0 +1,17 @@
+{
+  "fetchedAt": 1789857724204,
+  "finalUrl": "https://www.emag.bg/vynshen-ssd-transcend-1tb-external-ssd-esd260c-usb-3-1-gen-2-type-c-ts1tesd260c/pd/D2L6D6MBM/",
+  "httpStatus": 200,
+  "title": "Външен SSD Transcend 1TB, External SSD, ESD260C, USB 3.1 Gen 2 Type-C TS1TESD260C - eMAG.bg",
+  "price": {
+    "amount": 261.22,
+    "currency": "EUR"
+  },
+  "signals": {
+    "warranty": true,
+    "returnPolicy": true,
+    "official": false,
+    "storageRisk": true
+  },
+  "cached": false
+}

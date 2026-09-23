@@ -1,0 +1,17 @@
+Mission complete. Both deliverables written, nothing else touched.
+
+## Files
+- **Report**: `C:/Users/User/Desktop/PERFORM/realms/06-university/research/agent-logs/agent2-simplifier-study.md`
+- **Trail**: `C:/Users/User/Desktop/PERFORM/realms/06-university/research/agent-logs/agent2-progress.md` (ends with DONE)
+
+## Key findings (all price/date facts verified live from official pages)
+
+**Q1 — Long docs:** A 500-page book is only ~130–200k tokens — every flagship 1M-context model swallows it whole. Gemini counts PDFs at ~258 tokens/page and **doesn't charge for native text layers**, so a whole digital textbook reads for ~$0.05–0.30. Recommended: hierarchical map-reduce summary (cheap Flash does chunks, Pro/Sonnet does the synthesis), RAG only as a second layer for exam-week Q&A.
+
+**Q2 — Brief design:** 7-block structure (essence page → key theses → names/dates/terms table → likely exam questions with answer outlines → verified quotes with page numbers → counterarguments → timeline). The terms table feeds the Anki pipeline mechanically. Per-course exam format (тест vs есе vs устен билети) needs one login to SWU's AIS to confirm — flagged as the action item.
+
+**Q3 — Memory:** Testing + spacing beat rereading (Dunlosky 2013, Roediger & Karpicke 2006). FSRS is now built into Anki (current release 26.09.2, verified), 90% desired retention default. Fastest programmatic path: **genanki 0.13.1 → .apkg**, CSV import as fallback, AnkiConnect for chat-driven adds — all three verified.
+
+**Q4 — Extraction:** Digital PDFs → PyMuPDF (no OCR); scanned → OCRmyPDF with `bul+eng` (Bulgarian traineddata confirmed in Tesseract repos); cloud fallback Google Document AI $1.50/page (first 1,000/month free), Mathpix from $0.002/image. Gemini-as-OCR is a sneaky-good option for old scans.
+
+**Q5 — SWU logistics (verified from swu.bg):** Зимен семестър занятия **17.09.2026–08.01.2027**; изпитна сесия **11.01–29.01.2027**; поправителна only **1 week (01–05.02.2027)**. Exam admission requires *fulfilled course obligations + заверен семестър* (stamp in студентска книжка) — skipping lectures is survivable, skipping seminar deliverables is not. No public Moodle found (marked unverified).

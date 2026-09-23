@@ -1,0 +1,17 @@
+{
+  "fetchedAt": 1789860584055,
+  "finalUrl": "https://www.technopolis.bg/bg/Vanshni-diskove/Vanshen-disk-SANDISK-SSD-SANDISK-PHONE-1TB-SDSSDE62/p/510545",
+  "httpStatus": 200,
+  "title": "Външен диск SANDISK SSD SANDISK PHONE 1TB SDSSDE62",
+  "price": {
+    "amount": 279,
+    "currency": "EUR"
+  },
+  "signals": {
+    "warranty": true,
+    "returnPolicy": false,
+    "official": false,
+    "storageRisk": true
+  },
+  "cached": false
+}

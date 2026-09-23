@@ -1,0 +1,24 @@
+LANE 5: BG REFURB DEALERS
+
+== DDG: рефърбиширани лаптопи магазин България
+  ddg ERR ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+
+== DDG: used laptops Bulgaria shop thinkpad
+  - Used Laptops in Bulgaria | Second-Hand Laptops with Warranty | https://technodream.bg/page/used-laptops-bulgaria
+  - lenovo thinkpad - безплатни обяви | OLX.bg | https://www.olx.bg/ads/q-lenovo-thinkpad-/
+  - lenovo+thinkpad+втора+употреба - безплатни обяви | OLX.bg | https://www.olx.bg/ads/q-lenovo+thinkpad+%D0%B2%D1%82%D0%BE%D1%80%D0%B0+%D1%83%D0%BF%D0%BE%D1%82%D1%80%D0%B5%D0%B1%D0%B0/
+  - ᐉ Used Laptops - refurbished, second hand | Hop.bg | https://hop.bg/en/laptops-111
+  - ᐉ Buy refurbished Lenovo ThinkPad with guarantee | Hop.bg | https://hop.bg/en/laptops-111(filter=lenovo,brand=1)
+  - Лаптопи Lenovo ThinkPad - втора ръка | TechnoDream.bg | https://technodream.bg/category/laptopi-lenovo-thinkpad-vtora-ruka
+  - Лаптопи втора употреба на Супер Цени от Ардес | https://ardes.bg/upotrebyavani-laptopi/laptopi-vtora-upotreba
+  - Lenovo thinkpad - Обяви с евтини цени | Bazar.bg | https://bazar.bg/obiavi?q=lenovo%20thinkpad
+  - Лаптопи Lenovo Thinkpad втора ръка ️ ТОП Цени — Kvantservice.com | https://www.kvantservice.com/laptopi/lenovo/thinkpad/
+  - Лаптопи Втора Употреба, Сертифицирани и на ТОП цени | Outlet • PC | https://outletpc.bg/%D0%BB%D0%B0%D0%BF%D1%82%D0%BE%D0%BF%D0%B8-%D0%B2%D1%82%D0%BE%D1%80%D0%B0-%D1%83%D0%BF%D0%BE%D1%82%D1%80%D0%B5
+
+== DDG: втора ръка лаптопи София магазин гаранция
+
+== DDG: refurbished laptops Bulgaria онлайн магазин
+probe https://laptop.bg/ -> 200 678043
+probe https://www.itplaza.bg/ ERR HTTPSConnectionPool(host='www.itplaza.bg', port=443): Max retries exceeded with 
+probe https://bolero.bg/ -> 200 785
+probe https://www.pаcífic.com/ ERR HTTPSConnectionPool(host='www.xn--pcfic-0sa759c.com', port=443): Max retries exc

@@ -1,0 +1,17 @@
+{
+  "fetchedAt": 1789857725020,
+  "finalUrl": "https://www.emag.bg/vynshen-ssd-adata-se880-rgb-1tb-usb-3-2-gen2-x2-type-c-siv-aeli-se880-1tcgy/pd/DK3CHPYBM/",
+  "httpStatus": 200,
+  "title": "Външен SSD ADATA SE880 RGB, 1TB, USB 3.2 Gen2 x2 Type-C, Сив - eMAG.bg",
+  "price": {
+    "amount": 99,
+    "currency": "EUR"
+  },
+  "signals": {
+    "warranty": true,
+    "returnPolicy": false,
+    "official": false,
+    "storageRisk": true
+  },
+  "cached": false
+}

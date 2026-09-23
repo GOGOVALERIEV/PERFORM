@@ -1,0 +1,138 @@
+{
+  "day_window": "12:00 wake, 03:00 sleep",
+  "fixed_walls": "nothing",
+  "tasks": [
+    {
+      "name": "Business cards research: telegram on card, crypto legality",
+      "duration": 15,
+      "done": false
+    },
+    {
+      "name": "Read the notebooks - load the corpus",
+      "duration": 26,
+      "done": false
+    },
+    {
+      "name": "Chocolate run for the girl",
+      "duration": 5,
+      "done": false
+    },
+    {
+      "name": "Learn the LFS system",
+      "duration": 60,
+      "done": false
+    },
+    {
+      "name": "Use LFS - try doing scripts with it",
+      "duration": 60,
+      "done": false
+    },
+    {
+      "name": "Rewrite the ad script clean - kill useless lines, sharpen",
+      "duration": 180,
+      "done": false
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Business cards research: telegram on card, crypto legality",
+      "start_m": 941,
+      "end_m": 956,
+      "type": "deep_work",
+      "start": "15:41",
+      "end": "15:56",
+      "duration": 15
+    },
+    {
+      "name": "Read the notebooks - load the corpus (part 1)",
+      "start_m": 956,
+      "end_m": 1035,
+      "type": "deep_work",
+      "start": "15:56",
+      "end": "17:15",
+      "duration": 79
+    },
+    {
+      "start_m": 1035,
+      "end_m": 1065,
+      "name": "chocolate run 5 min for the girl",
+      "type": "break",
+      "start": "17:15",
+      "end": "17:45",
+      "duration": 30
+    },
+    {
+      "name": "Read the notebooks - load the corpus (part 2)",
+      "start_m": 1065,
+      "end_m": 1140,
+      "type": "deep_work",
+      "start": "17:45",
+      "end": "19:00",
+      "duration": 75
+    },
+    {
+      "start_m": 1140,
+      "end_m": 1170,
+      "name": "dinner (flexible 19-22)",
+      "type": "break",
+      "start": "19:00",
+      "end": "19:30",
+      "duration": 30
+    },
+    {
+      "name": "Read the notebooks - load the corpus",
+      "start_m": 1170,
+      "end_m": 1196,
+      "type": "deep_work",
+      "start": "19:30",
+      "end": "19:56",
+      "duration": 26
+    },
+    {
+      "name": "Chocolate run for the girl",
+      "start_m": 1196,
+      "end_m": 1201,
+      "type": "deep_work",
+      "start": "19:56",
+      "end": "20:01",
+      "duration": 5
+    },
+    {
+      "name": "Learn the LFS system",
+      "start_m": 1201,
+      "end_m": 1261,
+      "type": "deep_work",
+      "start": "20:01",
+      "end": "21:01",
+      "duration": 60
+    },
+    {
+      "name": "Use LFS - try doing scripts with it",
+      "start_m": 1261,
+      "end_m": 1321,
+      "type": "deep_work",
+      "start": "21:01",
+      "end": "22:01",
+      "duration": 60
+    },
+    {
+      "name": "Rewrite the ad script clean - kill useless lines, sharpen",
+      "start_m": 1321,
+      "end_m": 1501,
+      "type": "deep_work",
+      "start": "22:01",
+      "end": "01:01",
+      "duration": 180
+    },
+    {
+      "name": "Buffer / wind down",
+      "start_m": 1501,
+      "end_m": 1620,
+      "type": "personal",
+      "start": "01:01",
+      "end": "03:00",
+      "duration": 119
+    }
+  ],
+  "timestamp": "2026-09-19T15:41:39.444766"
+}

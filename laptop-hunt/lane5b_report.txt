@@ -1,0 +1,23 @@
+
+===== technodream =====
+https://technodream.bg/category/laptopi-lenovo-thinkpad-vtora-ruka -> 200 len 166111
+https://technodream.bg/category/laptopi-lenovo-thinkpad-vtora-ruka ERR unbalanced parenthesis at position 89
+https://technodream.bg/category/laptopi-vtora-ruka -> 200 len 197604
+https://technodream.bg/category/laptopi-vtora-ruka ERR unbalanced parenthesis at position 89
+
+===== hop.bg =====
+https://hop.bg/laptops-111 -> 404 len 165299
+https://hop.bg/en/laptops-111(filter=lenovo,brand=1) -> 200 len 242201
+https://hop.bg/en/laptops-111(filter=lenovo,brand=1) ERR unbalanced parenthesis at position 89
+
+===== ardes =====
+https://ardes.bg/upotrebyavani-laptopi/laptopi-vtora-upotreba -> 200 len 608921
+https://ardes.bg/upotrebyavani-laptopi/laptopi-vtora-upotreba ERR unbalanced parenthesis at position 89
+
+===== kvantservice =====
+https://www.kvantservice.com/laptopi/lenovo/thinkpad/ -> 200 len 244063
+https://www.kvantservice.com/laptopi/lenovo/thinkpad/ ERR unbalanced parenthesis at position 89
+
+===== outletpc =====
+https://outletpc.bg/%D0%BB%D0%B0%D0%BF%D1%82%D0%BE%D0%BF%D0%B8-%D0%B2%D1%82%D0%B -> 200 len 422702
+https://outletpc.bg/%D0%BB%D0%B0%D0%BF%D1%82%D0%BE%D0%BF%D0%B8-%D0%B2%D1%82%D0%B ERR unbalanced parenthesis at position 89

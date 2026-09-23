@@ -1,0 +1,9 @@
+LANE 2b: OLX VIA BING
+
+== bing: site:olx.bg thinkpad втора ръка -> 200 len 123431
+
+== bing: site:olx.bg dell latitude laptop -> 200 len 125382
+
+== bing: site:olx.bg hp elitebook laptop -> 200 len 123290
+
+== TRY DIRECT FETCH OF 2 LISTING PAGES ==

@@ -1,0 +1,22 @@
+{
+  "sinusoid": {
+    "label": "Sinusoid Check",
+    "answer": "top",
+    "timestamp": "2026-09-18T16:03:31.464145"
+  },
+  "boardroom": {
+    "label": "Boardroom Check",
+    "answer": "health 7, friends 4, fun 5, money 5 - 1200 euro on the line, 500 dad 700 boris",
+    "timestamp": "2026-09-18T16:03:31.464145"
+  },
+  "braindump": {
+    "label": "Brain Dump",
+    "answer": "tasks: lock in, produce first shit video ads then produce real good video ads, build the system for university in the meantime. worries: none. ideas: none. fires: none",
+    "timestamp": "2026-09-18T16:03:31.464145"
+  },
+  "goal_anchor": {
+    "label": "Goal Anchor",
+    "answer": "product good video ads",
+    "timestamp": "2026-09-18T16:03:31.464145"
+  }
+}

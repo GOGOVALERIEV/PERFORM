@@ -1,0 +1,32 @@
+{
+  "day_start": {
+    "label": "Day Start",
+    "answer": "09:00 wake, 01:00 sleep",
+    "timestamp": "2026-09-17T08:52:54.448010"
+  },
+  "fixed_walls": {
+    "label": "Fixed Walls",
+    "answer": "10:00-13:00 college",
+    "timestamp": "2026-09-17T08:52:54.448010"
+  },
+  "breaks": {
+    "label": "Breaks",
+    "answer": "13:00-13:30 lunch, 19:30-20:00 dinner, 18:00-18:30 errands: get car and return stuff to store",
+    "timestamp": "2026-09-17T08:52:54.448010"
+  },
+  "deep_work_hours": {
+    "label": "Deep Work Capacity",
+    "answer": "6 hours minimum",
+    "timestamp": "2026-09-17T08:52:54.448010"
+  },
+  "must_do": {
+    "label": "Must Do",
+    "answer": "be good with the machine, learn it fully",
+    "timestamp": "2026-09-17T08:52:54.448010"
+  },
+  "today_tasks": {
+    "label": "Today's Tasks",
+    "answer": "Learn the Tony Stark machine fully (120min)\nUse and test the machine live (120min)\nPrep and demo to the squad (60min)\nErrands: get car + return stuff to store (30min)\nTake out trash (1min)",
+    "timestamp": "2026-09-17T08:52:54.448010"
+  }
+}

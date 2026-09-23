@@ -1,0 +1,372 @@
+[
+ {
+  "store": "Technopolis",
+  "name": "Телевизор HAIER H32S80GFX&nbsp;QLED  SMART TV, GOOGLE TV, 32.0 &quot;, 80.0 см",
+  "price": "169.90"
+ },
+ {
+  "store": "Technopolis",
+  "name": "Аудио система KENWOOD M-750DAB",
+  "price": "229.00"
+ },
+ {
+  "store": "Technopolis",
+  "name": "Клавиатура LOGITECH G512 GX Brown 920-009352",
+  "price": "104.90"
+ },
+ {
+  "store": "Technopolis",
+  "name": "Аудио система DIVA MBP20KN",
+  "price": "35.70"
+ },
+ {
+  "store": "Technopolis",
+  "name": "РЕСИЙВЪР KENWOOD KR-W8000SCD-B",
+  "price": "419.00"
+ },
+ {
+  "store": "Technopolis",
+  "name": "ФОТО ПРИНТЕР  CANON CP 1500 BLACK",
+  "price": "129.90"
+ },
+ {
+  "store": "Technopolis",
+  "name": "ФОТО ПРИНТЕР  CANON CP 1500 WHITE",
+  "price": "129.90"
+ },
+ {
+  "store": "Technopolis",
+  "name": "ФОТО ПРИНТЕР  CANON CP 1500 PINK",
+  "price": "129.90"
+ },
+ {
+  "store": "Technopolis",
+  "name": "Външен диск HIKSEMI HS-ESSD-T100 SSD 512 GB BLACK",
+  "price": "92.50"
+ },
+ {
+  "store": "Technopolis",
+  "name": "Външен диск HIKSEMI HS-ESSD-T100 SSD 256GB BLACK",
+  "price": "49.80"
+ },
+ {
+  "store": "Technopolis",
+  "name": "Външен диск SANDISK SSD SANDISK PHONE 1TB SDSSDE62",
+  "price": "279.00"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Metal Executive, 32 GB",
+  "price": "7.36"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Pinstripe, USB 2.0, 16 GB, черна",
+  "price": "6.59"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Metal Executive, USB 3.2, 32 GB, златиста",
+  "price": "16.19"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Plectra, 128 GB, USB Type-C 3.2, черна",
+  "price": "35.99"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Plectra, 64 GB, USB Type-C 3.2, бяла",
+  "price": "19.19"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim, Keypad Secure, USB Type-C 3.2, 32 GB, черна",
+  "price": "55.21"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Hiksemi HS--M200R, USB 2.0, 16 GB",
+  "price": "5.39"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Tough Max, USB 2.0, 64 GB",
+  "price": "9.82"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Pinstripe, USB 3.2 G1, 128 GB, черна",
+  "price": "23.99"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Hiksemi HS--M220P, USB 3.2, 128 GB",
+  "price": "21.59"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Pinstripe, USB 3.2 G1, 256 GB, черна",
+  "price": "59.99"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Dual QuickStick, USB Type A/Type C, 512 GB",
+  "price": "143.88"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Pinstripe, USB 2.0, 32 GB, черна",
+  "price": "8.99"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Mini Elements, USB 2.0, 16 GB, огън",
+  "price": "8.39"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Plectra, 512 GB, USB Type-C 3.2, черна",
+  "price": "137.88"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет DataBаr Verbatim, USB 2.0, 32 GB, зелена",
+  "price": "8.99"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет DataBаr Verbatim, USB 2.0, 128 GB, сива",
+  "price": "25.19"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Pinstripe, USB 3.2 G1, 64 GB, черна",
+  "price": "13.19"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Store &#x27;n&#x27; Go Dual Drive, USB 3.2, Type A/Type C, 32GB",
+  "price": "16.79"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Store &#x27;n&#x27; Go, USB Type-C, USB 3.2 Gen 1, 64 GB",
+  "price": "20.99"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет DataBаr Verbatim, USB 2.0, 64 GB, синя",
+  "price": "11.39"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Plectra, 256 GB, USB Type-C 3.2, бяла",
+  "price": "57.59"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim, USB 3.2, 16GB",
+  "price": "30.67"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Hiksemi HS--M220P, USB 3.2, 32 GB",
+  "price": "8.99"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Pinstripe, USB 3.2, 16 GB, черна",
+  "price": "10.79"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Slider, USB 2.0, 16GB, 3 броя",
+  "price": "17.99"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Hiksemi HS--M200R, USB 2.0, 64 GB",
+  "price": "9.59"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Pinstripe, USB 2.0, 64 GB, черна",
+  "price": "10.79"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Pinstripe, USB 3.2 G1, 32 GB, черна",
+  "price": "10.79"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Verbatim Mini Graffiti, USB 2.0, 32 GB, синя",
+  "price": "8.39"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет Hiksemi HS--M220P, USB 3.2, 64 GB",
+  "price": "11.39"
+ },
+ {
+  "store": "Office1",
+  "name": "USB флаш памет DataBаr Verbatim, USB 2.0, 16 GB, червена",
+  "price": "7.79"
+ },
+ {
+  "store": "Office1",
+  "name": "Външен SSD твърд диск Verbatim Store &#x27;n&#x27; Go Portable, 1 TB, черен",
+  "price": "191.88"
+ },
+ {
+  "store": "Office1",
+  "name": "Външен SSD твърд диск Hiksemi T300S, 2 TB, USB 3.1, USB Type C",
+  "price": "299.88"
+ },
+ {
+  "store": "Office1",
+  "name": "Външен SSD твърд диск Verbatim Pocket, 1 TB, джобен, USB 3.2, черно-син",
+  "price": "227.88"
+ },
+ {
+  "store": "Office1",
+  "name": "Външен SSD твърд диск Hiksemi T300S, 1 TB, USB 3.1, USB Type C",
+  "price": "167.88"
+ },
+ {
+  "store": "Office1",
+  "name": "Външен SSD твърд диск Hiksemi HS-ESSD-T100, 256 GB, черен",
+  "price": "59.99"
+ },
+ {
+  "store": "Office1",
+  "name": "Външен SSD твърд диск Hiksemi HS-ESSD-T100, 512 GB, черен",
+  "price": "98.39"
+ },
+ {
+  "store": "Office1",
+  "name": "Твърд диск Patriot P220, SSD, вътрешен, 256 GB, Sata 3, 2.5&#x27;&#x27;, 550/R, 490W",
+  "price": "47.14"
+ },
+ {
+  "store": "Office1",
+  "name": "Твърд диск Hiksemi E3000, SSD, вътрешен, 512 GB, 2.5&#x27;&#x27;, PCIe Gen 3",
+  "price": "49.08"
+ },
+ {
+  "store": "Office1",
+  "name": "Твърд диск Hiksemi E100, SSD, вътрешен, 512 GB, 2.5&#x27;&#x27;, Sata III",
+  "price": "95.99"
+ },
+ {
+  "store": "Office1",
+  "name": "Твърд диск Hiksemi E3000, SSD, вътрешен, 1024 GB, 2.5&#x27;&#x27;, PCIe Gen 3",
+  "price": "91.97"
+ },
+ {
+  "store": "Office1",
+  "name": "Твърд диск Hiksemi E100, SSD, вътрешен, 1024 GB, 2.5&#x27;&#x27;, Sata III",
+  "price": "155.88"
+ },
+ {
+  "store": "Office1",
+  "name": "Твърд диск Samsung Evo 870, SSD, вътрешен, 250 GB, 2.5&#x27;&#x27;, Sata",
+  "price": "88.48"
+ },
+ {
+  "store": "Office1",
+  "name": "Твърд диск Verbatim VI550 S3, SSD, вътрешен, 2.5&#x27;&#x27;, 512 GB",
+  "price": "135.48"
+ },
+ {
+  "store": "Office1",
+  "name": "Компютърен модул Hikvision OPS, Intel Core i7, 512 GB SSD, 16 GB RAM, Windows 11 Pro",
+  "price": "1840.03"
+ },
+ {
+  "store": "Office1",
+  "name": "Настолен компютър IT Expert, Intel Core i7, 256 GB SSD, 16 GB RAM, Windows 11 Pro",
+  "price": "834.16"
+ },
+ {
+  "store": "Office1",
+  "name": "Настолен компютър IT Expert, Intel Core i5, 512 GB SSD, 16 GB RAM, Tower",
+  "price": "848.27"
+ },
+ {
+  "store": "Office1",
+  "name": "Настолен компютър IT Expert, Intel Core i7, 1 TB SSD, 16 GB RAM, Windows 11 Pro, GeForce RTX 5060 8GB GDDR7, T",
+  "price": "1737.94"
+ },
+ {
+  "store": "Office1",
+  "name": "Настолен компютър IT Expert, AMD Ryzen 3, 512 GB SSD, 8 GB RAM, Windows 11 Pro, Tower",
+  "price": "427.58"
+ },
+ {
+  "store": "Office1",
+  "name": "Настолен компютър IT Expert, Intel Core i3, 512 GB SSD, 8 GB RAM, Tower",
+  "price": "675.86"
+ },
+ {
+  "store": "Office1",
+  "name": "Компютърен модул Hikvision OPS, Intel Core i5, 256 GB SSD, 8 GB RAM, Windows 11",
+  "price": "1378.80"
+ },
+ {
+  "store": "Office1",
+  "name": "Лаптоп Lenovo Thinkbook G2, 16&#x27;&#x27;, AMD Ryzen 7, 1 TB SSD, 16 GB RAM, Windows 11 Pro, сив",
+  "price": "1374.18"
+ },
+ {
+  "store": "Office1",
+  "name": "Компютърен модул Huawei IdeaHub OPS, Intel Core i7, 512 GB SSD, 16 GB RAM, Windows 10 IoT",
+  "price": "697.50"
+ },
+ {
+  "store": "Office1",
+  "name": "Настолен компютър Lenovo LOQ Tower, Intel Core i5, 512 GB SSD, 16 GB RAM, RTX3050",
+  "price": "886.38"
+ },
+ {
+  "store": "Office1",
+  "name": "Лаптоп Lenovo Thinkbook 16, 16&#x27;&#x27;, Intel Core i3, 256 GB SSD, 8 GB RAM, Windows 11 Pro, Integrated gr",
+  "price": "659.88"
+ },
+ {
+  "store": "Office1",
+  "name": "Лаптоп Lenovo Ideapad 3, 15.6&#x27;&#x27;, Intel Core i5, 512 GB SSD, 8 GB RAM, Intel Iris Xe Graphics",
+  "price": "500.59"
+ },
+ {
+  "store": "Office1",
+  "name": "Лаптоп Lenovo Thinkpad L15, 15.6&#x27;&#x27;, Intel Core i3, 256 GB SSD, 8 GB RAM, Windows 11 Pro, Intel UHD G",
+  "price": "864.49"
+ },
+ {
+  "store": "Office1",
+  "name": "Лаптоп Apple Macbook Air, 15&#x27;&#x27;, IPS, M4 WQXGA, 512 GB SSD, 16 GB RAM, сребрист",
+  "price": "1718.67"
+ },
+ {
+  "store": "Office1",
+  "name": "Геймърски настолен компютър IT Expert, Intel Core i5, 1 TB SSD, 16 GB RAM, GW RTX5060, Tower",
+  "price": "1246.80"
+ },
+ {
+  "store": "Office1",
+  "name": "Компютърен модул Hikvision OPS, Intel Core i7, 13th, 512 GB SSD, 16 GB RAM, Windows 11 Pro",
+  "price": "2398.80"
+ },
+ {
+  "store": "Office1",
+  "name": "Лаптоп Acer Nitro V15, 15.6&#x27;&#x27;, Intel Core i7, 1 TB SSD, 16 GB RAM, 165 Hz, GeForce RTX 4050, HDMI",
+  "price": "1222.80"
+ },
+ {
+  "store": "Office1",
+  "name": "Лаптоп Lenovo LOQ 15AHP10, 15.6&#x27;&#x27;, FullHD, AMD Ryzen 7, 1 TB SSD, 16 GB RAM",
+  "price": "1199.21"
+ }
+]

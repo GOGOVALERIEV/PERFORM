@@ -1,0 +1,25 @@
+{
+ "run_id": "20260918-235948",
+ "paper_file": "C:\\Users\\User\\Desktop\\PERFORM\\realms\\06-university\\state\\benchmark\\batch1\\phi-francia\\p2-style-pass.txt",
+ "paper_sha256": "e612ed96303a4a72",
+ "total_words": 448,
+ "corpus_files": [
+  "френска-революция.txt"
+ ],
+ "max_match_words": 0,
+ "ks1": {
+  "ge4_pct_nonquote": 0.0,
+  "ge5_pct_nonquote": 0.0,
+  "count_ge4": 0
+ },
+ "ks2": {
+  "ge20_count_total": 0,
+  "ge25_count_total": 0,
+  "ge25_count_nonquote": 0,
+  "matches": []
+ },
+ "quote_pct": 0.0,
+ "gate_failures": [],
+ "verdict": "PASS",
+ "elapsed_sec": 0.2
+}

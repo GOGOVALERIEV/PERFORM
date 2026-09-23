@@ -1,0 +1,125 @@
+{
+  "day_window": "14:30 wake, 03:00 sleep",
+  "fixed_walls": "nothing",
+  "tasks": [
+    {
+      "name": "Watch copywriter youtube video + take notes",
+      "duration": 80,
+      "done": false
+    },
+    {
+      "name": "Write 1000 hooks by hand - reps tonight, rest is daily reps habit",
+      "duration": 19,
+      "done": false
+    },
+    {
+      "name": "Read the notebooks - load the corpus",
+      "duration": 180,
+      "done": false
+    },
+    {
+      "name": "Learn the LFS system",
+      "duration": 60,
+      "done": false
+    },
+    {
+      "name": "Use LFS - try doing scripts with it",
+      "duration": 60,
+      "done": false
+    },
+    {
+      "name": "Rewrite the ad script clean",
+      "duration": 75,
+      "done": false
+    },
+    {
+      "name": "Progress check + Journal",
+      "duration": 30,
+      "done": false
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Watch copywriter youtube video + take notes",
+      "start_m": 1009,
+      "end_m": 1089,
+      "type": "deep_work",
+      "start": "16:49",
+      "end": "18:09",
+      "duration": 80
+    },
+    {
+      "name": "Write 1000 hooks by hand - reps tonight, rest is daily reps habit (part 1)",
+      "start_m": 1089,
+      "end_m": 1170,
+      "type": "deep_work",
+      "start": "18:09",
+      "end": "19:30",
+      "duration": 81
+    },
+    {
+      "start_m": 1170,
+      "end_m": 1200,
+      "name": "dinner",
+      "type": "break",
+      "start": "19:30",
+      "end": "20:00",
+      "duration": 30
+    },
+    {
+      "name": "Write 1000 hooks by hand - reps tonight, rest is daily reps habit",
+      "start_m": 1200,
+      "end_m": 1219,
+      "type": "deep_work",
+      "start": "20:00",
+      "end": "20:19",
+      "duration": 19
+    },
+    {
+      "name": "Read the notebooks - load the corpus",
+      "start_m": 1219,
+      "end_m": 1399,
+      "type": "deep_work",
+      "start": "20:19",
+      "end": "23:19",
+      "duration": 180
+    },
+    {
+      "name": "Learn the LFS system",
+      "start_m": 1399,
+      "end_m": 1459,
+      "type": "deep_work",
+      "start": "23:19",
+      "end": "00:19",
+      "duration": 60
+    },
+    {
+      "name": "Use LFS - try doing scripts with it",
+      "start_m": 1459,
+      "end_m": 1519,
+      "type": "deep_work",
+      "start": "00:19",
+      "end": "01:19",
+      "duration": 60
+    },
+    {
+      "name": "Rewrite the ad script clean",
+      "start_m": 1519,
+      "end_m": 1594,
+      "type": "deep_work",
+      "start": "01:19",
+      "end": "02:34",
+      "duration": 75
+    },
+    {
+      "name": "Progress check + Journal",
+      "start_m": 1594,
+      "end_m": 1620,
+      "type": "deep_work",
+      "start": "02:34",
+      "end": "03:00",
+      "duration": 26
+    }
+  ],
+  "timestamp": "2026-09-20T16:49:02.317165"
+}

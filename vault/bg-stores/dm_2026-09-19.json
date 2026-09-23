@@ -1,0 +1,252 @@
+{
+ "date_collected": "2026-09-19",
+ "store": "dm",
+ "n_deals": 35,
+ "deals": [
+  {
+   "store": "dm",
+   "dan": "1697279",
+   "name": "Био овесена напитка Barista, 1 l",
+   "price": "1.65",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "1587359",
+   "name": "Лосион за тяло с кокос и ший, 400 ml",
+   "price": "1.95",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "1709533",
+   "name": "Течен сапун за ръце Кокос и праскова, 500 ml",
+   "price": "0.95",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "1609520",
+   "name": "Антибактериална паста за зъби, 125 ml",
+   "price": "0.95",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3047044",
+   "name": "Стилизираща пяна за коса Pure Styling, 250 ml",
+   "price": "1.50",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "1672436",
+   "name": "Молив за устни Clean & Precise, № 640, 1 бр",
+   "price": "0.95",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "1459832",
+   "name": "Препарат за дезинфекция на пране, 20 пранета, 1,5 l",
+   "price": "1.95",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "1556996",
+   "name": "Кухненска ролка Classic, 3-пластова, 4 бр",
+   "price": "2.80",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "1573035",
+   "name": "Tорби за смет за тежки отпадъци, 120 L, 10 бр",
+   "price": "2.00",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "1490306",
+   "name": "Кърпички за улавяне на цветове и замърсявания, 50 бр",
+   "price": "3.25",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "1426787",
+   "name": "Трипластови носни кърпички, различни..., 150 бр",
+   "price": "2.30",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "1676929",
+   "name": "Душ гел 4 в 1 Deep Sensation, 300 ml",
+   "price": "0.95",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "1623842",
+   "name": "Био бисквити с аромат на ванилия, 1+г, 125 g",
+   "price": "1.60",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "1493901",
+   "name": "Сух шампоан 6 в 1, 200 ml",
+   "price": "1.95",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "1517804",
+   "name": "Био безглутенови овесени ядки, фини, 500 g",
+   "price": "2.50",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3156498",
+   "name": "Алкални батерии Optimum AAA, 6 бр",
+   "price": "7.15",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3152532",
+   "name": "Четка за зъби Deep Clean Soft, 1 бр",
+   "price": "3.70",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3154516",
+   "name": "Пачове против пъпки, 9 бр",
+   "price": "5.10",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3152630",
+   "name": "Интимен крем сапун Невен, 280 ml",
+   "price": "3.55",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3138567",
+   "name": "Гел за устни SuperStay Peel Off, Nr. 001 aura, 1 Брой",
+   "price": "9.45",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3155835",
+   "name": "Миглоизвивачка с допълнителна гумичка, 1 бр",
+   "price": "2.90",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3159229",
+   "name": "Комплект BB Крем със серум №23, SPF50+, 2 бр",
+   "price": "8.25",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3129213",
+   "name": "Парфюм за пране Tropical Glow, 540 g",
+   "price": "6.25",
+   "promo": true
+  },
+  {
+   "store": "dm",
+   "dan": "3160994",
+   "name": "Душ гел Caramel Fudge, 250 ml",
+   "price": "2.80",
+   "promo": true
+  },
+  {
+   "store": "dm",
+   "dan": "3140508",
+   "name": "Пелени - гащички, размер 5 (11-17kg), 50 Брой",
+   "price": "19.40",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3063354",
+   "name": "Дезодорант спрей Vanilla scent, 150 ml",
+   "price": "2.95",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3146468",
+   "name": "Масло за тяло и тен Watermelon, 100 ml",
+   "price": "22.00",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3138202",
+   "name": "Гел печат за тоалетна Flower, 75 ml",
+   "price": "1.95",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3155109",
+   "name": "Комплект фон дьо тен Magic cushion, Nr.23 + мини..., 1 Брой",
+   "price": "13.25",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3133209",
+   "name": "Серумен гланц за устни Cherry crush, 10 ml",
+   "price": "6.95",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3146918",
+   "name": "Таблетки за съдомиялна машина Ultimate Plus, 110 бр",
+   "price": "28.40",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3159335",
+   "name": "Крем за къдрава коса без отмиване Major Moisture, 354 ml",
+   "price": "6.95",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3124980",
+   "name": "Молив за вежди Brow Inserts 2 в 1, Nr. 4.5 Ash..., 1 Брой",
+   "price": "11.25",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3143412",
+   "name": "Крем депилатоар с масло от ший, 125 ml",
+   "price": "1.95",
+   "promo": false
+  },
+  {
+   "store": "dm",
+   "dan": "3151789",
+   "name": "Спрей за коса Re GENIQ, 100 ml",
+   "price": "20.50",
+   "promo": false
+  }
+ ]
+}

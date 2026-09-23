@@ -1,0 +1,10 @@
+LANE 3: BAZAR.BG + ALTERNATIVES
+https://www.bazar.bg/ads/laptops/ -> 404 len 32539
+https://www.bazar.bg/obiavi/kompyutri-i-periferiya/laptopi/ -> 404 len 32539
+https://www.bazar.bg/search?q=thinkpad -> 200 len 206500
+
+== bazar.bg q-thinkpad -> 404 len 32539
+
+== bazar.bg q-latitude -> 404 len 32539
+
+== bazar.bg q-elitebook -> 404 len 32539

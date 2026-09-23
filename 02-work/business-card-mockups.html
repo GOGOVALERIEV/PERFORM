@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Business Card Mockups — George</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0d0d0f; color:#e8e8e8; font-family:'Segoe UI',Arial,sans-serif; padding:40px; }
+  h1 { font-weight:300; letter-spacing:4px; text-transform:uppercase; margin-bottom:8px; }
+  .sub { color:#888; margin-bottom:40px; font-size:14px; }
+  .row { display:flex; gap:50px; flex-wrap:wrap; margin-bottom:60px; }
+  .card-wrap { text-align:center; }
+  .label { margin-top:14px; color:#999; font-size:13px; letter-spacing:1px; }
+  .price { color:#4ade80; font-size:12px; margin-top:3px; }
+  .card { width:336px; height:212px; border-radius:14px; margin:0 auto; position:relative;
+          box-shadow:0 20px 50px rgba(0,0,0,.6); transition:transform .2s; display:flex; align-items:center; justify-content:center; }
+  .card:hover { transform:scale(1.04); }
+
+  /* === 1. MATTE BLACK PVC + NFC === */
+  .matte { background:linear-gradient(145deg,#111 0%,#1a1a1c 60%,#101012 100%); border:1px solid #262628; }
+  .matte::after { content:''; position:absolute; inset:0; border-radius:14px;
+    background:linear-gradient(120deg, transparent 30%, rgba(255,255,255,.045) 45%, transparent 60%); }
+  .name { font-size:24px; font-weight:600; letter-spacing:5px; color:#f5f5f5; }
+  .role { font-size:9px; letter-spacing:3px; color:#6a6a6e; text-transform:uppercase; margin-top:5px; text-align:center; }
+  .center-stack { text-align:center; }
+  .qr { width:64px; height:64px; border-radius:6px; position:absolute; right:20px; bottom:18px;
+        background:conic-gradient(#000 0 25%, #fff 0 50%, #000 0 75%, #fff 0);
+        background-size:16px 16px; opacity:.92; }
+  .qr::after { content:''; position:absolute; inset:22%; background:#fff; border-radius:2px;
+        box-shadow:0 0 0 2px #000 inset; }
+  .contacts { position:absolute; left:20px; bottom:18px; text-align:left; font-size:10.5px; color:#9a9a9e; line-height:1.7; }
+  .nfc-badge { position:absolute; top:16px; right:20px; font-size:8px; letter-spacing:2px; color:#555; border:1px solid #333; padding:3px 7px; border-radius:20px; }
+
+  /* === 2. FROSTED / TRANSLUCENT PVC === */
+  .frosted { background:linear-gradient(160deg,#2a2d33 0%,#3b4048 45%,#23262b 100%);
+             border:1px solid rgba(255,255,255,.14); }
+  .frosted::before { content:''; position:absolute; inset:0; border-radius:14px;
+    background:repeating-linear-gradient(45deg, rgba(255,255,255,.02) 0 2px, transparent 2px 4px); }
+  .frosted .name { color:#fff; }
+  .frosted .contacts { color:#b8bcc4; }
+
+  /* === 3. BRUSHED BLACK METAL === */
+  .metal { background:linear-gradient(155deg,#151517 0%,#2e3033 30%,#0f0f11 50%,#2a2c2f 70%,#0c0c0e 100%);
+           border:1px solid #3a3c40; }
+  .metal::before { content:''; position:absolute; inset:0; border-radius:14px; opacity:.25;
+    background:repeating-linear-gradient(90deg, rgba(255,255,255,.05) 0 1px, transparent 1px 3px); }
+  .metal .name { color:#d9d9de; text-shadow:0 1px 0 rgba(255,255,255,.08); }
+  .metal .contacts { color:#8e9096; }
+  .metal .edge { position:absolute; inset:8px; border-radius:8px; border:1px solid rgba(255,255,255,.08); }
+
+  /* === 4. DARK WOOD === */
+  .wood { background:
+    repeating-linear-gradient(88deg, #3d2b1f 0 3px, #4a3627 3px 5px, #352519 5px 9px),
+    #3d2b1f; border:1px solid #241a12; }
+  .wood .name { color:#f0e6d8; }
+
+  /* === 5. CARBON FIBER === */
+  .carbon { background:
+    repeating-linear-gradient(45deg,#0a0a0c 0 4px,#141416 4px 8px),
+    #0a0a0c; border:1px solid #222; }
+  .carbon::before { content:''; position:absolute; inset:0; border-radius:14px;
+    background:repeating-linear-gradient(-45deg, rgba(255,255,255,.03) 0 2px, transparent 2px 6px); }
+  .carbon .accent { color:#e11d48; }
+  .carbon .name { color:#eee; }
+  .carbon .contacts { color:#999; }
+
+  .tag { position:absolute; top:16px; left:20px; font-size:8.5px; letter-spacing:2.5px; color:#777; text-transform:uppercase; }
+  .note { max-width:900px; margin:20px auto 0; color:#777; font-size:13px; line-height:1.8; border-top:1px solid #222; padding-top:24px; }
+  b { color:#ccc; font-weight:600; }
+</style>
+</head>
+<body>
+<h1>Business Card Mockups</h1>
+<div class="sub">85 × 54 mm · rounded corners · tap-to-Telegram NFC · real materials compared — Friday research, prices verified</div>
+
+<div class="row">
+  <div class="card-wrap">
+    <div class="card matte">
+      <div class="nfc-badge">◉ NFC</div>
+      <div class="center-stack">
+        <div class="name">GEORGE</div>
+        <div class="role">Systems · Performance</div>
+      </div>
+      <div class="contacts">
+        ✈ @your_handle<br>
+        ✉ gogovaleriev@gmail.com<br>
+        🌐 yoursite.com
+      </div>
+      <div class="qr"></div>
+    </div>
+    <div class="label">1 · MATTE BLACK PVC + NFC</div>
+    <div class="price">~90–250 лв/100 · 3 days–3 weeks</div>
+  </div>
+
+  <div class="card-wrap">
+    <div class="card frosted">
+      <div class="nfc-badge">◉ NFC</div>
+      <div class="center-stack">
+        <div class="name">GEORGE</div>
+        <div class="role">Systems · Performance</div>
+      </div>
+      <div class="contacts">
+        ✈ @your_handle<br>
+        ✉ gogovaleriev@gmail.com<br>
+        🌐 yoursite.com
+      </div>
+      <div class="qr"></div>
+    </div>
+    <div class="label">2 · FROSTED TRANSLUCENT PVC</div>
+    <div class="price">~120–250 лв/100 · 3–5 days BG</div>
+  </div>
+
+  <div class="card-wrap">
+    <div class="card metal">
+      <div class="edge"></div>
+      <div class="center-stack">
+        <div class="name">GEORGE</div>
+        <div class="role">Systems · Performance</div>
+      </div>
+      <div class="contacts">
+        ✈ @your_handle<br>
+        ✉ gogovaleriev@gmail.com<br>
+        🌐 yoursite.com
+      </div>
+      <div class="qr" style="background:conic-gradient(#111 0 25%, #d9d9de 0 50%, #111 0 75%, #d9d9de 0);"></div>
+    </div>
+    <div class="label">3 · BRUSHED BLACK METAL (engraved)</div>
+    <div class="price">Forzima от 300 лв · China ~100–150 лв/100</div>
+  </div>
+
+  <div class="card-wrap">
+    <div class="card carbon">
+      <div class="tag">SYSTEMS</div>
+      <div class="center-stack">
+        <div class="name">GE<span class="accent">O</span>RGEE</div>
+        <div class="role">Performance Architecture</div>
+      </div>
+      <div class="contacts">
+        ✈ @your_handle<br>
+        ✉ gogovaleriev@gmail.com
+      </div>
+      <div class="qr"></div>
+    </div>
+    <div class="label">4 · CARBON FIBER PVC (red accent)</div>
+    <div class="price">~150–250 лв/100 · Alibaba custom</div>
+  </div>
+
+  <div class="card-wrap">
+    <div class="card wood">
+      <div class="center-stack">
+        <div class="name">GEORGE</div>
+        <div class="role">Systems · Performance</div>
+      </div>
+      <div class="contacts" style="color:#e8dcc8;">
+        ✈ @your_handle<br>
+        ✉ gogovaleriev@gmail.com
+      </div>
+    </div>
+    <div class="label">5 · DARK WOOD (laser engraved)</div>
+    <div class="price">300+ лв/100 · niche</div>
+  </div>
+</div>
+
+<div class="note">
+<b>How the NFC moment feels:</b> you slide the card across the table → the other person taps it with their phone → <b>your Telegram opens instantly.</b> The QR is the fallback that works on every phone. NFC = the trick, QR = the guarantee.<br><br>
+<b>Decision needed:</b> ① material ② content — full personal (photo?, gmail, site) vs. minimal anonymous (handle + QR only) ③ professional Telegram handle is PERMANENT once printed on 100 cards.<br>
+<b>Site:</b> domain-only cost (~50–60 лв/yr), free hosting (GitHub Pages), showcase one-pager — built by me later, before cards ship.
+</div>
+</body>
+</html>
