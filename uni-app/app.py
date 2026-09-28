@@ -154,12 +154,6 @@ if "authenticated" not in st.session_state:
 if not st.session_state.authenticated:
     st.title(f"🎓 {T['title']}")
 
-    lc1, _ = st.columns([1, 4])
-    with lc1:
-        if st.button("🇧🇬 / 🇬🇧"):
-            st.session_state.lang = "bg" if st.session_state.lang == "en" else "en"
-            st.rerun()
-
     code = st.text_input(T["code"], type="password")
     if st.button(T["login"]):
         if code not in ACCESS_CODES:
@@ -226,7 +220,7 @@ def render_chat(chat_key):
                 st.write(msg["content"])
 
 # ─── TAB 1: REFERAT BOT ──────────────────────────────────────────────────────
-if tab_choice == "📝 Referat Bot":
+if tab_choice == "✍️ Writing Bot":
     st.header("📝 Referat Bot")
     st.caption("Type your topic + facts → get a referat. Paste images too.")
 
@@ -239,7 +233,13 @@ if tab_choice == "📝 Referat Bot":
     render_chat("ref_chat")
 
     user_input = st.chat_input("Type your topic and facts... You can paste images too (Ctrl+V)")
-    uploaded = st.file_uploader("📎 Attach image", type=["png", "jpg", "jpeg"], key="ref_img", label_visibility="collapsed")
+    up_col1, up_col2 = st.columns(2)
+    with up_col1:
+        uploaded = st.file_uploader("📎 Image", type=["png", "jpg", "jpeg"], key="ref_img", label_visibility="collapsed")
+    with up_col2:
+        uploaded_txt = st.file_uploader("📄 Text file", type=["txt", "md"], key="ref_txt", label_visibility="collapsed")
+    if uploaded_txt and not user_input:
+        user_input = uploaded_txt.read().decode("utf-8", errors="replace")
 
     if user_input or uploaded:
         msg = {"role": "user", "content": user_input or "(image)", "images": []}
@@ -448,59 +448,38 @@ elif tab_choice == "🎤 Transcribe Bot":
                 st.error(f"Error: {e}")
 
 # ─── TAB 3.5: WRITE GUIDE ─────────────────────────────────────────────────
-elif tab_choice == "✍️ Write Guide":
-    st.header("✍️ Write Guide")
-    st.caption("Everything you need to know about writing your referat sections.")
+elif tab_choice == "🔧 Humanizer":
+    st.header("🔧 Humanizer")
+    st.caption("Final polish pass. Make the generated text yours before submitting.")
     
-    st.info("⚠️ **IMPORTANT:** Write ONLY between the 3 blocks (---). Do NOT copy text before or after them — that's AI-generated scaffold, not your work.")
-
-    st.divider()
+    st.info("⚠️ **IMPORTANT:** Write ONLY between the 3 blocks (---). Do NOT copy text before or after them.")
     
-    col1, col2 = st.columns(2)
+    # Check if Writing Bot generated something
+    has_writing = "ref_chat" in st.session_state and len(st.session_state.ref_chat) > 1
+    writing_topic = ""
+    for msg in st.session_state.get("ref_chat", []):
+        if msg["role"] == "user" and len(msg.get("content", "")) > 20:
+            writing_topic = msg["content"][:200]
+            break
     
-    with col1:
-        st.subheader("🎯 How to Write")
+    if has_writing and writing_topic:
+        st.success(f"✅ Writing Bot output detected: {writing_topic}...")
+        st.markdown("### What to do with your generated text:")
+        
         st.markdown("""
-**Start with the topic.** Read your notes. Then write what YOU understood — not what sounds smart.
+**Step 1 — Read it.** Read the whole thing out loud. If a sentence doesn't sound like something you'd say, change it.
 
-**Every claim needs proof.** Don't say "democracy is good" — say "democracy works because in the 2016 Bulgarian referendum, 72% voted on specific questions."
+**Step 2 — Fill the blanks.** The text has --- markers between sections. Write YOUR own introduction before Block 1 (2-3 sentences: why this topic matters to you) and YOUR own conclusion after Block 3 (what you found most interesting or surprising).
 
-**Use names and dates.** "According to Dahl (1971), polyarchy requires..." sounds academic because it IS academic. Real students cite real sources.
+**Step 3 — Personalize.** Change 2-3 words per paragraph to sound like you. Swap a formal word for a simpler one. Add a specific example from your lectures.
 
-**Mix short and long sentences.** Short sentence. Then a really long sentence that explains the full context and includes the specific details about what happened and why it matters to your argument.
-
-**Have an opinion.** Professors can tell when you're just reporting. Say what YOU think — "I believe this matters because..." or "The counterargument would be..."
+**Step 4 — Add bibliography.** Add 3-4 sources at the end. Use your course materials.
         """)
-
-    with col2:
-        st.subheader("📋 The 3 Blocks System")
-        st.markdown("""
-Your generated referat comes in **3 blocks** separated by `---` lines:
-
-```
-Block 1: Introduction
----
-Block 2: Main Body  
----
-Block 3: Conclusion
-```
-
-**What to do:**
-1. Copy ONLY the text between the `---` markers
-2. Paste it into your Word document
-3. Add your own introduction (2-3 sentences before the first paragraph)
-4. Add your own conclusion (2-3 sentences after the last paragraph)
-5. Read it out loud — fix anything that doesn't sound like you
-
-**What NOT to do:**
-- Don't copy the `---` separator lines
-- Don't copy the AI-generated intro/conclusion (write your own)
-- Don't submit without reading it first
-- Don't forget to add your name, faculty number, and bibliography
-        """)
-
-    st.divider()
+    else:
+        st.warning("⚠️ No Writing Bot output detected. Go to ✍️ Writing Bot first, generate a text, then come back here for guidance.")
     
+    st.divider()
+
     st.subheader("💡 Pro Tips")
     st.markdown("""
 | Do | Don't |
@@ -584,5 +563,4 @@ Block 3: Conclusion
                     st.error("❌ 'Освен това' used more than once — remove extras")
 
 # ─── FOOTER ──────────────────────────────────────────────────────────────────
-st.divider()
-st.caption("🔒 " + T["footer"])
+
