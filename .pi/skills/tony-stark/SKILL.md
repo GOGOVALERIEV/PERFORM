@@ -42,6 +42,14 @@ If `now.py` reports drift > 2 min, trust the WEB time and tell George to fix his
 3. Brain Dump — "Dump everything: tasks, worries, ideas, fires."
 4. Goal Anchor — "What's the ONE outcome that makes today a win?"
 
+**Step 4.5: Money Check (price log)**
+Before the day context: read `price/logs/` (latest 3-7 files) + `price/purchases.json` + `price/month-budget.json`.
+- Fill in any numbers George gives on the spot (electricity, food, water, wifi...) — append to today's log file.
+- Show the picture simply: spent this month / 1500 budget / what's left.
+- Flag drift only if there IS drift (food or free zone creeping over plan). No lecture when clean.
+- This feeds the 3-month launch-fund plan: every leva under budget = offer testing money.
+- Empty log = remind him once, gently, to drop numbers in `price/logs/YYYY-MM-DD.txt` when he finds them. Never nag twice.
+
 **Step 5: Day Context + Tasks**
 5. Day Start/End — "What time do you actually wake and sleep TODAY?"
    (Machine parses free text: "woke up at 1" → 13:00, "sleap in 2 3" → 02:00. Bare wake hour 1-7 = PM.)
@@ -85,6 +93,7 @@ Machine writes:
 4. Undone tasks survive in `All.md` for tomorrow.
 
 ## Standing Rules
+- **Money data lives in `price/`**: daily txt logs (`price/logs/YYYY-MM-DD.txt`), buys from Telegram (`price/purchases.json`), plan (`price/month-budget.json`). The morning routine reads them — no other source of truth for money.
 - **Step 0 of every routine: `py scripts/now.py`** — PC clock + web cross-check (timeapi.io, Europe/Sofia). Drift > 2 min = trust web time and tell George to fix his PC clock. No time from memory, ever.
 - One main thing per day. Three half-done things = zero done things.
 - **Always check the real current time before scheduling or fixing times in chat. The machine schedules from NOW.**

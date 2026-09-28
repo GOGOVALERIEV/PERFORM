@@ -290,7 +290,7 @@ elif tab_choice == "📊 Presentation Bot":
     topic = st.text_input("Topic:")
     num_slides = st.slider("Slides:", 5, 20, 10)
     upload = st.file_uploader("Upload content file:", type=["txt", "md"])
-    with_images = st.toggle("Include image placeholders")
+    with_images = st.toggle("Include image placeholders", value=True)
 
     content_source = ""
     if upload:
@@ -354,11 +354,45 @@ Max 5 points per slide. Write in Bulgarian."""},
                         p.text = line
                         p.level = 0
                     img_desc = sd.get("image_desc", "")
-                    if img_desc:
-                        txBox = slide.shapes.add_textbox(Inches(9), Inches(2), Inches(3.5), Inches(3))
+                    if img_desc or with_images:
+                        from pptx.util import Emu
+                        from pptx.dml.color import RGBColor
+                        from pptx.enum.text import PP_ALIGN
+                        # Create a visible gray placeholder box on the right
+                        left = Inches(8.5)
+                        top = Inches(1.8)
+                        width = Inches(4.2)
+                        height = Inches(4.5)
+                        txBox = slide.shapes.add_textbox(left, top, width, height)
                         tf = txBox.text_frame
-                        tf.text = f"📷 {img_desc}"
-                        tf.paragraphs[0].font.size = Pt(10)
+                        tf.word_wrap = True
+                        p_frame = tf.paragraphs[0]
+                        p_frame.alignment = PP_ALIGN.CENTER
+                        from pptx.util import Pt as Pt2
+                        run = p_frame.add_run()
+                        run.text = "🖼️  INSERT IMAGE\n\n" + (img_desc or 'Add your image here')
+                        run.font.size = Pt2(11)
+                        run.font.color.rgb = RGBColor(160, 160, 160)
+                        # Add gray border/fill via XML
+                        from lxml import etree
+                        sp = txBox._element
+                        spPr = sp.find('.//{http://schemas.openxmlformats.org/drawingml/2006/main}spPr')
+                        if spPr is None:
+                            spPr = etree.SubElement(sp, '{http://schemas.openxmlformats.org/drawingml/2006/main}spPr')
+                        solidFill = etree.SubElement(spPr, '{http://schemas.openxmlformats.org/drawingml/2006/main}solidFill')
+                        srgbClr = etree.SubElement(solidFill, '{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr')
+                        srgbClr.set('val', '2A2A2A')
+                        ln = etree.SubElement(spPr, '{http://schemas.openxmlformats.org/drawingml/2006/main}ln')
+                        ln.set('w', '12700')
+                        lnFill = etree.SubElement(ln, '{http://schemas.openxmlformats.org/drawingml/2006/main}solidFill')
+                        lnClr = etree.SubElement(lnFill, '{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr')
+                        lnClr.set('val', '555555')
+                        # Shrink content area so it doesn't overlap the image box
+                        try:
+                            body.left = Inches(0.5)
+                            body.width = Inches(7.5)
+                        except Exception:
+                            pass
 
             pptx_buffer = io.BytesIO()
             prs.save(pptx_buffer)

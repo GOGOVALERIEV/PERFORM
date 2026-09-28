@@ -1,0 +1,8 @@
+# price log — 2026-09-28
+# write numbers when you find them. anything empty = still unknown.
+electricity:
+water:
+food:
+wifi:
+phone:
+other:
