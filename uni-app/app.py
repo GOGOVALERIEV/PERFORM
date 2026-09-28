@@ -10,6 +10,7 @@ Multi-tab AI assistant with:
 - Presentation maker with image placeholders
 """
 
+import sys
 import streamlit as st
 import json
 import re
@@ -22,7 +23,7 @@ from pathlib import Path
 
 # ─── PAGE CONFIG ─────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="University Machine",
+    page_title="Shadow Scholar",
     page_icon="🎓",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -58,7 +59,7 @@ if "lang" not in st.session_state:
 
 _L = {
     "en": {
-        "title": "University Machine",
+        "title": "Shadow Scholar",
         "code": "Enter your access code:",
         "login": "Login",
         "wrong": "Wrong code.",
@@ -152,7 +153,7 @@ if "authenticated" not in st.session_state:
     st.session_state.authenticated = False
 
 if not st.session_state.authenticated:
-    st.title(f"🎓 {T['title']}")
+    st.title(f"🎭 {T['title']}")
 
     code = st.text_input(T["code"], type="password")
     if st.button(T["login"]):
@@ -182,10 +183,10 @@ if not st.session_state.authenticated:
 
 # ─── SIDEBAR ─────────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.title(f"🎓 {T['title']}")
+    st.title(f"🎭 {T['title']}")
     st.caption(T["hello"])
     tab_choice = st.radio(T["choose"],
-        ["📝 Referat Bot", "📊 Presentation Bot", "✍️ Write Guide", "📚 Learn Bot", "🎤 Transcribe Bot"],
+        ["✍️ Writing Bot", "📊 Presentation Bot", "🔧 Humanizer", "📚 Learn Bot", "🎤 Transcribe Bot"],
         key="tab_selector")
     st.divider()
     if st.button("🌐 " + ("Български" if LANGSEL == "en" else "English")):
@@ -221,7 +222,7 @@ def render_chat(chat_key):
 
 # ─── TAB 1: REFERAT BOT ──────────────────────────────────────────────────────
 if tab_choice == "✍️ Writing Bot":
-    st.header("📝 Referat Bot")
+    st.header("✍️ Writing Bot")
     st.caption("Type your topic + facts → get a referat. Paste images too.")
 
     if "ref_chat" not in st.session_state:
@@ -235,7 +236,7 @@ if tab_choice == "✍️ Writing Bot":
     user_input = st.chat_input("Type your topic and facts... You can paste images too (Ctrl+V)")
     up_col1, up_col2 = st.columns(2)
     with up_col1:
-        uploaded = st.file_uploader("📎 Image", type=["png", "jpg", "jpeg"], key="ref_img", label_visibility="collapsed")
+        uploaded = st.file_uploader("📎 Image", type=["png", "jpg", "jpeg", "txt", "md"], key="ref_img", label_visibility="collapsed")
     with up_col2:
         uploaded_txt = st.file_uploader("📄 Text file", type=["txt", "md"], key="ref_txt", label_visibility="collapsed")
     if uploaded_txt and not user_input:
@@ -303,7 +304,7 @@ elif tab_choice == "📊 Presentation Bot":
                 {"role": "system", "content": f"""Create a PowerPoint presentation in Bulgarian.
 Topic: {topic}
 Slides: {num_slides}
-{"Include 'IMAGE:' line on each content slide with image description." if with_images else ""}
+{"On each content slide (not title), add a key: \"image\": \"description of a relevant image/screenshot/diagram for this slide\". Always include this key." if with_images else ""}
 
 Respond ONLY in JSON format:
 [
@@ -436,7 +437,7 @@ elif tab_choice == "🎤 Transcribe Bot":
             try:
                 import subprocess
                 r = subprocess.run(
-                    [sys.executable, str(REALM.parent / "learning-library" / "scripts" / "youtube_transcriber.py"), yt_url],
+                    [sys.executable, str(Path(__file__).parent.parent / "learning-library" / "scripts" / "youtube_transcriber.py"), yt_url],
                     capture_output=True, text=True, timeout=120, encoding="utf-8", errors="replace"
                 )
                 if r.stdout:
