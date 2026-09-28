@@ -1,0 +1,22 @@
+{
+  "sinusoid": {
+    "label": "Sinusoid Check",
+    "answer": "mid",
+    "timestamp": "2026-09-24T11:03:40.370029"
+  },
+  "boardroom": {
+    "label": "Boardroom Check",
+    "answer": "health 7, friends 4, fun 7, money 4 today (1500 euro; software -> 5 at 1800-2k; then harder multipliers to 6-10)",
+    "timestamp": "2026-09-24T11:03:40.370029"
+  },
+  "braindump": {
+    "label": "Brain Dump",
+    "answer": "nothing new: watch copywriter videos (3h) then read notebooks (3h) - that is the whole day. after everything: use the machine a lot. wake target 10:00 someday",
+    "timestamp": "2026-09-24T11:03:40.370029"
+  },
+  "goal_anchor": {
+    "label": "Goal Anchor",
+    "answer": "finish the copy input phase - videos + notes, notebooks corpus",
+    "timestamp": "2026-09-24T11:03:40.370029"
+  }
+}

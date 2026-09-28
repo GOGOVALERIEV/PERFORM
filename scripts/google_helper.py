@@ -29,9 +29,23 @@ CREDS_PATH = str(_BASE / 'config' / 'google-credentials.json')
 
 
 def get_creds():
-    """Load Google OAuth credentials from pickle token."""
+    """Load Google OAuth credentials from pickle token.
+    Refreshes proactively when expired (urllib transport, NOT httplib2 —
+    httplib2's socket connect to oauth2.googleapis.com times out flakily on
+    this machine and would crash the whole routine)."""
+    from google.auth.transport.requests import Request as GARequest
     with open(TOKEN_PATH, 'rb') as f:
-        return pickle.load(f)
+        creds = pickle.load(f)
+    if creds and creds.expired and creds.refresh_token:
+        try:
+            creds.refresh(GARequest())
+            with open(TOKEN_PATH, 'wb') as f:
+                pickle.dump(creds, f)
+            print("   [google_helper] token refreshed via urllib")
+        except Exception as e:
+            print(f"   [google_helper] token refresh failed: {type(e).__name__}: {e}")
+            raise
+    return creds
 
 
 def get_docs():

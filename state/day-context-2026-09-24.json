@@ -1,0 +1,32 @@
+{
+  "day_start": {
+    "label": "Day Start",
+    "answer": "14:30 wake, 03:00 sleep",
+    "timestamp": "2026-09-24T11:03:40.370029"
+  },
+  "fixed_walls": {
+    "label": "Fixed Walls",
+    "answer": "nothing - no college",
+    "timestamp": "2026-09-24T11:03:40.370029"
+  },
+  "breaks": {
+    "label": "Breaks",
+    "answer": "20:00-20:30 dinner (light - overfeeding kills the evening)",
+    "timestamp": "2026-09-24T11:03:40.370029"
+  },
+  "deep_work_hours": {
+    "label": "Deep Work Capacity",
+    "answer": "mid day - 6 hours planned (3 videos + 3 notebooks)",
+    "timestamp": "2026-09-24T11:03:40.370029"
+  },
+  "must_do": {
+    "label": "Must Do",
+    "answer": "the copy input phase - videos and notebooks",
+    "timestamp": "2026-09-24T11:03:40.370029"
+  },
+  "today_tasks": {
+    "label": "Today's Tasks",
+    "answer": "Watch copywriter youtube videos + take notes (180min)\nRead the notebooks - load the corpus (180min)",
+    "timestamp": "2026-09-24T11:03:40.370029"
+  }
+}

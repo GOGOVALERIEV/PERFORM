@@ -460,24 +460,39 @@ def seed_clockify_from_blocks(blocks):
     return True, f"Wiped {wiped} entries (last 72h), created {created} entries with real durations."
 
 
+def _google_retry(fn, attempts=3, delay=2, label="google api"):
+    """Run a Google API call with retries. Network to Google is flaky on this
+    machine (socket 10060 timeouts); retrying usually gets through."""
+    import time as _time
+    last = None
+    for i in range(attempts):
+        try:
+            return fn()
+        except Exception as e:
+            last = e
+            log_event("GOOGLE", f"{label} attempt {i+1}/{attempts} failed: {type(e).__name__}")
+            if i < attempts - 1:
+                _time.sleep(delay * (i + 1))
+    raise last
+    """Delete all non-all-day calendar events in the given window."""
 def delete_calendar_events_in_window(service, window_start_hours=-6, window_end_hours=18):
     """Delete all non-all-day calendar events in the given window."""
     now = datetime.datetime.now(datetime.timezone.utc)
     time_min = (now + datetime.timedelta(hours=window_start_hours)).isoformat()
     time_max = (now + datetime.timedelta(hours=window_end_hours)).isoformat()
-    events_result = service.events().list(
+    events_result = _google_retry(lambda: service.events().list(
         calendarId="primary",
         timeMin=time_min,
         timeMax=time_max,
         singleEvents=True,
         orderBy="startTime",
-    ).execute()
+    ).execute())
     items = events_result.get("items", [])
     deleted = 0
     for ev in items:
         if ev.get("start", {}).get("dateTime"):
             try:
-                service.events().delete(calendarId="primary", eventId=ev["id"]).execute()
+                _google_retry(lambda ev_id=ev["id"]: service.events().delete(calendarId="primary", eventId=ev_id).execute(), label="event delete")
                 deleted += 1
             except Exception as e:
                 log_event("CAL_DEL", f"Failed to delete {ev.get('summary')}: {e}")
@@ -1233,8 +1248,14 @@ def step_6_calendar_push(time_blocks):
     today = datetime.date.today()
 
     # WIPE today before writing
-    deleted = delete_calendar_events_in_window(service, window_start_hours=-6, window_end_hours=18)
-    print(f"   🗑️ Deleted {deleted} existing events.")
+    try:
+        deleted = _google_retry(lambda: delete_calendar_events_in_window(service, window_start_hours=-6, window_end_hours=18), label="cal wipe")
+        print(f"   🗑️ Deleted {deleted} existing events.")
+    except Exception as e:
+        print(f"   ❌ Calendar unreachable after retries: {type(e).__name__}")
+        print("   ⚠️ SKIPPING Calendar push (local schedule is still correct). Re-run later to push.")
+        log_event("STEP6", f"FAILED unreachable: {e}")
+        return False
 
     created = 0
     for block in time_blocks["blocks"]:
@@ -1256,11 +1277,11 @@ def step_6_calendar_push(time_blocks):
             "description": f"Tony Stark auto-block | Type: {block['type']}",
         }
         try:
-            service.events().insert(calendarId="primary", body=event).execute()
+            _google_retry(lambda: service.events().insert(calendarId="primary", body=event).execute(), label="event insert")
             created += 1
             print(f"   ✅ Created: {block['name']} ({block['start']} - {block['end']})")
         except Exception as e:
-            print(f"   ❌ Failed: {block['name']} — {e}")
+            print(f"   ❌ Failed: {block['name']} — {type(e).__name__}")
 
     log_event("STEP6", f"Wiped {deleted}, created {created} calendar events")
     print(f"\n📅 {created} events pushed to Google Calendar")

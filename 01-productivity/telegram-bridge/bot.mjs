@@ -195,6 +195,36 @@ async function runPrompt(chatId, text) {
     }
 }
 
+// ---------- PRICE — quick expense logger (fast path, no pi needed) ----------
+
+const PRICE_DIR = path.join(PERFORM_DIR, "price");
+const PRICE_LEDGER = path.join(PRICE_DIR, "purchases.json");
+
+function readPurchases() {
+    try { return JSON.parse(fs.readFileSync(PRICE_LEDGER, "utf8")); } catch { return []; }
+}
+function writePurchases(list) {
+    fs.mkdirSync(PRICE_DIR, { recursive: true });
+    fs.writeFileSync(PRICE_LEDGER, JSON.stringify(list, null, 2));
+}
+function monthTotal(list) {
+    const m = new Date().toISOString().slice(0, 7); // "2026-09"
+    return list.filter((p) => p.date.startsWith(m));
+}
+async function handleBuy(text) {
+    const m = text.replace(/^\/?\s*(buy|bought)\s+/i, "");
+    const num = m.match(/\d+(?:[.,]\d+)?/);
+    if (!num) return null; // no number -> not a log, let pi handle it
+    const amount = parseFloat(num[0].replace(",", "."));
+    const what = m.replace(num[0], "").trim() || "unnamed";
+    const list = readPurchases();
+    list.push({ date: new Date().toISOString(), amount, what });
+    writePurchases(list);
+    const month = monthTotal(list);
+    const sum = month.reduce((s, p) => s + p.amount, 0);
+    return `✅ Logged: ${amount.toFixed(2)} BGN — ${what}\n🗓 This month: ${sum.toFixed(2)} BGN across ${month.length} buys`;
+}
+
 // ---------- telegram bot ----------
 
 const bot = new Bot(config.token);
@@ -299,10 +329,27 @@ bot.command("current", async (ctx) => {
     await ctx.reply("📁 " + (session.sessionFile ?? "(not saved yet)"));
 });
 
+bot.command("price", async (ctx) => {
+    if (!checkOwner(ctx)) return;
+    const list = readPurchases();
+    const month = monthTotal(list);
+    if (month.length === 0) return ctx.reply("No buys logged this month yet.");
+    const sum = month.reduce((s, p) => s + p.amount, 0);
+    const lines = month.map((p) => `${p.date.slice(0, 10)}  ${p.amount.toFixed(2)}  ${p.what}`);
+    await ctx.reply(`🗓 This month: ${sum.toFixed(2)} BGN (${month.length} buys)\n\n${lines.join("\n")}`);
+});
+
 bot.on("message:text", async (ctx) => {
     if (!checkOwner(ctx)) return;
     const text = ctx.message.text;
     if (text.startsWith("/")) return; // unknown command - ignore
+
+    // PRICE fast path: "buy 25 food" / "bought 12.50 kebab" -> instant log, no pi
+    if (/^\/?\s*(buy|bought)\b/i.test(text)) {
+        const reply = await handleBuy(text);
+        if (reply) return ctx.reply(reply);
+        // no number in it -> fall through to pi (e.g. "buying a new laptop soon")
+    }
     if (busy) {
         if (session.isStreaming) {
             await session.steer(text);

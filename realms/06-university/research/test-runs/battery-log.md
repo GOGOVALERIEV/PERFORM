@@ -131,3 +131,26 @@
 | 2026-09-23 | JustDone (free, web) | v21-extreme-burstiness.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
 | 2026-09-23 | JustDone (free, web) | v21-extreme-burstiness.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
 | 2026-09-23 | JustDone (free, web) | v21-extreme-burstiness.txt | - | 85% | free sharp referee; calibrated vs GPTZero 97% | ALARM |
+| 2026-09-24 | JustDone (free, web) | block-1.txt | - | 88% | free sharp referee; calibrated vs GPTZero 97% | ALARM |
+| 2026-09-24 | JustDone (free, web) | block-2.txt | - | 97% | free sharp referee; calibrated vs GPTZero 97% | ALARM |
+| 2026-09-24 | JustDone (free, web) | block-3.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
+| 2026-09-24 | JustDone (free, web) | block-1.txt | - | n/a | score not parsed — see screenshot | NO-SCORE |
+| 2026-09-24 | JustDone (free, web) | block-2.txt | - | n/a | score not parsed — see screenshot | NO-SCORE |
+| 2026-09-24 | JustDone (free, web) | block-1.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
+| 2026-09-24 | JustDone (free, web) | block-2.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
+| 2026-09-24 | JustDone (free, web) | block-1.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
+| 2026-09-24 | JustDone (free, web) | block-2.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
+| 2026-09-24 | JustDone (free, web) | block-3.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
+| 2026-09-24 | JustDone (free, web) | block-1.txt | - | 92% | free sharp referee; calibrated vs GPTZero 97% | ALARM |
+| 2026-09-24 | JustDone (free, web) | block-2.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
+| 2026-09-24 | JustDone (free, web) | block-3.txt | - | 90% | free sharp referee; calibrated vs GPTZero 97% | ALARM |
+| 2026-09-24 | JustDone (free, web) | block-1.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
+| 2026-09-24 | JustDone (free, web) | all-blocks.txt | - | 80% | free sharp referee; calibrated vs GPTZero 97% | ALARM |
+| 2026-09-24 | JustDone (free, web) | all-blocks.txt | - | 95% | free sharp referee; calibrated vs GPTZero 97% | ALARM |
+| 2026-09-24 | JustDone (free, web) | all-blocks.txt | - | 71% | free sharp referee; calibrated vs GPTZero 97% | ALARM |
+| 2026-09-24 | JustDone (free, web) | glue-12.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
+| 2026-09-24 | JustDone (free, web) | glue-shuffled.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
+| 2026-09-24 | JustDone (free, web) | glue-12.txt | - | 70% | free sharp referee; calibrated vs GPTZero 97% | ALARM |
+| 2026-09-24 | JustDone (free, web) | glue-shuffled.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
+| 2026-09-24 | JustDone (free, web) | glue-12.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
+| 2026-09-24 | JustDone (free, web) | glue-shuffled.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |

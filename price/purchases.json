@@ -1,0 +1,22 @@
+[
+  {
+    "date": "2026-09-28T08:17:32.444Z",
+    "amount": 160,
+    "what": "rent"
+  },
+  {
+    "date": "2026-09-28T08:57:38.790Z",
+    "amount": 100,
+    "what": "bills (phone+wifi+electricity+water)"
+  },
+  {
+    "date": "2026-09-28T08:57:38.792Z",
+    "amount": 300,
+    "what": "food"
+  },
+  {
+    "date": "2026-09-28T08:57:38.792Z",
+    "amount": 100,
+    "what": "everything else"
+  }
+]
