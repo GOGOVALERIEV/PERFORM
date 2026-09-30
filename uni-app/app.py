@@ -19,6 +19,7 @@ import io
 import time
 import hashlib
 import base64
+from datetime import datetime
 from pathlib import Path
 
 # ─── PAGE CONFIG ─────────────────────────────────────────────────────────────
@@ -148,7 +149,45 @@ STYLE RULES:
 - If the user writes in English — respond in English. If in Bulgarian — in Bulgarian.
 - When the user sends an image, analyze it and incorporate relevant content into your response.""" + ANTI_LEAK
 
-# ─── AUTH + DEVICE LIMIT ─────────────────────────────────────────────────────
+# ─── AUTH + DEVICE LIMIT + SPEND PROTECTION ─────────────────────────────
+DAILY_CALL_LIMIT = 50          # max AI calls per access code per day
+ALLOWED_MODELS = {             # cheap beer only: customers can never order champagne
+    "deepseek/deepseek-v4-flash-0731",
+    "qwen/qwen3.7-flash",
+}
+USAGE_FILE = Path(__file__).parent / "usage_tracker.json"
+
+def _load_usage():
+    try:
+        return json.loads(USAGE_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+def _save_usage(data):
+    try:
+        USAGE_FILE.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    except Exception:
+        pass
+
+def _usage_today(code):
+    """Returns (calls_used_today, limit). Resets counter on a new day."""
+    data = _load_usage()
+    today = datetime.now().strftime("%Y-%m-%d")
+    rec = data.get(code, {})
+    if rec.get("date") != today:
+        return 0, DAILY_CALL_LIMIT
+    return rec.get("calls", 0), DAILY_CALL_LIMIT
+
+def _record_usage(code):
+    data = _load_usage()
+    today = datetime.now().strftime("%Y-%m-%d")
+    rec = data.get(code, {})
+    if rec.get("date") != today:
+        rec = {"date": today, "calls": 0}
+    rec["calls"] = rec.get("calls", 0) + 1
+    data[code] = rec
+    _save_usage(data)
+
 if "authenticated" not in st.session_state:
     st.session_state.authenticated = False
 
@@ -174,7 +213,14 @@ if not st.session_state.authenticated:
                 st.stop()
             devices.append(fingerprint)
         
+        used, limit = _usage_today(code)
+        if used >= limit:
+            st.error(f"⚠️ Daily AI limit reached for this access code ({used}/{limit} today). Come back tomorrow or contact support.")
+            st.info("📧 Contact: gogovaleriev77@gmail.com")
+            st.stop()
+
         st.session_state.authenticated = True
+        st.session_state.access_code = code
         st.session_state.fingerprint = fingerprint
         st.rerun()
 
@@ -189,6 +235,10 @@ with st.sidebar:
         ["✍️ Writing Bot", "📊 Presentation Bot", "🔧 Humanizer", "📚 Learn Bot", "🎤 Transcribe Bot"],
         key="tab_selector")
     st.divider()
+    used, limit = _usage_today(st.session_state.get("access_code", "unknown"))
+    remaining = max(limit - used, 0)
+    st.progress(min(used / limit, 1.0), text=f"🪙 AI requests today: {used}/{limit}")
+    st.divider()
     if st.button("🌐 " + ("Български" if LANGSEL == "en" else "English")):
         st.session_state.lang = "bg" if st.session_state.lang == "en" else "en"
         st.rerun()
@@ -199,11 +249,21 @@ with st.sidebar:
 
 # ─── HELPERS ─────────────────────────────────────────────────────────────────
 def call_llm(messages, model="deepseek/deepseek-v4-flash-0731", temp=0.8, max_tokens=2000):
+    # spend protection: model whitelist + per-code daily quota
+    if model not in ALLOWED_MODELS:
+        model = "deepseek/deepseek-v4-flash-0731"
+    code = st.session_state.get("access_code", "unknown")
+    used, limit = _usage_today(code)
+    if used >= limit:
+        return ("⚠️ **Daily AI limit reached** for your access code "
+                f"({used}/{limit} requests today). Come back tomorrow or contact "
+                "gogovaleriev77@gmail.com to upgrade.")
     body = json.dumps({"model": model, "messages": messages, "temperature": temp, "max_tokens": max_tokens}).encode()
     req = urllib.request.Request("https://openrouter.ai/api/v1/chat/completions", data=body,
         headers={"Authorization": f"Bearer {OPENROUTER_KEY}", "Content-Type": "application/json"})
     try:
         resp = json.loads(urllib.request.urlopen(req, timeout=120).read())
+        _record_usage(code)
         return resp["choices"][0]["message"]["content"]
     except Exception as e:
         return f"Error: {e}"
