@@ -493,12 +493,95 @@ Max 5 points per slide. Write in Bulgarian."""},
 # ─── TAB 3: LEARN BOT ────────────────────────────────────────────────────────
 elif tab_choice == "📚 Learn Bot":
     st.header("📚 Learn Bot")
-    st.caption("Give me a topic → I explain → quiz → I correct you.")
+    st.caption("Give me a topic → I explain → quiz → I correct you. Or load a book/article URL and I teach from it.")
+
+    # ── BOOK MODE helpers ────────────────────────────────────────────────────
+    def _fetch_url_text(u):
+        import requests as _rq
+        import lxml.html as _lh
+        r = _rq.get(u, timeout=30, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"})
+        ct = r.headers.get("content-type", "").lower()
+        if "pdf" in ct or u.lower().split("?")[0].endswith(".pdf"):
+            import io as _io
+            from pypdf import PdfReader
+            reader = PdfReader(_io.BytesIO(r.content))
+            return "\n".join((pg.extract_text() or "") for pg in reader.pages)
+        doc = _lh.fromstring(r.content)
+        for bad in doc.xpath("//script|//style|//nav|//header|//footer|//noscript|//aside"):
+            bad.drop_tree()
+        return doc.text_content()
+
+    def _chunk_text(text, size=8000):
+        paras = [p.strip() for p in text.replace("\r", "").split("\n") if p.strip()]
+        chunks, buf = [], ""
+        for p in paras:
+            if len(buf) + len(p) > size and buf:
+                chunks.append(buf)
+                buf = ""
+            buf += p + "\n\n"
+        if buf.strip():
+            chunks.append(buf)
+        return chunks
+
+    def _best_chunks(question, chunks, k=2):
+        q = set(question.lower().split())
+        scored = sorted(((len(q & set(c.lower().split())), c) for c in chunks), key=lambda x: -x[0])
+        return [c for s, c in scored[:k] if s > 0]
+
+    if "learn_book_dossier" not in st.session_state:
+        st.session_state.learn_book_dossier = None
+    if "learn_book_chunks" not in st.session_state:
+        st.session_state.learn_book_chunks = []
+
+    lang_inst = "Respond in English." if LANGSEL == "en" else "Отговаряй на български."
+    book_lang = "in English" if LANGSEL == "en" else "на български"
+
+    # ── BOOK MODE UI ─────────────────────────────────────────────────────────
+    with st.expander("📚 Book mode — load a book/article URL and I teach from it"):
+        st.caption("Works with web pages and PDF links. The material is read, summarized, and the professor then teaches FROM it.")
+        url = st.text_input("Book / article / PDF URL:", key="learn_book_url")
+        col1, col2 = st.columns([1, 1])
+        load_btn = col1.button("Load & summarize", key="learn_book_load", type="primary")
+        clear_btn = col2.button("Remove book", key="learn_book_clear")
+        if load_btn and url:
+            try:
+                raw = _fetch_url_text(url)
+            except Exception as e:
+                st.error(f"Couldn't read that URL: {e}")
+                raw = None
+            if raw:
+                raw = raw[:200000]  # cap: first ~200k chars
+                chunks = _chunk_text(raw)
+                prog = st.progress(0.0)
+                section_summaries = []
+                for i, ch in enumerate(chunks[:12]):
+                    section_summaries.append(call_llm([
+                        {"role": "system", "content": f"Summarize this part of study material for a university student {book_lang}. Keep ALL key facts, names, dates, definitions and structure. Maximum 250 words. Output only the summary."},
+                        {"role": "user", "content": ch},
+                    ], temp=0.3))
+                    prog.progress((i + 1) / min(len(chunks), 12))
+                prog.progress(1.0)
+                with st.spinner("Building study summary..."):
+                    dossier = call_llm([
+                        {"role": "system", "content": f"Combine these section summaries into ONE coherent study dossier {book_lang} with clear headings: main thesis, key concepts, key facts/dates, important people, chapter-by-chapter overview. This is what a professor will teach from."},
+                        {"role": "user", "content": "\n\n".join(section_summaries)},
+                    ], temp=0.4)
+                st.session_state.learn_book_dossier = dossier
+                st.session_state.learn_book_chunks = chunks
+                st.session_state.pop("learn_chat", None)  # restart professor WITH the book
+                if len(chunks) > 12:
+                    st.caption(f"⚠️ Long material: summarized the first 12 sections of {len(chunks)}. Q&A still has access to all sections.")
+        if st.session_state.learn_book_dossier:
+            st.success("✅ Book loaded — the professor now teaches from it.")
+            with st.expander("📖 Show study summary"):
+                st.write(st.session_state.learn_book_dossier)
+        if clear_btn:
+            st.session_state.learn_book_dossier = None
+            st.session_state.learn_book_chunks = []
+            st.session_state.pop("learn_chat", None)
 
     if "learn_chat" not in st.session_state:
-        lang_inst = "Respond in English." if LANGSEL == "en" else "Отговаряй на български."
-        st.session_state.learn_chat = [
-            {"role": "system", "content": """You are a professor teaching political science and international relations.
+        base_prompt = """You are a professor teaching political science and international relations.
 
 Teaching protocol:
 1. Clear, direct explanation
@@ -507,7 +590,19 @@ Teaching protocol:
 4. Short quiz (1 question) — check the answer and correct before moving on
 
 Don't start until you know what the student wants to learn. Ask briefly.
-""" + f"\n\n{lang_inst}" + ANTI_LEAK}
+"""
+        if st.session_state.learn_book_dossier:
+            base_prompt += """
+
+THE STUDENT HAS LOADED STUDY MATERIAL (a book/article). Teach FROM it:
+- Ground every explanation in this material; use its facts, names and dates
+- When the student asks something, answer from the material first, then general knowledge
+- If asked about something not in the material, say so plainly, then teach it anyway
+
+=== STUDY MATERIAL SUMMARY ===
+""" + st.session_state.learn_book_dossier + "\n=== END OF MATERIAL SUMMARY ==="
+        st.session_state.learn_chat = [
+            {"role": "system", "content": base_prompt + f"\n\n{lang_inst}" + ANTI_LEAK}
         ]
 
     for msg in st.session_state.learn_chat[1:]:
@@ -517,6 +612,14 @@ Don't start until you know what the student wants to learn. Ask briefly.
 
     user_input = st.chat_input("What do you want to learn?")
     if user_input:
+        # retrieval: attach the most relevant book chunks to the question
+        if st.session_state.learn_book_chunks:
+            rel = _best_chunks(user_input, st.session_state.learn_book_chunks)
+            if rel:
+                st.session_state.learn_chat.append({
+                    "role": "system",
+                    "content": "Relevant excerpt(s) from the loaded material for this question:\n\n" + "\n\n---\n\n".join(rel)
+                })
         with st.chat_message("user"):
             st.write(user_input)
         st.session_state.learn_chat.append({"role": "user", "content": user_input})
