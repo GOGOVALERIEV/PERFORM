@@ -159,3 +159,9 @@
 | 2026-09-30 | JustDone (free, web) | elicit-prose-test.txt | - | 99% | free sharp referee; calibrated vs GPTZero 97% | ALARM |
 
 | 2026-09-30 | JustDone (free, web) | elicit-prose-test.txt | - | 99% | Elicit source-summary prose, scan 3 | ALARM |
+| 2026-09-30 | JustDone (free, web) | quote-dense-test.txt | - | 98% | free sharp referee; calibrated vs GPTZero 97% | ALARM |
+| 2026-09-30 | JustDone (free, web) | quote-dense-test.txt | - | 77% | free sharp referee; calibrated vs GPTZero 97% | ALARM |
+| 2026-09-30 | JustDone (free, web) | quote-dense-test.txt | - | 98% | free sharp referee; calibrated vs GPTZero 97% | ALARM |
+| 2026-09-30 | JustDone (free, web) | quote-dense-test.txt | - | 98% | synthetic quote-wrapped Elicit prose, scan 1 | ALARM |
+| 2026-09-30 | JustDone (free, web) | quote-dense-test.txt | - | 77% | synthetic quote-wrapped Elicit prose, scan 2 | ALARM |
+| 2026-09-30 | JustDone (free, web) | quote-dense-test.txt | - | 98% | synthetic quote-wrapped Elicit prose, scan 3 | ALARM |
