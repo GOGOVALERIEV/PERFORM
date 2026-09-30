@@ -233,7 +233,7 @@ with st.sidebar:
     st.title(f"🎭 {T['title']}")
     st.caption(T["hello"])
     tab_choice = st.radio(T["choose"],
-        ["✍️ Writing Bot", "📄 Ready Papers", "📊 Presentation Bot", "🔧 Humanizer", "📚 Learn Bot", "🎤 Transcribe Bot"],
+        ["✍️ Writing Bot", "📊 Presentation Bot", "🔧 Humanizer", "📚 Learn Bot", "🎤 Transcribe Bot"],
         key="tab_selector")
     st.divider()
     used, limit = _usage_today(st.session_state.get("access_code", "unknown"))
@@ -500,71 +500,6 @@ if tab_choice == "✍️ Writing Bot":
             pass  # silent fail — never block the UI
         
         st.rerun()
-
-# ─── TAB 1b: READY PAPERS BOT ─────────────────────────────────────────────
-elif tab_choice == "📄 Ready Papers":
-    st.header("📄 Ready Papers")
-    st.caption("Say the topic + how many → real academic sources → ready drafts in your style.")
-
-    topic_rp = st.text_input("Topic:", key="rp_topic")
-    n_papers = st.slider("How many papers:", 1, 3, 1, key="rp_n")
-
-    if st.button("Generate papers", key="rp_go", type="primary") and topic_rp:
-        with st.spinner("Searching real academic sources..."):
-            try:
-                candidates = openalex_search(topic_rp, 10)
-            except Exception as e:
-                st.error(f"Source search failed: {e}")
-                candidates = []
-        # filter junk: keep papers whose title/abstract actually matches the topic keywords
-        kws = [w for w in topic_rp.lower().split() if len(w) > 3]
-        def _score(p):
-            t = (p["title"] + " " + p["abstract"]).lower()
-            return sum(1 for k in kws if k in t)
-        candidates = sorted([p for p in candidates if _score(p) >= 1], key=_score, reverse=True)
-        papers = candidates[:n_papers]
-        st.session_state.rp_selected = papers
-        st.session_state.rp_generated = {}
-        if not papers:
-            st.warning("No matching papers found — try a more specific topic (English usually matches better).")
-        for i, p in enumerate(papers, 1):
-            auth = ", ".join(p["authors"])
-            with st.spinner(f"Writing paper {i}/{len(papers)} from: {p['title'][:50]}..."):
-                ctx = build_corpus_context([p])
-                lang_inst = "Respond in English." if LANGSEL == "en" else "Отговаряй на български."
-                rp_sys = STUDENT_SYS + f"\n\n{lang_inst}" + """
-
-TASK: Write a ready student paper (referat-style, 500-700 words) about the user's topic,
-based PRIMARILY on this real academic source. Rules:
-- Structure: flowing prose (intro, body, conclusion) + a 'Библиография' section at the end
-- Ground every claim in the real source; attribute with 'Според [име] (година)'
-- Include 1-2 short real quotes from the source marked with „...“ and attributed
-- Bibliography: full citation of the real paper (authors, year, title, journal, DOI)
-- Write it so a professor checking the bibliography finds a REAL paper"""
-                paper_text = call_llm([
-                    {"role": "system", "content": rp_sys},
-                    {"role": "user", "content": f"Topic: {topic_rp}\n\nREAL SOURCE TO USE:\n{ctx}"},
-                ], temp=0.8, max_tokens=2500)
-                st.session_state.rp_generated[i] = {
-                    "text": paper_text,
-                    "meta": p,
-                }
-                _record_usage(st.session_state.get("access_code", "unknown"))
-
-    for i, art in (st.session_state.get("rp_generated") or {}).items():
-        p = art["meta"]
-        with st.expander(f"📕 Paper {i}: {p['title'][:70]} ({p['year']})", expanded=(i == 1)):
-            auth = ", ".join(p["authors"]) or "?"
-            st.caption(f"Real source: {auth} ({p['year']}) [{p['journal']}, {p['citations']} citations]"
-                       + (f" — DOI: {p['doi']}" if p["doi"] else ""))
-            st.write(art["text"])
-            st.download_button(
-                f"⬇️ Download paper {i} (.txt)",
-                data=art["text"],
-                file_name=f"paper-{i}-{(p['title'] or 'source')[:30].strip().replace(' ', '-')}.txt",
-                mime="text/plain",
-                key=f"rp_dl_{i}",
-            )
 
 # ─── TAB 2: PRESENTATION BOT ─────────────────────────────────────────────────
 elif tab_choice == "📊 Presentation Bot":
