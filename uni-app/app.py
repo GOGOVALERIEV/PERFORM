@@ -233,7 +233,7 @@ with st.sidebar:
     st.title(f"🎭 {T['title']}")
     st.caption(T["hello"])
     tab_choice = st.radio(T["choose"],
-        ["✍️ Writing Bot", "📊 Presentation Bot", "🔧 Humanizer", "📚 Learn Bot", "🎤 Transcribe Bot"],
+        ["✍️ Writing Bot", "📄 Ready Papers", "📊 Presentation Bot", "🔧 Humanizer", "📚 Learn Bot", "🎤 Transcribe Bot"],
         key="tab_selector")
     st.divider()
     used, limit = _usage_today(st.session_state.get("access_code", "unknown"))
@@ -404,6 +404,55 @@ def chat_history_bar(slug, chat_key):
         st.session_state[f"{slug}_conv_id"] = None
         st.rerun()
 
+# ─── POMAGALO ENGINE (BG copy-homework archive, free previews) ─────────────
+POMAGALO = "https://xn--80aai7ablfb.xn--90ae"
+POMAGALO_UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120"}
+
+def pomagalo_search(query, max_results=8):
+    """Search Pomagalo.bg archive. Returns [{title, url, id}] — real student papers."""
+    import urllib.parse
+    q = urllib.parse.quote(query)
+    r = requests.get(f"{POMAGALO}/all?search={q}", headers=POMAGALO_UA, timeout=30)
+    r.raise_for_status()
+    from lxml import html as _lh
+    doc = _lh.fromstring(r.text)
+    seen, out = set(), []
+    for a in doc.xpath("//a[contains(@href, '/download/')]"):
+        h = a.get("href", "")
+        if h.startswith("/"):
+            h = POMAGALO + h
+        t = (a.text_content() or "").strip()
+        if h in seen or len(t) < 5:
+            continue
+        seen.add(h)
+        out.append({"title": t, "url": h})
+        if len(out) >= max_results:
+            break
+    return out
+
+def pomagalo_read(url):
+    """Read the free preview text of one material page (the part between header and Изтегли)."""
+    r = requests.get(url, headers=POMAGALO_UA, timeout=30)
+    r.raise_for_status()
+    from lxml import html as _lh
+    doc = _lh.fromstring(r.text)
+    # paper zone: meta table (Дисциплина/Тема...) until the Изтегли/Закупи block
+    txt = doc.text_content()
+    start = txt.find("Дисциплина")
+    if start < 0:
+        start = 0
+    end_candidates = [txt.find("Изтегли", start), txt.find("Закупи", start), txt.find("Добави в любими", start)]
+    ends = [e for e in end_candidates if e > start]
+    paper = txt[start:max(ends) if ends else len(txt)]
+    meta = {}
+    for key in ("Дисциплина", "Тема", "Тип", "Брой думи", "Изготвил"):
+        m = re.search(key + r"[:\s]*([^\n]{3,120})", paper)
+        if m:
+            meta[key] = m.group(1).strip()
+    words = len(paper.split())
+    return {"text": paper.strip(), "words": words, "meta": meta}
+
+
 # ─── TAB 1: REFERAT BOT ──────────────────────────────────────────────────────
 if tab_choice == "✍️ Writing Bot":
     st.header("✍️ Writing Bot")
@@ -476,6 +525,62 @@ if tab_choice == "✍️ Writing Bot":
             pass  # silent fail — never block the UI
         
         st.rerun()
+
+# ─── TAB 1b: READY PAPERS BOT (Pomagalo edition — real BG student papers) ─
+elif tab_choice == "📄 Ready Papers":
+    st.header("📄 Ready Papers")
+    st.caption("Say the topic → real BG student papers from Pomagalo.bg, stitched into one document.")
+
+    topic_rp = st.text_input("Topic:", key="rp_topic")
+    n_src = st.slider("How many sources to stitch:", 2, 5, 3, key="rp_n")
+
+    if st.button("Get my paper", key="rp_go", type="primary") and topic_rp:
+        with st.spinner("Searching Pomagalo.bg..."):
+            try:
+                hits = pomagalo_search(topic_rp, 10)
+            except Exception as e:
+                st.error(f"Search failed: {e}")
+                hits = []
+        if not hits:
+            st.warning("Nothing found — try Bulgarian keywords (the archive is BG).")
+        else:
+            st.info(f"Found {len(hits)} papers. Reading the {min(n_src, len(hits))} best matches...")
+            sections = []
+            prog = st.progress(0.0)
+            for i, h in enumerate(hits[:n_src]):
+                try:
+                    art = pomagalo_read(h["url"])
+                    sections.append({"title": h["title"], "url": h["url"], **art})
+                except Exception:
+                    pass
+                prog.progress((i + 1) / min(n_src, len(hits)))
+            # stitch: header + each source's text + sources list
+            parts = [f"READY PAPER — {topic_rp}",
+                     f"(съставено от {len(sections)} реални материала от Pomagalo.bg)", ""]
+            for i, s in enumerate(sections, 1):
+                parts.append(f"{'='*60}")
+                parts.append(f"ИЗТОЧНИК {i}: {s['title']}")
+                if s.get("meta", {}).get("Тема"):
+                    parts.append(f"Тема: {s['meta']['Тема']}")
+                parts.append("=" * 60)
+                parts.append(s["text"])
+                parts.append("")
+            parts.append("=" * 60)
+            parts.append("ИЗПОЛЗВАНИ ИЗТОЧНИЦИ (от Pomagalo.bg):")
+            for s in sections:
+                parts.append(f"- {s['title']} — {s['url']}")
+            final = "\n".join(parts)
+            st.session_state.rp_final = {"text": final, "sections": sections}
+
+    art = st.session_state.get("rp_final")
+    if art:
+        st.success(f"✅ Ready: stitched from {len(art['sections'])} real Pomagalo papers.")
+        for s in art["sections"]:
+            st.markdown(f"- **{s['title']}** — {s['words']} words read {[k for k in [s.get('meta', {}).get('Тип')] if k]}")
+        st.text_area("Your paper:", art["text"], height=400, key="rp_view")
+        st.download_button("⬇️ Download (.txt)", data=art["text"],
+                           file_name=f"paper-{topic_rp[:30].strip().replace(' ', '-')}.txt",
+                           mime="text/plain", key="rp_dl")
 
 # ─── TAB 2: PRESENTATION BOT ─────────────────────────────────────────────────
 elif tab_choice == "📊 Presentation Bot":
