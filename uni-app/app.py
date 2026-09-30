@@ -280,10 +280,84 @@ def render_chat(chat_key):
             if msg.get("content"):
                 st.write(msg["content"])
 
+# ─── CHAT HISTORY (per customer, server-side) ────────────────────────────
+CHAT_STORE = Path(__file__).parent / "chats"
+
+def _customer_dir(code):
+    d = CHAT_STORE / code
+    d.mkdir(parents=True, exist_ok=True)
+    return d
+
+def _load_chats(code, slug):
+    try:
+        return json.loads((_customer_dir(code) / f"{slug}.json").read_text(encoding="utf-8"))
+    except Exception:
+        return []
+
+def _save_chats(code, slug, convs):
+    try:
+        (_customer_dir(code) / f"{slug}.json").write_text(
+            json.dumps(convs, ensure_ascii=False, indent=1), encoding="utf-8")
+    except Exception:
+        pass
+
+def persist_chat(slug, chat_key):
+    """Save the current chat (text only, no images) as/into a conversation."""
+    code = st.session_state.get("access_code", "anon")
+    msgs = [m for m in st.session_state.get(chat_key, []) if m.get("role") != "system"]
+    if not msgs:
+        return
+    stored = [{k: v for k, v in m.items() if k != "images"} for m in msgs]
+    convs = _load_chats(code, slug)
+    cid = st.session_state.get(f"{slug}_conv_id")
+    title = (str(stored[0].get("content") or "chat"))[:32].strip() or "chat"
+    for c in convs:
+        if c["id"] == cid:
+            c["messages"] = stored
+            break
+    else:
+        cid = datetime.now().strftime("%Y%m%d%H%M%S%f")
+        st.session_state[f"{slug}_conv_id"] = cid
+        convs.insert(0, {"id": cid, "title": title, "messages": stored})
+    _save_chats(code, slug, convs)
+
+def _fresh_chat(chat_key):
+    chat = st.session_state.get(chat_key, [])
+    sysmsg = chat[0] if chat and chat[0].get("role") == "system" else None
+    st.session_state[chat_key] = [sysmsg] if sysmsg else []
+
+def chat_history_bar(slug, chat_key):
+    """List of past conversations: open / delete / new."""
+    code = st.session_state.get("access_code", "anon")
+    convs = _load_chats(code, slug)
+    if not convs:
+        return
+    st.caption("🕘 Your saved chats — click to open:")
+    for c in convs[:15]:
+        colA, colB = st.columns([5, 1])
+        if colA.button(c["title"][:38], key=f"{slug}_open_{c['id']}"):
+            chat = st.session_state.get(chat_key, [])
+            sysmsg = chat[0] if chat and chat[0].get("role") == "system" else None
+            st.session_state[chat_key] = ([sysmsg] if sysmsg else []) + c["messages"]
+            st.session_state[f"{slug}_conv_id"] = c["id"]
+            st.rerun()
+        if colB.button("🗑", key=f"{slug}_del_{c['id']}"):
+            convs = [x for x in convs if x["id"] != c["id"]]
+            _save_chats(code, slug, convs)
+            if st.session_state.get(f"{slug}_conv_id") == c["id"]:
+                _fresh_chat(chat_key)
+                st.session_state[f"{slug}_conv_id"] = None
+            st.rerun()
+    if st.button("➕ New chat", key=f"{slug}_new"):
+        _fresh_chat(chat_key)
+        st.session_state[f"{slug}_conv_id"] = None
+        st.rerun()
+
 # ─── TAB 1: REFERAT BOT ──────────────────────────────────────────────────────
 if tab_choice == "✍️ Writing Bot":
     st.header("✍️ Writing Bot")
     st.caption("Type your topic + facts → get a referat. Paste images too.")
+    chat_history_bar("writing", "ref_chat")
 
     if "ref_chat" not in st.session_state:
         lang_inst = "Respond in English." if LANGSEL == "en" else "Отговаряй на български."
@@ -326,6 +400,7 @@ if tab_choice == "✍️ Writing Bot":
                 response = call_llm(st.session_state.ref_chat)
             st.write(response)
         st.session_state.ref_chat.append({"role": "assistant", "content": response})
+        persist_chat("writing", "ref_chat")
         
         # Auto-save to git (behind the scenes)
         import subprocess
@@ -554,6 +629,7 @@ Max 5 points per slide. Write in Bulgarian."""},
 elif tab_choice == "📚 Learn Bot":
     st.header("📚 Learn Bot")
     st.caption("Give me a topic → I explain → quiz → I correct you. Or load a book/article URL and I teach from it.")
+    chat_history_bar("learn", "learn_chat")
 
     # ── BOOK MODE helpers ────────────────────────────────────────────────────
     def _fetch_url_text(u):
@@ -688,6 +764,7 @@ THE STUDENT HAS LOADED STUDY MATERIAL (a book/article). Teach FROM it:
                 response = call_llm(st.session_state.learn_chat, model="qwen/qwen3.7-flash")
             st.write(response)
         st.session_state.learn_chat.append({"role": "assistant", "content": response})
+        persist_chat("learn", "learn_chat")
         
         # Auto-save study session (behind the scenes)
         try:
@@ -770,6 +847,16 @@ elif tab_choice == "🔧 Humanizer":
     st.subheader("✏️ Your Workspace")
     st.caption("Write or paste your draft here. Edit freely. Copy when done.")
     
+    # restore saved workspace for this customer (once per session)
+    _ws_file = _customer_dir(st.session_state.get("access_code", "anon")) / "workspace.txt"
+    if "ws_restored" not in st.session_state:
+        st.session_state.ws_restored = True
+        if _ws_file.exists() and "workspace_area" not in st.session_state:
+            try:
+                st.session_state.workspace_area = _ws_file.read_text(encoding="utf-8")
+            except Exception:
+                pass
+
     workspace_text = st.text_area(
         "Your text:",
         height=400,
@@ -777,6 +864,14 @@ elif tab_choice == "🔧 Humanizer":
 
         key="workspace_area"
     )
+
+    # auto-save workspace whenever it changes
+    if workspace_text != st.session_state.get("_ws_last_saved", ""):
+        try:
+            _ws_file.write_text(workspace_text, encoding="utf-8")
+            st.session_state._ws_last_saved = workspace_text
+        except Exception:
+            pass
     
     col_w1, col_w2, col_w3 = st.columns(3)
     with col_w1:
