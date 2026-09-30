@@ -19,6 +19,7 @@ import io
 import time
 import hashlib
 import base64
+import requests
 from datetime import datetime
 from pathlib import Path
 
@@ -247,6 +248,56 @@ with st.sidebar:
     st.divider()
     st.caption("🔒 " + T["trust"])
 
+# ─── OPENALEX CORPUS ENGINE (Stage 0b, built into the app) ─────────────────
+OPENALEX_API = "https://api.openalex.org/works"
+
+def openalex_search(query, max_papers=6):
+    """Search 138M+ papers (same corpus Elicit uses) — free, unlimited."""
+    r = requests.get(OPENALEX_API, params={
+        "search": query, "per-page": max_papers,
+        "select": ("title,publication_year,authorships,abstract_inverted_index,"
+                   "cited_by_count,doi,open_access,primary_location"),
+    }, headers={"User-Agent": "ShadowScholar/1.0 (mailto:gogovaleriev77@gmail.com)"}, timeout=30)
+    r.raise_for_status()
+    papers = []
+    for w in r.json().get("results", []):
+        inv = w.get("abstract_inverted_index")
+        abstract = ""
+        if inv:
+            pos = {}
+            for word, idxs in inv.items():
+                for i in idxs:
+                    pos[i] = word
+            abstract = " ".join(pos[i] for i in sorted(pos))
+        loc = w.get("primary_location") or {}
+        papers.append({
+            "title": w.get("title") or "Untitled",
+            "year": w.get("publication_year"),
+            "authors": [a["author"]["display_name"] for a in w.get("authorships", [])][:3],
+            "journal": ((loc.get("source") or {}).get("display_name")) or "",
+            "citations": w.get("cited_by_count", 0),
+            "doi": w.get("doi") or "",
+            "oa_url": (w.get("open_access") or {}).get("oa_url") or "",
+            "abstract": abstract,
+        })
+    return papers
+
+def build_corpus_context(papers):
+    """Turn papers into a fact-pack for the bot's system prompt."""
+    lines = []
+    for p in papers:
+        auth = ", ".join(p["authors"]) or "Unknown"
+        lines.append(f"- {auth} ({p['year']}) in '{p['title']}' [{p['journal']}, {p['citations']} citations]"
+                     + (f" DOI: {p['doi']}" if p["doi"] else ""))
+        if p["abstract"]:
+            sents = re.split(r"(?<=[.!?])\s+", p["abstract"])
+            for s in sents[:3]:
+                if len(s.strip()) > 50:
+                    lines.append(f"  * {s.strip()}")
+        if p["oa_url"]:
+            lines.append(f"  * Full text: {p['oa_url']}")
+    return "\n".join(lines)
+
 # ─── HELPERS ─────────────────────────────────────────────────────────────────
 def call_llm(messages, model="deepseek/deepseek-v4-flash-0731", temp=0.8, max_tokens=2000):
     # spend protection: model whitelist + per-code daily quota
@@ -357,12 +408,45 @@ def chat_history_bar(slug, chat_key):
 if tab_choice == "✍️ Writing Bot":
     st.header("✍️ Writing Bot")
     st.caption("Type your topic + facts → get a referat. Paste images too.")
+
+    # ── REAL SOURCES ENGINE (OpenAlex — 138M papers, free) ──────────────────
+    with st.expander("🎓 Real sources (recommended) — pull real academic papers for your topic"):
+        st.caption("Searches the same 138M-paper corpus Elicit uses (OpenAlex). Free, unlimited. The bot then writes GROUNDED in real papers with real citations.")
+        c1, c2 = st.columns([4, 1])
+        topic_for_sources = c1.text_input("Topic for source search:", key="ref_src_topic")
+        pull_btn = c2.button("Pull papers", key="ref_src_pull", type="primary")
+        if pull_btn and topic_for_sources:
+            with st.spinner("Searching 138M papers..."):
+                try:
+                    st.session_state.ref_papers = openalex_search(topic_for_sources, 6)
+                except Exception as e:
+                    st.error(f"Search failed: {e}")
+                    st.session_state.ref_papers = []
+        if st.session_state.get("ref_papers"):
+            st.success(f"✅ {len(st.session_state.ref_papers)} real papers loaded — the bot now cites them.")
+            for p in st.session_state.ref_papers:
+                auth = ", ".join(p["authors"][:2]) or "?"
+                st.markdown(f"- **{p['title']}** ({p['year']}) — {auth} [{p['journal']}, {p['citations']} cit.]")
+        if st.button("Clear sources", key="ref_src_clear"):
+            st.session_state.pop("ref_papers", None)
+            st.session_state.pop("ref_chat", None)
+            st.rerun()
+
     chat_history_bar("writing", "ref_chat")
 
     if "ref_chat" not in st.session_state:
         lang_inst = "Respond in English." if LANGSEL == "en" else "Отговаряй на български."
+        sys_prompt = STUDENT_SYS + f"\n\n{lang_inst}"
+        # ground the bot in real papers if loaded
+        papers = st.session_state.get("ref_papers")
+        if papers:
+            corpus_ctx = build_corpus_context(papers)
+            sys_prompt += ("\n\nREAL ACADEMIC SOURCES for this topic (USE THEM — ground every "
+                "claim in these papers, mention real author names with years in the text, "
+                "and add a bibliography list at the end with authors, years, titles, DOIs):\n"
+                + corpus_ctx)
         st.session_state.ref_chat = [
-            {"role": "system", "content": STUDENT_SYS + f"\n\n{lang_inst}"}
+            {"role": "system", "content": sys_prompt}
         ]
 
     render_chat("ref_chat")
@@ -716,6 +800,32 @@ elif tab_choice == "📚 Learn Bot":
             st.session_state.learn_book_chunks = []
             st.session_state.pop("learn_chat", None)
 
+    # ── REAL SOURCES ENGINE for Learn Bot ───────────────────────────────
+    with st.expander("🎓 Load real academic papers (OpenAlex — free, unlimited)"):
+        st.caption("Same 138M-paper corpus Elicit uses. The professor teaches FROM these real papers.")
+        lc1, lc2 = st.columns([4, 1])
+        learn_topic_src = lc1.text_input("Topic for paper search:", key="learn_src_topic")
+        learn_pull = lc2.button("Pull papers", key="learn_src_pull", type="primary")
+        if learn_pull and learn_topic_src:
+            with st.spinner("Searching 138M papers..."):
+                try:
+                    st.session_state.learn_papers = openalex_search(learn_topic_src, 5)
+                except Exception as e:
+                    st.error(f"Search failed: {e}")
+                    st.session_state.learn_papers = []
+            if st.session_state.get("learn_papers"):
+                st.session_state.learn_papers_ctx = build_corpus_context(st.session_state.learn_papers)
+                st.session_state.pop("learn_chat", None)  # restart professor with papers
+        if st.session_state.get("learn_papers"):
+            st.success(f"✅ {len(st.session_state.learn_papers)} real papers loaded.")
+            for p in st.session_state.learn_papers:
+                st.markdown(f"- **{p['title']}** ({p['year']}) [{p['journal']}]")
+        if st.button("Clear papers", key="learn_src_clear"):
+            for k in ("learn_papers", "learn_papers_ctx"):
+                st.session_state.pop(k, None)
+            st.session_state.pop("learn_chat", None)
+            st.rerun()
+
     if "learn_chat" not in st.session_state:
         base_prompt = """You are a professor teaching political science and international relations.
 
@@ -727,6 +837,10 @@ Teaching protocol:
 
 Don't start until you know what the student wants to learn. Ask briefly.
 """
+        if st.session_state.get("learn_papers_ctx"):
+            base_prompt += ("\n\nREAL ACADEMIC PAPERS on the student's topic (teach FROM these; "
+                "cite real authors with years; say when something is beyond these papers):\n"
+                + st.session_state.learn_papers_ctx)
         if st.session_state.learn_book_dossier:
             base_prompt += """
 
