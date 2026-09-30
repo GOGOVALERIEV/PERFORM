@@ -285,12 +285,53 @@ if tab_choice == "✍️ Writing Bot":
 # ─── TAB 2: PRESENTATION BOT ─────────────────────────────────────────────────
 elif tab_choice == "📊 Presentation Bot":
     st.header("📊 Presentation Bot")
-    st.caption("Give me a topic → get a PowerPoint with image placeholders.")
+    st.caption("Topic → Generate → drop your images → Build → Download. That's it.")
 
-    topic = st.text_input("Topic:")
-    num_slides = st.slider("Slides:", 5, 20, 10)
-    upload = st.file_uploader("Upload content file:", type=["txt", "md"])
-    with_images = st.toggle("Include image placeholders", value=True)
+    def parse_slides_json(text):
+        """Robust slide-plan parser: survives broken LLM JSON (missing commas etc.)."""
+        m = re.search(r'\[.*\]', text, re.DOTALL)
+        if not m:
+            m = re.search(r'\{.*\}', text, re.DOTALL)
+            if not m:
+                return None
+        raw = m.group()
+        if not raw.startswith('['):
+            raw = '[' + raw + ']'
+        # 1) clean parse
+        try:
+            data = json.loads(raw)
+            return data if isinstance(data, list) else None
+        except Exception:
+            pass
+        # 2) repair: trailing commas
+        fixed = re.sub(r',\s*([\]}])', r'\1', raw)
+        try:
+            data = json.loads(fixed)
+            return data if isinstance(data, list) else None
+        except Exception:
+            pass
+        # 3) salvage: decode each {...} object individually, keep the good ones
+        objs, depth, start = [], 0, None
+        for idx, ch in enumerate(raw):
+            if ch == '{':
+                if depth == 0:
+                    start = idx
+                depth += 1
+            elif ch == '}':
+                depth -= 1
+                if depth == 0 and start is not None:
+                    try:
+                        o = json.loads(raw[start:idx + 1])
+                        if isinstance(o, dict):
+                            objs.append(o)
+                    except Exception:
+                        pass
+                    start = None
+        return objs or None
+
+    topic = st.text_input("Topic:", key="pres_topic")
+    num_slides = st.slider("Slides:", 5, 20, 10, key="pres_slides")
+    upload = st.file_uploader("Upload content file (optional):", type=["txt", "md"], key="pres_upload")
 
     content_source = ""
     if upload:
@@ -298,13 +339,14 @@ elif tab_choice == "📊 Presentation Bot":
     elif topic:
         content_source = topic
 
-    if st.button("Generate Presentation") and content_source:
+    # ── STEP 1: generate the slide plan ─────────────────────────────────────
+    if st.button("Generate Presentation", key="pres_generate", type="primary") and content_source:
         with st.spinner("Generating..."):
             llm_response = call_llm([
                 {"role": "system", "content": f"""Create a PowerPoint presentation in Bulgarian.
 Topic: {topic}
 Slides: {num_slides}
-{"On each content slide (not title), add a key: \"image\": \"description of a relevant image/screenshot/diagram for this slide\". Always include this key." if with_images else ""}
+On each content slide (not the title slide), add a key: \"image_desc\": \"short description of a relevant image for this slide\". Always include this key on content slides.
 
 Respond ONLY in JSON format:
 [
@@ -315,24 +357,50 @@ Respond ONLY in JSON format:
 Max 5 points per slide. Write in Bulgarian."""},
                 {"role": "user", "content": content_source},
             ], temp=0.7)
+        slides = parse_slides_json(llm_response)
+        if slides:
+            st.session_state.slides_data = slides
+            st.session_state.pres_topic_final = topic or (upload.name if upload else "presentation")
+        else:
+            st.error("The AI returned a broken slide plan. Just press Generate again — it usually fixes itself.")
 
-        try:
-            json_match = re.search(r'\[.*\]', llm_response, re.DOTALL)
-            if json_match:
-                slides_data = json.loads(json_match.group())
-            else:
-                st.error("JSON parse error.")
-                st.stop()
+    slides_data = st.session_state.get("slides_data")
+    if not slides_data:
+        st.stop()
 
+    st.success(f"Slide plan ready: {len(slides_data)} slides.")
+
+    # ── STEP 2: ONE image upload for the whole presentation ─────────────────
+    st.subheader("1️⃣ Your images")
+    st.caption("Drop all your images here. They are placed into the slides in order (slide 3 gets your 1st image, slide 4 the 2nd...). Leftover slides get a gray placeholder.")
+    imgs = st.file_uploader(
+        "Upload images:",
+        type=["png", "jpg", "jpeg", "webp", "gif", "bmp"],
+        accept_multiple_files=True,
+        key="pres_images_all",
+    )
+    if imgs:
+        st.caption(f"{len(imgs)} image(s) ready: " + ", ".join(im.name for im in imgs))
+
+    # ── STEP 3: build + download ────────────────────────────────────────────
+    if st.button("Build PowerPoint", key="pres_build", type="primary"):
+        with st.spinner("Building..."):
             from pptx import Presentation
             from pptx.util import Inches, Pt
-            import pptx.dml.color
+            from pptx.dml.color import RGBColor
+            from pptx.enum.text import PP_ALIGN
+            from lxml import etree
+
+            # content slides in order get the uploaded images in order
+            content_idx = [i for i, sd in enumerate(slides_data)
+                           if sd.get("layout", "title_content") != "title"]
+            img_map = dict(zip(content_idx, [im.getvalue() for im in (imgs or [])]))
 
             prs = Presentation()
             prs.slide_width = Inches(13.333)
             prs.slide_height = Inches(7.5)
 
-            for sd in slides_data:
+            for i, sd in enumerate(slides_data):
                 layout = sd.get("layout", "title_content")
                 title = sd.get("title", "")
                 content = sd.get("content", [])
@@ -344,75 +412,81 @@ Max 5 points per slide. Write in Bulgarian."""},
                     slide.shapes.title.text = title
                     if content:
                         slide.placeholders[1].text = content[0]
-                else:
-                    slide = prs.slides.add_slide(prs.slide_layouts[1])
-                    slide.shapes.title.text = title
-                    body = slide.placeholders[1]
-                    body.clear()
-                    for i, line in enumerate(content):
-                        p = body.paragraphs[0] if i == 0 else body.add_paragraph()
-                        p.text = line
-                        p.level = 0
-                    img_desc = sd.get("image_desc", "")
-                    if img_desc or with_images:
-                        from pptx.util import Emu
-                        from pptx.dml.color import RGBColor
-                        from pptx.enum.text import PP_ALIGN
-                        # Create a visible gray placeholder box on the right
-                        left = Inches(8.5)
-                        top = Inches(1.8)
-                        width = Inches(4.2)
-                        height = Inches(4.5)
-                        txBox = slide.shapes.add_textbox(left, top, width, height)
-                        tf = txBox.text_frame
-                        tf.word_wrap = True
-                        p_frame = tf.paragraphs[0]
-                        p_frame.alignment = PP_ALIGN.CENTER
-                        from pptx.util import Pt as Pt2
-                        run = p_frame.add_run()
-                        run.text = "🖼️  INSERT IMAGE\n\n" + (img_desc or 'Add your image here')
-                        run.font.size = Pt2(11)
-                        run.font.color.rgb = RGBColor(160, 160, 160)
-                        # Add gray border/fill via XML
-                        from lxml import etree
-                        sp = txBox._element
-                        spPr = sp.find('.//{http://schemas.openxmlformats.org/drawingml/2006/main}spPr')
-                        if spPr is None:
-                            spPr = etree.SubElement(sp, '{http://schemas.openxmlformats.org/drawingml/2006/main}spPr')
-                        solidFill = etree.SubElement(spPr, '{http://schemas.openxmlformats.org/drawingml/2006/main}solidFill')
-                        srgbClr = etree.SubElement(solidFill, '{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr')
-                        srgbClr.set('val', '2A2A2A')
-                        ln = etree.SubElement(spPr, '{http://schemas.openxmlformats.org/drawingml/2006/main}ln')
-                        ln.set('w', '12700')
-                        lnFill = etree.SubElement(ln, '{http://schemas.openxmlformats.org/drawingml/2006/main}solidFill')
-                        lnClr = etree.SubElement(lnFill, '{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr')
-                        lnClr.set('val', '555555')
-                        # Shrink content area so it doesn't overlap the image box
-                        try:
-                            body.left = Inches(0.5)
-                            body.width = Inches(7.5)
-                        except Exception:
-                            pass
+                    continue
+
+                slide = prs.slides.add_slide(prs.slide_layouts[1])
+                slide.shapes.title.text = title
+                body = slide.placeholders[1]
+                body.text_frame.clear()
+                tf = body.text_frame
+                for j, line in enumerate(content):
+                    p = tf.paragraphs[0] if j == 0 else tf.add_paragraph()
+                    p.text = line
+                    p.level = 0
+                try:
+                    body.left = Inches(0.5)
+                    body.width = Inches(7.5)
+                except Exception:
+                    pass
+
+                box_left, box_top = 8.5, 1.8
+                box_w, box_h = 4.2, 4.5
+
+                img_bytes = img_map.get(i)
+                if img_bytes:
+                    from PIL import Image as PILImage
+                    try:
+                        im = PILImage.open(io.BytesIO(img_bytes))
+                        ar = im.size[0] / max(im.size[1], 1)
+                        w_in = min(box_w, box_h * ar)
+                        h_in = w_in / ar
+                        slide.shapes.add_picture(
+                            io.BytesIO(img_bytes),
+                            Inches(box_left + (box_w - w_in) / 2),
+                            Inches(box_top + (box_h - h_in) / 2),
+                            Inches(w_in), Inches(h_in),
+                        )
+                    except Exception:
+                        img_bytes = None
+
+                if not img_bytes:
+                    txBox = slide.shapes.add_textbox(Inches(box_left), Inches(box_top), Inches(box_w), Inches(box_h))
+                    t = txBox.text_frame
+                    t.word_wrap = True
+                    pf = t.paragraphs[0]
+                    pf.alignment = PP_ALIGN.CENTER
+                    run = pf.add_run()
+                    run.text = "🖼️  INSERT IMAGE\n\n" + (sd.get("image_desc", "") or 'Add your image here')
+                    run.font.size = Pt(11)
+                    run.font.color.rgb = RGBColor(160, 160, 160)
+                    sp = txBox._element
+                    spPr = sp.find('.//{http://schemas.openxmlformats.org/drawingml/2006/main}spPr')
+                    if spPr is None:
+                        spPr = etree.SubElement(sp, '{http://schemas.openxmlformats.org/drawingml/2006/main}spPr')
+                    solidFill = etree.SubElement(spPr, '{http://schemas.openxmlformats.org/drawingml/2006/main}solidFill')
+                    srgb = etree.SubElement(solidFill, '{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr')
+                    srgb.set('val', '2A2A2A')
+                    ln = etree.SubElement(spPr, '{http://schemas.openxmlformats.org/drawingml/2006/main}ln')
+                    ln.set('w', '12700')
+                    lnFill = etree.SubElement(ln, '{http://schemas.openxmlformats.org/drawingml/2006/main}solidFill')
+                    lnClr = etree.SubElement(lnFill, '{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr')
+                    lnClr.set('val', '555555')
 
             pptx_buffer = io.BytesIO()
             prs.save(pptx_buffer)
             pptx_buffer.seek(0)
+            st.session_state.pptx_bytes = pptx_buffer.getvalue()
 
-            st.success("Done!")
-            st.download_button(
-                label="⬇️ Download PowerPoint",
-                data=pptx_buffer.getvalue(),
-                file_name=f"{topic[:30] or 'presentation'}.pptx",
-                mime="application/vnd.openxmlformats-officedocument.presentationml.presentation",
-            )
-            st.subheader("Slide preview:")
-            for sd in slides_data:
-                with st.expander(f"📌 {sd.get('title', 'Slide')}"):
-                    for line in sd.get("content", []):
-                        st.write(f"• {line}")
-        except (json.JSONDecodeError, KeyError) as e:
-            st.error(f"Error: {e}")
-            st.text(llm_response[:500])
+    # download button — appears as soon as a build exists (survives reruns)
+    if st.session_state.get("pptx_bytes"):
+        st.success("Done! Grab it here:")
+        st.download_button(
+            label="⬇️ Download PowerPoint",
+            data=st.session_state.pptx_bytes,
+            file_name=f"{st.session_state.get('pres_topic_final', 'presentation')[:30]}.pptx",
+            mime="application/vnd.openxmlformats-officedocument.presentationml.presentation",
+            key="pres_download",
+        )
 
 # ─── TAB 3: LEARN BOT ────────────────────────────────────────────────────────
 elif tab_choice == "📚 Learn Bot":
