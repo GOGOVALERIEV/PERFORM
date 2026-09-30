@@ -52,3 +52,50 @@ Elicit prose NEVER enters a draft. Manual clicks only, never automated.
 ## Learn Bot tie-in
 Papers with public URLs/PDFs can be loaded into uni-app Learn Bot "book mode"
 (built 2026-09-30) — the professor then teaches from real academic sources.
+
+---
+
+# ADDENDUM (2026-09-30, evening): The vendor confession + the OpenAlex discovery
+
+## 1. Elicit's own help page kills the myth — with their signature
+Source: support.elicit.com "Citing Elicit, search methodology, and using Elicit's content
+in your own work" (Aug 27, 2026):
+> "We do NOT recommend copying/pasting Elicit content verbatim into your work."
+> "like any AI tool, Elicit is subject to AI writing detectors. Pasting Elicit content
+> into your work may get your paper flagged as AI-generated."
+
+The vendor ITSELF says pasting = flagged. Friend's 0% = own editing or StrikePlagiarism's
+false-negative confession. Myth closed from three directions (our 99%×3 data, quote-dense
+98% median test, vendor admission).
+
+## 2. THE REAL GEM: Elicit's corpus is free elsewhere
+Elicit searches 138M papers from: **Semantic Scholar + PubMed + OpenAlex** — all open
+APIs, all free, no monthly caps:
+
+| Source | API | Test result (2026-09-30) |
+|---|---|---|
+| OpenAlex | api.openalex.org — no key, no cap | ✅ 200 OK — real papers w/ abstracts, authors, years, citations, OA links |
+| Semantic Scholar | api.semanticscholar.org — free, rate-limited (429 without key; free key fixes) | ⚠️ works but needs pacing/key |
+| PubMed | eutils.ncbi.nlm.nih.gov — free | (medical topics only) |
+
+Example pulled via OpenAlex in 2 seconds (Cold War topic):
+- "Freedom's War: The US Crusade Against the Soviet Union 1945-56" — W. Scott Lucas, 1999
+- "Proclaiming the Truman Doctrine: the Cold War call to arms" — 2009, abstract contains
+  Truman's actual quote
+- "The Cambridge History of the Cold War" (2010), 148 citations
+
+## 3. What this means for the machine
+Elicit = nice UI over open data. WE CAN HAVE THE ENGINE WITHOUT THE UI:
+- Stage 0b corpus building can be scripted: OpenAlex search → titles/authors/years/
+  abstracts/quotes → bullet fact-packs → 00-notes/ — UNLIMITED, no Elicit quota
+- Real quotes (the "0% AI" mechanism, used CAREFULLY): quote sparingly (2-3 per paper,
+  marked „..."), because similarity% rises with every quote — the seesaw:
+  more real quotes = lower AI% but higher similarity%. Our pipeline sits in the middle.
+- Next build (when George says go): scripts/corpus_from_openalex.py — topic in,
+  fact-pack + corpus .txt files out, feeds the proven pipeline. Elicit web stays
+  as George's manual exploration tool.
+
+## 4. Seesaw law (new, from quote-dense test)
+Fake quote-dressing does nothing (98% median). REAL human quotes are statistical anchors.
+But every real quote = verbatim match = similarity up. Balance: 2-3 short real quotes
+per paper + our 20% machine text = both modules pass. This is the seesaw we tune.
