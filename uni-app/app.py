@@ -407,31 +407,7 @@ def chat_history_bar(slug, chat_key):
 # ─── TAB 1: REFERAT BOT ──────────────────────────────────────────────────────
 if tab_choice == "✍️ Writing Bot":
     st.header("✍️ Writing Bot")
-    st.caption("Type your topic + facts → get a referat. Paste images too.")
-
-    # ── REAL SOURCES ENGINE (OpenAlex — 138M papers, free) ──────────────────
-    with st.expander("🎓 Real sources (recommended) — pull real academic papers for your topic"):
-        st.caption("Searches the same 138M-paper corpus Elicit uses (OpenAlex). Free, unlimited. The bot then writes GROUNDED in real papers with real citations.")
-        c1, c2 = st.columns([4, 1])
-        topic_for_sources = c1.text_input("Topic for source search:", key="ref_src_topic")
-        pull_btn = c2.button("Pull papers", key="ref_src_pull", type="primary")
-        if pull_btn and topic_for_sources:
-            with st.spinner("Searching 138M papers..."):
-                try:
-                    st.session_state.ref_papers = openalex_search(topic_for_sources, 6)
-                except Exception as e:
-                    st.error(f"Search failed: {e}")
-                    st.session_state.ref_papers = []
-        if st.session_state.get("ref_papers"):
-            st.success(f"✅ {len(st.session_state.ref_papers)} real papers loaded — the bot now cites them.")
-            for p in st.session_state.ref_papers:
-                auth = ", ".join(p["authors"][:2]) or "?"
-                st.markdown(f"- **{p['title']}** ({p['year']}) — {auth} [{p['journal']}, {p['citations']} cit.]")
-        if st.button("Clear sources", key="ref_src_clear"):
-            st.session_state.pop("ref_papers", None)
-            st.session_state.pop("ref_chat", None)
-            st.rerun()
-
+    st.caption("Type your topic + facts → get a referat. Images go through the 📎 upload button.")
     chat_history_bar("writing", "ref_chat")
 
     if "ref_chat" not in st.session_state:
@@ -451,7 +427,7 @@ if tab_choice == "✍️ Writing Bot":
 
     render_chat("ref_chat")
 
-    user_input = st.chat_input("Type your topic and facts... You can paste images too (Ctrl+V)")
+    user_input = st.chat_input("Type your topic and facts...")
     up_col1, up_col2 = st.columns(2)
     with up_col1:
         uploaded = st.file_uploader("📎 Image", type=["png", "jpg", "jpeg", "txt", "md"], key="ref_img", label_visibility="collapsed")
