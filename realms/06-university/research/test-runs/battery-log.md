@@ -165,3 +165,9 @@
 | 2026-09-30 | JustDone (free, web) | quote-dense-test.txt | - | 98% | synthetic quote-wrapped Elicit prose, scan 1 | ALARM |
 | 2026-09-30 | JustDone (free, web) | quote-dense-test.txt | - | 77% | synthetic quote-wrapped Elicit prose, scan 2 | ALARM |
 | 2026-09-30 | JustDone (free, web) | quote-dense-test.txt | - | 98% | synthetic quote-wrapped Elicit prose, scan 3 | ALARM |
+| 2026-09-30 | JustDone (free, web) | openalex-pipeline-draft.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
+| 2026-09-30 | JustDone (free, web) | openalex-pipeline-draft.txt | - | 70% | free sharp referee; calibrated vs GPTZero 97% | ALARM |
+| 2026-09-30 | JustDone (free, web) | openalex-pipeline-draft.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
+| 2026-09-30 | JustDone (free, web) | openalex-pipeline-draft.txt | - | 20% | OpenAlex-corpus draft, scan 1 | PASS |
+| 2026-09-30 | JustDone (free, web) | openalex-pipeline-draft.txt | - | 70% | OpenAlex-corpus draft, scan 2 (noise) | ALARM |
+| 2026-09-30 | JustDone (free, web) | openalex-pipeline-draft.txt | - | 20% | OpenAlex-corpus draft, scan 3 | PASS |
