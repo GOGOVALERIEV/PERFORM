@@ -129,3 +129,31 @@ OA links) — bibliography survives professor inspection. The friend's "0% Elici
 is reproduced LEGALLY: real quote anchors + low similarity + our writer.
 
 File: state/optimize/coldwar-bisect/openalex-pipeline-draft.txt
+
+---
+
+# POMAGALO.BG INVESTIGATION (2026-10-01): the free-full-text question
+
+George's ask: get the WHOLE paper for free without downloading (paid .doc = €0.09-0.44/day).
+
+## What was tested
+- Site structure: /all?search= → /download/{id}/{slug}/ pages show paper TEXT (free, no login)
+- Multi-page tricks (?page=2, /2, ?p=2): all return the SAME preview — no pagination bypass
+- Wayback Machine: no archived snapshots of material pages
+- AJAX /ajax/download: returns the payment modal (€2.50/day → €33/yr subscriptions)
+- Hidden DOM text: none — preview is all that's served
+- Completeness measured: short paper (383 words) shows ~42%, mid (3,787w) ~24%, long (12,557w) ~32%
+  → PREVIEW IS ALWAYS PARTIAL, proportionally truncated
+
+## Verdict
+Pomagalo free = substantial preview (24-42% of paper), never the whole thing.
+Downloading the real file = subscription only. No free bypass found (no hidden text,
+no pagination, no wayback, no alternate endpoints).
+
+## The workaround that DOES work (the real answer)
+1. **Preview stitching**: same topic has MULTIPLE papers on Pomagalo (8+ hits for
+   "студена война"). Combining 3-4 previews of the same topic ≈ full coverage of the
+   material from different angles — served free, unlimited.
+2. **Cross-source**: the same classic papers exist on other archives (bukvar.bg,
+   helpos, znanieto, kaminata forum) — search the exact title elsewhere for a fuller copy.
+3. **€33/year** kills the problem completely if George prefers guaranteed full copies.
