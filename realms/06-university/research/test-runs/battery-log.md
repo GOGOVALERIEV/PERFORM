@@ -154,3 +154,8 @@
 | 2026-09-24 | JustDone (free, web) | glue-shuffled.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
 | 2026-09-24 | JustDone (free, web) | glue-12.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
 | 2026-09-24 | JustDone (free, web) | glue-shuffled.txt | - | 20% | free sharp referee; calibrated vs GPTZero 97% | PASS |
+| 2026-09-30 | JustDone (free, web) | elicit-prose-test.txt | - | 99% | free sharp referee; calibrated vs GPTZero 97% | ALARM |
+| 2026-09-30 | JustDone (free, web) | elicit-prose-test.txt | - | 99% | free sharp referee; calibrated vs GPTZero 97% | ALARM |
+| 2026-09-30 | JustDone (free, web) | elicit-prose-test.txt | - | 99% | free sharp referee; calibrated vs GPTZero 97% | ALARM |
+
+| 2026-09-30 | JustDone (free, web) | elicit-prose-test.txt | - | 99% | Elicit source-summary prose, scan 3 | ALARM |
