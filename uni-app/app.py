@@ -339,6 +339,18 @@ elif tab_choice == "📊 Presentation Bot":
     elif topic:
         content_source = topic
 
+    # ── STEP 0: your images — ALWAYS visible, before anything else ──────────
+    st.subheader("1️⃣ Your images")
+    st.caption("Drop all your images here (optional). They are placed into the slides in order — 1st image goes to the 1st content slide, 2nd to the 2nd... Slides without an image get a gray placeholder.")
+    imgs = st.file_uploader(
+        "Upload images:",
+        type=["png", "jpg", "jpeg", "webp", "gif", "bmp"],
+        accept_multiple_files=True,
+        key="pres_images_all",
+    )
+    if imgs:
+        st.caption(f"✅ {len(imgs)} image(s) ready: " + ", ".join(im.name for im in imgs))
+
     # ── STEP 1: generate the slide plan ─────────────────────────────────────
     if st.button("Generate Presentation", key="pres_generate", type="primary") and content_source:
         with st.spinner("Generating..."):
@@ -366,24 +378,14 @@ Max 5 points per slide. Write in Bulgarian."""},
 
     slides_data = st.session_state.get("slides_data")
     if not slides_data:
+        st.info("👆 Generate a presentation to unlock Build — your images above are already saved and will be used.")
         st.stop()
 
     st.success(f"Slide plan ready: {len(slides_data)} slides.")
 
-    # ── STEP 2: ONE image upload for the whole presentation ─────────────────
-    st.subheader("1️⃣ Your images")
-    st.caption("Drop all your images here. They are placed into the slides in order (slide 3 gets your 1st image, slide 4 the 2nd...). Leftover slides get a gray placeholder.")
-    imgs = st.file_uploader(
-        "Upload images:",
-        type=["png", "jpg", "jpeg", "webp", "gif", "bmp"],
-        accept_multiple_files=True,
-        key="pres_images_all",
-    )
-    if imgs:
-        st.caption(f"{len(imgs)} image(s) ready: " + ", ".join(im.name for im in imgs))
-
-    # ── STEP 3: build + download ────────────────────────────────────────────
+    # ── STEP 2: build + download ────────────────────────────────────────────
     if st.button("Build PowerPoint", key="pres_build", type="primary"):
+        imgs = st.session_state.get("pres_images_all") or []
         with st.spinner("Building..."):
             from pptx import Presentation
             from pptx.util import Inches, Pt
