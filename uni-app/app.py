@@ -794,8 +794,24 @@ elif tab_choice == "📚 Learn Bot":
                 st.session_state.pop("learn_chat", None)  # restart professor with papers
         if st.session_state.get("learn_papers"):
             st.success(f"✅ {len(st.session_state.learn_papers)} real papers loaded.")
-            for p in st.session_state.learn_papers:
-                st.markdown(f"- **{p['title']}** ({p['year']}) [{p['journal']}]")
+            for pi, p in enumerate(st.session_state.learn_papers):
+                auth = ", ".join(p["authors"]) or "?"
+                oa = bool(p.get("oa_url"))
+                tag = "🟢 open access" if oa else "🔒 abstract + DOI only"
+                with st.expander(f"📖 {p['title'][:70]} ({p['year']}) — {tag}"):
+                    st.markdown(f"**Authors:** {auth}  |  **Journal:** {p['journal']}  |  **Cited by:** {p['citations']}")
+                    if p["abstract"]:
+                        st.markdown("**Abstract:**")
+                        st.write(p["abstract"])
+                    else:
+                        st.caption("No abstract available in the index.")
+                    links = []
+                    if oa:
+                        links.append(f"[🔗 Open full text]({p['oa_url']})")
+                    if p["doi"]:
+                        links.append(f"[DOI page]({p['doi']})")
+                    if links:
+                        st.markdown("  |  ".join(links))
         if st.button("Clear papers", key="learn_src_clear"):
             for k in ("learn_papers", "learn_papers_ctx"):
                 st.session_state.pop(k, None)
