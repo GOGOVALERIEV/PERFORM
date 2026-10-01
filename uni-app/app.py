@@ -585,10 +585,106 @@ elif tab_choice == "📄 Ready Papers":
                            file_name=f"paper-{safe_topic}.txt",
                            mime="text/plain; charset=utf-8", key="rp_dl")
 
-# ─── TAB 2: PRESENTATION BOT ─────────────────────────────────────────────────
+# ─── TAB 2: PRESENTATION BOT ─────────────────────────────────────────       
 elif tab_choice == "📊 Presentation Bot":
     st.header("📊 Presentation Bot")
-    st.caption("Topic → Generate → drop your images → Build → Download. That's it.")
+    st.caption("Topic → Generate → drop your images → Build → Download. Or let Gamma make it beautiful.")
+
+    # ── GAMMA MODE: drive the real Gamma site through the user's Brave ────
+    with st.expander("🎨 Gamma mode — beautiful deck made on gamma.app (uses your Gamma account)"):
+        st.caption("Drives your own Brave (logged into Gamma) to build the deck on gamma.app. "
+                   "Requires: Brave running with remote control. Burns Gamma's monthly quota.")
+        import urllib.request as _ur
+        cdp_alive = False
+        try:
+            _ur.urlopen("http://localhost:9222/json/version", timeout=3)
+            cdp_alive = True
+        except Exception:
+            cdp_alive = False
+        if not cdp_alive:
+            st.warning("Your Brave isn't remote-controllable right now.")
+            if st.button("🔄 Restart Brave with remote control", key="gamma_relaunch"):
+                import subprocess as _sp
+                _sp.run(["powershell", "-Command",
+                         "Get-Process brave -ErrorAction SilentlyContinue | Stop-Process -Force; "
+                         "Start-Sleep 2; "
+                         "Start-Process 'C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe' "
+                         "-ArgumentList '--remote-debugging-port=9222','--no-first-run'"])
+                st.success("Brave restarting — your tabs will restore. Then try again.")
+        else:
+            st.success("✅ Brave connected.")
+            gamma_topic = st.text_input("Topic for Gamma:", key="gamma_topic")
+            if st.button("🎨 Build deck on Gamma", key="gamma_go", type="primary") and gamma_topic:
+                gamma_url = None
+                err = None
+                try:
+                    with st.spinner("Driving Gamma (this takes 1-3 minutes)..."):
+                        from playwright.sync_api import sync_playwright as _spw
+                        with _spw() as gp:
+                            gbrowser = gp.chromium.connect_over_cdp("http://localhost:9222")
+                            gctx = gbrowser.contexts[0]
+                            gpage = gctx.new_page()
+                            gpage.goto("https://gamma.app/create/generate", timeout=45000)
+                            gpage.wait_for_timeout(6000)
+                            box = gpage.locator("div.tiptap.ProseMirror:visible").first
+                            box.click()
+                            gpage.keyboard.type(gamma_topic, delay=10)
+                            gpage.wait_for_timeout(1200)
+                            # language: click through if English (BG usually remembered)
+                            try:
+                                gpage.get_by_text("English (US)", exact=False).first.click(timeout=6000)
+                                gpage.wait_for_timeout(1500)
+                                gpage.get_by_text("Български", exact=False).first.click()
+                                gpage.wait_for_timeout(1500)
+                            except Exception:
+                                pass  # already Bulgarian
+                            # outline
+                            gpage.evaluate("""() => {
+                                const b = Array.from(document.querySelectorAll('button'))
+                                    .find(b => b.innerText.trim()==='Generate outline' && (b.offsetWidth||b.offsetHeight));
+                                if (b) b.click();
+                            }""")
+                            for _ in range(24):
+                                gpage.wait_for_timeout(5000)
+                                if "Image source" in gpage.inner_text("body"):
+                                    break
+                            # final generate
+                            gpage.evaluate("""() => {
+                                const bs = Array.from(document.querySelectorAll('button'))
+                                    .filter(b => b.innerText.trim()==='Generate' && (b.offsetWidth||b.offsetHeight));
+                                if (bs.length) bs[bs.length-1].click();
+                            }""")
+                            for _ in range(40):
+                                gpage.wait_for_timeout(10000)
+                                if "/docs/" in gpage.url:
+                                    break
+                            # wait for deck to finish writing
+                            last, stable = 0, 0
+                            for _ in range(24):
+                                gpage.wait_for_timeout(10000)
+                                n = len(gpage.inner_text("body"))
+                                if n == last:
+                                    stable += 1
+                                    if stable >= 2: break
+                                else:
+                                    stable = 0; last = n
+                            gamma_url = gpage.url
+                            gpage.bring_to_front()
+                except Exception as e:
+                    err = str(e)[:200]
+                if gamma_url and "/docs/" in gamma_url:
+                    st.session_state.gamma_deck_url = gamma_url
+                elif err and ("usage limit" in err.lower() or "quota" in err.lower()):
+                    st.error("Gamma monthly quota reached — wait for the reset or upgrade on their site.")
+                elif err:
+                    st.error(f"Gamma drive failed: {err}")
+            if st.session_state.get("gamma_deck_url"):
+                u = st.session_state["gamma_deck_url"]
+                st.success("✅ Gamma deck built!")
+                st.markdown(f"[🎨 Open your Gamma deck]({u}) — then Share → Export → Download as PPTX (free).")
+                if st.button("🔗 Open deck in new tab", key="gamma_open"):
+                    import subprocess as _sp2
+                    _sp2.Popen(["C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe", u])
 
     def parse_slides_json(text):
         """Robust slide-plan parser: survives broken LLM JSON (missing commas etc.)."""
