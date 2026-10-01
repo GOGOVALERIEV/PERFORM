@@ -41,7 +41,7 @@ def parse_vtt(path: Path) -> str:
 
 
 def fetch_transcript(url: str, langs=("bg", "en")) -> tuple[str, str]:
-    """Returns (video_title, transcript_text)."""
+    """Returns (video_title, transcript_text). Uses saved cookies if present (higher rate limits)."""
     tmp = Path(tempfile.mkdtemp(prefix="yttrans_"))
     opts = {
         "skip_download": True,
@@ -54,6 +54,9 @@ def fetch_transcript(url: str, langs=("bg", "en")) -> tuple[str, str]:
         "no_warnings": True,
         "noplaylist": True,
     }
+    cookie_file = Path(__file__).parent / "youtube_cookies.txt"
+    if cookie_file.exists() and cookie_file.stat().st_size > 100:
+        opts["cookiefile"] = str(cookie_file)
     with yt_dlp.YoutubeDL(opts) as ydl:
         info = ydl.extract_info(url, download=True)
         title = info.get("title", "video")

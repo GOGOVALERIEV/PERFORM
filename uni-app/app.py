@@ -576,11 +576,14 @@ elif tab_choice == "📄 Ready Papers":
     if art:
         st.success(f"✅ Ready: stitched from {len(art['sections'])} real Pomagalo papers.")
         for s in art["sections"]:
-            st.markdown(f"- **{s['title']}** — {s['words']} words read {[k for k in [s.get('meta', {}).get('Тип')] if k]}")
+            tip = s.get("meta", {}).get("Тип", "")
+            st.markdown(f"- **{s['title']}** — {s['words']} words read" + (f" ({tip})" if tip else ""))
         st.text_area("Your paper:", art["text"], height=400, key="rp_view")
-        st.download_button("⬇️ Download (.txt)", data=art["text"],
-                           file_name=f"paper-{topic_rp[:30].strip().replace(' ', '-')}.txt",
-                           mime="text/plain", key="rp_dl")
+        safe_topic = re.sub(r"[^\w\-]+", "-", (topic_rp or "paper").strip())[:30] or "paper"
+        st.download_button("⬇️ Download (.txt)",
+                           data=art["text"].encode("utf-8"),
+                           file_name=f"paper-{safe_topic}.txt",
+                           mime="text/plain; charset=utf-8", key="rp_dl")
 
 # ─── TAB 2: PRESENTATION BOT ─────────────────────────────────────────────────
 elif tab_choice == "📊 Presentation Bot":
@@ -1001,11 +1004,16 @@ elif tab_choice == "🎤 Transcribe Bot":
                     [sys.executable, str(Path(__file__).parent.parent / "learning-library" / "scripts" / "youtube_transcriber.py"), yt_url],
                     capture_output=True, text=True, timeout=120, encoding="utf-8", errors="replace"
                 )
-                if r.stdout:
+                combined = (r.stdout or "") + (r.stderr or "")
+                if r.stdout and "NO_SUBTITLES" not in r.stdout:
                     st.success("Done!")
                     st.text_area("Transcript:", r.stdout[:5000], height=300)
+                elif "429" in combined or "Too Many Requests" in combined:
+                    st.warning("🎬 YouTube is rate-limiting this connection right now (too many caption pulls). Wait ~30-60 min or restart the router for a new IP, then try again.")
+                elif "NO_SUBTITLES" in combined:
+                    st.warning("This video has no captions (neither manual nor auto-generated). Try another video.")
                 else:
-                    st.error(f"Error: {r.stderr[:300]}")
+                    st.error(f"Error: {(r.stderr or r.stdout or 'unknown')[:300]}")
             except Exception as e:
                 st.error(f"Error: {e}")
 
