@@ -726,6 +726,57 @@ elif tab_choice == "📊 Presentation Bot":
                     import subprocess as _sp2
                     _sp2.Popen(["C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe", u])
 
+    # ── NOTEBOOKLM MODE: infinite free slides (Gemini builds them) ────
+    with st.expander("🟢 NotebookLM mode — FREE unlimited beautiful slides (recommended)"):
+        st.caption("Google NotebookLM + Gemini turns real BG papers (from Pomagalo) into pro slides "
+                   "with custom visuals. Free with your Google account — effectively unlimited.")
+        nlm_topic = st.text_input("Topic:", key="nlm_topic")
+        if st.button("📋 Prepare notes for NotebookLM", key="nlm_prep", type="primary") and nlm_topic:
+            with st.spinner("Pulling real papers from Pomagalo.bg..."):
+                try:
+                    hits = pomagalo_search(nlm_topic, 4)
+                except Exception as e:
+                    st.error(f"Search failed: {e}")
+                    hits = []
+            sections = []
+            prog = st.progress(0.0)
+            for i, h in enumerate(hits[:3]):
+                try:
+                    a = pomagalo_read(h["url"])
+                    sections.append({"title": h["title"], **a})
+                except Exception:
+                    pass
+                prog.progress((i + 1) / max(min(3, len(hits)), 1))
+            if sections:
+                nblm = [f"УЧЕБНИ МАТЕРИАЛ: {nlm_topic}", ""]
+                for i, s in enumerate(sections, 1):
+                    nblm.append(f"=== ИЗТОЧНИК {i}: {s['title']} ===")
+                    keep = [l.strip() for l in s["text"].split(chr(10))
+                            if len(l.strip()) > 40 and not re.search(r"Брой (думи|символи|страници)|Изготвил|Специалност|Проверил|гр\. ", l)]
+                    nblm.extend(keep)
+                    nblm.append("")
+                st.session_state.nlm_notes = "\n".join(nblm)
+            else:
+                st.warning("No matching papers — try Bulgarian keywords.")
+        if st.session_state.get("nlm_notes"):
+            st.success("✅ Notes ready — copy them into NotebookLM as a source.")
+            st.text_area("📋 Your NotebookLM source:", st.session_state.nlm_notes, height=220, key="nlm_view")
+            n1, n2 = st.columns(2)
+            n1.download_button("⬇️ Download notes (.txt)",
+                               data=st.session_state.nlm_notes.encode("utf-8"),
+                               file_name=f"notebooklm-{re.sub(r'[^\\w\\-]+', '-', (nlm_topic or 'notes').strip())[:30]}.txt",
+                               mime="text/plain; charset=utf-8", key="nlm_dl")
+            if n2.button("🌐 Open NotebookLM", key="nlm_open"):
+                import subprocess as _sp
+                _sp.Popen(["C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+                           "https://notebooklm.google.com/"])
+            st.markdown("""**Steps (2 minutes):**
+1. Download/copy the notes above
+2. NotebookLM → **Create new** → paste notes as a source
+3. **Studio** → **Slides** → Edit → *Detailed deck* or *Presenter slides*
+4. Language + style instructions (e.g. „модерен дизайн, тъмен фон, синьо“)
+5. **Generate** → Gemini builds the deck with custom visuals → present or export PDF""")
+
     def parse_slides_json(text):
         """Robust slide-plan parser: survives broken LLM JSON (missing commas etc.)."""
         m = re.search(r'\[.*\]', text, re.DOTALL)
