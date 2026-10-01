@@ -585,6 +585,46 @@ elif tab_choice == "📄 Ready Papers":
                            file_name=f"paper-{safe_topic}.txt",
                            mime="text/plain; charset=utf-8", key="rp_dl")
 
+    # ── NOTEBOOKLM BRIDGE (infinite free beautiful slides — video 4 workflow) ─
+    if art:
+        st.divider()
+        st.subheader("🎨 NotebookLM mode — infinite free beautiful slides")
+        st.caption("Google's NotebookLM + Gemini turns notes into pro slides with custom visuals "
+                   "per slide. Free with a Google account, effectively unlimited. "
+                   "Export = PDF (slides as images) — perfect for presenting.")
+        if st.button("📋 Prepare notes for NotebookLM", key="rp_nblm", type="primary"):
+            # format the stitched paper as the ideal NotebookLM source: clean,
+            # structured, no archive noise — so Gemini slides come out dense and factual
+            nblm = [f"УЧЕБНИ МАТЕРИАЛ: {topic_rp}", ""]
+            for i, s in enumerate(art["sections"], 1):
+                nblm.append(f"=== ИЗТОЧНИК {i}: {s['title']} ===")
+                body = s["text"]
+                # strip pomagalo meta-table noise, keep content lines
+                keep = [l.strip() for l in body.split(chr(10))
+                        if len(l.strip()) > 40 and not re.search(r"Брой (думи|символи|страници)|Изготвил|Специалност|Проверил|гр\. ", l)]
+                nblm.extend(keep)
+                nblm.append("")
+            nblm_text = "\n".join(nblm)
+            st.session_state.rp_nblm_text = nblm_text
+        if st.session_state.get("rp_nblm_text"):
+            st.text_area("📋 Copy this → NotebookLM (paste as source):",
+                         st.session_state.rp_nblm_text, height=250, key="rp_nblm_view")
+            cN1, cN2 = st.columns(2)
+            cN1.download_button("⬇️ Download notes (.txt)",
+                                data=st.session_state.rp_nblm_text.encode("utf-8"),
+                                file_name=f"notebooklm-{re.sub(r'[^\\w\\-]+', '-', (topic_rp or 'notes').strip())[:30]}.txt",
+                                mime="text/plain; charset=utf-8", key="rp_nblm_dl")
+            if cN2.button("🌐 Open NotebookLM", key="rp_nblm_open"):
+                import subprocess as _sp
+                _sp.Popen(["C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+                           "https://notebooklm.google.com/"])
+            st.markdown("""**Steps (2 minutes):**
+1. Download/copy the notes above
+2. NotebookLM → **Create new** → paste the notes as a source
+3. In **Studio** → add **Slides** → Edit → choose *Detailed deck* or *Presenter slides*
+4. Set language → add style instructions (e.g. „модерен дизайн, тъмен фон, синьо“)
+5. **Generate** → Gemini builds the slides with custom visuals → present or export PDF""")
+
 # ─── TAB 2: PRESENTATION BOT ─────────────────────────────────────────       
 elif tab_choice == "📊 Presentation Bot":
     st.header("📊 Presentation Bot")
