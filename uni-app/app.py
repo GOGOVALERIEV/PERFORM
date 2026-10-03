@@ -453,6 +453,47 @@ def pomagalo_read(url):
     return {"text": paper.strip(), "words": words, "meta": meta}
 
 
+# ─── NOTEBOOKLM ENGINE (programmatic — no browser driving needed) ─────────
+def nlm_generate_deck(notes_text: str, title: str, style: str = "Модерен професионален академичен дизайн, тъмен фон, сини акценти, изчистена типография. Плътни четливи слайдове за докад по история.") -> dict:
+    """Full NotebookLM pipeline via notebooklm-py CLI:
+    create notebook -> add source -> generate slide deck -> download PDF.
+    Returns {ok, pdf_path | error}."""
+    import subprocess as _sp
+    import uuid as _uuid
+    run_id = _uuid.uuid4().hex[:8]
+    notes_file = Path(__file__).parent / f"workspace-saves/nlm-notes-{run_id}.txt"
+    notes_file.parent.mkdir(parents=True, exist_ok=True)
+    notes_file.write_text(notes_text, encoding="utf-8")
+    pdf_path = notes_file.parent / f"nlm-deck-{run_id}.pdf"
+    try:
+        # 1. create notebook
+        r = _sp.run(["notebooklm", "create", f"{title} — {run_id}"], capture_output=True, text=True, timeout=90, encoding="utf-8", errors="replace")
+        m = re.search(r"Created notebook: ([0-9a-f-]+)", r.stdout or "")
+        if not m:
+            return {"ok": False, "error": f"create failed: {(r.stderr or r.stdout)[:150]}"}
+        nb_id = m.group(1)
+        # 2. add source
+        r = _sp.run(["notebooklm", "source", "add", "--type", "text", "--title", title, "--use", nb_id, notes_text],
+                    capture_output=True, text=True, timeout=120, encoding="utf-8", errors="replace")
+        if "Added source" not in (r.stdout or ""):
+            return {"ok": False, "error": f"source add failed: {(r.stderr or r.stdout)[:150]}"}
+        # 3. generate slide deck (wait up to 7 min)
+        r = _sp.run(["notebooklm", "generate", "slide-deck", style, "--format", "detailed",
+                     "--language", "bg", "--use", nb_id, "--wait", "--timeout", "420"],
+                    capture_output=True, text=True, timeout=450, encoding="utf-8", errors="replace")
+        out = (r.stdout or "") + (r.stderr or "")
+        if "Slide Deck ready" not in out and "ready:" not in out.lower():
+            return {"ok": False, "error": f"generate failed: {out[:200]}"}
+        # 4. download the PDF
+        r = _sp.run(["notebooklm", "download", "slide-deck", str(pdf_path), "--use", nb_id],
+                    capture_output=True, text=True, timeout=120, encoding="utf-8", errors="replace")
+        if not pdf_path.exists():
+            return {"ok": False, "error": f"download failed: {(r.stderr or r.stdout)[:150]}"}
+        return {"ok": True, "pdf_path": str(pdf_path)}
+    except Exception as e:
+        return {"ok": False, "error": str(e)[:200]}
+
+
 # ─── TAB 1: REFERAT BOT ──────────────────────────────────────────────────────
 if tab_choice == "✍️ Writing Bot":
     st.header("✍️ Writing Bot")
@@ -637,46 +678,6 @@ elif tab_choice == "📄 Ready Papers":
 3. In **Studio** → add **Slides** → Edit → choose *Detailed deck* or *Presenter slides*
 4. Set language → add style instructions (e.g. „модерен дизайн, тъмен фон, синьо“)
 5. **Generate** → Gemini builds the slides with custom visuals → present or export PDF""")
-
-# ─── NOTEBOOKLM ENGINE (programmatic — no browser driving needed) ─────────
-def nlm_generate_deck(notes_text: str, title: str, style: str = "Модерен професионален академичен дизайн, тъмен фон, сини акценти, изчистена типография. Плътни четливи слайдове за докад по история.") -> dict:
-    """Full NotebookLM pipeline via notebooklm-py CLI:
-    create notebook -> add source -> generate slide deck -> download PDF.
-    Returns {ok, pdf_path | error}."""
-    import subprocess as _sp
-    import uuid as _uuid
-    run_id = _uuid.uuid4().hex[:8]
-    notes_file = Path(__file__).parent / f"workspace-saves/nlm-notes-{run_id}.txt"
-    notes_file.parent.mkdir(parents=True, exist_ok=True)
-    notes_file.write_text(notes_text, encoding="utf-8")
-    pdf_path = notes_file.parent / f"nlm-deck-{run_id}.pdf"
-    try:
-        # 1. create notebook
-        r = _sp.run(["notebooklm", "create", f"{title} — {run_id}"], capture_output=True, text=True, timeout=90, encoding="utf-8", errors="replace")
-        m = re.search(r"Created notebook: ([0-9a-f-]+)", r.stdout or "")
-        if not m:
-            return {"ok": False, "error": f"create failed: {(r.stderr or r.stdout)[:150]}"}
-        nb_id = m.group(1)
-        # 2. add source
-        r = _sp.run(["notebooklm", "source", "add", "--type", "text", "--title", title, "--use", nb_id, notes_text],
-                    capture_output=True, text=True, timeout=120, encoding="utf-8", errors="replace")
-        if "Added source" not in (r.stdout or ""):
-            return {"ok": False, "error": f"source add failed: {(r.stderr or r.stdout)[:150]}"}
-        # 3. generate slide deck (wait up to 7 min)
-        r = _sp.run(["notebooklm", "generate", "slide-deck", style, "--format", "detailed",
-                     "--language", "bg", "--use", nb_id, "--wait", "--timeout", "420"],
-                    capture_output=True, text=True, timeout=450, encoding="utf-8", errors="replace")
-        out = (r.stdout or "") + (r.stderr or "")
-        if "Slide Deck ready" not in out and "ready:" not in out.lower():
-            return {"ok": False, "error": f"generate failed: {out[:200]}"}
-        # 4. download the PDF
-        r = _sp.run(["notebooklm", "download", "slide-deck", str(pdf_path), "--use", nb_id],
-                    capture_output=True, text=True, timeout=120, encoding="utf-8", errors="replace")
-        if not pdf_path.exists():
-            return {"ok": False, "error": f"download failed: {(r.stderr or r.stdout)[:150]}"}
-        return {"ok": True, "pdf_path": str(pdf_path)}
-    except Exception as e:
-        return {"ok": False, "error": str(e)[:200]}
 
 # ─── TAB 2: PRESENTATION BOT ─────────────────────────────────────────       
 elif tab_choice == "📊 Presentation Bot":
