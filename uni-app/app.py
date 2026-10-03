@@ -638,6 +638,46 @@ elif tab_choice == "📄 Ready Papers":
 4. Set language → add style instructions (e.g. „модерен дизайн, тъмен фон, синьо“)
 5. **Generate** → Gemini builds the slides with custom visuals → present or export PDF""")
 
+# ─── NOTEBOOKLM ENGINE (programmatic — no browser driving needed) ─────────
+def nlm_generate_deck(notes_text: str, title: str, style: str = "Модерен професионален академичен дизайн, тъмен фон, сини акценти, изчистена типография. Плътни четливи слайдове за докад по история.") -> dict:
+    """Full NotebookLM pipeline via notebooklm-py CLI:
+    create notebook -> add source -> generate slide deck -> download PDF.
+    Returns {ok, pdf_path | error}."""
+    import subprocess as _sp
+    import uuid as _uuid
+    run_id = _uuid.uuid4().hex[:8]
+    notes_file = Path(__file__).parent / f"workspace-saves/nlm-notes-{run_id}.txt"
+    notes_file.parent.mkdir(parents=True, exist_ok=True)
+    notes_file.write_text(notes_text, encoding="utf-8")
+    pdf_path = notes_file.parent / f"nlm-deck-{run_id}.pdf"
+    try:
+        # 1. create notebook
+        r = _sp.run(["notebooklm", "create", f"{title} — {run_id}"], capture_output=True, text=True, timeout=90, encoding="utf-8", errors="replace")
+        m = re.search(r"Created notebook: ([0-9a-f-]+)", r.stdout or "")
+        if not m:
+            return {"ok": False, "error": f"create failed: {(r.stderr or r.stdout)[:150]}"}
+        nb_id = m.group(1)
+        # 2. add source
+        r = _sp.run(["notebooklm", "source", "add", "--type", "text", "--title", title, "--use", nb_id, notes_text],
+                    capture_output=True, text=True, timeout=120, encoding="utf-8", errors="replace")
+        if "Added source" not in (r.stdout or ""):
+            return {"ok": False, "error": f"source add failed: {(r.stderr or r.stdout)[:150]}"}
+        # 3. generate slide deck (wait up to 7 min)
+        r = _sp.run(["notebooklm", "generate", "slide-deck", style, "--format", "detailed",
+                     "--language", "bg", "--use", nb_id, "--wait", "--timeout", "420"],
+                    capture_output=True, text=True, timeout=450, encoding="utf-8", errors="replace")
+        out = (r.stdout or "") + (r.stderr or "")
+        if "Slide Deck ready" not in out and "ready:" not in out.lower():
+            return {"ok": False, "error": f"generate failed: {out[:200]}"}
+        # 4. download the PDF
+        r = _sp.run(["notebooklm", "download", "slide-deck", str(pdf_path), "--use", nb_id],
+                    capture_output=True, text=True, timeout=120, encoding="utf-8", errors="replace")
+        if not pdf_path.exists():
+            return {"ok": False, "error": f"download failed: {(r.stderr or r.stdout)[:150]}"}
+        return {"ok": True, "pdf_path": str(pdf_path)}
+    except Exception as e:
+        return {"ok": False, "error": str(e)[:200]}
+
 # ─── TAB 2: PRESENTATION BOT ─────────────────────────────────────────       
 elif tab_choice == "📊 Presentation Bot":
     st.header("📊 Presentation Bot")
@@ -740,55 +780,66 @@ elif tab_choice == "📊 Presentation Bot":
                     _sp2.Popen(["C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe", u])
 
     # ── NOTEBOOKLM MODE: infinite free slides (Gemini builds them) ────
-    with st.expander("🟢 NotebookLM mode — FREE unlimited beautiful slides (recommended)"):
-        st.caption("Google NotebookLM + Gemini turns real BG papers (from Pomagalo) into pro slides "
-                   "with custom visuals. Free with your Google account — effectively unlimited.")
+    with st.expander("🟢 NotebookLM mode — FREE unlimited beautiful slides (fully automatic)"):
+        st.caption("The bot does EVERYTHING: pulls real BG papers from Pomagalo, feeds Gemini Notebook, "
+                   "generates the deck, downloads the PDF. You just download. Free Google quota — limits refresh every 5h.")
         nlm_topic = st.text_input("Topic:", key="nlm_topic")
-        if st.button("📋 Prepare notes for NotebookLM", key="nlm_prep", type="primary") and nlm_topic:
-            with st.spinner("Pulling real papers from Pomagalo.bg..."):
+        nlm_style = st.text_input("Style (optional):",
+                                  value="Модерен професионален академичен дизайн, тъмен фон, сини акценти, изчистена типография. Плътни четливи слайдове за доклад по история.",
+                                  key="nlm_style")
+        if st.button("🚀 Make my presentation (fully automatic)", key="nlm_prep", type="primary") and nlm_topic:
+            with st.spinner("1/4: Pulling real papers from Pomagalo.bg..."):
                 try:
-                    hits = pomagalo_search(nlm_topic, 4)
+                    hits = pomagalo_search(nlm_topic, 6)
                 except Exception as e:
                     st.error(f"Search failed: {e}")
                     hits = []
-            sections = []
-            prog = st.progress(0.0)
-            for i, h in enumerate(hits[:3]):
-                try:
-                    a = pomagalo_read(h["url"])
-                    sections.append({"title": h["title"], **a})
-                except Exception:
-                    pass
-                prog.progress((i + 1) / max(min(3, len(hits)), 1))
-            if sections:
-                nblm = [f"УЧЕБНИ МАТЕРИАЛ: {nlm_topic}", ""]
-                for i, s in enumerate(sections, 1):
-                    nblm.append(f"=== ИЗТОЧНИК {i}: {s['title']} ===")
-                    keep = [l.strip() for l in s["text"].split(chr(10))
-                            if len(l.strip()) > 40 and not re.search(r"Брой (думи|символи|страници)|Изготвил|Специалност|Проверил|гр\. ", l)]
-                    nblm.extend(keep)
-                    nblm.append("")
-                st.session_state.nlm_notes = "\n".join(nblm)
-            else:
+            if not hits:
                 st.warning("No matching papers — try Bulgarian keywords.")
-        if st.session_state.get("nlm_notes"):
-            st.success("✅ Notes ready — copy them into NotebookLM as a source.")
-            st.text_area("📋 Your NotebookLM source:", st.session_state.nlm_notes, height=220, key="nlm_view")
-            n1, n2 = st.columns(2)
-            n1.download_button("⬇️ Download notes (.txt)",
-                               data=st.session_state.nlm_notes.encode("utf-8"),
-                               file_name=f"notebooklm-{re.sub(r'[^\\w\\-]+', '-', (nlm_topic or 'notes').strip())[:30]}.txt",
-                               mime="text/plain; charset=utf-8", key="nlm_dl")
-            if n2.button("🌐 Open NotebookLM", key="nlm_open"):
-                import subprocess as _sp
-                _sp.Popen(["C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
-                           "https://notebooklm.google.com/"])
-            st.markdown("""**Steps (2 minutes):**
-1. Download/copy the notes above
-2. NotebookLM → **Create new** → paste notes as a source
-3. **Studio** → **Slides** → Edit → *Detailed deck* or *Presenter slides*
-4. Language + style instructions (e.g. „модерен дизайн, тъмен фон, синьо“)
-5. **Generate** → Gemini builds the deck with custom visuals → present or export PDF""")
+            else:
+                sections = []
+                prog = st.progress(0.0)
+                for i, h in enumerate(hits[:3]):
+                    try:
+                        a = pomagalo_read(h["url"])
+                        sections.append({"title": h["title"], **a})
+                    except Exception:
+                        pass
+                    prog.progress((i + 1) / max(min(3, len(hits)), 1))
+                if not sections:
+                    st.error("Couldn't read any papers.")
+                else:
+                    nblm = [f"УЧЕБНИ МАТЕРИАЛ: {nlm_topic}", ""]
+                    for i, s in enumerate(sections, 1):
+                        nblm.append(f"=== ИЗТОЧНИК {i}: {s['title']} ===")
+                        keep = [l.strip() for l in s["text"].split(chr(10))
+                                if len(l.strip()) > 40 and not re.search(r"Брой (думи|символи|страници)|Изготвил|Специалност|Проверил|гр\. ", l)]
+                        nblm.extend(keep)
+                        nblm.append("")
+                    notes = "\n".join(nblm)
+                    st.session_state.nlm_notes = notes
+                    with st.spinner("2/4: Gemini Notebook — creating + adding source..."):
+                        res = nlm_generate_deck(notes, nlm_topic, style=nlm_style)
+                    if res["ok"]:
+                        st.session_state.nlm_pdf = res["pdf_path"]
+                        st.session_state.pop("nlm_error", None)
+                    else:
+                        st.session_state.nlm_error = res["error"]
+                        st.session_state.pop("nlm_pdf", None)
+        if st.session_state.get("nlm_error"):
+            st.error(f"NotebookLM failed: {st.session_state['nlm_error']}")
+        if st.session_state.get("nlm_pdf"):
+            pdf_path = st.session_state["nlm_pdf"]
+            try:
+                with open(pdf_path, "rb") as f:
+                    pdf_bytes = f.read()
+                st.success("✅ Presentation ready — Gemini-built slides with custom visuals")
+                st.download_button("⬇️ Download presentation (.pdf)", data=pdf_bytes,
+                                   file_name=f"presentation-{re.sub(r'[^\\w\\-]+', '-', nlm_topic)[:30]}.pdf",
+                                   mime="application/pdf", key="nlm_pdf_dl")
+                st.caption("Slides are images (Gemini-designed). Present directly from the PDF.")
+            except Exception as e:
+                st.error(f"Couldn't load PDF: {e}")
 
     def parse_slides_json(text):
         """Robust slide-plan parser: survives broken LLM JSON (missing commas etc.)."""
