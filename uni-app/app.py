@@ -550,6 +550,11 @@ elif tab_choice == "📄 Ready Papers":
             for i, h in enumerate(hits[:n_src]):
                 try:
                     art = pomagalo_read(h["url"])
+                    import requests as _rq
+                    # claimed size from the page (Брой думи) for honest coverage reporting
+                    rr = _rq.get(h["url"], headers=POMAGALO_UA, timeout=30)
+                    m = re.search(r"Брой думи:\s*([\d\s]+)", rr.text)
+                    art["claimed_words"] = int(m.group(1).replace(" ", "")) if m else 0
                     sections.append({"title": h["title"], "url": h["url"], **art})
                 except Exception:
                     pass
@@ -574,16 +579,24 @@ elif tab_choice == "📄 Ready Papers":
 
     art = st.session_state.get("rp_final")
     if art:
-        st.success(f"✅ Ready: stitched from {len(art['sections'])} real Pomagalo papers.")
+        st.success(f"✅ Ready: {len(art['sections'])} real Pomagalo papers stitched — verbatim text, zero AI, zero hallucination.")
         for s in art["sections"]:
             tip = s.get("meta", {}).get("Тип", "")
-            st.markdown(f"- **{s['title']}** — {s['words']} words read" + (f" ({tip})" if tip else ""))
+            claimed = s.get("claimed_words")
+            cov = f" (~{min(100, s['words'] * 100 // max(claimed, 1))}% of the paper)" if claimed else ""
+            st.markdown(f"- **{s['title']}** — {s['words']} words read verbatim{cov} ({tip}) — [провери източника]({s['url']})")
+        st.caption("Every word below is copied from the real pages above — click any link to verify.")
         st.text_area("Your paper:", art["text"], height=400, key="rp_view")
         safe_topic = re.sub(r"[^\w\-]+", "-", (topic_rp or "paper").strip())[:30] or "paper"
-        st.download_button("⬇️ Download (.txt)",
+        cdl1, cdl2 = st.columns(2)
+        cdl1.download_button("⬇️ Download (.txt)",
                            data=art["text"].encode("utf-8"),
                            file_name=f"paper-{safe_topic}.txt",
                            mime="text/plain; charset=utf-8", key="rp_dl")
+        cdl2.download_button("⬇️ Download (.md)",
+                           data=art["text"].encode("utf-8"),
+                           file_name=f"paper-{safe_topic}.md",
+                           mime="text/markdown; charset=utf-8", key="rp_dl_md")
 
     # ── NOTEBOOKLM BRIDGE (infinite free beautiful slides — video 4 workflow) ─
     if art:
@@ -1302,8 +1315,8 @@ elif tab_choice == "🔧 Humanizer":
     st.divider()
     
     st.subheader("📏 Quality Check Before Submitting")
-    if st.button("🧪 Run Quality Check"):
-        test_text = st.text_area("Paste your draft here for instant analysis:", height=200)
+    test_text = st.text_area("🧪 Quality Check — paste your draft here:", height=200, key="qc_text")
+    if st.button("🧪 Run Quality Check", key="qc_go", type="primary"):
         if test_text:
             words = len(test_text.split())
             sents = [s for s in re.split(r'(?<=[.!?])\s+', test_text) if s.strip()]
